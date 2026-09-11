@@ -52,6 +52,8 @@ module bit_sieve_engine_25 #(
     wire [N-1:0] active_engine_mask;
     wire [TWIN_COUNT-1:0] pair_valid_bits;
     wire [TWIN_COUNT-1:0] pair_identifier_bits;
+    wire [TWIN_COUNT*FIELD_WIDTH-1:0] pair_delta_e_bits;
+    wire signed [FIELD_WIDTH-1:0] final_delta_e;
 
     wire signed [WEIGHT_WIDTH-1:0] weights [0:N-1];
     wire signed [ENERGY_WIDTH-1:0] winning_delta_E_extended;
@@ -65,8 +67,8 @@ module bit_sieve_engine_25 #(
     assign winner_index_out = winner_index;
     assign winner_X_val = current_state_X[winner_index];
     assign winning_delta_E_extended = {
-        {(ENERGY_WIDTH-FIELD_WIDTH){delta_E_array[winner_index][FIELD_WIDTH-1]}},
-        delta_E_array[winner_index]
+        {(ENERGY_WIDTH-FIELD_WIDTH){final_delta_e[FIELD_WIDTH-1]}},
+        final_delta_e
     };
 
     generate
@@ -147,7 +149,8 @@ module bit_sieve_engine_25 #(
                 .decision_low(valid_bits[i]),
                 .decision_high(valid_bits[i+TWIN_COUNT]),
                 .pair_valid(pair_valid_bits[i]),
-                .pair_identifier(pair_identifier_bits[i])
+                .pair_identifier(pair_identifier_bits[i]),
+                .pair_delta_E(pair_delta_e_bits[i*FIELD_WIDTH +: FIELD_WIDTH])
             );
         end
     endgenerate
@@ -190,15 +193,19 @@ module bit_sieve_engine_25 #(
         end
     end
 
-    matrix_selector_1024_flat u_selector (
+    matrix_selector_1024_flat #(
+        .FIELD_WIDTH(FIELD_WIDTH)
+    ) u_selector (
         .clk(clk),
         .rst(rst),
         .valid_bits(pair_valid_bits),
         .identifier_bits(pair_identifier_bits),
         .rand_bits(tree_rand[SELECTOR_WIDTH-2:TWIN_COUNT]),
+        .pair_delta_e_bits(pair_delta_e_bits),
         .final_index(matrix_winner_index),
         .final_identifier(matrix_winner_identifier),
-        .final_valid(winner_found)
+        .final_valid(winner_found),
+        .final_delta_e(final_delta_e)
     );
 
     // The physical dual-port memories live in BitSieve_256 so their write

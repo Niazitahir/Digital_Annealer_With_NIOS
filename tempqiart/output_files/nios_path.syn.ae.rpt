@@ -1,5 +1,5 @@
 Synthesis Analysis & Elaboration Stage Report for nios_path
-Fri Sep 11 16:04:01 2026
+Fri Sep 11 17:40:45 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -59,51 +59,52 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  51. Parameter Settings for User Entity e_off_generator Instance: u1|uut|u_e_off
  52. Parameter Settings for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer
  53. Parameter Settings for User Entity twin_unified_BitSieve_Engine Instance: u1|uut|twin_engine_array[1023].u_twin_engine
- 54. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
- 55. Parameter Settings for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
- 56. Parameter Settings for User Entity altera_syncram Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component
- 57. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
- 58. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
- 59. Parameter Settings for User Entity altera_merlin_waitrequest_adapter Instance: u0|mm_bridge_0|mm_bridge_0|waitrequest_adapter
- 60. Parameter Settings for User Entity altera_merlin_address_alignment Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_size
- 61. Parameter Settings for User Entity altera_merlin_burst_uncompressor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
- 62. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
- 63. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
- 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_obse4oa_default_decode Instance: u0|mm_interconnect_0|router_008|the_default_decode
- 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_baawywi_default_decode Instance: u0|mm_interconnect_0|router_007|the_default_decode
- 66. Parameter Settings for User Entity altera_merlin_burst_adapter_13_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter
- 67. Parameter Settings for User Entity altera_merlin_arbitrator Instance: u0|mm_interconnect_0|cmd_mux_004|arb
- 68. Parameter Settings for User Entity altera_merlin_arbitrator_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb
- 69. Parameter Settings for User Entity altera_merlin_arbitrator_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb
- 70. Parameter Settings for User Entity altera_merlin_arbitrator_3 Instance: u0|mm_interconnect_0|rsp_mux_003|arb
- 71. Parameter Settings for User Entity altera_syncram_1 Instance: u1|symmetric_qubo_banks[1023].u_sym_matrix_bank|ram_2port_0|altera_syncram_component
- 72. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_2011_hdk7lli Instance: u1|hp_ram|ram_1port_0|intel_mce_component
- 73. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_arb_2011_sgmuxea Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component
- 74. Parameter Settings for User Entity altera_syncram_2 Instance: u1|hp_ram|ram_1port_0|altera_syncram_component
- 75. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_2011_72jkply Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component
- 76. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_arb_2011_sr6jboi Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component
- 77. Parameter Settings for User Entity altera_syncram_3 Instance: u1|initial_h_ram_inst|ram_1port_0|altera_syncram_component
- 78. Parameter Settings for User Entity altera_syncram_4 Instance: u1|solution_state_ram|ram_1port_0|altera_syncram_component
- 79. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
- 80. Parameter Settings for User Entity scfifo Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w|wfifo
- 81. Parameter Settings for User Entity altera_merlin_address_alignment_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|align_address_to_size
- 82. Parameter Settings for User Entity altera_merlin_burst_adapter_burstwrap_increment Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_burstwrap_increment
- 83. Parameter Settings for User Entity altera_merlin_burst_adapter_min Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min
- 84. Parameter Settings for User Entity altera_merlin_arb_adder Instance: u0|mm_interconnect_0|rsp_mux_003|arb|adder
- 85. Parameter Settings for User Entity altera_merlin_arb_adder_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb|adder
- 86. Parameter Settings for User Entity altera_merlin_arb_adder_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb|adder
- 87. Parameter Settings for User Entity sld_mod_ram_rom_top Instance: u1|hp_ram|ram_1port_0|intel_mce_component|intel_mce_inst
- 88. Parameter Settings for User Entity altera_sld_arbiter_top Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
- 89. Parameter Settings for User Entity sld_mod_ram_rom_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component|intel_mce_inst
- 90. Parameter Settings for User Entity altera_sld_arbiter_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
- 91. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
- 92. Parameter Settings for User Entity altera_merlin_burst_adapter_subtractor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub
- 93. Parameter Settings for User Entity altera_merlin_burst_adapter_adder Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub|subtract
- 94. Verilog Macro Usage
- 95. System Level Debug Agent Report
- 96. Assignments with Invalid Source or Target
- 97. Top Causes of Logic Optimized Away During Sweep
- 98. Analysis & Elaboration Messages
+ 54. Parameter Settings for User Entity matrix_selector_1024_flat Instance: u1|uut|u_selector
+ 55. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
+ 56. Parameter Settings for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
+ 57. Parameter Settings for User Entity altera_syncram Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component
+ 58. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
+ 59. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
+ 60. Parameter Settings for User Entity altera_merlin_waitrequest_adapter Instance: u0|mm_bridge_0|mm_bridge_0|waitrequest_adapter
+ 61. Parameter Settings for User Entity altera_merlin_address_alignment Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_size
+ 62. Parameter Settings for User Entity altera_merlin_burst_uncompressor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
+ 63. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
+ 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
+ 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_obse4oa_default_decode Instance: u0|mm_interconnect_0|router_008|the_default_decode
+ 66. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_baawywi_default_decode Instance: u0|mm_interconnect_0|router_007|the_default_decode
+ 67. Parameter Settings for User Entity altera_merlin_burst_adapter_13_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter
+ 68. Parameter Settings for User Entity altera_merlin_arbitrator Instance: u0|mm_interconnect_0|cmd_mux_004|arb
+ 69. Parameter Settings for User Entity altera_merlin_arbitrator_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb
+ 70. Parameter Settings for User Entity altera_merlin_arbitrator_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb
+ 71. Parameter Settings for User Entity altera_merlin_arbitrator_3 Instance: u0|mm_interconnect_0|rsp_mux_003|arb
+ 72. Parameter Settings for User Entity altera_syncram_1 Instance: u1|symmetric_qubo_banks[1023].u_sym_matrix_bank|ram_2port_0|altera_syncram_component
+ 73. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_2011_hdk7lli Instance: u1|hp_ram|ram_1port_0|intel_mce_component
+ 74. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_arb_2011_sgmuxea Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component
+ 75. Parameter Settings for User Entity altera_syncram_2 Instance: u1|hp_ram|ram_1port_0|altera_syncram_component
+ 76. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_2011_72jkply Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component
+ 77. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_arb_2011_sr6jboi Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component
+ 78. Parameter Settings for User Entity altera_syncram_3 Instance: u1|initial_h_ram_inst|ram_1port_0|altera_syncram_component
+ 79. Parameter Settings for User Entity altera_syncram_4 Instance: u1|solution_state_ram|ram_1port_0|altera_syncram_component
+ 80. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
+ 81. Parameter Settings for User Entity scfifo Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w|wfifo
+ 82. Parameter Settings for User Entity altera_merlin_address_alignment_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|align_address_to_size
+ 83. Parameter Settings for User Entity altera_merlin_burst_adapter_burstwrap_increment Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_burstwrap_increment
+ 84. Parameter Settings for User Entity altera_merlin_burst_adapter_min Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min
+ 85. Parameter Settings for User Entity altera_merlin_arb_adder Instance: u0|mm_interconnect_0|rsp_mux_003|arb|adder
+ 86. Parameter Settings for User Entity altera_merlin_arb_adder_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb|adder
+ 87. Parameter Settings for User Entity altera_merlin_arb_adder_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb|adder
+ 88. Parameter Settings for User Entity sld_mod_ram_rom_top Instance: u1|hp_ram|ram_1port_0|intel_mce_component|intel_mce_inst
+ 89. Parameter Settings for User Entity altera_sld_arbiter_top Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
+ 90. Parameter Settings for User Entity sld_mod_ram_rom_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component|intel_mce_inst
+ 91. Parameter Settings for User Entity altera_sld_arbiter_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
+ 92. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
+ 93. Parameter Settings for User Entity altera_merlin_burst_adapter_subtractor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub
+ 94. Parameter Settings for User Entity altera_merlin_burst_adapter_adder Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub|subtract
+ 95. Verilog Macro Usage
+ 96. System Level Debug Agent Report
+ 97. Assignments with Invalid Source or Target
+ 98. Top Causes of Logic Optimized Away During Sweep
+ 99. Analysis & Elaboration Messages
 
 
 
@@ -552,7 +553,7 @@ u0|rst_controller_004
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
 ; ENERGY_WIDTH   ; 32    ; Signed Integer                                 ;
-; FIELD_WIDTH    ; 28    ; Signed Integer                                 ;
+; FIELD_WIDTH    ; 18    ; Signed Integer                                 ;
 ; INDEX_WIDTH    ; 11    ; Signed Integer                                 ;
 ; N              ; 2048  ; Signed Integer                                 ;
 ; SELECTOR_WIDTH ; 2048  ; Signed Integer                                 ;
@@ -1562,8 +1563,8 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
 ; USE_WRITERESPONSE         ; 0     ; Signed Integer                                                                                                      ;
 +---------------------------+-------+---------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent
 u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent
 u0|mm_interconnect_0|mm_bridge_0_s0_agent
 u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
@@ -1838,7 +1839,7 @@ u0|rst_controller_004|alt_rst_sync_uq1
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; WIDTH          ; 28    ; Signed Integer                                     ;
+; WIDTH          ; 18    ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 All Instances:
 u1|uut|u_e_off
@@ -1865,7 +1866,7 @@ u1|uut|tabu_buffer
 +----------------+-------+-----------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                          ;
 +----------------+-------+-----------------------------------------------------------------------------------------------+
-; FIELD_WIDTH    ; 28    ; Signed Integer                                                                                ;
+; FIELD_WIDTH    ; 18    ; Signed Integer                                                                                ;
 ; WEIGHT_WIDTH   ; 10    ; Signed Integer                                                                                ;
 +----------------+-------+-----------------------------------------------------------------------------------------------+
 All Instances:
@@ -2896,6 +2897,18 @@ u1|uut|twin_engine_array[1023].u_twin_engine
 
 
 
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity matrix_selector_1024_flat Instance: u1|uut|u_selector ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; FIELD_WIDTH    ; 18    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+All Instances:
+u1|uut|u_selector
+
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart ;
 +--------------------------+----------------------------------+---------------------------------------------------------------------------------+
@@ -3153,8 +3166,8 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_
 ; SYNC_RESET     ; 1     ; Signed Integer                                                                                                              ;
 +----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent|uncompressor
 u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent|uncompressor
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent|uncompressor
 u0|mm_interconnect_0|mm_bridge_0_s0_agent|uncompressor
 u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent|uncompressor
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
@@ -5406,16 +5419,15 @@ Table limited at 10 items. To change the number of top root causes reported, set
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Fri Sep 11 16:02:42 2026
-    Info: System process ID: 37576
-Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+    Info: Processing started: Fri Sep 11 17:39:43 2026
+    Info: System process ID: 39096
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off --analysis_and_elaboration nios_path -c nios_path --synthesis
 Info: qis_default_flow_script.tcl version: #1
 Info: Initializing Synthesis...
 Info: Project = "nios_path"
 Info: Revision = "nios_path"
-Info: Skip Design Assistant DRC check due to Optimization Mode setting of Aggressive Compile Time
 Info (21958): Initialized Quartus Message Database
-Info (16303): Aggressive Compile Time optimization mode selected -- reduced compilation time will be prioritized at the potential cost of reduced timing performance
+Info (16303): Aggressive Area optimization mode selected -- logic area will be prioritized at the potential cost of reduced timing performance
 Info: Analyzing source files
 Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_controller.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_controller.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
 Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
@@ -5473,11 +5485,11 @@ Warning (18254): Verilog HDL warning at initial_h_ram_ram_1port_2011_4l4kj3a.v(2
 Info (19337): VHDL info at sld_mod_ram_rom_top.vhd(31): executing entity "sld_mod_ram_rom_top(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name_dec=2147483647)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd Line: 31
 Info (19337): VHDL info at sld_mod_ram_rom.vhd(17): executing entity "sld_mod_ram_rom(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name=2147483647)(1,3)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 17
 Warning (18254): Verilog HDL warning at state_ram_ram_1port_2011_fyinmwy.v(26): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/ram_1port_2011/synth/state_ram_ram_1port_2011_fyinmwy.v Line: 26
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/37576/altera_mult_add_fil82.v Line: 37
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/37576/altera_mult_add_fil82.v Line: 38
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/37576/altera_mult_add_fil82.v Line: 39
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/37576/altera_mult_add_fil82.v Line: 41
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/37576/altera_mult_add_fil82.v Line: 42
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 37
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 38
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 39
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 41
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 42
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(682): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 682
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(683): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 683
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(710): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 710
@@ -5573,7 +5585,7 @@ Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
 Info (11172): Alt_sld_fab_0.alt_sld_fab_0.alt_sld_fab_0: SLD fabric agents which did not specify prefer_host were connected to JTAG
-Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_37576_0\sld\ipgen\alt_sld_fab_0.ip
+Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0.ip
 Info (11172): ***************************************************************
 Info (11172): Quartus is a registered trademark of Intel Corporation in the
 Info (11172): US and other countries.  Portions of the Quartus Prime software
@@ -5649,10 +5661,10 @@ Info (11172): Add_connection sldfabric.node_3 splitter.node_1 conduit
 Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
-Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_37576_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
+Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
 Info (11172): Generated by version: 25.1 build 129
 Info (11172): Starting: Create HDL design files for synthesis
-Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_37576_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_37576_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
+Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
 Info (11172): Add_instance splitter altera_sld_splitter
 Info (11172): Set_instance_parameter_value splitter ADD_INTERFACE_ASGN 1
 Info (11172): Send_message info {SLD fabric agents which did not specify prefer_host were connected to JTAG}
@@ -5739,11 +5751,11 @@ Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_for_
 Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_to_debug_logic"
 Info (11172): Alt_sld_fab_0: Done "alt_sld_fab_0" with 12 modules, 12 files
 Info (11172): Finished: Create HDL design files for synthesis
-Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_37576_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 1338 ms
+Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 872 ms
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab_0.
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_37576_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 402
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_37576_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 409
-Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_37576_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 402
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 409
+Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
 Info (19337): VHDL info at sld_jtag_hub.vhd(89): executing entity "sld_jtag_hub(device_family="Stratix 10",n_nodes=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(127,0)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 89
 Info (19337): VHDL info at sld_hub.vhd(1554): executing entity "sld_shadow_jsm(ip_major_version=1,ip_minor_version=5)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_hub.vhd Line: 1554
 Info (19337): VHDL info at sld_rom_sr.vhd(5): executing entity "sld_rom_sr(n_bits=160)" with architecture "INFO_REG" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_rom_sr.vhd Line: 5

@@ -30,7 +30,8 @@ module twin_unified_BitSieve_Engine #(
     output wire decision_low,
     output wire decision_high,
     output wire pair_valid,
-    output wire pair_identifier
+    output wire pair_identifier,
+    output wire signed [FIELD_WIDTH-1:0] pair_delta_E
 );
 
     // The extra arithmetic bit makes negation of the legal 10-bit value -512
@@ -79,6 +80,10 @@ module twin_unified_BitSieve_Engine #(
     assign pair_valid = candidate_low | candidate_high;
     assign pair_identifier = (candidate_low && candidate_high)
         ? ~pair_rand : candidate_high;
+
+    // Reuses pair_identifier's already-computed selection instead of
+    // re-deriving the winning delta_E later from a 2048-entry index.
+    assign pair_delta_E = pair_identifier ? delta_E_high : delta_E_low;
 
 endmodule
 

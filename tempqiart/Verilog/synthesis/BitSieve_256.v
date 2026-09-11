@@ -25,7 +25,7 @@ module BitSieve_256 (
     output        readdatavalid;
 
 	// --- Wires for Debug Signals --- //
-	wire signed [27:0]  current_E_off;
+	wire signed [17:0]  current_E_off;
 	wire signed [31:0]  Ising_Energy;
 
     // --- Wires for Temp Signals --- //
@@ -68,7 +68,9 @@ module BitSieve_256 (
     reg signed [31:0]        penalty_reg;
     reg signed [31:0]        init_ising_energy_reg;
     reg        [31:0]        random_seed_reg;
-    reg signed [27:0]        e_off_delta_reg;
+    // Only the low 18 bits of the loaded hyperparameter word are used,
+    // matching the reduced FIELD_WIDTH.
+    reg signed [17:0]        e_off_delta_reg;
     // Exposed hierarchically to the ModelSim testbench for problem-specific
     // objective reconstruction and optimum detection.
     reg signed [31:0]        qubo_constant_raw_reg;
@@ -80,6 +82,9 @@ module BitSieve_256 (
 
     // --- Wires for the init local fields ROM connection --- //
     wire	[10:0] h_init_address;
+    // The generated ROM is still 28 bits wide; only the low 18 bits are
+    // used now that FIELD_WIDTH is reduced, so host-programmed values must
+    // fit that signed range.
     wire	[27:0] h_init_value;
 
     // --- Wires for the SOLUTION RAM connection --- //
@@ -102,7 +107,18 @@ module BitSieve_256 (
     wire [BANK_ROW_WIDTH-1:0] bank_q_b_packed;
     reg  [9:0] sampled_weight_row_low;
 
-
+    // =========================================================================
+    // Avalon-MM Slave Interface to the symmetric matrix bank fabric
+    // =========================================================================
+    // Each of the 1024 banks stores both twin engines' folded rows directly:
+    // port A holds the low engine's 1024-entry row, port B holds the high
+    // engine's. The Avalon address is mapped as:
+    //   [20:11] -> bank number (0..1023)
+    //   [10]    -> engine half within the twin (0 = low/port A, 1 = high/port B)
+    //   [9:0]   -> row within that engine's folded 1024-entry weight vector
+    reg [9:0] avalon_last_bank_reg;
+    reg       avalon_last_port_reg;
+    reg [2:0] avalon_read_pipeline;
     reg [3:0] avalon_last_state_address_reg;
     reg [5:0] avalon_last_state_word_reg;
     reg       avalon_last_state_section_reg;
@@ -220,17 +236,40 @@ module BitSieve_256 (
     // engine bank_id's row, port B is engine (bank_id+TWIN_COUNT)'s row. Each
     // port is addressed directly by the shared sampled_weight_row_low value,
     // so no cross-bank remap/rotation is ever needed.
+
+    // Single shared bank-select decoder: a 32x32 two-level tree instead of
+    // 1024 independent 10-bit compares against the same avalon_bank value.
+    wire avalon_access_active = avalon_read_req || avalon_write_req;
+    wire [31:0] avalon_bank_hi_onehot;
+    wire [31:0] avalon_bank_lo_onehot;
+    wire [TWIN_COUNT-1:0] avalon_bank_onehot;
+    genvar decode_hi, decode_lo;
+    generate
+        for (decode_hi = 0; decode_hi < 32; decode_hi = decode_hi + 1) begin : avalon_bank_hi_decode
+            assign avalon_bank_hi_onehot[decode_hi] = (avalon_bank[9:5] == decode_hi);
+        end
+        for (decode_lo = 0; decode_lo < 32; decode_lo = decode_lo + 1) begin : avalon_bank_lo_decode
+            assign avalon_bank_lo_onehot[decode_lo] = (avalon_bank[4:0] == decode_lo);
+        end
+    endgenerate
+
     genvar bank_id;
     generate
         for (bank_id = 0; bank_id < TWIN_COUNT; bank_id = bank_id + 1) begin : symmetric_qubo_banks
-            wire bank_avalon_low_selected  = (avalon_bank == bank_id) && !avalon_row[10] &&
-                                              (avalon_read_req || avalon_write_req);
-            wire bank_avalon_high_selected = (avalon_bank == bank_id) &&  avalon_row[10] &&
-                                              (avalon_read_req || avalon_write_req);
+            assign avalon_bank_onehot[bank_id] =
+                avalon_bank_hi_onehot[bank_id[9:5]] & avalon_bank_lo_onehot[bank_id[4:0]];
 
+            wire bank_avalon_low_selected  = avalon_bank_onehot[bank_id] && !avalon_row[10] &&
+                                              avalon_access_active;
+            wire bank_avalon_high_selected = avalon_bank_onehot[bank_id] &&  avalon_row[10] &&
+                                              avalon_access_active;
+
+            // Port A/B are one shared 2048-word array: address MSB=0 selects
+            // the low engine's half, MSB=1 the high engine's half, so both
+            // ports always read disjoint, independent halves in parallel.
             sym_matrix_bank u_sym_matrix_bank (
                 .address_a(bank_avalon_low_selected  ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low}),
-                .address_b(bank_avalon_high_selected ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low}),
+                .address_b(bank_avalon_high_selected ? {1'b1, avalon_row[9:0]} : {1'b1, sampled_weight_row_low}),
                 .clock(CLOCK_50),
                 .data_a(bank_avalon_low_selected  && avalon_write_req ? writedata[9:0] : 10'd0),
                 .data_b(bank_avalon_high_selected && avalon_write_req ? writedata[9:0] : 10'd0),
@@ -262,14 +301,14 @@ module BitSieve_256 (
         .N(2048),
         .INDEX_WIDTH(11),
         .SELECTOR_WIDTH(2048),
-        .FIELD_WIDTH(28),
+        .FIELD_WIDTH(18),
         .ENERGY_WIDTH(32),
         .WEIGHT_WIDTH(10)
     ) uut (
         .clk(CLOCK_50),
         .rst(rst),
 
-        .h_init_value(h_init_value),
+        .h_init_value(h_init_value[17:0]),
 
         .rng_ADB_en(rng_ADB_en),
         .rng_US_en(rng_US_en),
@@ -361,7 +400,7 @@ module BitSieve_256 (
             penalty_reg           <= 32'd8;
             init_ising_energy_reg <= 32'sd0;
             random_seed_reg       <= 32'h12345678;
-            e_off_delta_reg       <= 27'd2;
+            e_off_delta_reg       <= 18'd2;
             qubo_constant_raw_reg <= 32'sd0;
             global_min_raw_reg    <= 32'sd0;
             active_variable_count_reg <= 12'd0;
@@ -375,7 +414,7 @@ module BitSieve_256 (
                 11'd3: penalty_reg           <= hp_q_data;       // Tabu depth is held in bits [10:0]
                 11'd4: init_ising_energy_reg <= hp_q_data;
                 11'd5: random_seed_reg       <= hp_q_data;
-                11'd6: e_off_delta_reg       <= hp_q_data[27:0];
+                11'd6: e_off_delta_reg       <= hp_q_data[17:0];
                 // Registered ROM output is two h_init_address counts behind.
                 11'd7: qubo_constant_raw_reg <= hp_q_data;
                 11'd8: global_min_raw_reg    <= hp_q_data;

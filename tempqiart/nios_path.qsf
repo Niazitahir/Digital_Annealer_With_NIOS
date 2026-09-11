@@ -17,7 +17,7 @@ set_global_assignment -name USE_INIT_DONE SDM_IO0
 set_global_assignment -name SDM_DIRECT_TO_FACTORY_IMAGE SDM_IO15
 set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_125MHZ
 set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2012
-set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE COMPILE TIME"
+set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE AREA"
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 
 #ReLingo_waive_start:vendor_intc:RL02
