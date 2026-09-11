@@ -53,10 +53,10 @@ RM = E:/quartus/Quartus/riscfree/build_tools/cmake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app
+CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug
+CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug
 
 # Utility rule file for create-objdump.
 
@@ -69,7 +69,7 @@ include CMakeFiles/create-objdump.dir/progress.make
 CMakeFiles/create-objdump: app.elf.objdump
 
 app.elf.objdump: app.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating app.elf.objdump."
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating app.elf.objdump."
 	riscv32-unknown-elf-objdump -Sdtx app.elf > app.elf.objdump
 
 CMakeFiles/create-objdump.dir/codegen:
@@ -89,6 +89,6 @@ CMakeFiles/create-objdump.dir/clean:
 .PHONY : CMakeFiles/create-objdump.dir/clean
 
 CMakeFiles/create-objdump.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles/create-objdump.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles/create-objdump.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/create-objdump.dir/depend
 

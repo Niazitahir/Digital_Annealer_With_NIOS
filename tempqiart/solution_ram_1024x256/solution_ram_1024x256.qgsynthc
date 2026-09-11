@@ -50,7 +50,7 @@
           </parameter>
           <parameter>
             <name>GUI_BYTE_WIDTH</name>
-            <value>64</value>
+            <value>256</value>
           </parameter>
           <parameter>
             <name>GUI_BlankMemory</name>
@@ -90,11 +90,11 @@
           </parameter>
           <parameter>
             <name>GUI_JTAG_ENABLED</name>
-            <value>false</value>
+            <value>true</value>
           </parameter>
           <parameter>
             <name>GUI_JTAG_ID</name>
-            <value>NONE</value>
+            <value>solution_ram</value>
           </parameter>
           <parameter>
             <name>GUI_MAXIMUM_DEPTH</name>
@@ -110,7 +110,7 @@
           </parameter>
           <parameter>
             <name>GUI_NUMWORDS_A</name>
-            <value>1024</value>
+            <value>20</value>
           </parameter>
           <parameter>
             <name>GUI_OPTIMIZATION_OPTION</name>
@@ -130,7 +130,7 @@
           </parameter>
           <parameter>
             <name>GUI_RESOURCE_USAGE</name>
-            <value>26 M20K</value>
+            <value>4 M20K</value>
           </parameter>
           <parameter>
             <name>GUI_RegAddr</name>
@@ -158,11 +158,11 @@
           </parameter>
           <parameter>
             <name>GUI_WIDTHAD_A</name>
-            <value>10</value>
+            <value>5</value>
           </parameter>
           <parameter>
             <name>GUI_WIDTH_A</name>
-            <value>512</value>
+            <value>2048</value>
           </parameter>
           <parameter>
             <name>GUI_WRCONTROL_ACLR_A</name>
@@ -181,12 +181,241 @@
         <className>ram_1port</className>
         <version>20.1.1</version>
         <name>ram_1port_0</name>
-        <uniqueName>solution_ram_1024x256_ram_1port_2011_o46sd4i</uniqueName>
+        <uniqueName>solution_ram_1024x256_ram_1port_2011_qxo3brq</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>solution_ram_1024x256.ram_1port_0</path>
       </instanceData>
-      <children></children>
+      <children>
+        <node>
+          <instanceKey xsi:type="xs:string">intel_mce_arb_inst</instanceKey>
+          <instanceData xsi:type="data">
+            <parameters>
+              <parameter>
+                <name>BYTE_ENABLE_WIDTH</name>
+                <value>256</value>
+              </parameter>
+              <parameter>
+                <name>DATA_WIDTH</name>
+                <value>2048</value>
+              </parameter>
+              <parameter>
+                <name>LATENCY</name>
+                <value>2</value>
+              </parameter>
+              <parameter>
+                <name>WIDTHAD</name>
+                <value>5</value>
+              </parameter>
+            </parameters>
+            <interconnectAssignments></interconnectAssignments>
+            <className>ram_1port_intel_mce_arb</className>
+            <version>20.1.1</version>
+            <name>intel_mce_arb_inst</name>
+            <uniqueName>solution_ram_1024x256_ram_1port_intel_mce_arb_2011_qa2jqni</uniqueName>
+            <nonce>0</nonce>
+            <incidentConnections></incidentConnections>
+            <path>solution_ram_1024x256.ram_1port_0.intel_mce_arb_inst</path>
+          </instanceData>
+          <children>
+            <node>
+              <instanceKey xsi:type="xs:string">intel_mce_arb_inst</instanceKey>
+              <instanceData xsi:type="data">
+                <parameters>
+                  <parameter>
+                    <name>BYTE_ENABLE_WIDTH</name>
+                    <value>256</value>
+                  </parameter>
+                  <parameter>
+                    <name>DATA_WIDTH</name>
+                    <value>2048</value>
+                  </parameter>
+                  <parameter>
+                    <name>LATENCY</name>
+                    <value>2</value>
+                  </parameter>
+                  <parameter>
+                    <name>WIDTHAD</name>
+                    <value>5</value>
+                  </parameter>
+                </parameters>
+                <interconnectAssignments></interconnectAssignments>
+                <className>intel_mce_arb</className>
+                <version>1.0.0</version>
+                <name>intel_mce_arb_inst</name>
+                <uniqueName>altera_sld_arbiter_top</uniqueName>
+                <fixedName>altera_sld_arbiter_top</fixedName>
+                <nonce>0</nonce>
+                <incidentConnections></incidentConnections>
+                <path>solution_ram_1024x256.ram_1port_0.intel_mce_arb_inst.intel_mce_arb_inst</path>
+              </instanceData>
+              <children></children>
+            </node>
+          </children>
+        </node>
+        <node>
+          <instanceKey xsi:type="xs:string">intel_mce_inst</instanceKey>
+          <instanceData xsi:type="data">
+            <parameters>
+              <parameter>
+                <name>BACKPRESSURE_ENABLED</name>
+                <value>1</value>
+              </parameter>
+              <parameter>
+                <name>BYTE_ENABLE_WIDTH</name>
+                <value>256</value>
+              </parameter>
+              <parameter>
+                <name>FIFO_SIZE</name>
+                <value>16</value>
+              </parameter>
+              <parameter>
+                <name>FIFO_SIZE_DELAY</name>
+                <value>5</value>
+              </parameter>
+              <parameter>
+                <name>FIFO_SIZE_WIDTH</name>
+                <value>4</value>
+              </parameter>
+              <parameter>
+                <name>IS_DATA_IN_RAM</name>
+                <value>1</value>
+              </parameter>
+              <parameter>
+                <name>IS_READABLE</name>
+                <value>1</value>
+              </parameter>
+              <parameter>
+                <name>LATENCY</name>
+                <value>2</value>
+              </parameter>
+              <parameter>
+                <name>NODE_NAME</name>
+                <value>solution_ram</value>
+              </parameter>
+              <parameter>
+                <name>NODE_NAME_DEC</name>
+                <value>2147483647</value>
+              </parameter>
+              <parameter>
+                <name>NUMWORDS</name>
+                <value>20</value>
+              </parameter>
+              <parameter>
+                <name>QUEUE_SIZE_WIDTH</name>
+                <value>5</value>
+              </parameter>
+              <parameter>
+                <name>SHIFT_COUNT_BITS</name>
+                <value>12</value>
+              </parameter>
+              <parameter>
+                <name>SLD_NODE_INFO</name>
+                <value>270036480</value>
+              </parameter>
+              <parameter>
+                <name>WIDTHAD</name>
+                <value>5</value>
+              </parameter>
+              <parameter>
+                <name>WIDTH_WORD</name>
+                <value>2048</value>
+              </parameter>
+            </parameters>
+            <interconnectAssignments></interconnectAssignments>
+            <className>ram_1port_intel_mce</className>
+            <version>20.1.1</version>
+            <name>intel_mce_inst</name>
+            <uniqueName>solution_ram_1024x256_ram_1port_intel_mce_2011_paxiatq</uniqueName>
+            <nonce>0</nonce>
+            <incidentConnections></incidentConnections>
+            <path>solution_ram_1024x256.ram_1port_0.intel_mce_inst</path>
+          </instanceData>
+          <children>
+            <node>
+              <instanceKey xsi:type="xs:string">intel_mce_inst</instanceKey>
+              <instanceData xsi:type="data">
+                <parameters>
+                  <parameter>
+                    <name>BACKPRESSURE_ENABLED</name>
+                    <value>1</value>
+                  </parameter>
+                  <parameter>
+                    <name>BYTE_ENABLE_WIDTH</name>
+                    <value>256</value>
+                  </parameter>
+                  <parameter>
+                    <name>FIFO_SIZE</name>
+                    <value>16</value>
+                  </parameter>
+                  <parameter>
+                    <name>FIFO_SIZE_DELAY</name>
+                    <value>5</value>
+                  </parameter>
+                  <parameter>
+                    <name>FIFO_SIZE_WIDTH</name>
+                    <value>4</value>
+                  </parameter>
+                  <parameter>
+                    <name>IS_DATA_IN_RAM</name>
+                    <value>1</value>
+                  </parameter>
+                  <parameter>
+                    <name>IS_READABLE</name>
+                    <value>1</value>
+                  </parameter>
+                  <parameter>
+                    <name>LATENCY</name>
+                    <value>2</value>
+                  </parameter>
+                  <parameter>
+                    <name>NODE_NAME</name>
+                    <value>solution_ram</value>
+                  </parameter>
+                  <parameter>
+                    <name>NODE_NAME_DEC</name>
+                    <value>2147483647</value>
+                  </parameter>
+                  <parameter>
+                    <name>NUMWORDS</name>
+                    <value>20</value>
+                  </parameter>
+                  <parameter>
+                    <name>QUEUE_SIZE_WIDTH</name>
+                    <value>5</value>
+                  </parameter>
+                  <parameter>
+                    <name>SHIFT_COUNT_BITS</name>
+                    <value>12</value>
+                  </parameter>
+                  <parameter>
+                    <name>SLD_NODE_INFO</name>
+                    <value>270036480</value>
+                  </parameter>
+                  <parameter>
+                    <name>WIDTHAD</name>
+                    <value>5</value>
+                  </parameter>
+                  <parameter>
+                    <name>WIDTH_WORD</name>
+                    <value>2048</value>
+                  </parameter>
+                </parameters>
+                <interconnectAssignments></interconnectAssignments>
+                <className>intel_mce</className>
+                <version>1.0.4</version>
+                <name>intel_mce_inst</name>
+                <uniqueName>sld_mod_ram_rom_top</uniqueName>
+                <fixedName>sld_mod_ram_rom_top</fixedName>
+                <nonce>0</nonce>
+                <incidentConnections></incidentConnections>
+                <path>solution_ram_1024x256.ram_1port_0.intel_mce_inst.intel_mce_inst</path>
+              </instanceData>
+              <children></children>
+            </node>
+          </children>
+        </node>
+      </children>
     </node>
   </children>
 </node>

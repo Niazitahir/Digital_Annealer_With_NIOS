@@ -4,7 +4,7 @@
 # compile CXX with E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe
 CXX_DEFINES = -DALT_LOG_FLAGS=0 -D__hal__
 
-CXX_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/drivers/inc
+CXX_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/drivers/inc
 
 CXX_FLAGS = -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32im_zicbom -mabi=ilp32
 

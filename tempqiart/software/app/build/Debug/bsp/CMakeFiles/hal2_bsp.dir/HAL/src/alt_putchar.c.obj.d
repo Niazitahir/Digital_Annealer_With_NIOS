@@ -1,5 +1,5 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj: \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/alt_putchar.c \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/src/alt_putchar.c \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2026.09.10.02:35:00"
- outputDirectory="C:/Users/bigkunt/Documents/GitHub/tempqiart/state_ram/">
+ date="2026.09.11.14:31:29"
+ outputDirectory="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -73,7 +73,7 @@
    <property name="associatedClock" value="" />
    <property name="associatedReset" value="" />
    <property name="prSafe" value="false" />
-   <port name="address" direction="input" role="address" width="10" />
+   <port name="address" direction="input" role="address" width="4" />
   </interface>
   <interface name="wren" kind="conduit" start="0">
    <property name="associatedClock" value="" />
@@ -100,16 +100,17 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\state_ram\synth\state_ram.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\synth\state_ram.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\state_ram\synth\state_ram.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\synth\state_ram.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
-   <file path="C:/Users/bigkunt/Documents/GitHub/tempqiart/state_ram.ip" />
+   <file
+       path="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -117,18 +118,18 @@
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="state_ram">"Generating: state_ram"</message>
-   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_ee55zny"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_fyinmwy"</message>
   </messages>
  </entity>
  <entity
    kind="ram_1port"
    version="20.1.1"
-   name="state_ram_ram_1port_2011_ee55zny">
+   name="state_ram_ram_1port_2011_fyinmwy">
   <parameter name="GUI_CLOCK_ENABLE_INPUT_A" value="false" />
   <parameter name="GUI_AclrData" value="false" />
-  <parameter name="GUI_NUMWORDS_A" value="1024" />
+  <parameter name="GUI_NUMWORDS_A" value="16" />
   <parameter name="DEVICE_FAMILY" value="Stratix 10" />
-  <parameter name="GUI_RAM_BLOCK_TYPE" value="Auto" />
+  <parameter name="GUI_RAM_BLOCK_TYPE" value="M20K" />
   <parameter name="GUI_SingleClock" value="0" />
   <parameter name="GUI_AclrAddr" value="false" />
   <parameter name="GUI_INIT_FILE_LAYOUT" value="PORT_A" />
@@ -139,7 +140,7 @@
   <parameter name="GUI_READ_DURING_WRITE_MODE_PORT_A" value="0" />
   <parameter name="GUI_CLOCK_ENABLE_OUTPUT_A" value="false" />
   <parameter name="GUI_BYTE_SIZE" value="8" />
-  <parameter name="GUI_RESOURCE_USAGE" value="103 M20K" />
+  <parameter name="GUI_RESOURCE_USAGE" value="2 M20K" />
   <parameter name="GUI_rden" value="false" />
   <parameter name="GUI_JTAG_ID" value="NONE" />
   <parameter name="GUI_WIDTH_A" value="2048" />
@@ -156,7 +157,7 @@
   <parameter name="GUI_BYTE_WIDTH" value="256" />
   <parameter name="GUI_WRCONTROL_ACLR_A" value="false" />
   <parameter name="GUI_AclrOutput" value="false" />
-  <parameter name="GUI_WIDTHAD_A" value="10" />
+  <parameter name="GUI_WIDTHAD_A" value="4" />
   <parameter name="GUI_ADDRESSSTALL_A" value="false" />
   <parameter name="GUI_FILE_REFERENCE" value="0" />
   <parameter name="GUI_BYTE_ENABLE" value="false" />
@@ -166,12 +167,12 @@
   <parameter name="GUI_BlankMemory" value="0" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_ee55zny.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_fyinmwy.v"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_ee55zny.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_fyinmwy.v"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -181,7 +182,7 @@
   <childSourceFiles/>
   <instantiator instantiator="state_ram" as="ram_1port_0" />
   <messages>
-   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_ee55zny"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_fyinmwy"</message>
   </messages>
  </entity>
 </deploy>

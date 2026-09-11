@@ -279,7 +279,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>511</ipxact:right>
+              <ipxact:right>2047</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -297,7 +297,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>511</ipxact:right>
+              <ipxact:right>2047</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -315,7 +315,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>9</ipxact:right>
+              <ipxact:right>4</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -454,12 +454,12 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="GUI_JTAG_ENABLED" type="bit">
           <ipxact:name>GUI_JTAG_ENABLED</ipxact:name>
           <ipxact:displayName>Allow In-System Memory Content Editor to capture and update content independently of the system clock</ipxact:displayName>
-          <ipxact:value>false</ipxact:value>
+          <ipxact:value>true</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="GUI_JTAG_ID" type="string">
           <ipxact:name>GUI_JTAG_ID</ipxact:name>
           <ipxact:displayName>The 'instance ID' of this RAM is</ipxact:displayName>
-          <ipxact:value>NONE</ipxact:value>
+          <ipxact:value>solution_ram</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="GUI_INIT_FILE_LAYOUT" type="string">
           <ipxact:name>GUI_INIT_FILE_LAYOUT</ipxact:name>
@@ -484,12 +484,12 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="GUI_WIDTH_A" type="int">
           <ipxact:name>GUI_WIDTH_A</ipxact:name>
           <ipxact:displayName>How wide should the 'q' output bus be?</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>2048</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="GUI_NUMWORDS_A" type="int">
           <ipxact:name>GUI_NUMWORDS_A</ipxact:name>
           <ipxact:displayName>How many words of memory?</ipxact:displayName>
-          <ipxact:value>1024</ipxact:value>
+          <ipxact:value>20</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="GUI_MAXIMUM_DEPTH" type="string">
           <ipxact:name>GUI_MAXIMUM_DEPTH</ipxact:name>

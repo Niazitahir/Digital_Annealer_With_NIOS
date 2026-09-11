@@ -1,5 +1,5 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj: \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/alt_stat.c \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/src/alt_stat.c \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/types.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
@@ -35,4 +35,4 @@ bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj: \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_default_fcntl.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/unistd.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/unistd.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/os/alt_syscall.h
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/os/alt_syscall.h

@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Fri Sep 11 10:56:24 2026
+Revision Name : nios_path
+Top-level Entity Name : tempqiart_top
+Family : Stratix 10
+Quartus Prime Version : 25.1.0 Build 129 03/26/2025 SC Pro Edition
+Device : 1ST040EH2F35E2VG
+Logic utilization estimate (in ALMs) : 2,583,096 / 128,160 ( 2016 % )
+Total dedicated logic registers : 100792
+Estimated DSP Blocks Post-Merging : 2

@@ -53,10 +53,10 @@ RM = E:/quartus/Quartus/riscfree/build_tools/cmake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app
+CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug
+CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.elf.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/app.elf.dir/codegen:
 .PHONY : CMakeFiles/app.elf.dir/codegen
 
 CMakeFiles/app.elf.dir/hello.cpp.obj: CMakeFiles/app.elf.dir/flags.make
-CMakeFiles/app.elf.dir/hello.cpp.obj: C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/hello.cpp
+CMakeFiles/app.elf.dir/hello.cpp.obj: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp
 CMakeFiles/app.elf.dir/hello.cpp.obj: CMakeFiles/app.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.elf.dir/hello.cpp.obj"
-	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.elf.dir/hello.cpp.obj -MF CMakeFiles/app.elf.dir/hello.cpp.obj.d -o CMakeFiles/app.elf.dir/hello.cpp.obj -c C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/hello.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.elf.dir/hello.cpp.obj"
+	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.elf.dir/hello.cpp.obj -MF CMakeFiles/app.elf.dir/hello.cpp.obj.d -o CMakeFiles/app.elf.dir/hello.cpp.obj -c C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp
 
 CMakeFiles/app.elf.dir/hello.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.elf.dir/hello.cpp.i"
-	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/hello.cpp > CMakeFiles/app.elf.dir/hello.cpp.i
+	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp > CMakeFiles/app.elf.dir/hello.cpp.i
 
 CMakeFiles/app.elf.dir/hello.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.elf.dir/hello.cpp.s"
-	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/hello.cpp -o CMakeFiles/app.elf.dir/hello.cpp.s
+	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp -o CMakeFiles/app.elf.dir/hello.cpp.s
 
 # Object files for target app.elf
 app_elf_OBJECTS = \
@@ -95,10 +95,10 @@ app_elf_EXTERNAL_OBJECTS =
 
 app.elf: CMakeFiles/app.elf.dir/hello.cpp.obj
 app.elf: CMakeFiles/app.elf.dir/build.make
-app.elf: C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.x
+app.elf: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.x
 app.elf: bsp/libhal2_bsp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app.elf"
-	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe -g -march=rv32im_zicbom -mabi=ilp32 -nostdlib $(app_elf_OBJECTS) $(app_elf_EXTERNAL_OBJECTS) -o app.elf  -T C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.x -nostdlib -Wl,--start-group bsp/libhal2_bsp.a -lc -lstdc++ -lgcc -lm -Wl,--end-group
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app.elf"
+	E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe -g -march=rv32im_zicbom -mabi=ilp32 -nostdlib $(app_elf_OBJECTS) $(app_elf_EXTERNAL_OBJECTS) -o app.elf  -T C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.x -nostdlib -Wl,--start-group bsp/libhal2_bsp.a -lc -lstdc++ -lgcc -lm -Wl,--end-group
 
 # Rule to build all files generated by this target.
 CMakeFiles/app.elf.dir/build: app.elf
@@ -109,6 +109,6 @@ CMakeFiles/app.elf.dir/clean:
 .PHONY : CMakeFiles/app.elf.dir/clean
 
 CMakeFiles/app.elf.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles/app.elf.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles/app.elf.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.elf.dir/depend
 

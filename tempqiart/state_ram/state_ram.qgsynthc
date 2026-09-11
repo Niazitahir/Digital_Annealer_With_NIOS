@@ -110,7 +110,7 @@
           </parameter>
           <parameter>
             <name>GUI_NUMWORDS_A</name>
-            <value>1024</value>
+            <value>16</value>
           </parameter>
           <parameter>
             <name>GUI_OPTIMIZATION_OPTION</name>
@@ -122,7 +122,7 @@
           </parameter>
           <parameter>
             <name>GUI_RAM_BLOCK_TYPE</name>
-            <value>Auto</value>
+            <value>M20K</value>
           </parameter>
           <parameter>
             <name>GUI_READ_DURING_WRITE_MODE_PORT_A</name>
@@ -130,7 +130,7 @@
           </parameter>
           <parameter>
             <name>GUI_RESOURCE_USAGE</name>
-            <value>103 M20K</value>
+            <value>2 M20K</value>
           </parameter>
           <parameter>
             <name>GUI_RegAddr</name>
@@ -158,7 +158,7 @@
           </parameter>
           <parameter>
             <name>GUI_WIDTHAD_A</name>
-            <value>10</value>
+            <value>4</value>
           </parameter>
           <parameter>
             <name>GUI_WIDTH_A</name>
@@ -181,7 +181,7 @@
         <className>ram_1port</className>
         <version>20.1.1</version>
         <name>ram_1port_0</name>
-        <uniqueName>state_ram_ram_1port_2011_ee55zny</uniqueName>
+        <uniqueName>state_ram_ram_1port_2011_fyinmwy</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>state_ram.ram_1port_0</path>

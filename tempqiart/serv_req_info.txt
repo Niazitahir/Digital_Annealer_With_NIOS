@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <internal_error>
 	<sub_system>ERR</sub_system>
-	<callstack>	0x7ffdec9f18a0: dni_orch + 0x118a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x3590)
-	0x7ffdf21b9c84: ucrtbase + 0x49c84 (bsearch_s + 0x254)
-	0x7ffdf21b98a6: ucrtbase + 0x498a6 (_execute_onexit_table + 0x86)
-	0x7ffdf21b985c: ucrtbase + 0x4985c (_execute_onexit_table + 0x3c)
-	0x7ffdec9ef5a0: dni_orch + 0xf5a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x1290)
-	0x7ffdec9ee68d: dni_orch + 0xe68d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x37d)
-	0x7ffdec9ee96d: dni_orch + 0xe96d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x65d)
-	0x7ffdf4fdead9: ntdll + 0x11ead9 (RtlIsCriticalSectionLocked + 0x5169)
-	0x7ffdf4ed0c32: ntdll + 0x10c32 (RtlRaiseException + 0x1532)
-	0x7ffdf4f4830f: ntdll + 0x8830f (LdrGetProcedureAddressForCaller + 0x106f)
-	0x7ffdf4f465fd: ntdll + 0x865fd (LdrUnloadDll + 0x50d)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f467a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7ffdf4f46443: ntdll + 0x86443 (LdrUnloadDll + 0x353)
-	0x7ffdf4f462df: ntdll + 0x862df (LdrUnloadDll + 0x1ef)
-	0x7ffdf23b1358: KERNELBASE + 0x21358 (FreeLibrary + 0x18)
-	0x7ffddf501fc8: mega_qsysipc_jni_stub + 0x1fc8 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x6c8)
-	0x7ffddf501908: mega_qsysipc_jni_stub + 0x1908 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x8)
-	0x1ad779bd620:
-	0x1ad5971d41f:
-	0x60b0284f7:
-	0x1acffffffff:
-	0x1ad779b94fd:
-	0x60b0707c7:
-	0x1ad779bd2f5:
-	0x391bfff1df:
-	0x1ad5971d41f:
-	0x391bfff247:
-	0x1ad59720277:
+	<callstack>	0x7fff756a18a0: dni_orch + 0x118a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x3590)
+	0x7fff921b9c84: ucrtbase + 0x49c84 (bsearch_s + 0x254)
+	0x7fff921b98a6: ucrtbase + 0x498a6 (_execute_onexit_table + 0x86)
+	0x7fff921b985c: ucrtbase + 0x4985c (_execute_onexit_table + 0x3c)
+	0x7fff7569f5a0: dni_orch + 0xf5a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x1290)
+	0x7fff7569e68d: dni_orch + 0xe68d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x37d)
+	0x7fff7569e96d: dni_orch + 0xe96d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x65d)
+	0x7fff94bbead9: ntdll + 0x11ead9 (RtlIsCriticalSectionLocked + 0x5169)
+	0x7fff94ab0c32: ntdll + 0x10c32 (RtlRaiseException + 0x1532)
+	0x7fff94b2830f: ntdll + 0x8830f (LdrGetProcedureAddressForCaller + 0x106f)
+	0x7fff94b265fd: ntdll + 0x865fd (LdrUnloadDll + 0x50d)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
+	0x7fff94b26443: ntdll + 0x86443 (LdrUnloadDll + 0x353)
+	0x7fff94b262df: ntdll + 0x862df (LdrUnloadDll + 0x1ef)
+	0x7fff91d81358: KERNELBASE + 0x21358 (FreeLibrary + 0x18)
+	0x7fff70341fc8: mega_qsysipc_jni_stub + 0x1fc8 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x6c8)
+	0x7fff70341908: mega_qsysipc_jni_stub + 0x1908 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x8)
+	0x192480dd620:
+	0x192aa71d597:
+	0x192abdfcd9f:
+	0x191ffffffff:
+	0x192480d94fd:
+	0x446003127:
+	0x192480dd2f5:
+	0x7bb5ff32f:
+	0x192aa71d597:
+	0x7bb5ff397:
+	0x192aa720297:
 </callstack>
-	<error>*** Fatal Error: Access Violation at 00007FFDEC9F18A1</error>
-	<date>Thu Sep 10 13:10:06 2026
+	<error>*** Fatal Error: Access Violation at 00007FFF756A18A1</error>
+	<date>Fri Sep 11 14:31:33 2026
 </date>
 	<version>Version 25.1.0 Build 129 03/26/2025 SC Pro Edition</version>
 </internal_error>

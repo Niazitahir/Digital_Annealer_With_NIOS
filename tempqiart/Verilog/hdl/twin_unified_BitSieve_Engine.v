@@ -37,25 +37,11 @@ module twin_unified_BitSieve_Engine #(
     // exact (+512) instead of wrapping in a 10-bit temporary.
     wire signed [WEIGHT_WIDTH:0] weight_low_extended;
     wire signed [WEIGHT_WIDTH:0] weight_high_extended;
-    wire signed [WEIGHT_WIDTH:0] delta_h_low;
-    wire signed [WEIGHT_WIDTH:0] delta_h_high;
-    wire signed [FIELD_WIDTH-1:0] delta_h_low_extended;
-    wire signed [FIELD_WIDTH-1:0] delta_h_high_extended;
     reg  signed [FIELD_WIDTH-1:0] local_field_low;
     reg  signed [FIELD_WIDTH-1:0] local_field_high;
 
     assign weight_low_extended = {weight_low[WEIGHT_WIDTH-1], weight_low};
     assign weight_high_extended = {weight_high[WEIGHT_WIDTH-1], weight_high};
-    assign delta_h_low = X_j ? weight_low_extended : -weight_low_extended;
-    assign delta_h_high = X_j ? weight_high_extended : -weight_high_extended;
-    assign delta_h_low_extended = {
-        {(FIELD_WIDTH-WEIGHT_WIDTH-1){delta_h_low[WEIGHT_WIDTH]}},
-        delta_h_low
-    };
-    assign delta_h_high_extended = {
-        {(FIELD_WIDTH-WEIGHT_WIDTH-1){delta_h_high[WEIGHT_WIDTH]}},
-        delta_h_high
-    };
 
     always @(posedge clk) begin
         if (rst) begin
@@ -64,13 +50,21 @@ module twin_unified_BitSieve_Engine #(
         end else begin
             if (init_load_en_low)
                 local_field_low <= init_h_value;
-            else if (h_update_en)
-                local_field_low <= local_field_low + delta_h_low_extended;
+            else if (h_update_en) begin
+                if (X_j)
+                    local_field_low <= local_field_low + weight_low_extended;
+                else
+                    local_field_low <= local_field_low - weight_low_extended;
+            end
 
             if (init_load_en_high)
                 local_field_high <= init_h_value;
-            else if (h_update_en)
-                local_field_high <= local_field_high + delta_h_high_extended;
+            else if (h_update_en) begin
+                if (X_j)
+                    local_field_high <= local_field_high + weight_high_extended;
+                else
+                    local_field_high <= local_field_high - weight_high_extended;
+            end
         end
     end
 

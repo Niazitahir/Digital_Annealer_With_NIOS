@@ -1,5 +1,5 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj: \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/intel_fpga_api_cmn_dfl.c \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/src/intel_fpga_api_cmn_dfl.c \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
@@ -24,16 +24,16 @@ bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj: \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdlib.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/stdlib.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/alloca.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_dfl.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_msg.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_dfl.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_msg.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdbool.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/intel_fpga_platform.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_platform_niosv.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_platform_api_niosv.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/system.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_inf.h
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/intel_fpga_platform.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_platform_niosv.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_platform_api_niosv.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/intel_fpga_api_cmn_inf.h

@@ -1,5 +1,5 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj: \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/alt_sbrk.c \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/src/alt_sbrk.c \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/types.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
@@ -23,12 +23,12 @@ bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj: \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_pthreadtypes.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/sched.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/types.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/os/alt_syscall.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/alt_irq.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/intel_niosv.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/alt_types.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/io.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/system.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/alt_types.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/alt_stack.h
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/os/alt_syscall.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/alt_irq.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/intel_niosv.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/io.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/alt_stack.h

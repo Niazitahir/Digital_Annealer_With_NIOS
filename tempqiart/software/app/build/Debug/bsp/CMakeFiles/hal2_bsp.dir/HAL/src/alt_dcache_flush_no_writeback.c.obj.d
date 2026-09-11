@@ -1,9 +1,9 @@
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj: \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/alt_dcache_flush_no_writeback.c \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/system.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/alt_types.h \
- C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/alt_cache.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/src/alt_dcache_flush_no_writeback.c \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/sys/alt_cache.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdlib.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \

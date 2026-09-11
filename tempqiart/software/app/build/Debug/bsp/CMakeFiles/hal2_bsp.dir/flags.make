@@ -5,13 +5,13 @@
 # compile C with E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe
 ASM_DEFINES = -DALT_LOG_FLAGS=0 -D__hal__
 
-ASM_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/drivers/inc
+ASM_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/drivers/inc
 
 ASM_FLAGS = -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32im_zicbom -mabi=ilp32
 
 C_DEFINES = -DALT_LOG_FLAGS=0 -D__hal__
 
-C_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/drivers/inc
+C_INCLUDES = -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/. -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc -IC:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/drivers/inc
 
 C_FLAGS = -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32im_zicbom -mabi=ilp32
 

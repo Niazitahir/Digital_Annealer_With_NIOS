@@ -18,6 +18,7 @@ set_global_assignment -name SDM_DIRECT_TO_FACTORY_IMAGE SDM_IO15
 set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_125MHZ
 set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2012
 set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE COMPILE TIME"
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 
 #ReLingo_waive_start:vendor_intc:RL02
 set_global_assignment -name PWRMGT_SLAVE_DEVICE_TYPE OTHER
@@ -566,37 +567,39 @@ set_location_assignment PIN_H20 -to FMC_PG_C2M_1V8
 #set_location_assignment PIN_J17 -to FMC_LA07_P
 #set_location_assignment PIN_L12 -to FMC_LA22_P
 
-set_global_assignment -name SEARCH_PATH ../rtl/top/
-set_global_assignment -name SEARCH_PATH ../rtl/eth_wrapper/
-set_global_assignment -name SEARCH_PATH ../rtl/reset/
-set_global_assignment -name SEARCH_PATH ../rtl/misc/
-set_global_assignment -name SEARCH_PATH ../rtl/mailbox/
-set_global_assignment -name SEARCH_PATH ../rtl/sensor_tx/
-set_global_assignment -name SEARCH_PATH ../rtl/regs/
-set_global_assignment -name SEARCH_PATH ../rtl/clock_checker/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/top/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/bootp/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ctrl_bus_evt/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/dp_pkt/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ecb/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/enum_int/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/eth_pkt/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/glb_ctrl/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/i2c/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/lib_apb/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/lib_axis/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/misc/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/packetizer/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/reg_map/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/reset_gen/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/roce/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/rx_parser/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/spi/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/sys_init/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/peri_ctrl/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/sensor_tx/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/data_gen/
-set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ptp/
+# Disabled for tempqiart debug builds: these stale external paths are not used
+# by the active source file list and can make analysis search old RTL trees.
+#set_global_assignment -name SEARCH_PATH ../rtl/top/
+#set_global_assignment -name SEARCH_PATH ../rtl/eth_wrapper/
+#set_global_assignment -name SEARCH_PATH ../rtl/reset/
+#set_global_assignment -name SEARCH_PATH ../rtl/misc/
+#set_global_assignment -name SEARCH_PATH ../rtl/mailbox/
+#set_global_assignment -name SEARCH_PATH ../rtl/sensor_tx/
+#set_global_assignment -name SEARCH_PATH ../rtl/regs/
+#set_global_assignment -name SEARCH_PATH ../rtl/clock_checker/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/top/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/bootp/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ctrl_bus_evt/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/dp_pkt/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ecb/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/enum_int/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/eth_pkt/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/glb_ctrl/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/i2c/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/lib_apb/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/lib_axis/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/misc/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/packetizer/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/reg_map/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/reset_gen/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/roce/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/rx_parser/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/spi/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/sys_init/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/peri_ctrl/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/sensor_tx/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/data_gen/
+#set_global_assignment -name SEARCH_PATH ../rtl/nv_hsb_ip/ptp/
 
 
 set_global_assignment -name VERILOG_MACRO "QUARTUS_BUILD=1"
@@ -612,10 +615,10 @@ set_instance_assignment -name PARTITION_COLOUR 4294945510 -to auto_fab_0 -entity
 set_global_assignment -name FAST_PRESERVE OFF -entity FPGA_top
 set_global_assignment -name SEED 49
 set_global_assignment -name SYNTH_MESSAGE_LEVEL HIGH
-set_global_assignment -name SYNTHESIS_EFFORT AUTO
+set_global_assignment -name SYNTHESIS_EFFORT FAST
 set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL3
-set_global_assignment -name FLOW_ENABLE_HYPER_RETIMER_FAST_FORWARD ON
-set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name FLOW_ENABLE_HYPER_RETIMER_FAST_FORWARD OFF
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON"
 
 
 
@@ -644,32 +647,34 @@ set_global_assignment -name BOARD default
 
 # Constraints file
 #set_global_assignment -name SDC_FILE hsb_100g.sdc
-set_global_assignment -name QIP_FILE ip/tempqiart/tempqiart_mm_bridge_0/tempqiart_mm_bridge_0.qip
+set_global_assignment -name QIP_FILE initial_h_ram/initial_h_ram.qip
 set_global_assignment -name QIP_FILE tempqiart/tempqiart.qip
 set_global_assignment -name VERILOG_FILE Verilog/synthesis/BitSieve_256.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/weight_synthesizer_MVC.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/weight_synthesizer.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/update_selector_1024_flat.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/update_selector_32.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/unified_BitSieve_Engine.v -hdl_version Verilog_2001
+# Legacy solver sources not instantiated by the active 2048-engine hierarchy.
+# Keep them in the workspace, but exclude them from analysis during debug builds.
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/weight_synthesizer_MVC.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/weight_synthesizer.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/update_selector_1024_flat.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/update_selector_32.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/unified_BitSieve_Engine.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/twin_unified_BitSieve_Engine.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/top.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/tabu_mask_generator.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/randomized_selector.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/programmable_accumulator.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/randomized_selector.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/programmable_accumulator.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/matrix_selector.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/matrix_folding.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/lookup_table.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_1024bit.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_32bit.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_16bit.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_10bit.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/global_weight_distributor.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/matrix_folding.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/lookup_table.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_1024bit.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_32bit.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_16bit.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/lfsr_10bit.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/global_weight_distributor.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/FSM.v -hdl_version Verilog_2001
 set_global_assignment -name VERILOG_FILE Verilog/hdl/e_off_generator.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/conditional_negator.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/bit_sieve_engine_25.v -hdl_version Verilog_2001
-set_global_assignment -name VERILOG_FILE Verilog/hdl/acceptance_decision_block.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/conditional_negator.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/bit_sieve_engine_25.v -hdl_version Verilog_2001
+#set_global_assignment -name VERILOG_FILE Verilog/hdl/acceptance_decision_block.v -hdl_version Verilog_2001
 set_global_assignment -name IP_FILE fpga_clk_pll_mfg/fpga_clk_pll_mfg.ip
 set_global_assignment -name SYSTEMVERILOG_FILE rst_pb_debounce.sv
 set_global_assignment -name VERILOG_FILE dbg_led.v
@@ -685,3 +690,5 @@ set_global_assignment -name IP_FILE hyperparam_rom.ip
 set_global_assignment -name IP_FILE state_ram.ip
 set_global_assignment -name IP_FILE sym_matrix_bank.ip
 set_global_assignment -name FAST_PRESERVE AUTO -entity tempqiart_top
+set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_mm_bridge_0.ip
+set_global_assignment -name IP_FILE hyperparam_ram.ip

@@ -647,6 +647,7 @@ set_global_assignment -name BOARD default
 
 # Constraints file
 #set_global_assignment -name SDC_FILE hsb_100g.sdc
+set_global_assignment -name QIP_FILE initial_h_ram/initial_h_ram.qip
 set_global_assignment -name QIP_FILE tempqiart/tempqiart.qip
 set_global_assignment -name VERILOG_FILE Verilog/synthesis/BitSieve_256.v -hdl_version Verilog_2001
 # Legacy solver sources not instantiated by the active 2048-engine hierarchy.
@@ -683,10 +684,11 @@ set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_intel_onchip_memory_0
 set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_clock_in.ip
 set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_jtag_uart_0.ip
 set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_intel_niosv_g_0.ip
-set_global_assignment -name IP_FILE solution_ram_1024x256.ip
-set_global_assignment -name IP_FILE initial_h_rom.ip
-set_global_assignment -name IP_FILE hyperparam_rom.ip
 set_global_assignment -name IP_FILE state_ram.ip
 set_global_assignment -name IP_FILE sym_matrix_bank.ip
 set_global_assignment -name FAST_PRESERVE AUTO -entity tempqiart_top
 set_global_assignment -name IP_FILE ip/tempqiart/tempqiart_mm_bridge_0.ip
+set_global_assignment -name IP_FILE hyperparam_ram.ip
+# Legacy ROM IPs removed: initial_h_rom.ip and hyperparam_rom.ip were replaced by
+# the generated RAM instances in the project root and are intentionally excluded
+# from active analysis to avoid stale Quartus QCU metadata conflicts.

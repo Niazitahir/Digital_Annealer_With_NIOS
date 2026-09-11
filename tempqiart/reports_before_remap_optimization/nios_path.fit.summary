@@ -1,0 +1,18 @@
+Fitter Status : Failed - Fri Sep 11 12:12:09 2026
+Quartus Prime Version : 25.1.0 Build 129 03/26/2025 SC Pro Edition
+Revision Name : nios_path
+Top-level Entity Name : tempqiart_top
+Family : Stratix 10
+Device : 1ST040EH2F35E2VG
+Timing Models : Final
+Power Models : Final
+Device Status : Final
+Total dedicated logic registers : 101207
+Total pins : 60 / 498 ( 12 % )
+Total block memory bits : 22,255,600 / 31,477,760 ( 71 % )
+Total RAM Blocks : 1,262 / 1,537 ( 82 % )
+Total DSP Blocks : 2 / 648 ( < 1 % )
+Total HSSI E-Tile Channels : 0 / 24 ( 0 % )
+Total HSSI HPS : 0 / 1 ( 0 % )
+Total HSSI EHIPs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 8 ( 13 % )

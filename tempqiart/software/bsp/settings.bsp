@@ -3,10 +3,10 @@
     <Tool>PD-BSP</Tool>
     <BspType>hal2</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Sep. 10, 2026 8:32:41 p.m.</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1789086761698</BspGeneratedUnixTimeStamp>
-    <BspGeneratedLocation>C:\Users\bigkunt\Documents\GitHub\tempqiart\software\bsp</BspGeneratedLocation>
-    <BspSettingsFile>C:\Users\bigkunt\Documents\GitHub\tempqiart\software\bsp\settings.bsp</BspSettingsFile>
+    <BspGeneratedTimeStamp>Sep. 11, 2026 2:49:38 a.m.</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1789109378966</BspGeneratedUnixTimeStamp>
+    <BspGeneratedLocation>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp</BspGeneratedLocation>
+    <BspSettingsFile>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp\settings.bsp</BspSettingsFile>
     <QsysFile>../../tempqiart.qsys</QsysFile>
     <QuartusProjectFile>../../nios_path.qpf</QuartusProjectFile>
     <SystemFileHash>6bf4e6beac3e85629747cd2b235196ad45e2f6f41608233a0dc351c52b517</SystemFileHash>

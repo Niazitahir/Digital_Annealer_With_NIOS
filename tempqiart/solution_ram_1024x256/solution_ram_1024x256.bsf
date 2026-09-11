@@ -27,15 +27,15 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 76)
 		(input)
-		(text "data[511..0]" (rect 0 0 43 12)(font "Arial" (font_size 8)))
-		(text "data[511..0]" (rect 4 65 76 76)(font "Arial" (font_size 8)))
+		(text "data[2047..0]" (rect 0 0 51 12)(font "Arial" (font_size 8)))
+		(text "data[2047..0]" (rect 4 65 82 76)(font "Arial" (font_size 8)))
 		(line (pt 0 76)(pt 85 76)(line_width 3))
 	)
 	(port
 		(pt 0 126)
 		(input)
-		(text "address[9..0]" (rect 0 0 51 12)(font "Arial" (font_size 8)))
-		(text "address[9..0]" (rect 4 115 82 126)(font "Arial" (font_size 8)))
+		(text "address[4..0]" (rect 0 0 53 12)(font "Arial" (font_size 8)))
+		(text "address[4..0]" (rect 4 115 82 126)(font "Arial" (font_size 8)))
 		(line (pt 0 126)(pt 85 126)(line_width 3))
 	)
 	(port
@@ -55,8 +55,8 @@ on the Quartus Prime software download page.
 	(port
 		(pt 248 76)
 		(output)
-		(text "q[511..0]" (rect 0 0 31 12)(font "Arial" (font_size 8)))
-		(text "q[511..0]" (rect 215 65 269 76)(font "Arial" (font_size 8)))
+		(text "q[2047..0]" (rect 0 0 40 12)(font "Arial" (font_size 8)))
+		(text "q[2047..0]" (rect 205 65 265 76)(font "Arial" (font_size 8)))
 		(line (pt 248 76)(pt 170 76)(line_width 3))
 	)
 	(drawing
@@ -70,7 +70,7 @@ on the Quartus Prime software download page.
 		(text "wren" (rect 90 171 204 352)(font "Arial" (color 0 0 0)))
 		(text "clock" (rect 57 196 144 405)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "clk" (rect 90 221 198 452)(font "Arial" (color 0 0 0)))
-		(text " solution_ram_1024x256 " (rect 151 251 440 512)(font "Arial" ))
+		(text " system " (rect 220 251 488 512)(font "Arial" ))
 		(line (pt 85 34)(pt 170 34)(line_width 1))
 		(line (pt 170 34)(pt 170 251)(line_width 1))
 		(line (pt 85 251)(pt 170 251)(line_width 1))

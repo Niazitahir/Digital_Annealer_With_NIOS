@@ -1,5 +1,5 @@
 Design Assistant report for nios_path
-Thu Sep 10 20:19:26 2026
+Fri Sep 11 16:04:01 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -46,7 +46,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------------------+----------+------------+--------+----------------------+
 ; Rule                                                                                          ; Severity ; Violations ; Waived ; Tags                 ;
 +-----------------------------------------------------------------------------------------------+----------+------------+--------+----------------------+
-; TMC-10115 - High Fan-out Signal                                                               ; Low      ; 2          ; 0      ; register-duplication ;
+; TMC-10115 - High Fan-out Signal                                                               ; Low      ; 3          ; 0      ; register-duplication ;
 ; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register ; Low      ; 1          ; 0      ; nonstandard-timing   ;
 ; RES-10204 - Reset Release Instance Count Check                                                ; High     ; 0          ; 0      ; system               ;
 ; RES-50005 - RAM Control Signals Driven by Flip-Flops with Asynchronous Clears                 ; Medium   ; 0          ; 0      ; ram, reset-usage     ;
@@ -61,7 +61,7 @@ on the Quartus Prime software download page.
 
 Status:		FAIL
 Severity:		Low
-Number of violations: 	2
+Number of violations: 	3
 Rule Parameters:      	
 		max_violations = 5000
 		fanout = 50000
@@ -70,8 +70,9 @@ Rule Parameters:
 +-----------------------------+--------+--------+
 ; Signal                      ; fanout ; Waived ;
 +-----------------------------+--------+--------+
-; u1|rst_filter|sync_rst_out  ; 88555  ;        ;
-; u1|control_unit|h_update_en ; 61450  ;        ;
+; u1|uut|Mux_0                ; 57344  ;        ;
+; u1|rst_filter|sync_rst_out  ; 90618  ;        ;
+; u1|control_unit|h_update_en ; 57355  ;        ;
 +-----------------------------+--------+--------+
 
 

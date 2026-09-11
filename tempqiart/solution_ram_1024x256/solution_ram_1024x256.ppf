@@ -5,9 +5,9 @@
  intended_family="Stratix 10"
  specifies="all_ports">
  <global>
-  <pin name="data[511..0]" direction="input" scope="external" />
-  <pin name="q[511..0]" direction="output" scope="external" />
-  <pin name="address[9..0]" direction="input" scope="external" />
+  <pin name="data[2047..0]" direction="input" scope="external" />
+  <pin name="q[2047..0]" direction="output" scope="external" />
+  <pin name="address[4..0]" direction="input" scope="external" />
   <pin name="wren" direction="input" scope="external" />
   <pin name="clock" direction="input" scope="external" />
  </global>

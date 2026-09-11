@@ -4,19 +4,19 @@
 
 `timescale 1 ps / 1 ps
 module solution_ram_1024x256 (
-		input  wire [511:0] data,    //    data.datain,  Data input of the memory.The data port is required for all RAM operation modes:SINGLE_PORT,DUAL_PORT,BIDIR_DUAL_PORT,QUAD_PORT
-		output wire [511:0] q,       //       q.dataout, Data output from the memory
-		input  wire [9:0]   address, // address.address, Address input of the memory
-		input  wire         wren,    //    wren.wren,    Write enable input for address port. The wren signal is required for all RAM operation modes:SINGLE_PORT,DUAL_PORT,BIDIR_DUAL_PORT,QUAD_PORT
-		input  wire         clock    //   clock.clk,     Memory clock,refer to user guide for specific details
+		input  wire [2047:0] data,    //    data.datain,  Data input of the memory.The data port is required for all RAM operation modes:SINGLE_PORT,DUAL_PORT,BIDIR_DUAL_PORT,QUAD_PORT
+		output wire [2047:0] q,       //       q.dataout, Data output from the memory
+		input  wire [4:0]    address, // address.address, Address input of the memory
+		input  wire          wren,    //    wren.wren,    Write enable input for address port. The wren signal is required for all RAM operation modes:SINGLE_PORT,DUAL_PORT,BIDIR_DUAL_PORT,QUAD_PORT
+		input  wire          clock    //   clock.clk,     Memory clock,refer to user guide for specific details
 	);
 
-	solution_ram_1024x256_ram_1port_2011_o46sd4i ram_1port_0 (
-		.data    (data),    //   input,  width = 512,    data.datain
-		.q       (q),       //  output,  width = 512,       q.dataout
-		.address (address), //   input,   width = 10, address.address
-		.wren    (wren),    //   input,    width = 1,    wren.wren
-		.clock   (clock)    //   input,    width = 1,   clock.clk
+	solution_ram_1024x256_ram_1port_2011_qxo3brq ram_1port_0 (
+		.data    (data),    //   input,  width = 2048,    data.datain
+		.q       (q),       //  output,  width = 2048,       q.dataout
+		.address (address), //   input,     width = 5, address.address
+		.wren    (wren),    //   input,     width = 1,    wren.wren
+		.clock   (clock)    //   input,     width = 1,   clock.clk
 	);
 
 endmodule

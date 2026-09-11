@@ -53,10 +53,10 @@ RM = E:/quartus/Quartus/riscfree/build_tools/cmake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app
+CMAKE_SOURCE_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug
+CMAKE_BINARY_DIR = C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug
 
 # Utility rule file for create-hex.
 
@@ -69,7 +69,7 @@ include CMakeFiles/create-hex.dir/progress.make
 CMakeFiles/create-hex: intel_onchip_memory_0.hex
 
 intel_onchip_memory_0.hex: app.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating intel_onchip_memory_0.hex."
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Creating intel_onchip_memory_0.hex."
 	elf2hex app.elf -o intel_onchip_memory_0.hex -b 0x00000000 -w 32 -e 0x0001FFFF -r 4
 
 CMakeFiles/create-hex.dir/codegen:
@@ -89,6 +89,6 @@ CMakeFiles/create-hex.dir/clean:
 .PHONY : CMakeFiles/create-hex.dir/clean
 
 CMakeFiles/create-hex.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/build/Debug/CMakeFiles/create-hex.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/build/Debug/CMakeFiles/create-hex.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/create-hex.dir/depend
 

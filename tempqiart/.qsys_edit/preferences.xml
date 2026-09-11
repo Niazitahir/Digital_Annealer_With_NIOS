@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
  <debug showDebugMenu="0" />
- <window width="1408" height="1173" x="0" y="0" />
- <systemtable filter="All Interfaces" />
- <library expandedCategories="Project,Existing IP Variants,Library" />
+ <window width="3456" height="1408" x="-8" y="-8" />
+ <generation path="" />
 </preferences>

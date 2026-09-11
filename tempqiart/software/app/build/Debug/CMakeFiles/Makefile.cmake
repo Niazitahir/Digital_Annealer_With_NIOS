@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Users/bigkunt/Documents/GitHub/tempqiart/software/app/CMakeLists.txt"
+  "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/CMakeLists.txt"
   "CMakeFiles/3.31.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeSystem.cmake"
-  "C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/CMakeLists.txt"
-  "C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/toolchain.cmake"
+  "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/CMakeLists.txt"
+  "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/toolchain.cmake"
   "E:/quartus/Quartus/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeASMInformation.cmake"
   "E:/quartus/Quartus/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "E:/quartus/Quartus/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"

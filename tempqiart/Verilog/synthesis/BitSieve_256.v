@@ -92,34 +92,34 @@ module BitSieve_256 (
     localparam integer WEIGHT_WIDTH    = 10;
     localparam integer BANK_ROW_WIDTH  = TWIN_COUNT * WEIGHT_WIDTH;
 
+    // The state RAM is used as a history/readback store. Keep solver startup
+    // deterministic until a separate initialization policy is required.
+    assign starting_state = {ENGINE_COUNT{1'b0}};
+
     wire [10:0] winner_index;
     wire [(ENGINE_COUNT*WEIGHT_WIDTH)-1:0] qubo_weights;
     wire [BANK_ROW_WIDTH-1:0] bank_q_a_packed;
     wire [BANK_ROW_WIDTH-1:0] bank_q_b_packed;
-    // TEMPORARILY DISABLED: these are only used by the large dynamic
-    // bank-output unscrambler and create the bulk of the synthesis fanout.
-    // wire [(2*BANK_ROW_WIDTH)-1:0] doubled_bank_q_a;
-    // wire [(2*BANK_ROW_WIDTH)-1:0] doubled_bank_q_b;
-    // wire [13:0] weight_barrel_shift_bits;
     reg  [9:0] sampled_weight_row_low;
 
-    // =========================================================================
-    // Avalon-MM Slave Interface to the symmetric matrix bank fabric
-    // =========================================================================
-    // The generated matrix-bank memory is organized as 1024 banks with 2048
-    // entries each. The Avalon address is mapped as:
-    //   [20:11] -> bank number (0..1023)
-    //   [10:0]  -> row within that bank (0..2047)
-    // This keeps the external CPU access narrow and readable while leaving the
-    // engine-side dual-port bank access intact for the solver datapath.
-    reg [9:0] avalon_last_bank_reg;
-    reg [2:0] avalon_read_pipeline;
+
+    reg [3:0] avalon_last_state_address_reg;
+    reg [5:0] avalon_last_state_word_reg;
+    reg       avalon_last_state_section_reg;
+    reg [3:0] avalon_last_section_reg;
 
     wire [9:0]  avalon_bank          = address[20:11];
     wire [10:0] avalon_row           = address[10:0];
     wire        avalon_access_enable = (avalon_read_pipeline == 3'b000);
     wire        avalon_read_req      = read && avalon_access_enable;
     wire        avalon_write_req     = write && byteenable[0] && avalon_access_enable;
+    wire        state_ram_read_active = !avalon_access_enable &&
+                                        avalon_last_state_section_reg;
+    wire [3:0]  state_ram_address = state_ram_read_active
+        ? avalon_last_state_address_reg
+        : sol_write_addr[3:0];
+    wire        state_ram_wren = write_en && !state_ram_read_active;
+    wire [2047:0] state_ram_q;
 
     assign waitrequest   = !avalon_access_enable;
     assign readdatavalid = avalon_read_pipeline[2];
@@ -127,6 +127,11 @@ module BitSieve_256 (
     always @(posedge CLOCK_50) begin
         if (rst) begin
             avalon_last_bank_reg <= 10'd0;
+            avalon_last_port_reg <= 1'b0;
+            avalon_last_state_address_reg <= 4'd0;
+            avalon_last_state_word_reg <= 6'd0;
+            avalon_last_state_section_reg <= 1'b0;
+            avalon_last_section_reg <= 4'd0;
             avalon_read_pipeline <= 3'b000;
             readdata             <= 32'd0;
         end else begin
@@ -137,11 +142,23 @@ module BitSieve_256 (
 
             if (avalon_read_req) begin
                 avalon_last_bank_reg <= avalon_bank;
+                avalon_last_port_reg <= avalon_row[10];
+                avalon_last_state_address_reg <= address[20:17];
+                avalon_last_state_word_reg <= address[7:2];
+                avalon_last_state_section_reg <= (address[24:21] == 4'b0010);
+                avalon_last_section_reg <= address[24:21];
             end
 
             if (avalon_read_pipeline[1]) begin
-                readdata <= {22'd0,
-                            bank_q_b_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]};
+                if (avalon_last_section_reg == 4'b0000) begin
+                    readdata <= {22'd0,
+                                avalon_last_port_reg
+                                    ? bank_q_b_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]
+                                    : bank_q_a_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]};
+                end else if (avalon_last_state_section_reg) begin
+                    readdata <= state_ram_q[
+                        (avalon_last_state_word_reg * 32) +: 32];
+                end
             end else if (avalon_write_req) begin
                 readdata <= 32'd0;
             end
@@ -195,56 +212,36 @@ module BitSieve_256 (
     end
 
     // =========================================================================
-    // MEMORY: 1024 x (2048-word x 10-bit) symmetric dual-port banks
+    // MEMORY: 1024 x (2048-word x 10-bit) folded twin-pair banks
     // =========================================================================
 
-    // For requested row i and physical bank b, the bank emits logical low
-    // column (b-i_low) mod 1024 on Port A and its high-half partner on Port B.
-    // max/min folding addresses the one stored representative of Q[i][j].
+    // Diagonal symmetry folds each engine's weight vector to 1024 entries, so
+    // one dual-port bank holds both twin engines' rows locally: port A is
+    // engine bank_id's row, port B is engine (bank_id+TWIN_COUNT)'s row. Each
+    // port is addressed directly by the shared sampled_weight_row_low value,
+    // so no cross-bank remap/rotation is ever needed.
     genvar bank_id;
     generate
         for (bank_id = 0; bank_id < TWIN_COUNT; bank_id = bank_id + 1) begin : symmetric_qubo_banks
-            // Port A remains available to the solver datapath. Avalon uses port B.
-            wire bank_is_selected_by_avalon = (avalon_bank == bank_id) &&
+            wire bank_avalon_low_selected  = (avalon_bank == bank_id) && !avalon_row[10] &&
+                                              (avalon_read_req || avalon_write_req);
+            wire bank_avalon_high_selected = (avalon_bank == bank_id) &&  avalon_row[10] &&
                                               (avalon_read_req || avalon_write_req);
 
             sym_matrix_bank u_sym_matrix_bank (
-                .address_a(11'd0),
-                .address_b(bank_is_selected_by_avalon ? avalon_row : 11'd0),
+                .address_a(bank_avalon_low_selected  ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low}),
+                .address_b(bank_avalon_high_selected ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low}),
                 .clock(CLOCK_50),
-                .data_a(10'd0),
-                .data_b(bank_is_selected_by_avalon && avalon_write_req ? writedata[9:0] : 10'd0),
-                .wren_a(1'b0),
-                .wren_b(bank_is_selected_by_avalon && avalon_write_req),
+                .data_a(bank_avalon_low_selected  && avalon_write_req ? writedata[9:0] : 10'd0),
+                .data_b(bank_avalon_high_selected && avalon_write_req ? writedata[9:0] : 10'd0),
+                .wren_a(bank_avalon_low_selected  && avalon_write_req),
+                .wren_b(bank_avalon_high_selected && avalon_write_req),
                 .q_a(bank_q_a_packed[(bank_id*WEIGHT_WIDTH) +: WEIGHT_WIDTH]),
                 .q_b(bank_q_b_packed[(bank_id*WEIGHT_WIDTH) +: WEIGHT_WIDTH])
             );
         end
     endgenerate
 
-    // TEMPORARILY DISABLED: dynamic weight remap section that creates the large
-    // synthesis fanout. Keep this block commented out and restore it later by
-    // uncommenting the original statements below.
-    // always @(posedge CLOCK_50) begin
-    //     if (rst)
-    //         sampled_weight_row_low <= 10'd0;
-    //     else
-    //         sampled_weight_row_low <= winner_index[9:0];
-    // end
-    //
-    // assign doubled_bank_q_a = {bank_q_a_packed, bank_q_a_packed};
-    // assign doubled_bank_q_b = {bank_q_b_packed, bank_q_b_packed};
-    // assign weight_barrel_shift_bits = sampled_weight_row_low * WEIGHT_WIDTH;
-    // assign qubo_weights = {(ENGINE_COUNT*WEIGHT_WIDTH){1'b0}};
-    //
-    // assign qubo_weights[BANK_ROW_WIDTH-1:0] =
-    //     doubled_bank_q_a >> weight_barrel_shift_bits;
-    // assign qubo_weights[(2*BANK_ROW_WIDTH)-1:BANK_ROW_WIDTH] =
-    //     doubled_bank_q_b >> weight_barrel_shift_bits;
-
-    // Equivalent remap using one 10-bit selection per engine instead of two
-    // full-width variable barrel shifts. The low and high halves preserve the
-    // original A/B bank ordering and wrap at 1024 entries.
     always @(posedge CLOCK_50) begin
         if (rst)
             sampled_weight_row_low <= 10'd0;
@@ -252,20 +249,10 @@ module BitSieve_256 (
             sampled_weight_row_low <= winner_index[9:0];
     end
 
-    genvar engine_id;
-    generate
-        for (engine_id = 0; engine_id < TWIN_COUNT; engine_id = engine_id + 1) begin : remapped_engine_weights
-            wire [10:0] remap_bank_index;
-
-            assign remap_bank_index = engine_id + sampled_weight_row_low;
-
-            assign qubo_weights[(engine_id * WEIGHT_WIDTH) +: WEIGHT_WIDTH] =
-                bank_q_a_packed[((remap_bank_index[9:0]) * WEIGHT_WIDTH) +: WEIGHT_WIDTH];
-
-            assign qubo_weights[((engine_id + TWIN_COUNT) * WEIGHT_WIDTH) +: WEIGHT_WIDTH] =
-                bank_q_b_packed[((remap_bank_index[9:0]) * WEIGHT_WIDTH) +: WEIGHT_WIDTH];
-        end
-    endgenerate
+    // Each bank's data is already local to its own twin engines, so the
+    // banks' direct outputs are the final per-engine weight vectors.
+    assign qubo_weights[BANK_ROW_WIDTH-1:0]                  = bank_q_a_packed;
+    assign qubo_weights[(2*BANK_ROW_WIDTH)-1:BANK_ROW_WIDTH] = bank_q_b_packed;
 
     // =========================================================================
     // ENGINE
@@ -358,7 +345,7 @@ module BitSieve_256 (
     // =========================================================================
 
     // Instantiate the new ROM
-    hyperparam_rom hp_rom (
+    hyperparam_ram hp_ram (
         .address(h_init_address[4:0]), // 5-bit address for the 32-word ROM
         .clock(CLOCK_50),
         .q(hp_q_data)
@@ -402,7 +389,7 @@ module BitSieve_256 (
     // MEMORY: Initial local fields
     // =========================================================================
 
-    initial_h_rom	initial_h_rom_inst (
+    initial_h_ram	initial_h_ram_inst (
         .address (h_init_address),
         .clock (CLOCK_50),
         .q (h_init_value)
@@ -420,13 +407,13 @@ module BitSieve_256 (
         end
     end
 
-	state_ram	solution_ram_1024x2048_inst (
-		.address (sol_write_addr),
-		.clock (CLOCK_50),
-		.data (current_state_X),
-		.wren (write_en),
-		.q (starting_state)
-	);	
+    state_ram solution_state_ram (
+        .address (state_ram_address),
+        .clock   (CLOCK_50),
+        .data    (current_state_X),
+        .wren    (state_ram_wren),
+        .q       (state_ram_q)
+    );
 
     // =========================================================================
     // OUTPUT HEX DISPLAY

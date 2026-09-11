@@ -1,0 +1,177 @@
+Flow report for nios_path
+Fri Sep 11 12:12:11 2026
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Flow Summary
+  2. Flow Settings
+  3. Flow Non-Default Global Settings
+  4. Flow Elapsed Time
+  5. Flow OS Summary
+  6. Flow Log
+  7. Legal Notice
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Flow Failed - Fri Sep 11 12:12:10 2026     ;
+; Quartus Prime Version           ; 25.1.0 Build 129 03/26/2025 SC Pro Edition ;
+; Revision Name                   ; nios_path                                  ;
+; Top-level Entity Name           ; tempqiart_top                              ;
+; Family                          ; Stratix 10                                 ;
+; Device                          ; 1ST040EH2F35E2VG                           ;
+; Timing Models                   ; Final                                      ;
+; Power Models                    ; Final                                      ;
+; Device Status                   ; Final                                      ;
+; Total dedicated logic registers ; 101207                                     ;
+; Total pins                      ; 60 / 498 ( 12 % )                          ;
+; Total block memory bits         ; 22,255,600 / 31,477,760 ( 71 % )           ;
+; Total RAM Blocks                ; 1,262 / 1,537 ( 82 % )                     ;
+; Total DSP Blocks                ; 2 / 648 ( < 1 % )                          ;
+; Total HSSI E-Tile Channels      ; 0 / 24 ( 0 % )                             ;
+; Total HSSI HPS                  ; 0 / 1 ( 0 % )                              ;
+; Total HSSI EHIPs                ; 0 / 4 ( 0 % )                              ;
+; Total PLLs                      ; 1 / 8 ( 13 % )                             ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/11/2026 07:50:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; nios_path           ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                        ;
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name               ; Value                                                                                                                                                        ; Default Value ; Entity Name ; Section Id ;
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID         ; 10995770589193.178912745926740                                                                                                                               ; --            ; --          ; --         ;
+; FITTER_RESYNTHESIS            ; Off                                                                                                                                                          ; On            ; --          ; --         ;
+; HDL_MESSAGE_LEVEL             ; Level3                                                                                                                                                       ; Level2        ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP        ; 100                                                                                                                                                          ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP        ; 0                                                                                                                                                            ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_26740_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp       ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_26740_0/sld/ipgen/alt_sld_fab_0.ip                      ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/fpga_clk_pll_mfg/fpga_clk_pll_mfg/fpga_clk_pll_mfg.cmp                                ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/fpga_clk_pll_mfg/fpga_clk_pll_mfg.ip                                                  ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram/hyperparam_ram.cmp                                                     ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram.ip                                                                     ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/initial_h_ram.cmp                                                       ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram.ip                                                                      ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_clock_in/tempqiart_clock_in.cmp                                ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_clock_in.ip                                                    ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/tempqiart_intel_niosv_g_0.cmp                  ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0.ip                                             ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0/tempqiart_intel_onchip_memory_0.cmp      ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0.ip                                       ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_jtag_uart_0/tempqiart_jtag_uart_0.cmp                          ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_jtag_uart_0.ip                                                 ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_mm_bridge_0/tempqiart_mm_bridge_0.cmp                          ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_mm_bridge_0.ip                                                 ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_reset_in/tempqiart_reset_in.cmp                                ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_reset_in.ip                                                    ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/state_ram.cmp                                                               ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram.ip                                                                          ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank/sym_matrix_bank.cmp                                                   ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank.ip                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/tempqiart.cmp                                                               ; --            ; --          ; --         ;
+; MISC_FILE                     ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart.qsys                                                                        ; --            ; --          ; --         ;
+; NUM_PARALLEL_PROCESSORS       ; All                                                                                                                                                          ; --            ; --          ; --         ;
+; OPTIMIZATION_MODE             ; Aggressive Compile Time                                                                                                                                      ; Balanced      ; --          ; --         ;
+; PLACEMENT_EFFORT_MULTIPLIER   ; 0.25                                                                                                                                                         ; 1.0           ; --          ; --         ;
+; POWER_APPLY_THERMAL_MARGIN    ; ADDITIONAL                                                                                                                                                   ; Off           ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY      ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/output_files                                                                          ; --            ; --          ; --         ;
+; RAPID_DESIGN_EXPLORATION_FLOW ; QoR                                                                                                                                                          ; Off           ; --          ; --         ;
+; REPORT_PARAMETER_SETTINGS_PRO ; Off                                                                                                                                                          ; On            ; --          ; --         ;
+; REPORT_SOURCE_ASSIGNMENTS_PRO ; Off                                                                                                                                                          ; On            ; --          ; --         ;
+; SEED                          ; 49                                                                                                                                                           ; 1             ; --          ; --         ;
+; SLD_FILE                      ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_jtag_uart_0/tempqiart_jtag_uart_0.regmap                       ; --            ; --          ; --         ;
+; SLD_FILE                      ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/tempqiart.regmap                                                            ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_26740_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo  ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/fpga_clk_pll_mfg/fpga_clk_pll_mfg/fpga_clk_pll_mfg.sopcinfo                           ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram/hyperparam_ram.sopcinfo                                                ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/initial_h_ram.sopcinfo                                                  ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_clock_in/tempqiart_clock_in.sopcinfo                           ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/tempqiart_intel_niosv_g_0.sopcinfo             ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0/tempqiart_intel_onchip_memory_0.sopcinfo ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_jtag_uart_0/tempqiart_jtag_uart_0.sopcinfo                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_mm_bridge_0/tempqiart_mm_bridge_0.sopcinfo                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_reset_in/tempqiart_reset_in.sopcinfo                           ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/state_ram.sopcinfo                                                          ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank/sym_matrix_bank.sopcinfo                                              ; --            ; --          ; --         ;
+; SOPCINFO_FILE                 ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/tempqiart.sopcinfo                                                          ; --            ; --          ; --         ;
+; STATE_MACHINE_PROCESSING      ; User-Encoded                                                                                                                                                 ; Auto          ; --          ; --         ;
+; SYNTHESIS_EFFORT              ; Fast                                                                                                                                                         ; Auto          ; --          ; --         ;
+; SYNTH_MESSAGE_LEVEL           ; High                                                                                                                                                         ; Medium        ; --          ; --         ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS ; Off                                                                                                                                                          ; On            ; --          ; --         ;
+; TOP_LEVEL_ENTITY              ; tempqiart_top                                                                                                                                                ; nios_path     ; --          ; --         ;
+; VERILOG_INPUT_VERSION         ; SystemVerilog_2012                                                                                                                                           ; Verilog_2001  ; --          ; --         ;
+; VERILOG_MACRO                 ; QUARTUS_BUILD=1                                                                                                                                              ; --            ; --          ; --         ;
+; VERILOG_MACRO                 ; BAJ_MFG=1                                                                                                                                                    ; --            ; --          ; --         ;
+; VERILOG_MACRO                 ; IP_EN=1                                                                                                                                                      ; --            ; --          ; --         ;
+; VERILOG_MACRO                 ; SYNTHESIS=1                                                                                                                                                  ; --            ; --          ; --         ;
+; VERILOG_MACRO                 ; NV_FPGA_FIFOGEN=1                                                                                                                                            ; --            ; --          ; --         ;
+; VERILOG_MACRO                 ; JESD_USE_FMC_CLK=1                                                                                                                                           ; --            ; --          ; --         ;
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------+
+; Flow Elapsed Time                                ;
++-------------+--------------+---------------------+
+; Module Name ; Elapsed Time ; Peak Virtual Memory ;
++-------------+--------------+---------------------+
+; Synthesis   ; 03:06:08     ; 36250 MB            ;
+; Fitter      ; 01:15:06     ; 55322 MB            ;
+; Total       ; 04:21:14     ; --                  ;
++-------------+--------------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Flow OS Summary                                                           ;
++-------------+------------------+------------+------------+----------------+
+; Module Name ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-------------+------------------+------------+------------+----------------+
+; Synthesis   ; DESKTOP-Q792E6G  ; Windows 11 ; 10.0.26200 ; x86_64         ;
+; Fitter      ; DESKTOP-Q792E6G  ; Windows 11 ; 10.0.26200 ; x86_64         ;
++-------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+quartus_fit --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+

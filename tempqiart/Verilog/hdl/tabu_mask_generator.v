@@ -16,12 +16,19 @@ module tabu_mask_generator #(
     reg [INDEX_WIDTH-1:0] history_idx [0:MAX_DEPTH-1];
     reg                   history_val [0:MAX_DEPTH-1];
 
-    // The combined lockout mask
+    // The combined lockout mask, updated incrementally instead of being
+    // recomputed from every history entry on every cycle.
     reg [MASK_WIDTH-1:0] tabu_mask;
 
-    wire [INDEX_WIDTH:0] effective_depth = {1'b0, depth};
-    
-    integer i, j;
+    // Only the entry at depth-1 can leave the runtime-sized window during a
+    // shift. A masked index is not selected again while it remains tabu.
+    wire [INDEX_WIDTH-1:0] evict_pos = depth - 1'b1;
+    wire [INDEX_WIDTH-1:0] evict_index = history_idx[evict_pos];
+    wire evict_active = shift_en &&
+                        (depth != {INDEX_WIDTH{1'b0}}) &&
+                        history_val[evict_pos];
+
+    integer i;
 
     // 1. Shift Register Logic (The Circular Buffer)
     always @(posedge clk) begin
@@ -30,6 +37,7 @@ module tabu_mask_generator #(
                 history_idx[i] <= {INDEX_WIDTH{1'b0}};
                 history_val[i] <= 1'b0; // Invalid at startup
             end
+            tabu_mask <= {MASK_WIDTH{1'b0}};
         end else if (shift_en) begin
             // Shift everything down by 1
             for (i = MAX_DEPTH-1; i > 0; i = i - 1) begin
@@ -39,24 +47,15 @@ module tabu_mask_generator #(
             // Insert the new winning index at the top
             history_idx[0] <= new_index;
             history_val[0] <= 1'b1;
+
+            tabu_mask[new_index] <= 1'b1;
+            if (evict_active)
+                tabu_mask[evict_index] <= 1'b0;
         end
     end
 
-    // 2. Combinational Mask Generation
-    always @(*) begin
-        // Initialize mask to all zeros
-        tabu_mask = {MASK_WIDTH{1'b0}};
-        
-        // OR the decoded one-hot indices together
-        for (j = 0; j < MAX_DEPTH; j = j + 1) begin
-            if ((j < effective_depth) && history_val[j]) begin
-                tabu_mask[history_idx[j]] = 1'b1; // Lock out this specific bit
-            end
-        end
-    end
-
-    // Indices at or above ZERO_BITS are permanently masked.  top.v passes
-    // MASK_WIDTH here and applies its runtime active-engine mask separately.
-    assign tabu_mask_gated = tabu_mask | ({MASK_WIDTH{1'b1}} << ZERO_BITS);
+    // ZERO_BITS == MASK_WIDTH for the current caller, so no additional
+    // permanently masked bits are required here.
+    assign tabu_mask_gated = tabu_mask;
 
 endmodule
