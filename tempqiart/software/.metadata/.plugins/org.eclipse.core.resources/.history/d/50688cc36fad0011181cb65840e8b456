@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "system.h"
+#include "io.h"
+
+#define QUBO_WORD_MASK 0x3FFu
+#define QUBO_STEP_BYTES 4u
+#define QUBO_BANK_WORDS 2048u
+#define QUBO_BANK_SPAN_BYTES (QUBO_BANK_WORDS * QUBO_STEP_BYTES)
+
+int main(void)
+{
+    printf("Hello from Nios V!\n");
+    printf("Starting QUBO bank 0 test (%u words, %u bytes)...\n",
+           QUBO_BANK_WORDS, (unsigned)QUBO_BANK_SPAN_BYTES);
+    fflush(stdout);
+    unsigned failures = 0;
+
+    // Write test pattern to Bank 0 (2048 entries)
+    uint32_t word_index = 0;
+    for (uint32_t offset = 0; offset < QUBO_BANK_SPAN_BYTES; offset += QUBO_STEP_BYTES) {
+        IOWR_32DIRECT(MM_BRIDGE_0_BASE, offset, word_index & QUBO_WORD_MASK);
+        word_index = (word_index + 1u) & QUBO_WORD_MASK;
+    }
+
+    printf("Write phase complete. Starting readback verification...\n");
+    fflush(stdout);
+
+    // Read back and verify Bank 0
+    word_index = 0;
+    for (uint32_t offset = 0; offset < QUBO_BANK_SPAN_BYTES; offset += QUBO_STEP_BYTES) {
+        uint32_t expected = word_index & QUBO_WORD_MASK;
+        uint32_t readback = IORD_32DIRECT(MM_BRIDGE_0_BASE, offset) & QUBO_WORD_MASK;
+        if (readback != expected) {
+            printf("MISMATCH at offset 0x%04lx: wrote 0x%03lx read 0x%03lx\n",
+                   (unsigned long)offset, (unsigned long)expected, (unsigned long)readback);
+            failures++;
+        }
+        word_index = (word_index + 1u) & QUBO_WORD_MASK;
+    }
+
+    if (failures == 0) {
+        printf("QUBO bank 0 verify PASSED (%lu words verified)\n",
+               (unsigned long)QUBO_BANK_WORDS);
+    } else {
+        printf("QUBO bank 0 verify FAILED (%u mismatches)\n", failures);
+    }
+
+    return failures ? 1 : 0;
+}

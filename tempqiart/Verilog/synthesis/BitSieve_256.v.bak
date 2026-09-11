@@ -1,0 +1,172 @@
+
+module BitSieve_256 (KEY, SW, CLOCK_50, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+
+   input [9:0] SW;
+	input [3:0] KEY;
+	input CLOCK_50;
+	
+   output [9:0] LEDR;
+	output [6:0] HEX0;
+  	output [6:0] HEX1;
+	output [6:0] HEX2;
+	output [6:0] HEX3;
+	output [6:0] HEX4;
+	output [6:0] HEX5;
+	
+	wire [23:0]  max_iter = 24'd10;
+	wire signed [26:0]  current_E_off;
+	wire [26:0]  Ising_Energy;
+	wire [255:0] current_state_X;
+	wire 			 busy_temp;
+	wire 			 sign_temp;
+	
+	
+	bit_sieve_engine_25 #(
+        .N(256),
+        .INDEX_WIDTH(8),
+        .SELECTOR_WIDTH(256),
+        .MAX_ITER_WIDTH(24),
+        .ISING_WIDTH(27),
+        .WEIGHT_WIDTH(16)
+    ) uut (
+        .clk(KEY[3]),
+        .rst(~KEY[0]),
+        .program(SW[0]),
+        .Go(SW[1]),
+        .max_iter(max_iter),
+        
+        .current_state_X(current_state_X),
+        .Ising_Energy(Ising_Energy),
+		  .current_E_off(current_E_off),
+        .done(LEDR[9]),
+        .busy(busy_temp),
+		  
+		  .idle(LEDR[1]),
+		  .ready(LEDR[2]),
+		  .rg_gen(LEDR[3]),
+		  .sieve_wait(LEDR[4]),
+		  .sieve_wait2(LEDR[5]),
+		  .sieve_wait3(LEDR[6]),
+		  .update(LEDR[7]),
+		  .degloria(LEDR[8])
+    );
+	
+	signed_to_hex (
+		.bin_in(Ising_Energy[19:0]),
+		.HEX0(HEX0),
+		.HEX1(HEX1),
+		.HEX2(HEX2),
+		.HEX3(HEX3),
+		.HEX4(HEX4),
+		.HEX5(HEX5),
+		.sign(LEDR[0])
+	);
+	
+	//assign LEDR[9:1] = SW[9:1];
+
+endmodule
+
+module signed_to_hex(
+    input signed [19:0] bin_in,
+    output reg [6:0] HEX0,
+    output reg [6:0] HEX1,
+    output reg [6:0] HEX2,
+    output reg [6:0] HEX3,
+	 output reg [6:0] HEX4,
+	 output reg [6:0] HEX5,
+	 output reg			sign
+);
+
+    reg [19:0] abs_val;
+    reg is_neg;
+    reg [3:0] ones, tens, hundreds, thousands, ten_thousands, hun_thousands;
+
+    // Wires to hold the decoded 7-segment patterns from your custom module
+    wire [6:0] dec0, dec1, dec2, dec3, dec4, dec5;
+
+    // Instantiate your custom 4-bit to 7-segment module 4 times
+    hex_decoder inst0 (.c(ones), .display(dec0));
+    hex_decoder inst1 (.c(tens), .display(dec1));
+    hex_decoder inst2 (.c(hundreds), .display(dec2));
+	 hex_decoder inst3 (.c(thousands), .display(dec3));
+	 hex_decoder inst4 (.c(ten_thousands), .display(dec4));
+	 hex_decoder inst5 (.c(hun_thousands), .display(dec5));
+
+    always @(*) begin
+        // 1. Determine sign and absolute value
+        is_neg = bin_in[9]; // MSB is the sign bit
+        if (is_neg) begin
+            abs_val = ~bin_in + 1; // Two's complement conversion
+				sign = 1'b1;
+        end else begin
+            abs_val = bin_in;
+				sign = 1'b0;
+        end
+
+        // 2. Binary to BCD (Extracting digits)
+        ones     		 = abs_val 				 % 10;
+        tens     		 = (abs_val / 10) 	 % 10;
+        hundreds 		 = (abs_val / 100) 	 % 10;
+		  thousands 	 = (abs_val / 1000)   % 10;
+		  ten_thousands = (abs_val / 10000)  % 10;
+		  hun_thousands = (abs_val / 100000) % 10;
+
+        // 3. Route the decoded digits, minus signs, and blanks
+        // Active-low defaults: 7'b1111111 is blank, 7'b0111111 is a minus sign ('g' segment ON)
+
+        // HEX0 is ALWAYS the ones digit
+        HEX0 = dec0;
+
+        // HEX1 Logic: Tens digit OR blank
+        if (abs_val >= 10) begin
+            HEX1 = dec1;               // Pass through the instantiated module's output
+        end else begin
+            HEX1 = 7'b1111111;         // Override with Blank
+        end
+
+        // HEX2 Logic: Hundreds digit OR blank
+        if (abs_val >= 100) begin
+            HEX2 = dec2;               // Pass through the instantiated module's output
+        end else begin
+            HEX2 = 7'b1111111;         // Override with Blank
+        end
+
+        // HEX3 Logic: Thousands digit OR blank
+        if (abs_val >= 1000) begin
+            HEX3 = dec3;               // Pass through the instantiated module's output
+        end else begin
+            HEX3 = 7'b1111111;         // Override with Blank
+        end
+		  
+		  // HEX4 Logic: Ten_Thousands digit OR blank
+        if (abs_val >= 10000) begin
+            HEX4 = dec4;               // Pass through the instantiated module's output
+        end else begin
+            HEX4 = 7'b1111111;         // Override with Blank
+        end
+		  
+		  // HEX5 Logic: Hun_Thousands digit OR blank
+        if (abs_val >= 100000) begin
+            HEX5 = dec5;               // Pass through the instantiated module's output
+        end else begin
+            HEX5 = 7'b1111111;         // Override with Blank
+        end
+    end
+
+endmodule
+
+
+module hex_decoder (c, display);
+
+	input [3:0] c;
+	output [6:0] display;
+
+	assign display[0] = (c[0] & ~c[1] & ~c[2] & ~c[3]) + (~c[0] & ~c[1] & c[2] & ~c[3]) + (c[0] & c[1] & ~c[2] & c[3]) + (c[0] & ~c[1] & c[2] & c[3]);
+	assign display[1] = (c[0] & ~c[1] & c[2] & ~c[3]) + (~c[0] & c[1] & c[2] & ~c[3]) + (c[0] & c[1] & ~c[2] & c[3]) + (~c[0] & ~c[1] & c[2] & c[3]) + (~c[0] & c[1] & c[2] & c[3]) + (c[0] & c[1] & c[2] & c[3]);
+	assign display[2] = (~c[0] & c[1] & ~c[2] & ~c[3]) + (~c[0] & ~c[1] & c[2] & c[3]) + (~c[0] & c[1] & c[2] & c[3]) + (c[0] & c[1] & c[2] & c[3]);
+	assign display[3] = (c[0] & ~c[1] & ~c[2] & ~c[3]) + (~c[0] & ~c[1] & c[2] & ~c[3]) + (c[0] & c[1] & c[2] & ~c[3]) + (~c[0] & c[1] & ~c[2] & c[3]) + (c[0] & c[1] & c[2] & c[3]);
+	assign display[4] = (c[0] & ~c[1] & ~c[2] & ~c[3]) + (c[0] & c[1] & ~c[2] & ~c[3]) + (~c[0] & ~c[1] & c[2] & ~c[3]) + (c[0] & ~c[1] & c[2] & ~c[3]) + (c[0] & c[1] & c[2] & ~c[3]) + (c[0] & ~c[1] & ~c[2] & c[3]);
+	assign display[5] = (c[0] & ~c[1] & ~c[2] & ~c[3]) + (~c[0] & c[1] & ~c[2] & ~c[3]) + (c[0] & c[1] & ~c[2] & ~c[3]) + (c[0] & c[1] & c[2] & ~c[3]) + (c[0] & ~c[1] & c[2] & c[3]);
+	assign display[6] = (~c[0] & ~c[1] & ~c[2] & ~c[3]) + (c[0] & ~c[1] & ~c[2] & ~c[3]) + (c[0] & c[1] & c[2] & ~c[3]) + (~c[0] & ~c[1] & c[2] & c[3]);
+
+endmodule

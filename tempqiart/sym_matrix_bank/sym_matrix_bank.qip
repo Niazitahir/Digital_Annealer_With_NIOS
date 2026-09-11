@@ -1,0 +1,52 @@
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TOOL_VERSION "25.1"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TOP_LEVEL_COMPONENT_NAME "ram_2port"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name OCS_IP_FILE [file join $::quartus(qip_path) "../sym_matrix_bank.ip"]
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name OCS_IP_TYPE "ram_2port"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name OCS_IP_VERSION "20.5.0"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name OCS_IP_HASH "frg6cuq"
+set_global_assignment -library "sym_matrix_bank" -name SOPCINFO_FILE [file join $::quartus(qip_path) "sym_matrix_bank.sopcinfo"]
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name SLD_INFO "QSYS_NAME sym_matrix_bank HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "sym_matrix_bank" -name MISC_FILE [file join $::quartus(qip_path) "sym_matrix_bank.cmp"]
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "sym_matrix_bank" -name MISC_FILE [file join $::quartus(qip_path) "../sym_matrix_bank.ip"]
+
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_NAME "c3ltX21hdHJpeF9iYW5rX3JhbV8ycG9ydF8yMDUwX2ZyZzZjdXE="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DISPLAY_NAME "UkFNOiAyLVBPUlQgRlBHQSBJUA=="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_VERSION "MjAuNS4w"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DESCRIPTION "VGhlIFJBTTogMi1QT1JUIEZQR0EgSVAgYWxsb3dzIHlvdSB0byBpbXBsZW1lbnQgU2ltcGxlIGR1YWwtcG9ydCBSQU0gb3IgVHJ1ZSBkdWFsLXBvcnQgUkFN"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzgyOC8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzc3MS8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE4MS8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzMwMS8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzgxMzkxOC8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI0MC8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzQyMy8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI0MS8="
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzExMC8="
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_NAME "c3ltX21hdHJpeF9iYW5r"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "sym_matrix_bank" -library "sym_matrix_bank" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "ram_2port_2050" -name VERILOG_FILE [file join $::quartus(qip_path) "ram_2port_2050/synth/sym_matrix_bank_ram_2port_2050_frg6cuq.v"]
+set_global_assignment -library "sym_matrix_bank" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/sym_matrix_bank.v"]
+
+
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_TOOL_NAME "ram_2port"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_TOOL_VERSION "20.5.0"
+set_global_assignment -entity "sym_matrix_bank_ram_2port_2050_frg6cuq" -library "ram_2port_2050" -name IP_TOOL_ENV "QsysPrimePro"
+

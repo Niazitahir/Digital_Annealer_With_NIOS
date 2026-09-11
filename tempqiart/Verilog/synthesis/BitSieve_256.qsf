@@ -1,0 +1,95 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 19:26:46  March 26, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		BitSieve_256_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name DEVICE 1SG280LN2F43E1VG
+set_global_assignment -name TOP_LEVEL_ENTITY BitSieve_256
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:26:46  MARCH 26, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1.0 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity BinaryAdder -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity BinaryAdder -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_global_assignment -name PARTITION_COLOR 16764057 -entity BinaryAdder -section_id Top"
+# Obsolete assignment in <Version 25.1> "set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity BinaryAdder -section_id Top"
+set_global_assignment -name SAFE_STATE_MACHINE ON
+set_global_assignment -name VERILOG_FILE ../hdl/update_selector_1024_flat.v
+set_global_assignment -name VERILOG_FILE ../hdl/unified_BitSieve_Engine.v
+set_global_assignment -name VERILOG_FILE ../hdl/matrix_selector.v
+set_global_assignment -name VERILOG_FILE ../hdl/twin_unified_BitSieve_Engine.v
+set_global_assignment -name VERILOG_FILE ../test/tb_bit_sieve_engine_25.v
+set_global_assignment -name VERILOG_FILE ../hdl/weight_synthesizer_MVC.v
+set_global_assignment -name VERILOG_FILE BitSieve_256.v
+set_global_assignment -name SOURCE_FILE ../memoy/state_ram.mem
+set_global_assignment -name SOURCE_FILE ../memoy/h_init_values.mem
+set_global_assignment -name SOURCE_FILE ../memoy/dist_rev_flat.mem
+set_global_assignment -name SOURCE_FILE ../memoy/dist_fwd_flat.mem
+set_global_assignment -name SOURCE_FILE ../memoy/adb_lut.mem
+set_global_assignment -name VERILOG_FILE ../hdl/weight_synthesizer.v
+set_global_assignment -name VERILOG_FILE ../hdl/update_selector_32.v
+set_global_assignment -name VERILOG_FILE ../hdl/top.v
+set_global_assignment -name VERILOG_FILE ../hdl/tabu_mask_generator.v
+set_global_assignment -name VERILOG_FILE ../hdl/randomized_selector.v
+set_global_assignment -name VERILOG_FILE ../hdl/programmable_accumulator.v
+set_global_assignment -name VERILOG_FILE ../hdl/lookup_table.v
+set_global_assignment -name VERILOG_FILE ../hdl/lfsr_1024bit.v
+set_global_assignment -name VERILOG_FILE ../hdl/lfsr_32bit.v
+set_global_assignment -name VERILOG_FILE ../hdl/lfsr_16bit.v
+set_global_assignment -name VERILOG_FILE ../hdl/lfsr_10bit.v
+set_global_assignment -name VERILOG_FILE ../hdl/global_weight_distributor.v
+set_global_assignment -name VERILOG_FILE ../hdl/FSM.v
+set_global_assignment -name VERILOG_FILE ../hdl/e_off_generator.v
+set_global_assignment -name VERILOG_FILE ../hdl/conditional_negator.v
+set_global_assignment -name VERILOG_FILE ../hdl/bit_sieve_engine_25.v
+set_global_assignment -name VERILOG_FILE ../hdl/acceptance_decision_block.v
+set_global_assignment -name QIP_FILE solution_ram_1024x256.qip
+set_global_assignment -name QIP_FILE initial_h_rom.qip
+set_global_assignment -name QIP_FILE hyperparam_rom.qip
+set_global_assignment -name QIP_FILE state_ram.qip
+
+# Obsolete assignment in <Version 25.1> "set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top"
+set_global_assignment -name QIP_FILE sym_matrix_bank.qip

@@ -1,0 +1,3178 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/simulation
+va_graycounter
+Z1 !s110 1787421991
+!i10b 1
+!s100 ;PT;2YiUMXXYOAQkoEKfA0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8^AkdZ=1??=ZDLGdDkCLY1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1536793856
+Z5 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/altera_mf.v
+Z6 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/altera_mf.v
+!i122 2993
+L0 52630 72
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1787421990.000000
+Z9 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/altera_mf.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/altera_mf.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vacceptance_decision_block
+Z13 !s110 1787421983
+!i10b 1
+!s100 zjgf_i>dEPc]kzH;VCBa01
+R2
+IE2P48Bf@L:6]I[ndNKzkc0
+R3
+R0
+w1775674118
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/acceptance_decision_block.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/acceptance_decision_block.v
+!i122 2977
+L0 1 86
+R7
+r1
+!s85 0
+31
+!s108 1787421982.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/acceptance_decision_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/acceptance_decision_block.v|
+!i113 1
+R11
+R12
+vaccumulator
+R13
+!i10b 1
+!s100 37hh=f3Y>PGzo:;k>>1Cj0
+R2
+IO[1X1mGdn9`zi2NG;nRLW1
+R3
+R0
+w1769663241
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/accumulator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/accumulator.v
+!i122 2978
+L0 1 12
+R7
+r1
+!s85 0
+31
+!s108 1787421983.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/accumulator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/accumulator.v|
+!i113 1
+R11
+R12
+vaccumulator_loadable
+!s110 1787421986
+!i10b 1
+!s100 f9J1VgNYEC:zlPYiGE`<F3
+R2
+IL;5VnoIejU6iEYAmPHXdK1
+R3
+R0
+w1769790090
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/programmable_accumulator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/programmable_accumulator.v
+!i122 2984
+L0 1 25
+R7
+r1
+!s85 0
+31
+Z14 !s108 1787421986.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/programmable_accumulator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/programmable_accumulator.v|
+!i113 1
+R11
+R12
+valt3pram
+R1
+!i10b 1
+!s100 z>LO2PDh[mmHcf]K@>WDK0
+R2
+I55U6XE;>HZkhB9AgdH_KX1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 50822 650
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_aeq_s4
+R1
+!i10b 1
+!s100 iX^4`QHkLm46<X=NRdOcU3
+R2
+I?c2RUeb;9bE8<Z=;h]mAb1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53581 83
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_cal
+R1
+!i10b 1
+!s100 CfXkm=5Djj>V>C211Q6?_0
+R2
+Ik[9@cC>AVzK9Mjcd3`B<X2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53050 98
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_cal_av
+R1
+!i10b 1
+!s100 aVmdB;cT5[;dY;[42`igO2
+R2
+I28fT<<LI90@OIMH?QUHFc2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53474 93
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_cal_c3gxb
+R1
+!i10b 1
+!s100 A4zX7a`9e>d;=[:[5lGHk0
+R2
+I25=j_jGUe<=CV6BNKAS4P3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53277 96
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_cal_mm
+R1
+!i10b 1
+!s100 U9f9Gdeg:D3:OG9MbVl@k3
+R2
+IhYH6;V5QUldAKIjbgh@Ih0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53152 121
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_cal_sv
+R1
+!i10b 1
+!s100 hedjgGh]]k2h6GZPR9e^I0
+R2
+I3>0zoja6WWZKD]=cCcP<n2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53377 93
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_dfe
+R1
+!i10b 1
+!s100 UTRo1=N1e5iR3M9dWdck13
+R2
+I:;hbS?;MY`M[f8A1Cmj;G3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53958 272
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_eyemon
+R1
+!i10b 1
+!s100 E9eEHe;`f>6i6adYUk?7@0
+R2
+I6d^L[d`^ln7K224bo5bc73
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53678 268
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valt_fault_injection
+Z15 !s110 1787421992
+!i10b 1
+!s100 _j6Ljn>LMMLjL4=O2nIA12
+R2
+If7<9M9S`N<P7L4OTjTozf3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 56026 47
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtaccumulate
+R1
+!i10b 1
+!s100 Y2AHY]1>@a7Gb[VaN54W?1
+R2
+Ij8KTIa1;oeC228iNhM@m83
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 34797 226
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtclklock
+R1
+!i10b 1
+!s100 2jc3El9GH4fl^_fHgVLEb3
+R2
+I0CF:B5BWb@NiIdXlSn39<0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 45467 905
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtddio_bidir
+R1
+!i10b 1
+!s100 :Nk4;mnGl6zK3BX0ZVAom0
+R2
+IzacVTWbZMkM]XHWPA@Ui53
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 46907 121
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtddio_in
+R1
+!i10b 1
+!s100 9m:YXO3aF;SD5mdAU_<iN1
+R2
+IW<l]DeQ^P]a[O8SAHm4;j2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 46393 245
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtddio_out
+R1
+!i10b 1
+!s100 6b7Mnng?T@2[zgUUVJ9U_1
+R2
+IkLYblCKZk`0BC07Q_6^ZC1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 46656 229
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtdpram
+R1
+!i10b 1
+!s100 `=a667n1SP62^z:<`>[8:2
+R2
+I4JYATc2k^]cS4h3UoU;2N2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 47046 528
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vALTERA_DEVICE_FAMILIES
+Z16 !s110 1787421990
+!i10b 1
+!s100 ZR<7@[A1N33`2G?k`oM5Y3
+R2
+Id?:@nmigUj96RGkcnk^C=2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 1432 896
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
+vALTERA_MF_HINT_EVALUATION
+R16
+!i10b 1
+!s100 2AIo>74D<@LhSOm5;aYj92
+R2
+IA3TRTQFNKmM14S4bU7KTh3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 1310 105
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
+vALTERA_MF_MEMORY_INITIALIZATION
+R16
+!i10b 1
+!s100 OZCTeQI1WbnJZglgFi2RG3
+R2
+IleEFcEGEjgaYVCg?cGE1L3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 71 1219
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@a@l@t@e@r@a_@m@f_@m@e@m@o@r@y_@i@n@i@t@i@a@l@i@z@a@t@i@o@n
+valtera_std_synchronizer
+R1
+!i10b 1
+!s100 78co;kia;5f<ClbYX<?j[2
+R2
+Ib7h7g4Lnc^^Tc3emio6aU3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 52856 130
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtera_std_synchronizer_bundle
+R1
+!i10b 1
+!s100 R`L>2L6b8MXkI<HFFSHiZ3
+R2
+IMc6V;Sz0P4:RZ8R3SjTM^3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 53015 33
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtera_syncram_derived
+R1
+!i10b 1
+!s100 O2Q8c6Z?oND>8DPV?X6@;0
+R2
+I`cO]mC<^HN5V^B:T2PhAm0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 31873 2834
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtera_syncram_derived_forwarding_logic
+R1
+!i10b 1
+!s100 [76jScB8=na]Qh>i<KP6m3
+R2
+I3QZJY5;z_RGGC3^Z1WhMO3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 34708 62
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtfp_mult
+R1
+!i10b 1
+!s100 7kUfbVB_WU^4EGbL;9B=J0
+R2
+IIF92aSh37RjHF5NXR26UL2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 44580 663
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtlvds_rx
+R1
+!i10b 1
+!s100 MBZD>PBgX>^dR]4nC`mmG3
+R2
+IlGOH`GgieSfa7L[RfA<PV3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 23844 1197
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtlvds_tx
+R1
+!i10b 1
+!s100 HoTP<hi6hJ[PWdoIRdO]60
+R2
+I660M@[X7W:3<XdaTODlFc3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 27430 1388
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtmult_accum
+R1
+!i10b 1
+!s100 ilK^Z4KAKS3KU0V66?07W0
+R2
+I6`[coJjUC=goHK2RDh0<E3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 35039 2191
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtmult_add
+R1
+!i10b 1
+!s100 zzm=^^NG6VT]aBlEYB1iF0
+R2
+IEOebRW2e4AQPbiD__LS4O1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 37244 7315
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtparallel_flash_loader
+R15
+!i10b 1
+!s100 2iVQdD3E?EzE0fo7H:f^[2
+R2
+I:J7k6E8QPac<:@X5dg=0A1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55871 120
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtpll
+R1
+!i10b 1
+!s100 XO2A3bccgdOK^NPlkzLB:0
+R2
+IXRT=5Udkb9>TI9`GWTnJk0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 21830 1989
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtserial_flash_loader
+R15
+!i10b 1
+!s100 ]62X7DDY`IJ^K2h4i3a9I0
+R2
+I_m1^cQ>9HkI5KX1?hn[7M2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55992 33
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtshift_taps
+R1
+!i10b 1
+!s100 F7OSf_o7L=LWmg;>dOlTI3
+R2
+IDB3fkX3[c9m>TgD9ERI=Z3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 52485 128
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtsource_probe
+R15
+!i10b 1
+!s100 >PfKIWiY=f?HChlYaZoik2
+R2
+InAjlnjOa7d3A7oIBaCOm82
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 56152 55
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtsqrt
+R1
+!i10b 1
+!s100 hGdX8[<46E[Q=?n10NmWi3
+R2
+IAZ=L<mI;LY6JF5_B==2Qo2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 45265 181
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtsquare
+R1
+!i10b 1
+!s100 lJ?JGMRQa:V?KJkR7HGQ;3
+R2
+ID9_VZNDkWVX5=ZCX1d]L`1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 52721 101
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtstratixii_oct
+R15
+!i10b 1
+!s100 lh>Mehg[C>0YJYfE2CZ5g0
+R2
+IH54K5hnY;OV@ObJRQaD1l3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55855 15
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtsyncram
+R1
+!i10b 1
+!s100 [nLf?zZjj1VjEKITUAh5=0
+R2
+ISWcP[Bfz@4;<b;6n?[_MR1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 47591 293
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+valtsyncram_body
+R1
+!i10b 1
+!s100 ljc[2CnIgWCW>J<TfKSfe1
+R2
+IZ5@@zBC106`4=Ek0PW[Y<0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 47885 2885
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+varm_m_cntr
+R16
+!i10b 1
+!s100 BX4fzaB2VeJ04?fcka9D[0
+R2
+I66;78eKWd>Ti=LV7hhE2c0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 6559 69
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+varm_n_cntr
+R16
+!i10b 1
+!s100 dUe[TnfTJfG5b@UMjWe]31
+R2
+I?EolDE3S5<mdPnCaR]>NK2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 6639 70
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+varm_scale_cntr
+R16
+!i10b 1
+!s100 oDoU]T<Q^3fkib6Ie:c4<0
+R2
+IChNIX16foHd7IHa`eOjn>1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 6721 100
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vbinary_to_onehot_1024
+Z17 !s110 1772394224
+!i10b 1
+!s100 l2C6_GN@A:Z83]KZMVShA3
+R2
+IGS[1F:aGZh^Q;?jhoRK9m2
+R3
+R0
+w1768950348
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/oneHot_decoder.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/oneHot_decoder.v
+!i122 352
+Z18 L0 1 11
+R7
+r1
+!s85 0
+31
+Z19 !s108 1772394224.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/oneHot_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/oneHot_decoder.v|
+!i113 1
+R11
+R12
+vbit_sieve_engine_25
+Z20 !s110 1788058264
+!i10b 1
+!s100 ZfHU_^2i8^>n2I[bg8o@?1
+R2
+IQY_Ihf;AQH=e09[aA8b>T1
+R3
+R0
+w1787598352
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/top.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/top.v
+!i122 3011
+L0 7 248
+R7
+r1
+!s85 0
+31
+Z21 !s108 1788058263.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/top.v|
+!i113 1
+R11
+R12
+vbit_sieve_selector
+Z22 !s110 1772372654
+!i10b 1
+!s100 ?`L0PQ?57WoUjc?LmkZb82
+R2
+I>eAN>ZRMGO1jOmGFjW>hL3
+R3
+R0
+Z23 w1768884222
+Z24 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/sketch.v
+Z25 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/sketch.v
+!i122 13
+L0 401 22
+R7
+r1
+!s85 0
+31
+Z26 !s108 1772372654.000000
+Z27 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/sketch.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/sketch.v|
+!i113 1
+R11
+R12
+vBitSieve_256
+Z29 !s110 1788058263
+!i10b 1
+!s100 i_N[2maIPeW0k_d4;NG3H0
+R2
+IJDJhkj7F`83f6fo@ad=^c2
+R3
+R0
+Z30 w1787598358
+Z31 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/BitSieve_256.v
+Z32 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/BitSieve_256.v
+!i122 3010
+L0 2 273
+R7
+r1
+!s85 0
+31
+R21
+Z33 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/BitSieve_256.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/BitSieve_256.v|
+!i113 1
+R11
+R12
+n@bit@sieve_256
+vbitSieve_engine
+Z35 !s110 1788058262
+!i10b 1
+!s100 _VZ0m=4YkJTD562<3Kd8C3
+R2
+IGhIJEcM`TUaYgjm_nFAaU0
+R3
+R0
+w1787598357
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/bit_sieve_engine_25.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/bit_sieve_engine_25.v
+!i122 3007
+L0 2 79
+R7
+r1
+!s85 0
+31
+!s108 1788058261.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/bit_sieve_engine_25.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/bit_sieve_engine_25.v|
+!i113 1
+R11
+R12
+nbit@sieve_engine
+vcda_m_cntr
+R1
+!i10b 1
+!s100 lenz;_0TNVbj7=@lSZ6YG0
+R2
+IG5]OBYZX4LNEDJ`Bad90<2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 14498 70
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vcda_n_cntr
+R1
+!i10b 1
+!s100 J[LZVY?5meHP3YQO[AKL61
+R2
+IcCHUELnWBP8zgheV5C?k[0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 14579 59
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vcda_scale_cntr
+R1
+!i10b 1
+!s100 96=J8QDUTU8Y5?:Ni_2ZL2
+R2
+I6PLlb`jn6[Ii60YmZbW6o0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 14650 100
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vconditional_inverter
+!s110 1772384318
+!i10b 1
+!s100 =Boe5TT2nK5Il6c2EnPFZ2
+R2
+IR>Nl7g^RR=:zS@<HeK6<B3
+R3
+R0
+w1768879420
+Z36 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/conditional_negator.v
+Z37 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/conditional_negator.v
+!i122 319
+R18
+R7
+r1
+!s85 0
+31
+!s108 1772384318.000000
+Z38 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/conditional_negator.v|
+Z39 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/conditional_negator.v|
+!i113 1
+R11
+R12
+vconditional_inverter_neg0
+Z40 !s110 1787421984
+!i10b 1
+!s100 62keF^La`NDWOH:6dGS2e0
+R2
+INjWn6UQZEB4Z5K8_l;b=82
+R3
+R0
+Z41 w1772390267
+R36
+R37
+!i122 2980
+R18
+R7
+r1
+!s85 0
+31
+Z42 !s108 1787421984.000000
+R38
+R39
+!i113 1
+R11
+R12
+vconditional_inverter_neg1
+R40
+!i10b 1
+!s100 04BOoDbeeL]AnVHm<l:dn1
+R2
+IQ2gRkj2jTbgkI<=jbOKP^0
+R3
+R0
+R41
+R36
+R37
+!i122 2980
+L0 13 11
+R7
+r1
+!s85 0
+31
+R42
+R38
+R39
+!i113 1
+R11
+R12
+vcycloneiiigl_post_divider
+R1
+!i10b 1
+!s100 ;KFXm>5?h3E051JgMi5jA0
+R2
+I6m9@7@kzLAFYl`6idYI@R2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 18368 62
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo
+R1
+!i10b 1
+!s100 CU6loQmBA51cn_C_RPLja0
+R2
+IiRem_eH[CN<KRbk[8O;;a1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 31728 113
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_async
+R1
+!i10b 1
+!s100 @@mQ<FJ3HOWAPQdh:Shhn1
+R2
+ILmCdRWXX5TGQanU2k5aBB0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 29929 524
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_dffpipe
+R1
+!i10b 1
+!s100 Jh<nzV8ZAC:VkTo8mEOA`3
+R2
+I=d=a?nfmPW4M5jiBBg;Bk1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 29699 60
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_fefifo
+R1
+!i10b 1
+!s100 =Dz0Z9ZU_L`>mRfc?LbDJ2
+R2
+IZm^;_3O8hOoW9WhLAod3B3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 29777 134
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_low_latency
+R1
+!i10b 1
+!s100 VT@9kIP]F[?g65ViXmPX12
+R2
+IHIEMB[]LS`[=@3=T1>eW62
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 30780 600
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_mixed_widths
+R1
+!i10b 1
+!s100 Rm[3C;i0[CDnYDPzjGk<=0
+R2
+I1klBOPFlV8Aii8e3ko>eP0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 31398 312
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdcfifo_sync
+R1
+!i10b 1
+!s100 ^;zIZmV`i6lU5A^h0gh3c3
+R2
+Ib:40@:oo8IFN2e_1;jfZB3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 30471 288
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdecimal_to_bcd_20bit
+R17
+!i10b 1
+!s100 jIDocInA`;2DY9?W@l>9i0
+R2
+IMfVo1;O25z:OLRB`?UDk;2
+R3
+R0
+Z43 w1769301269
+Z44 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/single_hex_decoder.v
+Z45 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/single_hex_decoder.v
+!i122 355
+L0 95 26
+R7
+r1
+!s85 0
+31
+R19
+Z46 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/single_hex_decoder.v|
+Z47 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/single_hex_decoder.v|
+!i113 1
+R11
+R12
+vdffp
+R16
+!i10b 1
+!s100 3_J70[I^A4>f@C1aY;6S=3
+R2
+IY8^bXfHPILB>oL7LZn`Vz1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2337 30
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdummy_hub
+R15
+!i10b 1
+!s100 ZfS05B=ANUOUU?=d5?BG53
+R2
+Ig6`kY3QBm4E9l>T09m]k92
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55329 236
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+ve_off_generator
+Z48 !s110 1787421985
+!i10b 1
+!s100 RM_4HMB^0c3O=SaGZK2ea0
+R2
+IYzcNJ:5R:D_J@hM=DY:K`0
+R3
+R0
+w1787378917
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/e_off_generator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/e_off_generator.v
+!i122 2981
+L0 1 35
+R7
+r1
+!s85 0
+31
+R42
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/e_off_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/e_off_generator.v|
+!i113 1
+R11
+R12
+vengine_control_fsm
+!s110 1787421994
+!i10b 1
+!s100 :MBTdjI;]A[Sf]AI03g?41
+R2
+IflFUME^BcS:Yb9G]ddXnM1
+R3
+R0
+w1787376646
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/FSM.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/FSM.v
+!i122 2998
+L0 1 246
+R7
+r1
+!s85 0
+31
+!s108 1787421994.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/FSM.v|
+!i113 1
+R11
+R12
+vflexible_lvds_rx
+R1
+!i10b 1
+!s100 M>QZ;OGEjE;K;a@HBj5FE2
+R2
+I5I^L9e`ROf26029oF8E5f3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 25897 450
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vflexible_lvds_tx
+R1
+!i10b 1
+!s100 ?07fH1O?BGS12V@B58J5z1
+R2
+IL8NhFfdF;FQ6=O96a8[5L3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 29139 541
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vglobal_weight_distributor
+R29
+!i10b 1
+!s100 ]ek8dA77`8o=Ym^?aigkD1
+R2
+IS3[a_^`MbTR?^DWHzWb__3
+R3
+R0
+Z49 w1787599567
+Z50 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/global_weight_distributor.v
+Z51 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/global_weight_distributor.v
+!i122 3009
+L0 1 42
+R7
+r1
+!s85 0
+31
+Z52 !s108 1788058262.000000
+Z53 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/global_weight_distributor.v|
+Z54 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/global_weight_distributor.v|
+!i113 1
+R11
+R12
+vglobal_weight_distributor_old
+R29
+!i10b 1
+!s100 X8@_E6j6go^9PX?8<[cZV1
+R2
+IF>M4]d6i46T@f7bZ[RO`83
+R3
+R0
+R49
+R50
+R51
+!i122 3009
+L0 44 40
+R7
+r1
+!s85 0
+31
+R52
+R53
+R54
+!i113 1
+R11
+R12
+vhex_decoder
+R29
+!i10b 1
+!s100 ]gdL?gfoGmH?k7M;l@oiA1
+R2
+I:zl<DnH_UgW4U;^YZVme^2
+R3
+R0
+R30
+R31
+R32
+!i122 3010
+L0 398 14
+R7
+r1
+!s85 0
+31
+R21
+R33
+R34
+!i113 1
+R11
+R12
+vhex_display_24bit
+R17
+!i10b 1
+!s100 FkT@:i^O2oYf0ofzG;nnb3
+R2
+IT:@K=B[j=;XO[7VLTAQ1m2
+R3
+R0
+R43
+R44
+R45
+!i122 355
+L0 81 13
+R7
+r1
+!s85 0
+31
+R19
+R46
+R47
+!i113 1
+R11
+R12
+vhex_display_decimal_20bit
+R17
+!i10b 1
+!s100 `F[UNVoj9zM?df9:nOloD0
+R2
+I^]ddM:e5ZHPhIVJJ;ji3]2
+R3
+R0
+R43
+R44
+R45
+!i122 355
+L0 63 17
+R7
+r1
+!s85 0
+31
+R19
+R46
+R47
+!i113 1
+R11
+R12
+vhyperparam_rom
+R15
+!i10b 1
+!s100 @Zk78RUk=Ge0O<H7i]PaU3
+R2
+Ificoh4IXk;dkA<EaQECe[0
+R3
+R0
+w1787379041
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/hyperparam_rom.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/hyperparam_rom.v
+!i122 2994
+Z55 L0 39 61
+R7
+r1
+!s85 0
+31
+Z56 !s108 1787421992.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/hyperparam_rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/hyperparam_rom.v|
+!i113 1
+R11
+R12
+vinitial_h_rom
+Z57 !s110 1787421993
+!i10b 1
+!s100 bG[JFgi8A`]=EYFH_h?=K0
+R2
+Iga7_j^f1OmTbY3ee2C]lX2
+R3
+R0
+w1787379148
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/initial_h_rom.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/initial_h_rom.v
+!i122 2995
+R55
+R7
+r1
+!s85 0
+31
+R56
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/initial_h_rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/initial_h_rom.v|
+!i113 1
+R11
+R12
+vjtag_tap_controller
+R15
+!i10b 1
+!s100 Ng]2QEQ<PQ;S4Jf4IIbY^1
+R2
+IjPQA;BGI0icYU67F35lIn1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 54872 435
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vlcell
+R16
+!i10b 1
+!s100 kh8Rn24K7CVPZS?B6T]eC0
+R2
+I9HX]N6hQQez3a]7F?XXMg3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 34 6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vlfsr_1024bit
+Z58 !s110 1787421989
+!i10b 1
+!s100 QlY_`S^GTi@Ja;E1h^LMY3
+R2
+IWYRV3UG<>TWUG[IbCg8Dh2
+R3
+R0
+w1774068251
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_1024bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_1024bit.v
+!i122 2991
+L0 1 32
+R7
+r1
+!s85 0
+31
+Z59 !s108 1787421989.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_1024bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_1024bit.v|
+!i113 1
+R11
+R12
+vlfsr_10bit
+R58
+!i10b 1
+!s100 UH03Q_i7zJLLG4:NTWCa92
+R2
+IX8ED8dfV2RSGe`RBji]WD3
+R3
+R0
+w1774054606
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_10bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_10bit.v
+!i122 2990
+Z60 L0 1 29
+R7
+r1
+!s85 0
+31
+Z61 !s108 1787421988.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_10bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_10bit.v|
+!i113 1
+R11
+R12
+vlfsr_16
+R22
+!i10b 1
+!s100 nOg5gY?di4822O47idh?Z3
+R2
+IS5JAc;LmlI<2KK1Z9EYoS3
+R3
+R0
+R23
+R24
+R25
+!i122 13
+L0 481 14
+R7
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R11
+R12
+vlfsr_16bit
+R48
+!i10b 1
+!s100 k>A3Wh<SG:^<WN]S`>BiX0
+R2
+IaA_^BYgIY3?M=6RZgeWbW0
+R3
+R0
+w1774648982
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_16bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_16bit.v
+!i122 2982
+Z62 L0 1 31
+R7
+r1
+!s85 0
+31
+!s108 1787421985.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_16bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_16bit.v|
+!i113 1
+R11
+R12
+vlfsr_32bit
+Z63 !s110 1787421988
+!i10b 1
+!s100 ebU5Li5>DCHcZHd?=V9aI3
+R2
+IiEmzaj0zU8=mXCnAg?Za73
+R3
+R0
+w1774057532
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_32bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_32bit.v
+!i122 2989
+R62
+R7
+r1
+!s85 0
+31
+R61
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_32bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lfsr_32bit.v|
+!i113 1
+R11
+R12
+vlookup_table
+R35
+!i10b 1
+!s100 F7[oz=eTCl>EIAX?WJdI10
+R2
+IB>WKLD81XSfg3OTjcn;@R2
+R3
+R0
+w1787599566
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lookup_table.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lookup_table.v
+!i122 3008
+L0 1 27
+R7
+r1
+!s85 0
+31
+R52
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lookup_table.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/lookup_table.v|
+!i113 1
+R11
+R12
+vMF_cycloneiii_pll
+R1
+!i10b 1
+!s100 feUaL[FB?5Pi4QL[icNV31
+R2
+IIagaKR54ICfBCK_]n=K983
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 14777 3316
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_cycloneiii_pll
+vMF_cycloneiiigl_m_cntr
+R1
+!i10b 1
+!s100 RlMYY2Igff40AdLd[9GMe2
+R2
+IkLD<PK>]PUK@=im:EB3Y[1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 18106 70
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_cycloneiiigl_m_cntr
+vMF_cycloneiiigl_n_cntr
+R1
+!i10b 1
+!s100 D3QAegZ;_3MS0g9VYj=>21
+R2
+Ib>TY_IiPaHZmN;8T[SZh>0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 18187 59
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_cycloneiiigl_n_cntr
+vMF_cycloneiiigl_pll
+R1
+!i10b 1
+!s100 68i8?Z2f_ZZ38_Z?V`iYR0
+R2
+I]VAQ_F=zi<m[z6FD>LDHg0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 18457 3344
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_cycloneiiigl_pll
+vMF_cycloneiiigl_scale_cntr
+R1
+!i10b 1
+!s100 L8>Vm:jJhIIlX6aU[3b5J2
+R2
+I_3=ZnO9:9KYEGRb=lWh4h2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 18258 100
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_cycloneiiigl_scale_cntr
+vMF_pll_reg
+R16
+!i10b 1
+!s100 Ph7M?;OJ3h:AQ9mo`<;J72
+R2
+IiNX[[PgdBhNkJZ7OaVb@H0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2694 36
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_pll_reg
+vMF_stratix_pll
+R16
+!i10b 1
+!s100 5I84T>@eWQKRfNQ8D44?e2
+R2
+IePfjXn]CfRH^HfGJ`c0ez2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2753 3795
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_stratix_pll
+vMF_stratixii_pll
+R1
+!i10b 1
+!s100 HM8lXBBeF1S2DDSfleJC:2
+R2
+Io]U0@V;fM[hSaY;Q<HPEX0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 6844 3541
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_stratixii_pll
+vMF_stratixiii_pll
+R1
+!i10b 1
+!s100 ^nf4?`X15G2H>o4:@?IFg0
+R2
+IYT>>f_@2nlHh==FJCkOHP3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 10675 3811
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@f_stratixiii_pll
+vmux
+R17
+!i10b 1
+!s100 fn9:>>1NdX5<CNY]SX:zk2
+R2
+I?J;VldnU[<RbU>Ldan=GB0
+R3
+R0
+R43
+R44
+R45
+!i122 355
+L0 8 31
+R7
+r1
+!s85 0
+31
+R19
+R46
+R47
+!i113 1
+R11
+R12
+vparallel_add
+R1
+!i10b 1
+!s100 Xf]>4KHZ[SVgY]j6F^C6S0
+R2
+IIh;[E`a?iTN0218]GcIX83
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 51505 152
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vpll_iobuf
+R16
+!i10b 1
+!s100 bmO:75mI_c8amgVk^^=1K0
+R2
+IS6^=Co:ZGSe]`dUaF7SgI3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2370 14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vqubo_row_rom
+Z64 !s110 1787421996
+!i10b 1
+!s100 G?0c1UZFMz8W5FAm1egeN3
+R2
+IWKYgdkT0:GCMJGYhKn]@Z2
+R3
+R0
+w1787379174
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/qubo_row_rom.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/qubo_row_rom.v
+!i122 3002
+L0 39 63
+R7
+r1
+!s85 0
+31
+!s108 1787421996.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/qubo_row_rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/qubo_row_rom.v|
+!i113 1
+R11
+R12
+vqubo_weight_rom
+R20
+!i10b 1
+!s100 L;[OUQI15z<9>g>hNOR6@2
+R2
+InmVCU`EPO>3K^PhU]`K6S3
+R3
+R0
+w1787598354
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/qubo_weight_rom.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/qubo_weight_rom.v
+!i122 3013
+L0 9 25
+R7
+r1
+!s85 0
+31
+Z65 !s108 1788058264.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/qubo_weight_rom.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/qubo_weight_rom.v|
+!i113 1
+R11
+R12
+vrandomized_selector_2to1
+Z66 !s110 1787421987
+!i10b 1
+!s100 STQ<BgJ;DJ5GMfI8AZJUS0
+R2
+Ii^K`3MCl=UalQk858N;D72
+R3
+R0
+w1773678409
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/randomized_selector.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/randomized_selector.v
+!i122 2985
+L0 1 15
+R7
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/randomized_selector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/randomized_selector.v|
+!i113 1
+R11
+R12
+vreset_debouncer
+R29
+!i10b 1
+!s100 Zb?S8oCReNWY`MDG?D@kb1
+R2
+IFH^Y<L2aTI=B;dzKb0Ak>0
+R3
+R0
+R30
+R31
+R32
+!i122 3010
+L0 276 32
+R7
+r1
+!s85 0
+31
+R21
+R33
+R34
+!i113 1
+R11
+R12
+vscfifo
+R1
+!i10b 1
+!s100 ejQoa1`]2TLjjYJ:gJ^Rj0
+R2
+IS:YAJo]28ZIBjZGB?;QX_2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 51674 790
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vselector_2to1
+!s110 1774055340
+!i10b 1
+!s100 NQWeD1L`FMC^Wj3QYoJM:3
+R2
+IE:7e2]8W5U>g6^?QST^JS3
+R3
+R0
+w1768949160
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/fixed_priority_selector.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/fixed_priority_selector.v
+!i122 1409
+L0 1 21
+R7
+r1
+!s85 0
+31
+!s108 1774055340.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/fixed_priority_selector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/fixed_priority_selector.v|
+!i113 1
+R11
+R12
+vsignal_gen
+R15
+!i10b 1
+!s100 MG>TgL>aB23OnPYne0K6_1
+R2
+IXAljJ2OPGW3m`RX=50[Om2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 54305 546
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vsigned_to_hex
+R29
+!i10b 1
+!s100 8ak]B[LYjo3Mn0TdaGb7^2
+R2
+IEJUdI3:S<:al488bn1Oh]0
+R3
+R0
+R30
+R31
+R32
+!i122 3010
+L0 309 88
+R7
+r1
+!s85 0
+31
+R21
+R33
+R34
+!i113 1
+R11
+R12
+vsld_signaltap
+R15
+!i10b 1
+!s100 AP`_dK:cJOW`?S]DChaFW1
+R2
+IjaiSo31=m@H1=A5ajH8XX3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55713 141
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vsld_virtual_jtag
+R15
+!i10b 1
+!s100 Q`YoaeN3Z373YzB>IV<[B1
+R2
+I<:XKU8DjAozGf[AgX>ang2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 55586 125
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vsld_virtual_jtag_basic
+R15
+!i10b 1
+!s100 Q1C9UPI3?:=l2bAO1Pf?H0
+R2
+IJfd2Ejh[a<927jNL@cWGK0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 56074 77
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vsolution_ram_1024x256
+R57
+!i10b 1
+!s100 l7XhE2zkR?7SD6@ICT0Ak1
+R2
+IDfAXBBh>0jUE=[S[Ma@2Y2
+R3
+R0
+w1786595278
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/solution_ram_1024x256.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/solution_ram_1024x256.v
+!i122 2996
+L0 39 65
+R7
+r1
+!s85 0
+31
+!s108 1787421993.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/solution_ram_1024x256.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/solution_ram_1024x256.v|
+!i113 1
+R11
+R12
+vstate_ram
+R64
+!i10b 1
+!s100 ^9Rc<j1Ln3SC[QEP`9=@J1
+R2
+ITT=_<3b7cf=?La<h@hP6E3
+R3
+R0
+w1787379144
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/state_ram.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/state_ram.v
+!i122 3001
+L0 39 67
+R7
+r1
+!s85 0
+31
+Z67 !s108 1787421995.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/state_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/synthesis/state_ram.v|
+!i113 1
+R11
+R12
+vstratix_lvds_rx
+R1
+!i10b 1
+!s100 8X<5boC_BG5M2oiaKkDMI1
+R2
+In^i?;]X1]0d9V:2Rh_5QW1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 25060 90
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratix_tx_outclk
+R1
+!i10b 1
+!s100 eT=zl<A:3Z`Kk8ekUF;3U3
+R2
+IA4BcVZ>cn`L[@a3V>Jh943
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 28930 89
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixgx_dpa_lvds_rx
+R1
+!i10b 1
+!s100 W@CTS0R2oBzJJOl@UEzD93
+R2
+IPTo9[`hS4;jWoMM@>1GPX2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 25168 383
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixii_lvds_rx
+R1
+!i10b 1
+!s100 g3C181izmK9:PlR`P3]ee0
+R2
+IS1oR[RcX`?0Dz3Dd@@6PG2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 25571 307
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixii_tx_outclk
+R1
+!i10b 1
+!s100 4=U`a?ebGLGfnUO9^@>Xa2
+R2
+ICGBX`L^c^:eFRoL`l@ATA3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 29038 81
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixiii_lvds_rx
+R1
+!i10b 1
+!s100 jEd@f[<f:>`<mbe7`Zm160
+R2
+IgTXMP4hDkR<z77dnMN@i;1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 26370 160
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixiii_lvds_rx_channel
+R1
+!i10b 1
+!s100 B[XBBUM8gn`WzhTGdV1Y63
+R2
+INREkcn49SGEkZ`n91BH[=1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 26552 594
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixiii_lvds_rx_dpa
+R1
+!i10b 1
+!s100 QmeGUH23EJL8Gz7oZHhj82
+R2
+IAikbz;b4Uk[GfKb9Nbd@S2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 27161 244
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstratixv_local_clk_divider
+R1
+!i10b 1
+!s100 jYzOcJXA3ZBWTc1Ai8mFV3
+R2
+Igh[[CYQCTFgWUzof?C0nA2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 28836 75
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstx_m_cntr
+R16
+!i10b 1
+!s100 H1DmeM^BlCgmI[HYCQZ]N1
+R2
+IZVU@:K7M=<R4dUH1mZ3E[2
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2396 67
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstx_n_cntr
+R16
+!i10b 1
+!s100 Vb`mV5i1@djlAAAdW@9O51
+R2
+IcdUAi^C15ZT>l1d?_5?@B0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2474 73
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vstx_scale_cntr
+R16
+!i10b 1
+!s100 dEhKLH`P^8k:2k:KEcLJo3
+R2
+ICajQhb`2H_o4RB7U8zIcN1
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 2559 123
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtabu_mask_generator
+R16
+!i10b 1
+!s100 ooJ6nWAe1lK2_2YTU<fUE1
+R2
+IObg=QQgNOmJnTI?jKQDNP0
+R3
+R0
+w1787376685
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/tabu_mask_generator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/tabu_mask_generator.v
+!i122 2992
+L0 1 62
+R7
+r1
+!s85 0
+31
+R59
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/tabu_mask_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/tabu_mask_generator.v|
+!i113 1
+R11
+R12
+vtb_acceptance_decision_block
+!s110 1774055341
+!i10b 1
+!s100 W>G8Uok]3fmae]iG_m]`G0
+R2
+I3fTA>ga]ORI?X>2`4HK^42
+R3
+R0
+w1772385497
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_acceptance_decision_block.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_acceptance_decision_block.v
+!i122 1417
+L0 3 113
+R7
+r1
+!s85 0
+31
+!s108 1774055341.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_acceptance_decision_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_acceptance_decision_block.v|
+!i113 1
+R11
+R12
+vtb_bit_sieve_engine_1024
+!s110 1774497663
+!i10b 1
+!s100 UbP`SJGIjU0<76zhjh==H2
+R2
+Ie@^?]7YPXE:Nh5:KAQDR01
+R3
+R0
+w1774497480
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v
+!i122 1801
+L0 3 403
+R7
+r1
+!s85 0
+31
+!s108 1774497663.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v|
+!i113 1
+R11
+R12
+vtb_bit_sieve_engine_25
+!s110 1787452964
+!i10b 1
+!s100 5ROM9T?JaG4@WME:UM9d90
+R2
+IZkaWUcdbWR?Wfi_l^[16C1
+R3
+R0
+w1787452937
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_25.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_25.v
+!i122 3006
+L0 3 284
+R7
+r1
+!s85 0
+31
+!s108 1787452963.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_25.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_25.v|
+!i113 1
+R11
+R12
+vttn_m_cntr
+R1
+!i10b 1
+!s100 h<PH00M`fL9^=b@XB]>>C3
+R2
+IEKjZ^^mV=c@N0AegUXhYb0
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 10396 70
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vttn_n_cntr
+R1
+!i10b 1
+!s100 7IPQ8o[^HjT];^;Nona`B1
+R2
+I7Q6>O;;k7?O3WicEU@^ZA3
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 10477 59
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vttn_scale_cntr
+R1
+!i10b 1
+!s100 hed;6m9_0GS:mlLORJK`A2
+R2
+IE66[Jn`beng[6Y0@C:I220
+R3
+R0
+R4
+R5
+R6
+!i122 2993
+L0 10548 100
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vunified_BitSieve_Engine
+R20
+!i10b 1
+!s100 ddA`]h;JDFDBW_M@2=>QP0
+R2
+I2oNK`Wdc:GmZzP74;75=I3
+R3
+R0
+w1787598355
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/unified_BitSieve_Engine.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/unified_BitSieve_Engine.v
+!i122 3012
+L0 10 66
+R7
+r1
+!s85 0
+31
+R65
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/unified_BitSieve_Engine.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/unified_BitSieve_Engine.v|
+!i113 1
+R11
+R12
+nunified_@bit@sieve_@engine
+vupdate_selector_1024_flat
+!s110 1787421997
+!i10b 1
+!s100 [gHYo4=c_LTc?56FZZC6k3
+R2
+Ig<4T=7a<Be9`Gc@9POGO`0
+R3
+R0
+w1787376497
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_1024_flat.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_1024_flat.v
+!i122 3004
+L0 4 122
+R7
+r1
+!s85 0
+31
+!s108 1787421997.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_1024_flat.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_1024_flat.v|
+!i113 1
+R11
+R12
+vupdate_selector_32
+R66
+!i10b 1
+!s100 =^E9^<VMbFbNYWOeYnVZ92
+R2
+IQEo5<NE[O94b0iY=>HJRi1
+R3
+R0
+w1787376493
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_32.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_32.v
+!i122 2986
+L0 4 120
+R7
+r1
+!s85 0
+31
+!s108 1787421987.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_32.v|
+!i113 1
+R11
+R12
+vupdate_selector_512_flat
+!s110 1786931772
+!i10b 1
+!s100 CEoTBIm<DFVOmL9>[0O4K2
+R2
+IcN_UEoPERKo5BlQXGzl[D2
+R3
+R0
+w1786924215
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_512_flat.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_512_flat.v
+!i122 2969
+L0 1 161
+R7
+r1
+!s85 0
+31
+!s108 1786931771.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_512_flat.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/update_selector_512_flat.v|
+!i113 1
+R11
+R12
+vweight_synthesizer
+R63
+!i10b 1
+!s100 ;Gm2<GLHIi5g?3UUBa;e`0
+R2
+IQFE5CC_zJK5PfHz3n=oNd2
+R3
+R0
+w1773926974
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer.v
+!i122 2988
+L0 1 56
+R7
+r1
+!s85 0
+31
+R61
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer.v|
+!i113 1
+R11
+R12
+vweight_synthesizer_MVC
+!s110 1787421995
+!i10b 1
+!s100 >L5WQLD1oMMi3_lkEHYSB1
+R2
+IWQG<ScO5B=zgeVEE8:C_?2
+R3
+R0
+w1782105057
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer_MVC.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer_MVC.v
+!i122 3000
+R60
+R7
+r1
+!s85 0
+31
+R67
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer_MVC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/weight_synthesizer_MVC.v|
+!i113 1
+R11
+R12
+nweight_synthesizer_@m@v@c
+vxor_register_1024
+!s110 1772372696
+!i10b 1
+!s100 H7E80N_bMFU_11B2=a6Na1
+R2
+I?iTT0k_9XQP;nPi;o<=9d2
+R3
+R0
+w1768950598
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/xor_state_register.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/xor_state_register.v
+!i122 28
+L0 1 20
+R7
+r1
+!s85 0
+31
+!s108 1772372696.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/xor_state_register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl/xor_state_register.v|
+!i113 1
+R11
+R12

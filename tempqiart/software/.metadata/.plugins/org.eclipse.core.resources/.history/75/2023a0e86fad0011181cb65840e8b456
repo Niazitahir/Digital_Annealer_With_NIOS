@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "system.h"
+#include "io.h"
+
+#define QUBO_WORD_MASK 0x3FFu
+#define QUBO_STEP_BYTES 4u
+#define QUBO_BANK_WORDS 2048u
+#define QUBO_BANK_SPAN_BYTES (QUBO_BANK_WORDS * QUBO_STEP_BYTES)
+
+int main(void)
+{
+    printf("Hello from Nios V!\n");
+    printf("Starting QUBO bank 0 test (%u words, %u bytes)...\n",
+           QUBO_BANK_WORDS, (unsigned)QUBO_BANK_SPAN_BYTES);
+    fflush(stdout);
+    unsigned failures = 0;
+
+
+    return failures ? 1 : 0;
+}

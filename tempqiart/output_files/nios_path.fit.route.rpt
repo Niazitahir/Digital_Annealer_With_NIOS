@@ -1,0 +1,605 @@
+Fitter Route Stage Report for nios_path
+Thu Sep 10 20:30:00 2026
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Nets with Highest Wire Count
+  3. PLL Delay Chain Settings
+  4. Delay Chain Summary
+  5. Routing Usage Summary
+  6. Route Messages
+  7. Estimated Delay Added for Hold Timing Summary
+  8. Estimated Delay Added for Hold Timing Details
+  9. Global Router Wire Utilization Map
+ 10. Peak Wire Demand Summary
+ 11. Peak Wire Demand Details
+ 12. Peak Total Grid Crossings
+ 13. Global Router Congestion Hotspot Summary
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------+
+; Nets with Highest Wire Count                                                ;
++---------------------------------------------+----------------------+--------+
+; Net                                         ; Number of Wires Used ; Fanout ;
++---------------------------------------------+----------------------+--------+
+; ~GND                                        ; 1284                 ; 24331  ;
+; u1|avalon_write_req~0                       ; 1238                 ; 2686   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[8]   ; 1174                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]   ; 1174                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[2]   ; 1166                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]   ; 1156                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[5] ; 1155                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[4]   ; 1147                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]   ; 1146                 ; 1025   ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[1] ; 1143                 ; 1025   ;
++---------------------------------------------+----------------------+--------+
+
+
++----------------------------------------------------------------------------+
+; PLL Delay Chain Settings                                                   ;
++------------------------------------------------------------------------+---+
+;                                                                        ;   ;
++------------------------------------------------------------------------+---+
+; fpga_clk_pll|iopll_0|stratix10_altera_iopll_i|s10_iopll.fourteennm_pll ;   ;
+;     -- Delay Chain Setting                                             ; 0 ;
+;     -- PLL Output Counter 0                                            ;   ;
+;             -- C Counter Delay Chain Setting                           ; 0 ;
+;             -- LVDS Delay Chain Setting                                ; 0 ;
+;     -- PLL Output Counter 1                                            ;   ;
+;             -- C Counter Delay Chain Setting                           ; 0 ;
+;             -- LVDS Delay Chain Setting                                ; 0 ;
+;                                                                        ;   ;
++------------------------------------------------------------------------+---+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                 ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name               ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; FPGA_HB_LED        ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[0]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[1]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[2]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[3]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[4]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[5]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[6]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[7]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[8]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[9]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[14]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[15]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_RECONFIG      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[0]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[1]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[2]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[3]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[4]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[5]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[6]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[7]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[8]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[9]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[10]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[11]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[12]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[13]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[10]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[11]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[12]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[13]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[14]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[15]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[2]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[3]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[4]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[5]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[6]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[7]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[8]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[9]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[10]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[11]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[12]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[13]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[14]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[15]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[0]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[1]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[2]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[3]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; FMC_PWR_EN         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FMC_LA22_P         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_PG_C2M        ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_EXT_CLK_OUT_P ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_CLK_IN        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[0]      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[1]      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; FPGA_PB_RESET_L    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++--------------------------------------------------------------+
+; Routing Usage Summary                                        ;
++--------------------------------+-----------------------------+
+; Routing Resource Type          ; Usage                       ;
++--------------------------------+-----------------------------+
+; Block Input Muxes              ; 22 / 122,932 ( < 1 % )      ;
+; Block interconnects            ; 105,400 / 1,247,616 ( 8 % ) ;
+; C16 interconnects              ; 7,618 / 30,888 ( 25 % )     ;
+; C2 interconnects               ; 13,523 / 185,328 ( 7 % )    ;
+; C3 interconnects               ; 27,090 / 375,912 ( 7 % )    ;
+; C4 interconnects               ; 39,858 / 241,848 ( 16 % )   ;
+; CLOCK_INVERTs                  ; 0 / 1,472 ( 0 % )           ;
+; DCM_muxes                      ; 2 / 368 ( < 1 % )           ;
+; Direct links                   ; 17,598 / 1,247,616 ( 1 % )  ;
+; GAP Interconnects              ; 4,250 / 79,560 ( 5 % )      ;
+; GAPs                           ; 4,078 / 29,304 ( 14 % )     ;
+; HIO Buffers                    ; 6 / 64,512 ( < 1 % )        ;
+; Horizontal Buffers             ; 1,104 / 49,788 ( 2 % )      ;
+; Horizontal_clock_segment_muxes ; 30 / 1,600 ( 2 % )          ;
+; Programmable Inverts           ; 1,125 / 78,336 ( 1 % )      ;
+; R10 interconnects              ; 37,498 / 364,860 ( 10 % )   ;
+; R2 interconnects               ; 15,319 / 308,880 ( 5 % )    ;
+; R24 interconnects              ; 6,241 / 49,896 ( 13 % )     ;
+; R24/C16 interconnect drivers   ; 9,010 / 61,776 ( 15 % )     ;
+; R4 interconnects               ; 33,988 / 454,860 ( 7 % )    ;
+; Row Clock Tap-Offs             ; 2,624 / 100,872 ( 3 % )     ;
+; Switchbox_clock_muxes          ; 99 / 9,600 ( 1 % )          ;
+; Vertical_seam_tap_muxes        ; 79 / 4,416 ( 2 % )          ;
++--------------------------------+-----------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 24 of the 24 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+    Info: Processing started: Thu Sep 10 20:26:11 2026
+    Info: System process ID: 26620
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = nios_path
+Info: Revision = nios_path
+Info (22300): Design uses Placement Effort Multiplier = 0.2.
+Info (170193): Fitter routing operations beginning
+Info (20215): Router estimated peak short interconnect demand : 70% of up directional wire in region X96_Y24 to X103_Y31
+    Info (20265): Estimated peak short right directional wire demand : 35% in region X56_Y40 to X63_Y47
+    Info (20265): Estimated peak short left directional wire demand : 41% in region X128_Y32 to X135_Y39
+    Info (20265): Estimated peak short up directional wire demand : 70% in region X96_Y24 to X103_Y31
+    Info (20265): Estimated peak short down directional wire demand : 36% in region X88_Y56 to X95_Y63
+Info (20215): Router estimated peak long high speed interconnect demand : 100% of right directional wire in region X64_Y40 to X71_Y47
+    Info (20265): Estimated peak long high speed right directional wire demand : 100% in region X64_Y40 to X71_Y47
+    Info (20265): Estimated peak long high speed left directional wire demand : 100% in region X104_Y48 to X111_Y55
+    Info (20265): Estimated peak long high speed up directional wire demand : 100% in region X64_Y8 to X71_Y15
+    Info (20265): Estimated peak long high speed down directional wire demand : 100% in region X56_Y72 to X63_Y79
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170239): Router is attempting to preserve 0.01 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (11888): Total time spent on timing analysis during Routing is 10.45 seconds.
+Info: Adding default timing constraints to JTAG signals.  This will help to achieve basic functionality since no such constraints were provided by the user.
+Info (16607): Fitter routing operations ending: elapsed time is 00:01:45
+
+
++-----------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                           ;
++----------------------------------+----------------------------------+-------------------+
+; Source Clock(s)                  ; Destination Clock(s)             ; Delay Added in ns ;
++----------------------------------+----------------------------------+-------------------+
+; fpga_clk_pll|iopll_0_fpga_clk_50 ; fpga_clk_pll|iopll_0_fpga_clk_50 ; 176.8             ;
+; altera_reserved_tck              ; fpga_clk_pll|iopll_0_fpga_clk_50 ; 6.9               ;
+; fpga_clk_pll|iopll_0_fpga_clk_50 ; altera_reserved_tck              ; 5.3               ;
++----------------------------------+----------------------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                                                                 ; Destination Register                                                                                                                                                            ; Delay Added in ns ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; rst_pb_debounce|debounce_sync[2]                                                                                                                ; FPGA_HB_LED~reg0                                                                                                                                                                ; 0.780             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[15]                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[15] ; 0.468             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[7]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[7]  ; 0.457             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[14]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[14]                                                                              ; 0.392             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[4]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[4]                                                                               ; 0.384             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[10]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[10]                                                                              ; 0.383             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[18]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[18]                                                                              ; 0.380             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[23]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[23]                                                                                ; 0.373             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[3]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[3]  ; 0.371             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[16] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[16]                            ; 0.366             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[10] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[10]                            ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[28] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[28]                            ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[4]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[4]                             ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[6]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[6]                             ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[27] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[27]                            ; 0.363             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[18] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[18]                            ; 0.363             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[26] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[26]                            ; 0.360             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[1]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[1]                             ; 0.360             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[8]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[8]                             ; 0.360             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[29] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[29]                            ; 0.357             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[0]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[0]  ; 0.356             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[20] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[20]                            ; 0.355             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[0]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[0]                             ; 0.353             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[14] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[14]                            ; 0.351             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[21]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[21]                                                                                ; 0.349             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[27]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[27]                                                                                ; 0.348             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[31]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[31]                                                                                ; 0.341             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[16]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[16]                                                                                ; 0.335             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[4]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[4]  ; 0.324             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[29]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[29]                                                                                ; 0.315             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[7]                                                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[7]                                                                                 ; 0.314             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[19] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[19]                            ; 0.314             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[31]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[31]                                     ; 0.310             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[4]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[4]                                      ; 0.309             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[1]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[1]  ; 0.309             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[7]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[7]                             ; 0.306             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[23]                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[23] ; 0.306             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[11] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[11]                            ; 0.305             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[17]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[17]                                     ; 0.304             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[26]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[26]                                                                                ; 0.304             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[31] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[31]                            ; 0.304             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[24] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[24]                            ; 0.302             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[15] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[15]                            ; 0.302             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[2]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[2]                                      ; 0.301             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[24]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[24]                                     ; 0.301             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[6]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[6]  ; 0.299             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[12] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[12]                            ; 0.298             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[22] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[22]                            ; 0.298             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[14]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[14]                                     ; 0.295             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[19]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[19]                                     ; 0.295             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[18]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[18]                                     ; 0.294             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[15]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[15]                                     ; 0.293             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[13]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[13]                                                                                ; 0.291             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[22]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[22]                                     ; 0.291             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[15]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[15]                                                                                ; 0.290             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[5]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[5]                                      ; 0.289             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[17] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[17]                            ; 0.289             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[3]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[3]                                      ; 0.287             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[6]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[6]                                      ; 0.286             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[5]                    ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|address_buf[20]                                                                            ; 0.286             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[10]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[10]                                                                                ; 0.286             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[10]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[10]                                     ; 0.286             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[1]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[1]                                      ; 0.286             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[10]                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[10] ; 0.285             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[8]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[8]  ; 0.284             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[8]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[8]                                      ; 0.283             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[21] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[21]                            ; 0.282             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[12]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[12]                                     ; 0.282             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[21]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[21]                                     ; 0.281             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[30]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[30]                                     ; 0.281             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[2]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[2]  ; 0.281             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[4]                                                                           ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_exe_s2[4]                                                                                                                   ; 0.281             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_ecc_stall                                                                                  ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_ecc_stall                                                                                                                  ; 0.279             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[30] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[30]                            ; 0.278             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[13]                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[13] ; 0.278             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[0]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[0]                                      ; 0.277             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[9]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[9]                             ; 0.277             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[25]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[25]                                                                                ; 0.276             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[3]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[3]                             ; 0.275             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[8]                                                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[8]                                                                                 ; 0.275             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[20]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[20]                                                                                ; 0.274             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[23] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[23]                            ; 0.273             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[1]                    ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|address_buf[20]                                                                            ; 0.272             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[15]                   ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|address_buf[20]                                                                            ; 0.271             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[7]           ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[7]                                      ; 0.270             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[22]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[22]                                                                                ; 0.269             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[31]                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[31] ; 0.268             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[20]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[20]                                     ; 0.267             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_mem_signext                                                                                ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|buffered_load_data[28]                                                                         ; 0.267             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_byteen_q[1]                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[9]  ; 0.266             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|irq_inst|A1_debug_irq                                                                ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_ecc_stall                                                                                                                  ; 0.265             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[2]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[2]                             ; 0.264             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[27]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[27]                                     ; 0.263             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[13] ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[13]                            ; 0.262             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[3]                    ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|address_buf[20]                                                                            ; 0.261             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[9]                                                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[9]                                                                                 ; 0.261             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[5]  ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[5]                             ; 0.260             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[12]                   ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|address_buf[20]                                                                            ; 0.260             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[29]          ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[29]                                     ; 0.260             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[14]                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[14]                                                                                ; 0.260             ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+
+--------------------------------------
+; Global Router Wire Utilization Map ;
+--------------------------------------
+This report is unavailable in plain text report export.
+
+
++-------------------------------------------------------------------------------+
+; Peak Wire Demand Summary                                                      ;
++-----------------+-----------+-----------------------------------+-------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ;
++-----------------+-----------+-----------------------------------+-------------+
+; short           ; right     ; [(56, 40), (63, 47)]              ; 35.690 %    ;
+; short           ; left      ; [(128, 32), (135, 39)]            ; 41.453 %    ;
+; short           ; up        ; [(96, 24), (103, 31)]             ; 70.370 %    ;
+; short           ; down      ; [(88, 56), (95, 63)]              ; 36.891 %    ;
+; long high speed ; right     ; [(64, 40), (71, 47)]              ; 100.000 %   ;
+; long high speed ; left      ; [(104, 48), (111, 55)]            ; 100.000 %   ;
+; long high speed ; up        ; [(64, 8), (71, 15)]               ; 100.000 %   ;
+; long high speed ; down      ; [(56, 72), (63, 79)]              ; 100.000 %   ;
++-----------------+-----------+-----------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Wire Demand Details                                                                                                                                                                                        ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                                                                                                                       ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+; short           ; right     ; [(56, 40), (63, 47)]              ; 35.690 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[4]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~459                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~462                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~434                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[684].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[687].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[751].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+; short           ; right     ; [(56, 40), (63, 47)]              ; 35.690 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[4]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[40].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]   ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[40].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[6]   ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[655].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[687].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[620].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[684].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+; short           ; left      ; [(128, 32), (135, 39)]            ; 41.453 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|i207~0                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[8]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[7]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[0]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[6]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[1]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[5]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[10]                                                                                      ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]                                                                                       ;
+; short           ; left      ; [(128, 32), (135, 39)]            ; 41.453 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[0]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[1]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[6]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[10]                                                                                      ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[2]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[8]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[5]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[7]                                                                                     ;
+; short           ; up        ; [(96, 24), (103, 31)]             ; 70.370 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|i27979                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|i9789                                                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_931~23                                                                                                            ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_931~48                                                                                                            ;
+;     --          ;           ;                                   ;             ; u1|i8377~0                                                                                                                      ;
+;     --          ;           ;                                   ;             ; u1|i8376~0                                                                                                                      ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[497].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[440].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[443].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+; short           ; up        ; [(96, 24), (103, 31)]             ; 70.370 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[966].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[966].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[966].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+;     --          ;           ;                                   ;             ; u1|i9789                                                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[654].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[914].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_931~23                                                                                                            ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[966].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[2]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[600].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+; short           ; down      ; [(88, 56), (95, 63)]              ; 36.891 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[4]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[9]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[1]                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~134                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|i149~2227_ERTM3                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~45                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|i7152                                                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|i14974                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~82                                                                                                              ;
+; short           ; down      ; [(88, 56), (95, 63)]              ; 36.891 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[9]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[4]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[1]                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~134                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|i149~2227_ERTM3                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[268].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[368].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|i149~1753_ERTM0                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|i149~730_ERTM0                                                                                                               ;
+; long high speed ; right     ; [(64, 40), (71, 47)]              ; 100.000 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~349                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~390                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[280].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[813].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[884].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1020].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1013].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1021].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[672].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[464].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+; long high speed ; right     ; [(64, 40), (71, 47)]              ; 100.000 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[179].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~349                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[794].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[794].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[794].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[179].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[179].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[179].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[6]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[179].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[2]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[672].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+; long high speed ; left      ; [(104, 48), (111, 55)]            ; 100.000 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~8                                                                                                               ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~6                                                                                                               ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~43                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~11                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~50                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~27                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~19                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~444                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~17                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~187                                                                                                             ;
+; long high speed ; left      ; [(104, 48), (111, 55)]            ; 100.000 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~6                                                                                                               ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~444                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~50                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~43                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~27                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~11                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[337].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~8                                                                                                               ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[77].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]   ;
+;     --          ;           ;                                   ;             ; u1|i149~177                                                                                                                     ;
+; long high speed ; up        ; [(64, 8), (71, 15)]               ; 100.000 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[937].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1002].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1003].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[889].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[698].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[954].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[866].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[937].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[938].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[954].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[7]  ;
+; long high speed ; up        ; [(64, 8), (71, 15)]               ; 100.000 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[229].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[954].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|i149~1427_ERTM                                                                                                               ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[600].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[600].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[737].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[737].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[229].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[954].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[888].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[6]  ;
+; long high speed ; down      ; [(56, 72), (63, 79)]              ; 100.000 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~349                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|i18760                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[618].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[570].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[634].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[591].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[100].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[868].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[533].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+; long high speed ; down      ; [(56, 72), (63, 79)]              ; 100.000 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8]                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_1~349                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[100].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[104].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[105].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[2]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[591].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[117].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[105].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[5]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[93].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3]   ;
+;     --          ;           ;                                   ;             ; u1|i149~2797_ERTM                                                                                                               ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Peak Total Grid Crossings                                          ;
++---------------------------------------------+----------------------+
+; Net Name                                    ; Total Grid Crossings ;
++---------------------------------------------+----------------------+
+; u1|avalon_write_req~0                       ; 180                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[4] ; 179                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[5] ; 177                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[1] ; 175                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[0] ; 175                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[3] ; 175                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[2] ; 173                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]   ; 172                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[8]   ; 170                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[6]   ; 170                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[3]   ; 169                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[1]   ; 169                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[6] ; 169                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[4]   ; 168                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[2]   ; 168                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]   ; 168                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[5]   ; 168                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]   ; 167                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[9] ; 167                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[7] ; 164                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[8] ; 161                  ;
+; u1|i207~0                                   ; 161                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[10]  ; 160                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[19]  ; 129                  ;
+; u1|avalon_last_bank_reg[5]                  ; 118                  ;
+; u1|avalon_last_bank_reg[1]                  ; 116                  ;
+; u1|avalon_last_bank_reg[0]                  ; 116                  ;
+; u0|mm_bridge_0|mm_bridge_0|cmd_address[20]  ; 115                  ;
+; u1|avalon_last_bank_reg[4]                  ; 114                  ;
+; u1|avalon_last_bank_reg[8]                  ; 114                  ;
+; u1|avalon_last_bank_reg[9]                  ; 110                  ;
+; u1|reduce_nor_1~352                         ; 106                  ;
+; u1|avalon_last_bank_reg[3]                  ; 99                   ;
+; u1|avalon_last_bank_reg[2]                  ; 99                   ;
+; u1|reduce_nor_1~59                          ; 97                   ;
+; ~GND                                        ; 88                   ;
+; u1|reduce_nor_1~0                           ; 87                   ;
+; u1|reduce_nor_1~4                           ; 86                   ;
+; u1|avalon_last_bank_reg[6]                  ; 86                   ;
+; u1|reduce_nor_1~6                           ; 85                   ;
+; u1|avalon_last_bank_reg[7]                  ; 85                   ;
+; u1|reduce_nor_1~1                           ; 84                   ;
+; u1|reduce_nor_1~7                           ; 84                   ;
+; u1|reduce_nor_1~9                           ; 76                   ;
+; u1|reduce_nor_1~353                         ; 75                   ;
+; u1|reduce_nor_1~5                           ; 75                   ;
+; u1|reduce_nor_1~11                          ; 74                   ;
+; u1|reduce_nor_1~43                          ; 72                   ;
+; u1|reduce_nor_1~8                           ; 71                   ;
+; u1|reduce_nor_1~66                          ; 67                   ;
++---------------------------------------------+----------------------+
+
+
+--------------------------------------------
+; Global Router Congestion Hotspot Summary ;
+--------------------------------------------
+No congestion hotspots found where global router short wire usage exceeded 100%.
+If the design is hard to route, use other techniques to analyze congestion. Refer to the Estimated Delay Added for Hold Timing section in the Fitter report and routing utilization in the Chip Planner.
+
+

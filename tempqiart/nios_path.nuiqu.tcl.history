@@ -1,0 +1,20 @@
+# TCL commands history
+# Thu Sep 10 18:53:56 2026
+dni::selection -action set -object {}
+dni::selection -action set -object {net_bus::tempqiart_top::u1|n24791}
+dni::selection -action set -object {}
+dni::selection -action set -object {net_bus::tempqiart_top::u1|n24791}
+dni::selection -action set -object {}
+dni::selection -action set -object {net_bus::tempqiart_top::u1|penalty_reg}
+dni::selection -action set -object {instance_bus::tempqiart_top::u1|i20602}
+dni::selection -action set -object {instance::tempqiart_top::u1|reduce_nor_0}
+dni::selection -action set -object {instance_bus::tempqiart_top::u1|i20602}
+dni::selection -action set -object {instance_bus::tempqiart_top::u1|i20866}
+dni::selection -action set -object {net_bus::tempqiart_top::u1|current_state_X}
+dni::selection -action set -object {}
+dni::selection -action set -object {net_bus::tempqiart_top::u1|sync_program_reg}
+dni::selection -action set -object {net::tempqiart_top::u1|winner_found}
+dni::selection -action set -object {net::tempqiart_top::u1|winner_found}
+dni::trigger_gui -command gui_command::rtl_analyzer::unfold -options {"checkpoint":"user_runs/default_run/swept","object":"button @hier_unfold inst u1|uut bit_sieve_engine_25 {}"}
+dni::selection -action set -object {net::tempqiart_top::u1|winner_found}
+dni::selection -action set -object {}

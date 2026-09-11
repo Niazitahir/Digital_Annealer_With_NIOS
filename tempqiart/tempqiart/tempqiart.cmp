@@ -1,0 +1,18 @@
+	component tempqiart is
+		port (
+			clk_clk                   : in  std_logic                     := 'X';             -- clk
+			clock_out_clk             : out std_logic;                                        -- clk
+			avalon_qsys_waitrequest   : in  std_logic                     := 'X';             -- waitrequest
+			avalon_qsys_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			avalon_qsys_readdatavalid : in  std_logic                     := 'X';             -- readdatavalid
+			avalon_qsys_burstcount    : out std_logic_vector(0 downto 0);                     -- burstcount
+			avalon_qsys_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			avalon_qsys_address       : out std_logic_vector(24 downto 0);                    -- address
+			avalon_qsys_write         : out std_logic;                                        -- write
+			avalon_qsys_read          : out std_logic;                                        -- read
+			avalon_qsys_byteenable    : out std_logic_vector(3 downto 0);                     -- byteenable
+			avalon_qsys_debugaccess   : out std_logic;                                        -- debugaccess
+			reset_out_reset           : out std_logic                                         -- reset
+		);
+	end component tempqiart;
+

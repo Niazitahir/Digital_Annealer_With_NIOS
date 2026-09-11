@@ -1,0 +1,52 @@
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TOOL_VERSION "25.1"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TOP_LEVEL_COMPONENT_NAME "ram_1port"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name OCS_IP_FILE [file join $::quartus(qip_path) "../solution_ram_1024x256.ip"]
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name OCS_IP_TYPE "ram_1port"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name OCS_IP_VERSION "20.1.1"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name OCS_IP_HASH "o46sd4i"
+set_global_assignment -library "solution_ram_1024x256" -name SOPCINFO_FILE [file join $::quartus(qip_path) "solution_ram_1024x256.sopcinfo"]
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name SLD_INFO "QSYS_NAME solution_ram_1024x256 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "solution_ram_1024x256" -name MISC_FILE [file join $::quartus(qip_path) "solution_ram_1024x256.cmp"]
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "solution_ram_1024x256" -name MISC_FILE [file join $::quartus(qip_path) "../solution_ram_1024x256.ip"]
+
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_NAME "c29sdXRpb25fcmFtXzEwMjR4MjU2X3JhbV8xcG9ydF8yMDExX280NnNkNGk="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DISPLAY_NAME "UkFNOiAxLVBPUlQgRlBHQSBJUA=="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_VERSION "MjAuMS4x"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DESCRIPTION "VGhlIFJBTTogMS1QT1JUIEZQR0EgSVAgYWxsb3dzIHlvdSB0byBpbXBsZW1lbnQgU2luZ2xlLXBvcnQgUkFN"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL09uIENoaXAgTWVtb3J5"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzgyOC8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzc3MS8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzE4MS8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzMwMS8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzgxMzkxOC8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI0MC8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzQyMy8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzI0MS8="
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzExMC8="
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_NAME "c29sdXRpb25fcmFtXzEwMjR4MjU2"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "solution_ram_1024x256" -library "solution_ram_1024x256" -name IP_COMPONENT_VERSION "MS4w"
+
+
+set_global_assignment -library "ram_1port_2011" -name VERILOG_FILE [file join $::quartus(qip_path) "ram_1port_2011/synth/solution_ram_1024x256_ram_1port_2011_o46sd4i.v"]
+set_global_assignment -library "solution_ram_1024x256" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/solution_ram_1024x256.v"]
+
+
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_TOOL_NAME "ram_1port"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_TOOL_VERSION "20.1.1"
+set_global_assignment -entity "solution_ram_1024x256_ram_1port_2011_o46sd4i" -library "ram_1port_2011" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,154 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 304 440)
+	(text "tempqiart" (rect 122 0 158 12)(font "Arial" (font_size 11)))
+	(text "inst" (rect 8 424 20 436)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 65 46 76)(font "Arial" (font_size 8)))
+		(line (pt 0 76)(pt 51 76)(line_width 1))
+	)
+	(port
+		(pt 304 126)
+		(input)
+		(text "avalon_qsys_waitrequest" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_waitrequest" (rect 176 115 314 126)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 151)
+		(input)
+		(text "avalon_qsys_readdata[31..0]" (rect 0 0 115 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_readdata[31..0]" (rect 163 140 325 151)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 176)
+		(input)
+		(text "avalon_qsys_readdatavalid" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_readdatavalid" (rect 169 165 319 176)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 304 76)
+		(output)
+		(text "clock_out_clk" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "clock_out_clk" (rect 237 65 315 76)(font "Arial" (font_size 8)))
+		(line (pt 304 76)(pt 136 76)(line_width 1))
+	)
+	(port
+		(pt 304 201)
+		(output)
+		(text "avalon_qsys_burstcount" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_burstcount" (rect 182 190 314 201)(font "Arial" (font_size 8)))
+		(line (pt 304 201)(pt 136 201)(line_width 1))
+	)
+	(port
+		(pt 304 226)
+		(output)
+		(text "avalon_qsys_writedata[31..0]" (rect 0 0 115 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_writedata[31..0]" (rect 160 215 328 226)(font "Arial" (font_size 8)))
+		(line (pt 304 226)(pt 136 226)(line_width 3))
+	)
+	(port
+		(pt 304 251)
+		(output)
+		(text "avalon_qsys_address[24..0]" (rect 0 0 115 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_address[24..0]" (rect 164 240 320 251)(font "Arial" (font_size 8)))
+		(line (pt 304 251)(pt 136 251)(line_width 3))
+	)
+	(port
+		(pt 304 276)
+		(output)
+		(text "avalon_qsys_write" (rect 0 0 75 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_write" (rect 209 265 311 276)(font "Arial" (font_size 8)))
+		(line (pt 304 276)(pt 136 276)(line_width 1))
+	)
+	(port
+		(pt 304 301)
+		(output)
+		(text "avalon_qsys_read" (rect 0 0 75 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_read" (rect 212 290 308 301)(font "Arial" (font_size 8)))
+		(line (pt 304 301)(pt 136 301)(line_width 1))
+	)
+	(port
+		(pt 304 326)
+		(output)
+		(text "avalon_qsys_byteenable[3..0]" (rect 0 0 120 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_byteenable[3..0]" (rect 157 315 325 326)(font "Arial" (font_size 8)))
+		(line (pt 304 326)(pt 136 326)(line_width 3))
+	)
+	(port
+		(pt 304 351)
+		(output)
+		(text "avalon_qsys_debugaccess" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "avalon_qsys_debugaccess" (rect 168 340 306 351)(font "Arial" (font_size 8)))
+		(line (pt 304 351)(pt 136 351)(line_width 1))
+	)
+	(port
+		(pt 304 401)
+		(output)
+		(text "reset_out_reset" (rect 0 0 63 12)(font "Arial" (font_size 8)))
+		(text "reset_out_reset" (rect 225 390 315 401)(font "Arial" (font_size 8)))
+		(line (pt 304 401)(pt 136 401)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 36 46 90 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 56 71 130 152)(font "Arial" (color 0 0 0)))
+		(text "clock_out" (rect 137 46 328 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 121 71 260 152)(font "Arial" (color 0 0 0)))
+		(text "avalon_qsys" (rect 137 96 340 205)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "waitrequest" (rect 85 121 236 252)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 96 146 240 302)(font "Arial" (color 0 0 0)))
+		(text "readdatavalid" (rect 76 171 230 352)(font "Arial" (color 0 0 0)))
+		(text "burstcount" (rect 88 196 236 402)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 95 221 244 452)(font "Arial" (color 0 0 0)))
+		(text "address" (rect 99 246 240 502)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 113 271 256 552)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 114 296 252 602)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 87 321 234 652)(font "Arial" (color 0 0 0)))
+		(text "debugaccess" (rect 78 346 222 702)(font "Arial" (color 0 0 0)))
+		(text "reset_out" (rect 137 371 328 755)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 111 396 252 802)(font "Arial" (color 0 0 0)))
+		(text " tempqiart " (rect 263 426 592 862)(font "Arial" ))
+		(line (pt 51 34)(pt 136 34)(line_width 1))
+		(line (pt 136 34)(pt 136 426)(line_width 1))
+		(line (pt 51 426)(pt 136 426)(line_width 1))
+		(line (pt 51 34)(pt 51 426)(line_width 1))
+		(line (pt 52 55)(pt 52 80)(line_width 1))
+		(line (pt 53 55)(pt 53 80)(line_width 1))
+		(line (pt 135 55)(pt 135 80)(line_width 1))
+		(line (pt 134 55)(pt 134 80)(line_width 1))
+		(line (pt 306 126)(pt 136 126)(line_width 1))
+		(line (pt 306 151)(pt 136 151)(line_width 3))
+		(line (pt 306 176)(pt 136 176)(line_width 1))
+		(line (pt 135 105)(pt 135 355)(line_width 1))
+		(line (pt 134 105)(pt 134 355)(line_width 1))
+		(line (pt 135 380)(pt 135 405)(line_width 1))
+		(line (pt 134 380)(pt 134 405)(line_width 1))
+		(line (pt 0 0)(pt 304 0)(line_width 1))
+		(line (pt 304 0)(pt 304 443)(line_width 1))
+		(line (pt 0 443)(pt 304 443)(line_width 1))
+		(line (pt 0 0)(pt 0 443)(line_width 1))
+	)
+)

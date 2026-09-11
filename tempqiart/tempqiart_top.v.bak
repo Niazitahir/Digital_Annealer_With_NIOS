@@ -1,0 +1,74 @@
+module FPGA_top #(
+    parameter                           BUILD_REV = 48'h0
+) (
+  
+    //FPGA Clock and Push Button Reset
+    input  logic                        FPGA_CLK_IN     ,
+    input  logic                        FPGA_PB_RESET_L ,
+    
+    //Reconfig
+    output logic                        FPGA_RECONFIG   ,
+
+
+    //Headers, LEDs, and Straps
+    output logic                        FPGA_HB_LED     ,
+    output logic    [15:0]              DBG_HEADER      ,
+    output logic    [15:0]              STX_DBG_LED     ,
+    input  logic    [15:0]              DBG_SWITCH      ,
+    input  logic    [ 3:0]              STX_STRAP       ,
+    //FMC Power
+    output logic                        FMC_PWR_EN          ,
+    output logic                        FMC_LA22_P          ,
+    output logic                        FPGA_PG_C2M         ,
+    
+    //FPGA EXT Clock OUT
+    output logic                        FPGA_EXT_CLK_OUT_P 
+);
+
+localparam                        HALF_SECOND   = 26'h5F5E0F;
+
+//------------------------------------------------------------------------------
+// Reset, clocks, and initialization 
+//------------------------------------------------------------------------------
+
+logic                             fpga_clk_pll_rst;           //FPGA clock PLL reset
+logic                             fpga_clk_100;               //100MHz clock from FPGA PLL
+logic                             fpga_clk_50;                //50MHz clock from FPGA PLL
+logic                             fpga_clk_pll_lock;          //FPGA PLL lock
+logic                             rst_sys;                    //System reset - synchronous to 100MHz clock
+logic                             ptp_clk;
+logic                             ptp_rst;
+logic                             pb_rst_debounced;           //Debounced push button
+//------------------------------------------------------------------------------
+// Heartbeat and debug LEDs 
+//------------------------------------------------------------------------------
+logic                             heartbeat;                  //Heartbeat LED signal
+logic   [25:0]                    second_cnt;                 //Counter for heartbeat LED logic
+logic   [15:0]                    dbg_led_out;                //Debug LED output
+//------------------------------------------------------------------------------
+// Heartbeat LED Logic
+//------------------------------------------------------------------------------
+tempqiart u0 (
+  .clk_clk         (FPGA_CLK_IN),         //   input,  width = 1,       clk.clk
+  .clock_out_clk   (fpga_clk_100),   //  output,  width = 1, clock_out.clk
+  .reset_out_reset (rst_sys)  //  output,  width = 1, reset_out.reset
+);
+
+always_ff @(posedge fpga_clk_100) begin
+  FPGA_HB_LED                             <= rst_sys;
+end
+
+dbg_led u_dbg_led (
+  .clk                            ( fpga_clk_100             ),
+  .rst                            ( pb_rst_debounced             ),
+  .led                            ( rst_sys         )
+);
+
+always_ff @(posedge fpga_clk_100) begin
+  STX_DBG_LED                           <= dbg_led_out;
+end
+
+
+
+
+endmodule

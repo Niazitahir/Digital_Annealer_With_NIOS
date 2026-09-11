@@ -1,0 +1,117 @@
+{C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_bit_sieve_engine_1024
+
+Top level modules:
+	tb_bit_sieve_engine_1024
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module acceptance_decision_block
+
+Top level modules:
+	acceptance_decision_block
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module engine_control_fsm
+
+Top level modules:
+	engine_control_fsm
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lfsr_10bit
+
+Top level modules:
+	lfsr_10bit
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module update_selector_32
+
+Top level modules:
+	update_selector_32
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module accumulator_loadable
+
+Top level modules:
+	accumulator_loadable
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lookup_table
+
+Top level modules:
+	lookup_table
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lfsr_1024bit
+
+Top level modules:
+	lfsr_1024bit
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bitSieve_engine
+
+Top level modules:
+	bitSieve_engine
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module e_off_generator
+
+Top level modules:
+	e_off_generator
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module randomized_selector_2to1
+
+Top level modules:
+	randomized_selector_2to1
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tabu_mask_generator
+
+Top level modules:
+	tabu_mask_generator
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module weight_synthesizer
+
+Top level modules:
+	weight_synthesizer
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module global_weight_distributor
+-- Compiling module global_weight_distributor_old
+
+Top level modules:
+	global_weight_distributor
+	global_weight_distributor_old
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module conditional_inverter_neg0
+-- Compiling module conditional_inverter_neg1
+
+Top level modules:
+	conditional_inverter_neg0
+	conditional_inverter_neg1
+
+} {} {}} {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v} {1 {vlog -work work -stats=none {C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bit_sieve_engine_25
+
+Top level modules:
+	bit_sieve_engine_25
+
+} {} {}}

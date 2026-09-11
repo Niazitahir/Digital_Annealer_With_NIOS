@@ -1,0 +1,321 @@
+module bit_sieve_engine_25 #(
+    parameter N = 256,
+    parameter INDEX_WIDTH = 8,
+    parameter SELECTOR_WIDTH = 256,
+    parameter MAX_ITER_WIDTH = 24,
+    parameter ISING_WIDTH = 27,
+    parameter WEIGHT_WIDTH = 16
+
+)(
+    input wire clk,
+    input wire rst,
+    
+    // --- Control FSM Interface ---
+    input wire program,           // Start initialization sequence
+    input wire Go,                // Start optimization
+    input wire [MAX_ITER_WIDTH-1:0] max_iter,   // Number of iterations
+    
+    // --- Output / Debug ---
+    output reg [N-1:0] current_state_X, // The live 25-bit solution state
+    output reg signed [ISING_WIDTH-1:0] Ising_Energy,    // The Ising Energy of the current state
+    output wire [ISING_WIDTH-1:0] current_E_off,   // Monitor the dynamic offset
+    output wire done,                   // Finished max_iter
+    output wire busy,
+
+    output wire idle,
+    output wire ready,
+    output wire rg_gen,
+    output wire sieve_wait,
+    output wire sieve_wait2,
+    output wire sieve_wait3,
+    output wire update,
+    output wire degloria
+);
+
+    // =========================================================================
+    // Internal Signals & Interconnects
+    // =========================================================================
+    
+    // -- Control Signals from FSM -- //
+    wire rng_ADB_en;
+    wire rng_US_en;
+    wire write_en;
+    wire ising_update_en;
+    wire state_update_en;
+    wire valid_hold_en;
+    wire e_off_update_en;
+    wire h_update_en;
+    
+    // -- Feedback Signals -- //
+    wire winner_found;       // From Tournament Tree (Valid bit)
+    wire [INDEX_WIDTH-1:0] winner_index; // From Tournament Tree (0-24)
+    
+    // -- Data Signals -- //
+    wire        winner_X_val; // The value of X at the winner index (X_j)
+    
+    // -- Arrays for Parallel Engine Connections -- //
+    wire signed [ISING_WIDTH-1:0] delta_E_array [0:N-1]; // Output of Engines
+    wire        [N-1:0] valid_bits;           // Output of ADBs, 1-bit each
+    wire        [N-1:0] tabu_mask;            // short-term memory to prevent immediate re-flips
+    reg         [N-1:0] valid_candidates;     // necessary to hold index_j stable
+    
+    // -- Synthesis Variable -- //
+    genvar i;
+
+    // =========================================================================
+    // Control Unit (FSM)
+    // =========================================================================
+    engine_control_fsm #(.WIDTH(MAX_ITER_WIDTH)) control_unit (
+        .clk(clk),
+        .rst(rst),
+        .program(program),
+        .Go(Go),
+        .max_iter(max_iter),
+        .winner_found(winner_found),
+        
+        // Outputs
+        .rng_ADB_en(rng_ADB_en),
+        .rng_US_en(rng_US_en),
+        .write_en(write_en),
+        .ising_update_en(ising_update_en),
+        .state_update_en(state_update_en),
+        .valid_hold_en(valid_hold_en),
+        .e_off_update_en(e_off_update_en),
+        .h_update_en(h_update_en),
+        .busy(busy),
+        .done(done),
+
+        .idle(idle),
+        .ready(ready),
+        .rg_gen(rg_gen),
+        .sieve_wait(sieve_wait),
+        .sieve_wait2(sieve_wait2),
+        .sieve_wait3(sieve_wait3),
+        .update(update),
+        .degloria(degloria)
+    );
+
+    // =========================================================================
+    // Global Resources
+    // =========================================================================
+    
+    // --- Dynamic Energy Offset Generator --- //
+    e_off_generator #( .WIDTH(ISING_WIDTH), .DELTA_VAL(27'd24) ) u_e_off (
+        .clk(clk),
+        .rst(rst),
+        .en(e_off_update_en),
+        .winner_found(winner_found), // If winner found, reset to 0
+        .E_off(current_E_off)
+    );
+
+    tabu_mask_generator #(
+    .DEPTH(16),
+    .INDEX_WIDTH(8),
+    .MASK_WIDTH(256)
+    ) tabu_buffer (
+        .clk(clk),
+        .rst(rst),
+        .shift_en(state_update_en & winner_found), // Only shift when we actually commit a flip
+        .new_index(winner_index),
+        .tabu_mask(tabu_mask)
+    );
+    
+    always @(posedge clk) begin
+        if (rst) begin
+            current_state_X  <= 256'h0; // Default State
+            Ising_Energy     <= 27'h0;//27'h7FFFFB3; // Pre-computed Ising Energy for the default state
+            //tabu_mask        <= 256'd0; // Initialize tabu mask to 0
+            valid_candidates <= 256'd0; // Initialize valid candidates to 0
+        end else begin
+            if (state_update_en) begin
+                current_state_X <= current_state_X ^ (256'd1 << winner_index); // Flip the bit at winner_index
+            end
+            if (ising_update_en) begin // Update Ising Energy with winning delta E
+                Ising_Energy <= Ising_Energy + delta_E_array[winner_index];
+            end
+            // if (winner_found) begin
+            //     tabu_mask <= 256'd0; // Clear the old mask and lock out the newly flipped bit
+            //     tabu_mask[winner_index] <= 1'b1; // Set the tabu bit for the winner index 
+            // end
+            if (valid_hold_en) begin
+                valid_candidates <= valid_bits & ~tabu_mask; // Hold the valid bits stable for the tournament tree
+            end
+        end
+    end
+
+    reg [9:0] write_addr;
+    reg [N-1:0] write_ram [1023:0];
+    initial begin
+        $readmemh("C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\BitSieve_Algorithm\\Verilog\\memoy\\state_ram.mem", write_ram);
+    end
+
+    always@(posedge clk) begin
+        if (rst) begin
+          write_addr <= 10'b0;
+        end else if (write_en) begin
+          write_addr <= write_addr + 1'b1;
+          write_ram[write_addr] <= current_state_X; // Write the updated state to RAM
+        end
+    end
+
+    // --- Winner State Mux --- //
+    // The engines need to know the state value of the neighbor that flipped (X_j).
+    assign winner_X_val = current_state_X[winner_index];
+
+
+    // --- (ROM) --- //
+    // In a final implementation, load this from a file.
+
+    // DistribuWeight Memory ROM holding 25 rows x 400 bits.
+
+    //reg signed [N*WEIGHT_WIDTH-1:0] weight_matrix [0:N-1];
+
+    // initial begin
+    //     $readmemh("C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\BitSieve_Algorithm\\Verilog\\memoy\\weights_25_city.mem", weight_matrix);
+    // end
+
+    // Local Fields Memory ROM holding 25 rows x 27 bits.
+    // In a final implementation, load this from a file.
+    reg signed [ISING_WIDTH-1:0] init_local_fields [0:N-1];
+    initial begin
+        $readmemh("C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\BitSieve_Algorithm\\Verilog\\memoy\\h_init_values.mem", init_local_fields);
+    end
+
+    // =========================================================================
+    // Parallel 25 Engine Array (The Bit Sieve)
+    // =========================================================================
+    // This generates the 25 Parallel Engines and their ADBs
+
+    /*
+        Take winnder_index (idx_j) and the entire adj matrix
+        isolate the row and column for city j
+        pass the row and column down to each engine
+    */
+    reg  [255:0] dist_fwd_flat [0:15];
+    reg  [255:0] dist_rev_flat [0:15];
+    wire [15:0] weights [0:N-1];
+
+    initial begin
+        $readmemh("C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\BitSieve_Algorithm\\Verilog\\memoy\\dist_fwd_flat.mem", dist_fwd_flat);
+    end
+
+    initial begin
+        $readmemh("C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\BitSieve_Algorithm\\Verilog\\memoy\\dist_rev_flat.mem", dist_rev_flat);
+    end
+
+    // global_weight_distributor u_gwd (
+    //     .j_idx(winner_index),
+    //     .dist_fwd_flat(dist_fwd_flat),
+    //     .dist_rev_flat(dist_rev_flat)
+    // );
+    
+    generate
+        for (i = 0; i < N; i = i + 1) begin : engine_array
+
+            weight_synthesizer #(
+                .IDX_ENGINE(i),
+                .WIDTH(WEIGHT_WIDTH)
+            ) u_weight_synth (
+                .dist_fwd_for_city_i(dist_fwd_flat[i[7:4]][(winner_index[7:4]*16) +: 16]),
+                .dist_rev_for_city_i(dist_rev_flat[i[7:4]][(winner_index[7:4]*16) +: 16]),
+                .penalty(16'sd1200), // Large penalty to enforce constraints
+                .idx_j(winner_index), //{city_j[4:0], time_j[4:0]}
+                .weight(weights[i]) // Output weight for this engine
+            );
+
+            // The Bit Sieve Engine (Calculates Delta E)
+            bitSieve_engine #(
+                .N(N),
+                .INDEX_WIDTH(INDEX_WIDTH),
+                .ISING_WIDTH(ISING_WIDTH),
+                .WEIGHT_WIDTH(WEIGHT_WIDTH)
+            ) u_engine (
+                .clk(clk),
+                .rst(rst),
+
+                // Local Feilds Register Signals
+                .h_update_en(h_update_en),
+                .init_load_en(program), 
+                
+                // State Inputs
+                .X_i(current_state_X[i]),
+                .X_j(winner_X_val),   // The state of the bit that just flipped
+                .idx_j(winner_index), // The index of the bit that just flipped
+                
+                // Data Inputs
+                .weight(weights[i]), // Hardwired to this engine's row
+                .init_h_value(init_local_fields[i]),  //hardwired specific value
+                
+                // Output
+                .delta_E(delta_E_array[i])
+            );
+
+            // The Acceptance Decision Block (The Sieve)
+            // Includes the LFSR and LUT internally
+            acceptance_decision_block #(
+                .DATA_WIDTH(ISING_WIDTH),
+                .ADDR_WIDTH(10),
+                .SEED(16'h1234 + (i*16'h4321)) // Unique seed for each ADB if desired
+            ) u_adb (
+                .clk(clk),
+                .rst(rst),
+                // Only advance RNG when FSM says so
+                // We gate the clock or add an enable to the LFSR inside ADB.
+                .rng_en(rng_ADB_en),
+                .deltaE(delta_E_array[i]),
+                .E_off(current_E_off),
+                .decision(valid_bits[i])
+            );
+        end
+    endgenerate
+    
+    // =========================================================================
+    // Update Selector (Tournament Tree)
+    // =========================================================================
+    // Random bits for the tree (Needs 31 bits for a 32-input tree)
+    
+    // Instantiate LFSRs for tournament tree
+    wire [SELECTOR_WIDTH-1:0] tree_rand;
+    lfsr_16bit #(.SEED(16'h1234)) tree_rng_inst_1 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[15:0])); 
+    lfsr_16bit #(.SEED(16'h5678)) tree_rng_inst_2 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[31:16]));
+    lfsr_16bit #(.SEED(16'h9ABC)) tree_rng_inst_3 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[47:32]));
+    lfsr_16bit #(.SEED(16'hDEF0)) tree_rng_inst_4 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[63:48]));
+
+    lfsr_16bit #(.SEED(16'hDEAD)) tree_rng_inst_5 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[79:64])); 
+    lfsr_16bit #(.SEED(16'h1987)) tree_rng_inst_6 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[95:80]));
+    lfsr_16bit #(.SEED(16'h7891)) tree_rng_inst_7 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[111:96]));
+    lfsr_16bit #(.SEED(16'h2345)) tree_rng_inst_8 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[127:112]));
+
+    lfsr_16bit #(.SEED(16'h6789)) tree_rng_inst_9 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[143:128])); 
+    lfsr_16bit #(.SEED(16'h9876)) tree_rng_inst_10 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[159:144]));
+    lfsr_16bit #(.SEED(16'h5432)) tree_rng_inst_11 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[175:160]));
+    lfsr_16bit #(.SEED(16'h1987)) tree_rng_inst_12 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[191:176]));
+
+    lfsr_16bit #(.SEED(16'hC001)) tree_rng_inst_13 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[207:192])); 
+    lfsr_16bit #(.SEED(16'hDAAD)) tree_rng_inst_14 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[223:208]));
+    lfsr_16bit #(.SEED(16'hBAAD)) tree_rng_inst_15 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[239:224]));
+    lfsr_16bit #(.SEED(16'hC0FE)) tree_rng_inst_16 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[255:240]));
+
+    // lfsr_32bit #(.SEED(32'h12345678)) tree_rng_inst_1 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[31:0])); 
+    // lfsr_32bit #(.SEED(32'h56789ABC)) tree_rng_inst_2 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[63:32]));
+    // lfsr_32bit #(.SEED(32'h9ABCDEF0)) tree_rng_inst_3 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[95:64]));
+    // lfsr_32bit #(.SEED(32'hDEF01234)) tree_rng_inst_4 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[127:96]));
+
+    // lfsr_32bit #(.SEED(32'h6789ABCD)) tree_rng_inst_5 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[159:128])); 
+    // lfsr_32bit #(.SEED(32'h1987EF01)) tree_rng_inst_6 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[191:160]));
+    // lfsr_32bit #(.SEED(32'h78912345)) tree_rng_inst_7 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[223:192]));
+    // lfsr_32bit #(.SEED(32'h23456789)) tree_rng_inst_8 (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand[255:224]));
+
+    // lfsr_1024bit #(.SEED(1024'h123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF)
+    // ) tree_rng_inst (.clk(clk), .rst(rst), .rng_en(rng_US_en), .data_out(tree_rand));
+
+    update_selector_32 u_selector (
+        .clk(clk),
+        .rst(rst),
+        .valid_bits(valid_candidates),
+        .rand_bits(tree_rand[SELECTOR_WIDTH-2:0]), 
+        .final_index(winner_index),
+        .final_valid(winner_found)
+    );
+
+endmodule

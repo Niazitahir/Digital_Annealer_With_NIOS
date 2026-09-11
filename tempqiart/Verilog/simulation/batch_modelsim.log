@@ -1,0 +1,53 @@
+Command: C:\intelFPGA\20.1\modelsim_ase\win32aloem\vsim.exe -c -do "onerror {quit -code 1 -f}; do {run_sim.do}; quit -code 0 -f"
+
+Reading pref.tcl
+
+# 2020.1
+
+# onerror {quit -code 1 -f}
+#  Warning: onerror command for use within macro
+#  do {run_sim.do}
+# 1
+# +NO_VCD +QUIET_BATCH
+# +NO_VCD +QUIET_BATCH +MAX_ITER=1
+# vsim work.tb_bit_sieve_engine_25 "+NO_VCD" "+QUIET_BATCH" "+MAX_ITER=1" 
+# Start time: 15:33:31 on Aug 24,2026
+# Loading work.tb_bit_sieve_engine_25
+# Loading work.BitSieve_256
+# Loading work.reset_debouncer
+# Loading work.bit_sieve_engine_25
+# Loading work.e_off_generator
+# Loading work.tabu_mask_generator
+# Loading work.update_selector_1024_flat
+# Loading work.qubo_weight_rom
+# Loading work.engine_control_fsm
+# Loading work.hyperparam_rom
+# Loading work.altsyncram
+# Loading work.initial_h_rom
+# Loading work.state_ram
+# Loading work.signed_to_hex
+# Loading work.hex_decoder
+# Loading work.unified_BitSieve_Engine
+# Loading work.altsyncram_body
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Programming ROMs...
+# Programming Complete! System Ready.
+# Loaded configuration: max_iter=1, tabu_depth=5, active_variables=895, E_off_step_raw=64, selector_seed=0x00003039.
+# Overriding max iterations with 1.
+# ----------------------------------------------------------------
+# Starting Simulation: UAV Replacement Bit Sieve Engine
+# ----------------------------------------------------------------
+# BATCH_PROGRESS trial=1
+# Simulation Complete!
+# ----------------------------------------------------------------
+# [21550000 ns] Simulation Complete.
+# Final State X: 000000000000000000000000000000007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdffffffffffffffffffffffffffffff
+# Best Ising Energy: -13920034
+# Best Ising Energy Raw Q25.2: -55680138
+# Best Trial Count: 0
+# ----------------------------------------------------------------
+# ** Note: $finish    : C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_25.v(241)
+#    Time: 21550 ns  Iteration: 0  Instance: /tb_bit_sieve_engine_25
+# End time: 15:33:37 on Aug 24,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

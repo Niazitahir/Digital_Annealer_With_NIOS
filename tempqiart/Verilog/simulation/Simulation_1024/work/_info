@@ -1,0 +1,426 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vacceptance_decision_block
+!s110 1774498234
+!i10b 1
+!s100 aSn2Wb2nfbN;:DdnRa6bc1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1B>fhB9JdzQED^Pm8ezJ33
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/simulation/Simulation_1024
+w1774498224
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v
+!i122 34
+L0 1 78
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1774498234.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/acceptance_decision_block.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vaccumulator_loadable
+Z6 !s110 1774497962
+!i10b 1
+!s100 f9J1VgNYEC:zlPYiGE`<F3
+R0
+IQ:_g_Kaj1V]a<E0h;1S_o1
+R1
+R2
+w1769790090
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v
+!i122 25
+L0 1 25
+R3
+r1
+!s85 0
+31
+Z7 !s108 1774497962.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/programmable_accumulator.v|
+!i113 1
+R4
+R5
+vbit_sieve_engine_25
+Z8 !s110 1774504372
+!i10b 1
+!s100 :DVgj^5SiWA;L;D6TV[ZT3
+R0
+I`ZKK:;:@T8m31QKnzo_ho1
+R1
+R2
+w1774504196
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v
+!i122 37
+L0 1 280
+R3
+r1
+!s85 0
+31
+Z9 !s108 1774504372.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/top.v|
+!i113 1
+R4
+R5
+vbitSieve_engine
+Z10 !s110 1774497961
+!i10b 1
+!s100 [P?_j]NhaAgdejBz^<N7T0
+R0
+Iz8?Ra@KZ01H]hE=WZlZm41
+R1
+R2
+w1774458589
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v
+!i122 17
+L0 2 88
+R3
+r1
+!s85 0
+31
+Z11 !s108 1774497961.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/bit_sieve_engine_25.v|
+!i113 1
+R4
+R5
+nbit@sieve_engine
+vconditional_inverter_neg0
+R10
+!i10b 1
+!s100 62keF^La`NDWOH:6dGS2e0
+R0
+I=n2U]HjlzF8[WDeckX9U[3
+R1
+R2
+Z12 w1772390267
+Z13 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v
+Z14 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v
+!i122 18
+L0 1 11
+R3
+r1
+!s85 0
+31
+R11
+Z15 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/conditional_negator.v|
+!i113 1
+R4
+R5
+vconditional_inverter_neg1
+R10
+!i10b 1
+!s100 04BOoDbeeL]AnVHm<l:dn1
+R0
+IKKIjE0hG>H?ddFS[lHikg2
+R1
+R2
+R12
+R13
+R14
+!i122 18
+L0 13 11
+R3
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R4
+R5
+ve_off_generator
+R6
+!i10b 1
+!s100 X`[W1`3z<9iz<=]^c]6LB1
+R0
+I`hWeE`9M5IjzCX?Q]fd8:0
+R1
+R2
+w1774335142
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v
+!i122 19
+L0 1 34
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/e_off_generator.v|
+!i113 1
+R4
+R5
+vengine_control_fsm
+R6
+!i10b 1
+!s100 CDf@@L[R0[E]KU^EN[IWR2
+R0
+IAS@]2DXW1Im5X^Pz_9CaZ3
+R1
+R2
+w1774497306
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v
+!i122 20
+L0 1 173
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/FSM.v|
+!i113 1
+R4
+R5
+vglobal_weight_distributor
+R6
+!i10b 1
+!s100 cXV<[@?EclK9TO_f5Bh;T1
+R0
+IiLFV;O?81CTLXVMhY:@B53
+R1
+R2
+Z17 w1774407202
+Z18 8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v
+Z19 FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v
+!i122 21
+L0 1 42
+R3
+r1
+!s85 0
+31
+R7
+Z20 !s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/global_weight_distributor.v|
+!i113 1
+R4
+R5
+vglobal_weight_distributor_old
+R6
+!i10b 1
+!s100 FX3VdFGnG]bddzSI=<hmi3
+R0
+IPTi[:kRzZU[`g_nSGiJMj0
+R1
+R2
+R17
+R18
+R19
+!i122 21
+L0 44 40
+R3
+r1
+!s85 0
+31
+R7
+R20
+R21
+!i113 1
+R4
+R5
+vlfsr_1024bit
+R6
+!i10b 1
+!s100 QlY_`S^GTi@Ja;E1h^LMY3
+R0
+IV;W_O20Ho`KP3E;DlogZ^3
+R1
+R2
+w1774068251
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v
+!i122 23
+L0 1 32
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_1024bit.v|
+!i113 1
+R4
+R5
+vlfsr_10bit
+R6
+!i10b 1
+!s100 UH03Q_i7zJLLG4:NTWCa92
+R0
+IMV_6Y3jM`jV?7g7<<^No02
+R1
+R2
+w1774054606
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v
+!i122 22
+L0 1 29
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lfsr_10bit.v|
+!i113 1
+R4
+R5
+vlookup_table
+R6
+!i10b 1
+!s100 Gk@gzW_me?ceTYf]>Ng1n0
+R0
+IhdC17c2OHCnT3IjUZNJN83
+R1
+R2
+w1774497611
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v
+!i122 24
+L0 1 27
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/lookup_table.v|
+!i113 1
+R4
+R5
+vrandomized_selector_2to1
+R6
+!i10b 1
+!s100 STQ<BgJ;DJ5GMfI8AZJUS0
+R0
+I9Kc8[i82]RlWoo4^G13>h1
+R1
+R2
+w1773678409
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v
+!i122 26
+L0 1 15
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/randomized_selector.v|
+!i113 1
+R4
+R5
+vtabu_mask_generator
+R6
+!i10b 1
+!s100 TN5>Hi>;4nj_H7oNkzmRO1
+R0
+ITjIgZ21YJcoTmSDoj?ihB1
+R1
+R2
+w1774458559
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v
+!i122 27
+L0 1 51
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/tabu_mask_generator.v|
+!i113 1
+R4
+R5
+vtb_bit_sieve_engine_1024
+R8
+!i10b 1
+!s100 <Rh?B2QDk`UD1ec1SA6cN1
+R0
+I2gS6d`Ob;[<4Y^>KWYO;50
+R1
+R2
+w1774503901
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v
+!i122 38
+L0 3 403
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/test/tb_bit_sieve_engine_1024.v|
+!i113 1
+R4
+R5
+vupdate_selector_32
+R6
+!i10b 1
+!s100 :b@<8^S6iQ?`QeoFKJ3P71
+R0
+IGIf;z2]2VYIZFFj@egTF20
+R1
+R2
+w1774496600
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v
+!i122 29
+L0 1 151
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/update_selector_32.v|
+!i113 1
+R4
+R5
+vweight_synthesizer
+!s110 1774497963
+!i10b 1
+!s100 S>_Edcm1SEnaVo:4fX1zL3
+R0
+I0i7TZ>fk@_N?k7Q:2bNJ`3
+R1
+R2
+w1774457024
+8C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v
+FC:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v
+!i122 30
+L0 1 56
+R3
+r1
+!s85 0
+31
+!s108 1774497963.000000
+!s107 C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Muaaz Nisar/Documents/UofT/Fourth Year/ECE496/BitSieve_Algorithm/Verilog/hdl_1024/weight_synthesizer.v|
+!i113 1
+R4
+R5

@@ -1,0 +1,8 @@
+	component hyperparam_rom is
+		port (
+			q       : out std_logic_vector(31 downto 0);                    -- dataout
+			address : in  std_logic_vector(4 downto 0)  := (others => 'X'); -- address
+			clock   : in  std_logic                     := 'X'              -- clk
+		);
+	end component hyperparam_rom;
+

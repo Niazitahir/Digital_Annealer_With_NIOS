@@ -1,0 +1,15 @@
+
+182
+00000000000000bfdfb7bfffffecfffbffffff3ffffabffffbffffbbfbffffff
+00000000000000bfdfb7bfffafecfffbffafff3ffafabffffbffffbbfbffafff
+
+181
+00000000000000bffffffffffffe7df7ed7ffbb7ffff7ffffdfffef77ddffff7
+00000000000000bffafffaffffae7df7ed7ffbb7f9ff7ffffdfffef77ddfaff7
+
+180
+00000000000000bffff7bffffffe7df7fd7ffb37fffbfffff9ff7fff7dfffff7
+
+179
+00000000000000bfbff7bfffffff7cf7fd7ffb37fffbffffffff5eff7dfffff7
+SOLUTION FOUNND ON TRIAL 98 -> Penalty 800; tabu mask 3

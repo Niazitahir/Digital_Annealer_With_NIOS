@@ -1,0 +1,32 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj: \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/src/alt_find_file.c \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/string.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_locale.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/strings.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/string.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/alt_dev.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/system.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/linker.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/sys/alt_llist.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/priv/alt_dev_llist.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/priv/alt_file.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/os/alt_sem.h \
+ C:/Users/bigkunt/Documents/GitHub/tempqiart/software/bsp/HAL/inc/priv/alt_no_error.h

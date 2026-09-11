@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "system.h"
+#include "io.h"
+
+// QUBO RAM is only reachable through mm_bridge_0's exported avalon_qsys
+// master, which is 10 address bits wide (MM_BRIDGE_0_SPAN bytes). top.v
+// decodes bank = address[18:10] and row = address[9:0], so with only 10
+// bits presented, bank is always 0: only bank 0 is reachable from software
+// today. Widen mm_bridge_0's address width in the Qsys system to reach the
+// other 511 banks.
+#define QUBO_WORD_MASK   0x3FFu   // RAM word is 10 bits wide
+#define QUBO_STEP_BYTES  4u       // top.v uses address[9:0] directly as the
+                                  // row index, so word writes only reach
+                                  // row = 0, 4, 8, ... (not every row)
+
+int main(void)
+{
+	printf("Hello");
+    unsigned failures = 0;
+
+    for (uint32_t offset = 0; offset < MM_BRIDGE_0_SPAN; offset += QUBO_STEP_BYTES) {
+        uint32_t pattern = (offset ^ 0x155u) & QUBO_WORD_MASK;
+        IOWR_32DIRECT(MM_BRIDGE_0_BASE, offset, pattern);
+    }
+
+    for (uint32_t offset = 0; offset < MM_BRIDGE_0_SPAN; offset += QUBO_STEP_BYTES) {
+        uint32_t expected = (offset ^ 0x155u) & QUBO_WORD_MASK;
+        uint32_t readback = IORD_32DIRECT(MM_BRIDGE_0_BASE, offset) & QUBO_WORD_MASK;
+        printf("%d Offset", offset);
+        if (readback != expected) {
+            printf("MISMATCH at offset 0x%03lx: wrote 0x%03lx read 0x%03lx\n",
+                   (unsigned long)offset, (unsigned long)expected, (unsigned long)readback);
+            failures++;
+        }
+    }
+
+    if (failures == 0) {
+        printf("QUBO bank 0 verify PASSED (%lu words)\n",
+               (unsigned long)(MM_BRIDGE_0_SPAN / QUBO_STEP_BYTES));
+    } else {
+        printf("QUBO bank 0 verify FAILED (%u mismatches)\n", failures);
+    }
+
+    return failures ? 1 : 0;
+}

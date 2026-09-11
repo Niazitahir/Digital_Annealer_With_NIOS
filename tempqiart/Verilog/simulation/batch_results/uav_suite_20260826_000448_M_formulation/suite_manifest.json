@@ -1,0 +1,53 @@
+{
+  "suite_seed": 7218791234157129882,
+  "formulation": "M_formulation",
+  "worker_count": 10,
+  "detected_physical_core_cpu_ids": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "worker_cpu_assignments": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    0,
+    2
+  ],
+  "physical_core_cpu_ids": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    0,
+    2
+  ],
+  "instance_root": "C:\\Users\\Muaaz Nisar\\Documents\\UofT\\Fourth Year\\ECE496\\UAV\\uav_instances_m10_n35\\uav_instances_m10_n35",
+  "instance_batch_seeds": [
+    1012504826101901171,
+    1369048791089064771,
+    5777434204459253156,
+    8653524161242778536,
+    1818869102640598565,
+    2309057817857315252,
+    7999536150278178639,
+    3173651095436166714,
+    4682503559333115205,
+    3115905827026732349
+  ],
+  "created": "2026-08-26T00:04:48.266085"
+}
