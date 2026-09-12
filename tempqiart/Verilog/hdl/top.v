@@ -59,7 +59,14 @@ module bit_sieve_engine_25 #(
     wire signed [ENERGY_WIDTH-1:0] winning_delta_E_extended;
     reg [SELECTOR_WIDTH-1:0] tree_rand;
 
+    // Regional copies of E_off: identical value from independent generator
+    // instances instead of one register fanning out to all 1024 twins.
+    localparam integer EOFF_REGIONS = 16;
+    localparam integer TWINS_PER_EOFF_REGION = TWIN_COUNT / EOFF_REGIONS;
+    wire signed [FIELD_WIDTH-1:0] current_E_off_region [0:EOFF_REGIONS-1];
+
     genvar i;
+    genvar eoff_r;
     integer rng_word;
 
     assign winner_index = {matrix_winner_identifier, matrix_winner_index};
@@ -86,6 +93,21 @@ module bit_sieve_engine_25 #(
         .winner_found(winner_found),
         .E_off(current_E_off)
     );
+
+    // Additional independent copies for the twin engines only; the port
+    // above remains the hierarchical debug/observation value.
+    generate
+        for (eoff_r = 0; eoff_r < EOFF_REGIONS; eoff_r = eoff_r + 1) begin : e_off_region_gen
+            e_off_generator #(.WIDTH(FIELD_WIDTH)) u_e_off_region (
+                .clk(clk),
+                .rst(rst),
+                .delta_val(e_off_delta),
+                .en(e_off_update_en),
+                .winner_found(winner_found),
+                .E_off(current_E_off_region[eoff_r])
+            );
+        end
+    endgenerate
 
     tabu_mask_generator #(
         .MAX_DEPTH(N),
@@ -140,7 +162,7 @@ module bit_sieve_engine_25 #(
                 .weight_low(weights[i]),
                 .weight_high(weights[i+TWIN_COUNT]),
                 .init_h_value(h_init_value),
-                .E_off(current_E_off),
+                .E_off(current_E_off_region[i / TWINS_PER_EOFF_REGION]),
                 .candidate_low(valid_candidates[i]),
                 .candidate_high(valid_candidates[i+TWIN_COUNT]),
                 .pair_rand(tree_rand[i]),

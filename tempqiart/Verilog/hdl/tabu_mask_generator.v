@@ -12,45 +12,54 @@ module tabu_mask_generator #(
     output wire [MASK_WIDTH-1:0] tabu_mask_gated
 );
 
-    // Internal Shift Registers
-    reg [INDEX_WIDTH-1:0] history_idx [0:MAX_DEPTH-1];
-    reg                   history_val [0:MAX_DEPTH-1];
+    // Circular history buffer backed by inferred block RAM instead of a
+    // MAX_DEPTH-entry shift-register array (which Quartus's shift-register
+    // recognition maps to MLABs, i.e. the same LAB budget as combinational
+    // logic). The eviction candidate is continuously prefetched one cycle
+    // ahead so the BRAM's synchronous read latency never adds a cycle to
+    // the actual insertion/eviction event -- this relies on shift_en never
+    // asserting on two consecutive clock cycles, which the multi-cycle FSM
+    // iteration (RNG/select/update pipeline) between accepted flips already
+    // guarantees.
+    (* ramstyle = "M20K" *) reg [INDEX_WIDTH-1:0] history_ram [0:MAX_DEPTH-1];
 
-    // The combined lockout mask, updated incrementally instead of being
-    // recomputed from every history entry on every cycle.
-    reg [MASK_WIDTH-1:0] tabu_mask;
+    reg [INDEX_WIDTH-1:0] wr_ptr;
+    reg [INDEX_WIDTH:0]   fill_count;   // counts insertions so far, saturates at MAX_DEPTH
+    reg [MASK_WIDTH-1:0]  tabu_mask;
 
-    // Only the entry at depth-1 can leave the runtime-sized window during a
-    // shift. A masked index is not selected again while it remains tabu.
-    wire [INDEX_WIDTH-1:0] evict_pos = depth - 1'b1;
-    wire [INDEX_WIDTH-1:0] evict_index = history_idx[evict_pos];
-    wire evict_active = shift_en &&
-                        (depth != {INDEX_WIDTH{1'b0}}) &&
-                        history_val[evict_pos];
+    // What would be evicted if a shift happened this cycle, using the
+    // current (not-yet-updated) wr_ptr/depth. Re-issued every cycle so the
+    // result is already valid by the time an actual shift needs it.
+    wire [INDEX_WIDTH-1:0] evict_read_ptr = wr_ptr - depth;
+    reg  [INDEX_WIDTH-1:0] evict_index_prefetched;
+    reg                    evict_valid_prefetched;
 
-    integer i;
-
-    // 1. Shift Register Logic (The Circular Buffer)
     always @(posedge clk) begin
         if (rst) begin
-            for (i = 0; i < MAX_DEPTH; i = i + 1) begin
-                history_idx[i] <= {INDEX_WIDTH{1'b0}};
-                history_val[i] <= 1'b0; // Invalid at startup
-            end
-            tabu_mask <= {MASK_WIDTH{1'b0}};
+            evict_index_prefetched <= {INDEX_WIDTH{1'b0}};
+            evict_valid_prefetched <= 1'b0;
+        end else begin
+            evict_index_prefetched <= history_ram[evict_read_ptr];
+            evict_valid_prefetched <= (depth != {INDEX_WIDTH{1'b0}}) &&
+                                       (fill_count >= depth);
+        end
+    end
+
+    always @(posedge clk) begin
+        if (rst) begin
+            wr_ptr     <= {INDEX_WIDTH{1'b0}};
+            fill_count <= {(INDEX_WIDTH+1){1'b0}};
+            tabu_mask  <= {MASK_WIDTH{1'b0}};
         end else if (shift_en) begin
-            // Shift everything down by 1
-            for (i = MAX_DEPTH-1; i > 0; i = i - 1) begin
-                history_idx[i] <= history_idx[i-1];
-                history_val[i] <= history_val[i-1];
-            end
-            // Insert the new winning index at the top
-            history_idx[0] <= new_index;
-            history_val[0] <= 1'b1;
+            history_ram[wr_ptr] <= new_index;
+
+            wr_ptr <= wr_ptr + 1'b1;
+            if (fill_count < MAX_DEPTH)
+                fill_count <= fill_count + 1'b1;
 
             tabu_mask[new_index] <= 1'b1;
-            if (evict_active)
-                tabu_mask[evict_index] <= 1'b0;
+            if (evict_valid_prefetched)
+                tabu_mask[evict_index_prefetched] <= 1'b0;
         end
     end
 

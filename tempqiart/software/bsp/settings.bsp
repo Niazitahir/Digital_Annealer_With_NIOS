@@ -3,8 +3,8 @@
     <Tool>PD-BSP</Tool>
     <BspType>hal2</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Sep. 11, 2026 2:49:38 a.m.</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1789109378966</BspGeneratedUnixTimeStamp>
+    <BspGeneratedTimeStamp>Sep. 11, 2026 8:07:56 p.m.</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1789171676903</BspGeneratedUnixTimeStamp>
     <BspGeneratedLocation>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp</BspGeneratedLocation>
     <BspSettingsFile>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp\settings.bsp</BspSettingsFile>
     <QsysFile>../../tempqiart.qsys</QsysFile>

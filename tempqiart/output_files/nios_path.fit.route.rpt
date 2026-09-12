@@ -1,0 +1,605 @@
+Fitter Route Stage Report for nios_path
+Fri Sep 11 19:56:58 2026
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Nets with Highest Wire Count
+  3. PLL Delay Chain Settings
+  4. Delay Chain Summary
+  5. Routing Usage Summary
+  6. Route Messages
+  7. Estimated Delay Added for Hold Timing Summary
+  8. Estimated Delay Added for Hold Timing Details
+  9. Global Router Congestion Hotspot Summary
+ 10. Global Router Wire Utilization Map
+ 11. Peak Wire Demand Summary
+ 12. Peak Wire Demand Details
+ 13. Peak Total Grid Crossings
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Nets with Highest Wire Count                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; Net                                                                                                               ; Number of Wires Used ; Fanout ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[6]~11 ; 3682                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[9]~8  ; 3413                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14 ; 3389                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[5]~12 ; 3388                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[7]~10 ; 3387                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[8]~9  ; 3334                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[13]~4 ; 3323                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[2]~15 ; 3270                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17 ; 3205                 ; 2049   ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[1]~16 ; 3203                 ; 2049   ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+
+
++----------------------------------------------------------------------------+
+; PLL Delay Chain Settings                                                   ;
++------------------------------------------------------------------------+---+
+;                                                                        ;   ;
++------------------------------------------------------------------------+---+
+; fpga_clk_pll|iopll_0|stratix10_altera_iopll_i|s10_iopll.fourteennm_pll ;   ;
+;     -- Delay Chain Setting                                             ; 0 ;
+;     -- PLL Output Counter 0                                            ;   ;
+;             -- C Counter Delay Chain Setting                           ; 0 ;
+;             -- LVDS Delay Chain Setting                                ; 0 ;
+;     -- PLL Output Counter 1                                            ;   ;
+;             -- C Counter Delay Chain Setting                           ; 0 ;
+;             -- LVDS Delay Chain Setting                                ; 0 ;
+;                                                                        ;   ;
++------------------------------------------------------------------------+---+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                 ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name               ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; DBG_HEADER[14]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[15]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_HB_LED        ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[0]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[1]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[2]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[3]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[4]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[5]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[6]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[7]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[8]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[9]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_RECONFIG      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[0]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[1]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[2]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[3]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[4]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[5]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[6]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[7]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[8]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[9]      ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[10]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[11]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[12]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_HEADER[13]     ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[10]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[11]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[12]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[13]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[14]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; STX_DBG_LED[15]    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[2]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[3]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[4]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[5]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[6]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[7]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[8]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[9]      ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[10]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[11]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[12]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[13]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[14]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[15]     ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[0]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[1]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[2]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; STX_STRAP[3]       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; FMC_PWR_EN         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FMC_LA22_P         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_PG_C2M        ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_EXT_CLK_OUT_P ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; FPGA_CLK_IN        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[0]      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; DBG_SWITCH[1]      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; FPGA_PB_RESET_L    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++---------------------------------------------------------------+
+; Routing Usage Summary                                         ;
++--------------------------------+------------------------------+
+; Routing Resource Type          ; Usage                        ;
++--------------------------------+------------------------------+
+; Block Input Muxes              ; 22 / 122,932 ( < 1 % )       ;
+; Block interconnects            ; 491,964 / 1,247,616 ( 39 % ) ;
+; C16 interconnects              ; 22,293 / 30,888 ( 72 % )     ;
+; C2 interconnects               ; 75,901 / 185,328 ( 41 % )    ;
+; C3 interconnects               ; 163,313 / 375,912 ( 43 % )   ;
+; C4 interconnects               ; 142,880 / 241,848 ( 59 % )   ;
+; CLOCK_INVERTs                  ; 0 / 1,472 ( 0 % )            ;
+; DCM_muxes                      ; 2 / 368 ( < 1 % )            ;
+; Direct links                   ; 87,141 / 1,247,616 ( 7 % )   ;
+; GAP Interconnects              ; 13,913 / 79,560 ( 17 % )     ;
+; GAPs                           ; 15,738 / 29,304 ( 54 % )     ;
+; HIO Buffers                    ; 6 / 64,512 ( < 1 % )         ;
+; Horizontal Buffers             ; 7,341 / 49,788 ( 15 % )      ;
+; Horizontal_clock_segment_muxes ; 32 / 1,600 ( 2 % )           ;
+; Programmable Inverts           ; 1,190 / 78,336 ( 2 % )       ;
+; R10 interconnects              ; 172,230 / 364,860 ( 47 % )   ;
+; R2 interconnects               ; 122,876 / 308,880 ( 40 % )   ;
+; R24 interconnects              ; 16,134 / 49,896 ( 32 % )     ;
+; R24/C16 interconnect drivers   ; 25,693 / 61,776 ( 42 % )     ;
+; R4 interconnects               ; 199,829 / 454,860 ( 44 % )   ;
+; Row Clock Tap-Offs             ; 6,272 / 100,872 ( 6 % )      ;
+; Switchbox_clock_muxes          ; 98 / 9,600 ( 1 % )           ;
+; Vertical_seam_tap_muxes        ; 67 / 4,416 ( 2 % )           ;
++--------------------------------+------------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 24 of the 24 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+    Info: Processing started: Fri Sep 11 19:35:12 2026
+    Info: System process ID: 14380
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = nios_path
+Info: Revision = nios_path
+Info (22300): Design uses Placement Effort Multiplier = 1.0.
+Info (170193): Fitter routing operations beginning
+Info (20215): Router estimated peak short interconnect demand : 81% of down directional wire in region X96_Y32 to X103_Y39
+    Info (20265): Estimated peak short right directional wire demand : 60% in region X56_Y48 to X63_Y55
+    Info (20265): Estimated peak short left directional wire demand : 50% in region X64_Y72 to X71_Y79
+    Info (20265): Estimated peak short up directional wire demand : 76% in region X48_Y56 to X55_Y63
+    Info (20265): Estimated peak short down directional wire demand : 81% in region X96_Y32 to X103_Y39
+Info (20215): Router estimated peak long high speed interconnect demand : 139% of down directional wire in region X24_Y104 to X31_Y111
+    Info (20265): Estimated peak long high speed right directional wire demand : 129% in region X96_Y32 to X103_Y39
+    Info (20265): Estimated peak long high speed left directional wire demand : 119% in region X112_Y32 to X119_Y39
+    Info (20265): Estimated peak long high speed up directional wire demand : 137% in region X96_Y16 to X103_Y23
+    Info (20265): Estimated peak long high speed down directional wire demand : 139% in region X24_Y104 to X31_Y111
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170239): Router is attempting to preserve 0.00 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Info (188005): Design requires adding a large amount of routing delay for some signals to meet hold time requirements, and there is an excessive demand for the available routing resources. The Fitter is reducing the routing delays of some signals to help the routing algorithm converge, but doing so may cause hold time failures. For more information, refer to the "Estimated Delay Added for Hold Timing" section in the Fitter report.
+Warning (16684): The router is trying to resolve an exceedingly large amount of congestion. At the moment, it predicts long routing run time and/or significant setup or hold timing failures. Congestion details can be found in the Chip Planner.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (11888): Total time spent on timing analysis during Routing is 55.41 seconds.
+Info: Adding default timing constraints to JTAG signals.  This will help to achieve basic functionality since no such constraints were provided by the user.
+Info (16607): Fitter routing operations ending: elapsed time is 00:10:25
+
+
++-----------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                           ;
++----------------------------------+----------------------------------+-------------------+
+; Source Clock(s)                  ; Destination Clock(s)             ; Delay Added in ns ;
++----------------------------------+----------------------------------+-------------------+
+; fpga_clk_pll|iopll_0_fpga_clk_50 ; fpga_clk_pll|iopll_0_fpga_clk_50 ; 959.1             ;
++----------------------------------+----------------------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                                                                                                                                                    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                                                                                            ; Destination Register                                                                                                                                                            ; Delay Added in ns ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[11]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[11]                                                                              ; 0.655             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[5]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[5]                                                                               ; 0.653             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[6]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[6]                                                                               ; 0.643             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[14]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[14]                                                                              ; 0.643             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[7]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[7]                                                                               ; 0.640             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[17]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[17]                                                                              ; 0.638             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[1]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[1]                                                                               ; 0.637             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[16]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[16]                                                                              ; 0.637             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[0]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[0]                                                                               ; 0.637             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[3]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[3]                                                                               ; 0.635             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[9]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[9]                                                                               ; 0.635             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[12]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[12]                                                                              ; 0.627             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[18]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[18]                                                                              ; 0.618             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[10]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[10]                                                                              ; 0.618             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[15]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[15]                                                                              ; 0.614             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[19]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[19]                                                                              ; 0.614             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[8]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[8]                                                                               ; 0.605             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[4]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[4]                                                                               ; 0.604             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[2]                                                                          ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[2]                                                                               ; 0.604             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[13]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[13]                                                                              ; 0.602             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|core_irq                                                                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|C_expn_is_interrupt                                                                                                           ; 0.550             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|irq_inst|A1_debug_irq                                                                                           ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|C_dbg_expn_type[0]                                                                                                            ; 0.546             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|mem_done_q2                                                                           ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_cached_instr_fetch.icache_inst|state~1                                                                                    ; 0.538             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_div_op                                                                                                                ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_div_op                                                                                                                     ; 0.529             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[2]                                                ; u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component|auto_generated|altera_syncram_impl1|ram_block2a497~reg0                                                 ; 0.517             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_is_wfi                                                                                                                ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[0]                                                                                                             ; 0.492             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[3]                                                ; u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component|auto_generated|altera_syncram_impl1|ram_block2a506~reg0                                                 ; 0.488             ;
+; u0|mm_interconnect_0|mm_bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[3]                                                          ; u0|mm_bridge_0|mm_bridge_0|wr_reg_read                                                                                                                                          ; 0.483             ;
+; u0|mm_interconnect_0|mm_bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[1]                                                          ; u0|mm_bridge_0|mm_bridge_0|wr_reg_read                                                                                                                                          ; 0.480             ;
+; u0|mm_interconnect_0|mm_bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[2]                                                          ; u0|mm_bridge_0|mm_bridge_0|wr_reg_read                                                                                                                                          ; 0.479             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[1]                                                ; u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component|auto_generated|altera_syncram_impl1|ram_block2a491~reg0                                                 ; 0.471             ;
+; u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rsp_fifo|mem[0][147]                                                                                                   ; u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent|uncompressor|burst_uncompress_byte_counter[2]                                                                               ; 0.436             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rsp_fifo|mem[0][147]                                                                                                   ; u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent|uncompressor|burst_uncompress_byte_counter[2]                                                                               ; 0.433             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[0]                                                ; u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component|auto_generated|altera_syncram_impl1|ram_block2a480~reg0                                                 ; 0.427             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[5]                                                                                                      ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs2_gpr_val[5]~_Duplicate0                                                                                                  ; 0.415             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_mem_signext                                                                                                           ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|buffered_load_data[10]                                                                         ; 0.409             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|meta_instr_hold[12]                                                                    ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|D_instr_word[10]                                                                                                              ; 0.407             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[13]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_csr_s1[13]                                                                                                                  ; 0.406             ;
+; rst_pb_debounce|debounce_sync[2]                                                                                                                                           ; FPGA_HB_LED~reg0                                                                                                                                                                ; 0.400             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[12]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_csr_s1[12]                                                                                                                  ; 0.394             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[9]                                                                                                      ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_csr_s1[9]                                                                                                                   ; 0.393             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|wr_tag_data_q[21]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_cbo_flush                                                                                   ; 0.392             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[24]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_csr_s1[24]                                                                                                                  ; 0.383             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[4]                                                                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[4]                                                                                 ; 0.381             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[21]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_csr_s1[21]                                                                                                                  ; 0.371             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[4]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.368             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[31]                                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[31] ; 0.367             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[23]                                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|buffered_load_data[7]                                                                          ; 0.365             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[17]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[17]                                     ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[12]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[12]                                     ; 0.364             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[3]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.361             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|victim_in_sop                                                                             ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[33] ; 0.360             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|core_irq_pndg                                                                                                   ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[0]                                                                                                             ; 0.358             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[4]                                                                                                      ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs2_gpr_val[4]~_Duplicate0                                                                                                  ; 0.358             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_cbo_valid                                                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|predicted_stall                                                                                ; 0.358             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[20]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs1_gpr_val[20]                                                                                                             ; 0.357             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[26]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.355             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|irq_inst|A1_plat_irq_vec[0]                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_exe_result[16]                                                                                                             ; 0.354             ;
+; u0|mm_interconnect_0|mm_bridge_0_s0_agent_rsp_fifo|mem[0][147]                                                                                                             ; u0|mm_interconnect_0|mm_bridge_0_s0_agent|uncompressor|burst_uncompress_byte_counter[2]                                                                                         ; 0.351             ;
+; u0|mm_interconnect_0|intel_onchip_memory_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_narrow_reg                                                   ; u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component|auto_generated|altera_syncram_impl1|ram_block2a480~reg0                                                 ; 0.351             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[23]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.350             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[18]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs2_gpr_val[18]                                                                                                             ; 0.350             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[25]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.350             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M0_redirect_pc[3]                                                                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|fetch_pc[3]                                                                                 ; 0.349             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[28]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[28]                                                                             ; 0.349             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[27]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.349             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[21]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.348             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[7]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.348             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[2]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.347             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|M1_dret_instr                                                                                                            ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|dcsr.cause[2]                                                                                                        ; 0.347             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[8]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.343             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|mem_op_q                                                                                  ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|predicted_stall                                                                                ; 0.341             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[22]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.340             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[24]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.339             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[12]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.334             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[31]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[63]                                     ; 0.333             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|csr_inst|mcontrol_action_and_dmode                                                                                       ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|C_dbg_expn_taken                                                                                                              ; 0.332             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[10]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.332             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dcache_tag_ram|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|ram_block2a1~reg0  ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[1]                                                                               ; 0.331             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dram_wr_data_q[7]                                                                         ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|niosv_victim_buffer_inst|victim_buffer|auto_generated|altera_syncram_impl1|portadatain_reg[7]  ; 0.328             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|dcache_tag_ram|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|ram_block2a16~reg0 ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_dcache_lsu.dcache_lsu_inst|C1_victim_tag[16]                                                                              ; 0.328             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[3]                                      ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[35]                                     ; 0.326             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[1]                                               ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.324             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[18]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[50]                                     ; 0.324             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|meta_instr_hold[33]                                                                    ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|D_imm[19]                                                                                                                     ; 0.323             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|imm_q[2]                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.323             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[19]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs2_gpr_val[19]                                                                                                             ; 0.322             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[9]                             ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[9]                             ; 0.321             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[13]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.321             ;
+; u1|uut|valid_candidates[85]                                                                                                                                                ; u1|uut|u_selector|row_column_pipe[2][0]                                                                                                                                         ; 0.320             ;
+; u1|uut|valid_candidates[1109]                                                                                                                                              ; u1|uut|u_selector|row_column_pipe[2][0]                                                                                                                                         ; 0.320             ;
+; u1|uut|valid_candidates[80]                                                                                                                                                ; u1|uut|u_selector|row_column_pipe[2][0]                                                                                                                                         ; 0.320             ;
+; u1|uut|valid_candidates[1104]                                                                                                                                              ; u1|uut|u_selector|row_column_pipe[2][0]                                                                                                                                         ; 0.320             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|instr_araddr_q[20]                                              ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.320             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[5]                                      ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[37]                                     ; 0.320             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|W_gpr_exe_result[14]                                                                                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|E_rs1_gpr_val[14]~_Duplicate0                                                                                                 ; 0.318             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[20]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[52]                                     ; 0.318             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[15]                                     ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|dbg_rom_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[47]                                     ; 0.317             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|branch_prediction_inst|imm_q[3]                                                        ; u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|gen_branch_prediction.new_pc_inst|dispatch_pc[27]                                                                             ; 0.317             ;
+; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|datain_reg[2]                             ; u0|intel_niosv_g_0|intel_niosv_g_0|dbg_mod|dm_inst|niosv_dm_csr_mem_inst|ram_no_ecc.data_ram|auto_generated|altera_syncram_impl1|portadatain_reg[2]                             ; 0.316             ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+
+--------------------------------------------
+; Global Router Congestion Hotspot Summary ;
+--------------------------------------------
+No congestion hotspots found where global router short wire usage exceeded 100%.
+If the design is hard to route, use other techniques to analyze congestion. Refer to the Estimated Delay Added for Hold Timing section in the Fitter report and routing utilization in the Chip Planner.
+
+
+--------------------------------------
+; Global Router Wire Utilization Map ;
+--------------------------------------
+This report is unavailable in plain text report export.
+
+
++-------------------------------------------------------------------------------+
+; Peak Wire Demand Summary                                                      ;
++-----------------+-----------+-----------------------------------+-------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ;
++-----------------+-----------+-----------------------------------+-------------+
+; short           ; right     ; [(56, 48), (63, 55)]              ; 58.054 %    ;
+; short           ; left      ; [(64, 72), (71, 79)]              ; 50.360 %    ;
+; short           ; up        ; [(48, 56), (55, 63)]              ; 74.942 %    ;
+; short           ; down      ; [(96, 32), (103, 39)]             ; 83.333 %    ;
+; long high speed ; right     ; [(48, 104), (55, 111)]            ; 105.333 %   ;
+; long high speed ; left      ; [(120, 32), (127, 39)]            ; 112.000 %   ;
+; long high speed ; up        ; [(96, 16), (103, 23)]             ; 112.500 %   ;
+; long high speed ; down      ; [(96, 32), (103, 39)]             ; 112.500 %   ;
++-----------------+-----------+-----------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Wire Demand Details                                                                                                                                                                                        ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                                                                                                                       ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+; short           ; right     ; [(56, 48), (63, 55)]              ; 58.054 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|uut|Mux_0~682xsyn                                                                                                            ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14               ;
+;     --          ;           ;                                   ;             ; u1|uut|twin_engine_array[0].u_twin_engine|i206~0                                                                                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[5]~12               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[8]~9                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[11]~6               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[7]~10               ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~12                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~22                                                                                                              ;
+; short           ; right     ; [(56, 48), (63, 55)]              ; 58.054 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[11]~6               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[5]~12               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[8]~9                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[7]~10               ;
+;     --          ;           ;                                   ;             ; u1|uut|twin_engine_array[0].u_twin_engine|i206~0                                                                                ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~12                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~22                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[861]~173                                                                                         ;
+; short           ; left      ; [(64, 72), (71, 79)]              ; 50.360 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~12                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|uut|u_e_off|E_off[12]~_Duplicate_11                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~6                                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~0                                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[977]~113                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[73]~65                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[913]~309                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~2                                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~32                                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[1845]~135                                                                                        ;
+; short           ; left      ; [(64, 72), (71, 79)]              ; 50.360 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~12                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1565]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1597]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[525]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1068]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1592]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[312]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[541]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1336]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|u_e_off|E_off[12]~_Duplicate_11                                                                                          ;
+; short           ; up        ; [(48, 56), (55, 63)]              ; 74.942 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[14]~3               ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[2013]~74                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|uut|u_selector|final_index_comb[3]~54xsyn                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|rst_filter|sync_rst_out~_Duplicate_13                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|uut|u_selector|final_index_comb[4]~65xsyn                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|u_selector|final_index_comb[0]~21xsyn                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~35                                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[1837]~273                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~29                                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|uut|shift_left_0~21                                                                                                          ;
+; short           ; up        ; [(48, 56), (55, 63)]              ; 74.942 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[14]~3               ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[525]~1190                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[1837]~273                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|rst_filter|sync_rst_out~_Duplicate_13                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1783]                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|control_unit|engine_load_en[1298]~1627                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[471]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[994]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[499]                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|current_state_X[1474]                                                                                                    ;
+; short           ; down      ; [(96, 32), (103, 39)]             ; 83.333 %    ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~9                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~15                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~16                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~2                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[0].bank_avalon_low_selected~0P_BUFF10                                                                   ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][8]                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][0]~_Duplicate_2                                                                             ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][7]~_Duplicate_16                                                                            ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]~_Duplicate_2                                                                          ;
+; short           ; down      ; [(96, 32), (103, 39)]             ; 83.333 %    ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_3~15                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~9                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~2                                                                                                              ;
+;     --          ;           ;                                   ;             ; u1|reduce_nor_35~16                                                                                                             ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[3]                                                                                       ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][8]                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][0]~_Duplicate_2                                                                             ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[0]~_Duplicate_2                                                                          ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1021].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9] ;
+; long high speed ; right     ; [(48, 104), (55, 111)]            ; 105.333 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|uut|Mux_0~682xsynP_BUFF                                                                                                      ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[14]~3               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[12]~5               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[17]~0               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[2]~15               ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][9]~_Duplicate_20                                                                            ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[9]~_Duplicate_20                                                                         ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][0]~_Duplicate_1                                                                             ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[2]                                                                                     ;
+; long high speed ; right     ; [(48, 104), (55, 111)]            ; 105.333 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[17]~0               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[12]~5               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[2]~15               ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[14]~3               ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[5]~_Duplicate                                                                          ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[1]~_Duplicate_4                                                                          ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[2]                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[563].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[1]  ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_writedata[1]~_Duplicate_3                                                                        ;
+; long high speed ; left      ; [(120, 32), (127, 39)]            ; 112.000 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|avalon_last_bank_reg[9]~_Duplicate_19                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|i14834                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1008].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1021].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1009].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[753].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[757].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[761].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[732].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[733].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+; long high speed ; left      ; [(120, 32), (127, 39)]            ; 112.000 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|i2312~5242_ERTM0                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|i2312~7139_ERTM0                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|i2312~2558_ERTM0                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[761].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[757].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[501].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[5]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[732].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1012].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[3] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1012].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[8] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[749].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+; long high speed ; up        ; [(96, 16), (103, 23)]             ; 112.500 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17               ;
+;     --          ;           ;                                   ;             ; u1|i50223                                                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|i25211~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i25221~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50611~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50609~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50622~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50621~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50619~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50207~0                                                                                                                     ;
+; long high speed ; up        ; [(96, 16), (103, 23)]             ; 112.500 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17               ;
+;     --          ;           ;                                   ;             ; u1|i50611~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50609~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50622~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50621~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|i50619~0                                                                                                                     ;
+;     --          ;           ;                                   ;             ; u1|uut|twin_engine_array[505].u_twin_engine|local_field_low[7]                                                                  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[878].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[1]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[955].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[4]  ;
+;     --          ;           ;                                   ;             ; u1|i25211~0                                                                                                                     ;
+; long high speed ; down      ; [(96, 32), (103, 39)]             ; 112.500 %   ;    High Routing Fan-Out                                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|avalon_write_req                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][9]                                                                                          ;
+;     --          ;           ;                                   ;             ; u0|mm_bridge_0|mm_bridge_0|cmd_address[7]                                                                                       ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][3]~_Duplicate_7                                                                             ;
+;     --          ;           ;                                   ;             ; u1|avalon_last_bank_reg[4]~_Duplicate_1                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|avalon_last_bank_reg[5]~_Duplicate                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|rst_filter|sync_rst_out~_Duplicate_10                                                                                        ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[1016].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_b[9] ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[761].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[732].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+; long high speed ; down      ; [(96, 32), (103, 39)]             ; 112.500 %   ;    Long Distance                                                                                                                ;
+;     --          ;           ;                                   ;             ; u1|avalon_write_req                                                                                                             ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][3]~_Duplicate_7                                                                             ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[761].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|avalon_last_bank_reg[5]~_Duplicate                                                                                           ;
+;     --          ;           ;                                   ;             ; u1|avalon_last_bank_reg[4]~_Duplicate_1                                                                                         ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[732].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|i2312~763                                                                                                                    ;
+;     --          ;           ;                                   ;             ; u1|sampled_weight_row_low_region[0][9]                                                                                          ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[764].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[0]  ;
+;     --          ;           ;                                   ;             ; u1|symmetric_qubo_banks[961].u_sym_matrix_bank|ram_2port_0|altera_syncram_component|auto_generated|altera_syncram_impl1|q_a[1]  ;
++-----------------+-----------+-----------------------------------+-------------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Total Grid Crossings                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+
+; Net Name                                                                                                          ; Total Grid Crossings ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[3]~14 ; 296                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[2]~15 ; 292                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[17]~0 ; 287                  ;
+; u1|uut|twin_engine_array[0].u_twin_engine|i206~0                                                                  ; 285                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[12]~5 ; 284                  ;
+; u1|avalon_write_req                                                                                               ; 270                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[9]~8  ; 257                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[16]~1 ; 256                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[11]~6 ; 252                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[14]~3 ; 252                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[13]~4 ; 251                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[4]~13 ; 249                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[1]~16 ; 248                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[8]~9  ; 247                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[6]~11 ; 247                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[0]~17 ; 247                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[7]~10 ; 247                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[15]~2 ; 247                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[10]~7 ; 245                  ;
+; u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst|altera_sld_arbiter_inst|urdata[5]~12 ; 244                  ;
+; u1|reduce_nor_35~1                                                                                                ; 155                  ;
+; u1|reduce_nor_35~16                                                                                               ; 127                  ;
+; u1|reduce_nor_3~13                                                                                                ; 125                  ;
+; u1|reduce_nor_35~3                                                                                                ; 123                  ;
+; u1|reduce_nor_35~28                                                                                               ; 121                  ;
+; u1|reduce_nor_3~14                                                                                                ; 119                  ;
+; u1|reduce_nor_35~17                                                                                               ; 118                  ;
+; u1|reduce_nor_3~5                                                                                                 ; 117                  ;
+; u1|reduce_nor_35~23                                                                                               ; 113                  ;
+; u1|reduce_nor_35~4                                                                                                ; 110                  ;
+; u1|reduce_nor_35~8                                                                                                ; 109                  ;
+; u1|reduce_nor_3~3                                                                                                 ; 109                  ;
+; u1|uut|Mux_0~682xsyn                                                                                              ; 108                  ;
+; u1|reduce_nor_3~21                                                                                                ; 107                  ;
+; u1|symmetric_qubo_banks[0].bank_avalon_low_selected~0                                                             ; 107                  ;
+; u1|reduce_nor_35~13                                                                                               ; 106                  ;
+; u1|reduce_nor_35~2                                                                                                ; 105                  ;
+; u1|symmetric_qubo_banks[0].bank_avalon_high_selected~0                                                            ; 105                  ;
+; ~GND                                                                                                              ; 105                  ;
+; u1|reduce_nor_35~22                                                                                               ; 104                  ;
+; u1|reduce_nor_3~8                                                                                                 ; 104                  ;
+; u1|reduce_nor_3~10                                                                                                ; 102                  ;
+; u1|reduce_nor_35~18                                                                                               ; 101                  ;
+; u1|reduce_nor_35~9                                                                                                ; 101                  ;
+; u1|reduce_nor_35~19                                                                                               ; 101                  ;
+; u1|reduce_nor_3~18                                                                                                ; 101                  ;
+; u1|reduce_nor_3~16                                                                                                ; 100                  ;
+; u1|reduce_nor_3~6                                                                                                 ; 99                   ;
+; u1|reduce_nor_3~12                                                                                                ; 99                   ;
+; u1|reduce_nor_35~27                                                                                               ; 98                   ;
++-------------------------------------------------------------------------------------------------------------------+----------------------+
+
+

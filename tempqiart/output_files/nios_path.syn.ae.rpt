@@ -1,5 +1,5 @@
 Synthesis Analysis & Elaboration Stage Report for nios_path
-Fri Sep 11 17:40:45 2026
+Fri Sep 11 20:14:03 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -21,90 +21,92 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  13. Source Assignments for User Entity altera_reset_synchronizer Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_sync_uq1
  14. Source Assignments for User Entity altera_reset_synchronizer_1 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_req_sync_uq1
  15. Source Assignments for User Entity altera_reset_synchronizer_2 Instance: u0|rst_controller_004|alt_rst_sync_uq1
- 16. Source Assignments for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
- 17. Ignored Source Level Assignments for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
- 18. Ignored Source Level Assignments for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
- 19. Parameter Settings for Top-Level Entity
- 20. Parameter Settings for User Entity rst_pb_debounce Instance: rst_pb_debounce
- 21. Parameter Settings for User Entity tempqiart_mm_bridge_0 Instance: u0|mm_bridge_0
- 22. Parameter Settings for User Entity altera_reset_controller Instance: u0|rst_controller
- 23. Parameter Settings for User Entity altera_reset_controller_1 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001
- 24. Parameter Settings for User Entity altera_reset_controller_2 Instance: u0|rst_controller_003
- 25. Parameter Settings for User Entity altera_reset_controller_3 Instance: u0|rst_controller_004
- 26. Parameter Settings for User Entity bit_sieve_engine_25 Instance: u1|uut
- 27. Parameter Settings for User Entity engine_control_fsm Instance: u1|control_unit
- 28. Parameter Settings for User Entity stratix10_altera_iopll Instance: fpga_clk_pll|iopll_0|stratix10_altera_iopll_i
- 29. Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0
- 30. Parameter Settings for User Entity altera_avalon_jtag_uart Instance: u0|jtag_uart_0|jtag_uart_0
- 31. Parameter Settings for User Entity tempqiart_mm_bridge_0_altera_avalon_mm_bridge_2010_tex5a4i Instance: u0|mm_bridge_0|mm_bridge_0
- 32. Parameter Settings for User Entity tempqiart_altera_merlin_axi_translator_1974_xfkiwxi Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_translator
- 33. Parameter Settings for User Entity tempqiart_altera_merlin_axi_translator_1974_xfkiwxi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_translator
- 34. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi Instance: u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_translator
- 35. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_translator
- 36. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_2 Instance: u0|mm_interconnect_0|mm_bridge_0_s0_translator
- 37. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_3 Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_translator
- 38. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_4 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_translator
- 39. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_agent
- 40. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
- 41. Parameter Settings for User Entity tempqiart_altera_merlin_slave_agent_1930_jxauz3i Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
- 42. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rsp_fifo
- 43. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rdata_fifo
- 44. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_2 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rsp_fifo
- 45. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_3 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rdata_fifo
- 46. Parameter Settings for User Entity tempqiart_altera_merlin_traffic_limiter_1921_5pm4apa Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_rd_limiter
- 47. Parameter Settings for User Entity tempqiart_altera_merlin_burst_adapter_1940_yvysctq Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter
- 48. Parameter Settings for User Entity altera_reset_synchronizer Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_sync_uq1
- 49. Parameter Settings for User Entity altera_reset_synchronizer_1 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_req_sync_uq1
- 50. Parameter Settings for User Entity altera_reset_synchronizer_2 Instance: u0|rst_controller_004|alt_rst_sync_uq1
- 51. Parameter Settings for User Entity e_off_generator Instance: u1|uut|u_e_off
- 52. Parameter Settings for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer
- 53. Parameter Settings for User Entity twin_unified_BitSieve_Engine Instance: u1|uut|twin_engine_array[1023].u_twin_engine
- 54. Parameter Settings for User Entity matrix_selector_1024_flat Instance: u1|uut|u_selector
- 55. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
- 56. Parameter Settings for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
- 57. Parameter Settings for User Entity altera_syncram Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component
- 58. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
- 59. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
- 60. Parameter Settings for User Entity altera_merlin_waitrequest_adapter Instance: u0|mm_bridge_0|mm_bridge_0|waitrequest_adapter
- 61. Parameter Settings for User Entity altera_merlin_address_alignment Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_size
- 62. Parameter Settings for User Entity altera_merlin_burst_uncompressor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
- 63. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
- 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
- 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_obse4oa_default_decode Instance: u0|mm_interconnect_0|router_008|the_default_decode
- 66. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_baawywi_default_decode Instance: u0|mm_interconnect_0|router_007|the_default_decode
- 67. Parameter Settings for User Entity altera_merlin_burst_adapter_13_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter
- 68. Parameter Settings for User Entity altera_merlin_arbitrator Instance: u0|mm_interconnect_0|cmd_mux_004|arb
- 69. Parameter Settings for User Entity altera_merlin_arbitrator_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb
- 70. Parameter Settings for User Entity altera_merlin_arbitrator_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb
- 71. Parameter Settings for User Entity altera_merlin_arbitrator_3 Instance: u0|mm_interconnect_0|rsp_mux_003|arb
- 72. Parameter Settings for User Entity altera_syncram_1 Instance: u1|symmetric_qubo_banks[1023].u_sym_matrix_bank|ram_2port_0|altera_syncram_component
- 73. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_2011_hdk7lli Instance: u1|hp_ram|ram_1port_0|intel_mce_component
- 74. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_arb_2011_sgmuxea Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component
- 75. Parameter Settings for User Entity altera_syncram_2 Instance: u1|hp_ram|ram_1port_0|altera_syncram_component
- 76. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_2011_72jkply Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component
- 77. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_arb_2011_sr6jboi Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component
- 78. Parameter Settings for User Entity altera_syncram_3 Instance: u1|initial_h_ram_inst|ram_1port_0|altera_syncram_component
- 79. Parameter Settings for User Entity altera_syncram_4 Instance: u1|solution_state_ram|ram_1port_0|altera_syncram_component
- 80. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
- 81. Parameter Settings for User Entity scfifo Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w|wfifo
- 82. Parameter Settings for User Entity altera_merlin_address_alignment_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|align_address_to_size
- 83. Parameter Settings for User Entity altera_merlin_burst_adapter_burstwrap_increment Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_burstwrap_increment
- 84. Parameter Settings for User Entity altera_merlin_burst_adapter_min Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min
- 85. Parameter Settings for User Entity altera_merlin_arb_adder Instance: u0|mm_interconnect_0|rsp_mux_003|arb|adder
- 86. Parameter Settings for User Entity altera_merlin_arb_adder_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb|adder
- 87. Parameter Settings for User Entity altera_merlin_arb_adder_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb|adder
- 88. Parameter Settings for User Entity sld_mod_ram_rom_top Instance: u1|hp_ram|ram_1port_0|intel_mce_component|intel_mce_inst
- 89. Parameter Settings for User Entity altera_sld_arbiter_top Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
- 90. Parameter Settings for User Entity sld_mod_ram_rom_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component|intel_mce_inst
- 91. Parameter Settings for User Entity altera_sld_arbiter_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
- 92. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
- 93. Parameter Settings for User Entity altera_merlin_burst_adapter_subtractor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub
- 94. Parameter Settings for User Entity altera_merlin_burst_adapter_adder Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub|subtract
- 95. Verilog Macro Usage
- 96. System Level Debug Agent Report
- 97. Assignments with Invalid Source or Target
- 98. Top Causes of Logic Optimized Away During Sweep
- 99. Analysis & Elaboration Messages
+ 16. Source Assignments for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer
+ 17. Source Assignments for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
+ 18. Ignored Source Level Assignments for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
+ 19. Ignored Source Level Assignments for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
+ 20. Parameter Settings for Top-Level Entity
+ 21. Parameter Settings for User Entity rst_pb_debounce Instance: rst_pb_debounce
+ 22. Parameter Settings for User Entity tempqiart_mm_bridge_0 Instance: u0|mm_bridge_0
+ 23. Parameter Settings for User Entity altera_reset_controller Instance: u0|rst_controller
+ 24. Parameter Settings for User Entity altera_reset_controller_1 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001
+ 25. Parameter Settings for User Entity altera_reset_controller_2 Instance: u0|rst_controller_003
+ 26. Parameter Settings for User Entity altera_reset_controller_3 Instance: u0|rst_controller_004
+ 27. Parameter Settings for User Entity bit_sieve_engine_25 Instance: u1|uut
+ 28. Parameter Settings for User Entity engine_control_fsm Instance: u1|control_unit
+ 29. Parameter Settings for User Entity stratix10_altera_iopll Instance: fpga_clk_pll|iopll_0|stratix10_altera_iopll_i
+ 30. Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0
+ 31. Parameter Settings for User Entity altera_avalon_jtag_uart Instance: u0|jtag_uart_0|jtag_uart_0
+ 32. Parameter Settings for User Entity tempqiart_mm_bridge_0_altera_avalon_mm_bridge_2010_tex5a4i Instance: u0|mm_bridge_0|mm_bridge_0
+ 33. Parameter Settings for User Entity tempqiart_altera_merlin_axi_translator_1974_xfkiwxi Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_translator
+ 34. Parameter Settings for User Entity tempqiart_altera_merlin_axi_translator_1974_xfkiwxi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_translator
+ 35. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi Instance: u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_translator
+ 36. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_translator
+ 37. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_2 Instance: u0|mm_interconnect_0|mm_bridge_0_s0_translator
+ 38. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_3 Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_translator
+ 39. Parameter Settings for User Entity tempqiart_altera_merlin_slave_translator_191_xg7rzxi_4 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_translator
+ 40. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_agent
+ 41. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
+ 42. Parameter Settings for User Entity tempqiart_altera_merlin_slave_agent_1930_jxauz3i Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
+ 43. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rsp_fifo
+ 44. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rdata_fifo
+ 45. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_2 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rsp_fifo
+ 46. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_3 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rdata_fifo
+ 47. Parameter Settings for User Entity tempqiart_altera_merlin_traffic_limiter_1921_5pm4apa Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_rd_limiter
+ 48. Parameter Settings for User Entity tempqiart_altera_merlin_burst_adapter_1940_yvysctq Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter
+ 49. Parameter Settings for User Entity altera_reset_synchronizer Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_sync_uq1
+ 50. Parameter Settings for User Entity altera_reset_synchronizer_1 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller_001|alt_rst_req_sync_uq1
+ 51. Parameter Settings for User Entity altera_reset_synchronizer_2 Instance: u0|rst_controller_004|alt_rst_sync_uq1
+ 52. Parameter Settings for User Entity e_off_generator Instance: u1|uut|e_off_region_gen[15].u_e_off_region
+ 53. Parameter Settings for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer
+ 54. Parameter Settings for User Entity twin_unified_BitSieve_Engine Instance: u1|uut|twin_engine_array[1023].u_twin_engine
+ 55. Parameter Settings for User Entity matrix_selector_1024_flat Instance: u1|uut|u_selector
+ 56. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
+ 57. Parameter Settings for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
+ 58. Parameter Settings for User Entity altera_syncram Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component
+ 59. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
+ 60. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_r Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_r
+ 61. Parameter Settings for User Entity altera_merlin_waitrequest_adapter Instance: u0|mm_bridge_0|mm_bridge_0|waitrequest_adapter
+ 62. Parameter Settings for User Entity altera_merlin_address_alignment Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_size
+ 63. Parameter Settings for User Entity altera_merlin_burst_uncompressor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
+ 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
+ 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
+ 66. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_obse4oa_default_decode Instance: u0|mm_interconnect_0|router_008|the_default_decode
+ 67. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_baawywi_default_decode Instance: u0|mm_interconnect_0|router_007|the_default_decode
+ 68. Parameter Settings for User Entity altera_merlin_burst_adapter_13_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter
+ 69. Parameter Settings for User Entity altera_merlin_arbitrator Instance: u0|mm_interconnect_0|cmd_mux_004|arb
+ 70. Parameter Settings for User Entity altera_merlin_arbitrator_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb
+ 71. Parameter Settings for User Entity altera_merlin_arbitrator_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb
+ 72. Parameter Settings for User Entity altera_merlin_arbitrator_3 Instance: u0|mm_interconnect_0|rsp_mux_003|arb
+ 73. Parameter Settings for User Entity altera_syncram_1 Instance: u1|symmetric_qubo_banks[1023].u_sym_matrix_bank|ram_2port_0|altera_syncram_component
+ 74. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_2011_hdk7lli Instance: u1|hp_ram|ram_1port_0|intel_mce_component
+ 75. Parameter Settings for User Entity hyperparam_ram_ram_1port_intel_mce_arb_2011_sgmuxea Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component
+ 76. Parameter Settings for User Entity altera_syncram_2 Instance: u1|hp_ram|ram_1port_0|altera_syncram_component
+ 77. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_2011_72jkply Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component
+ 78. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_arb_2011_sr6jboi Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component
+ 79. Parameter Settings for User Entity altera_syncram_3 Instance: u1|initial_h_ram_inst|ram_1port_0|altera_syncram_component
+ 80. Parameter Settings for User Entity altera_syncram_4 Instance: u1|solution_state_ram|ram_1port_0|altera_syncram_component
+ 81. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
+ 82. Parameter Settings for User Entity scfifo Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w|wfifo
+ 83. Parameter Settings for User Entity altera_merlin_address_alignment_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|align_address_to_size
+ 84. Parameter Settings for User Entity altera_merlin_burst_adapter_burstwrap_increment Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_burstwrap_increment
+ 85. Parameter Settings for User Entity altera_merlin_burst_adapter_min Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min
+ 86. Parameter Settings for User Entity altera_merlin_arb_adder Instance: u0|mm_interconnect_0|rsp_mux_003|arb|adder
+ 87. Parameter Settings for User Entity altera_merlin_arb_adder_1 Instance: u0|mm_interconnect_0|cmd_mux_003|arb|adder
+ 88. Parameter Settings for User Entity altera_merlin_arb_adder_2 Instance: u0|mm_interconnect_0|rsp_mux_001|arb|adder
+ 89. Parameter Settings for User Entity sld_mod_ram_rom_top Instance: u1|hp_ram|ram_1port_0|intel_mce_component|intel_mce_inst
+ 90. Parameter Settings for User Entity altera_sld_arbiter_top Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
+ 91. Parameter Settings for User Entity sld_mod_ram_rom_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component|intel_mce_inst
+ 92. Parameter Settings for User Entity altera_sld_arbiter_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
+ 93. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
+ 94. Parameter Settings for User Entity altera_merlin_burst_adapter_subtractor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub
+ 95. Parameter Settings for User Entity altera_merlin_burst_adapter_adder Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub|subtract
+ 96. Verilog Macro Usage
+ 97. System Level Debug Agent Report
+ 98. Assignments with Invalid Source or Target
+ 99. Hierarchies Optimized Away During Sweep
+100. Top Causes of Logic Optimized Away During Sweep
+101. Analysis & Elaboration Messages
 
 
 
@@ -319,6 +321,18 @@ All Instances:
 u0|rst_controller_002|alt_rst_sync_uq1
 u0|rst_controller_003|alt_rst_sync_uq1
 u0|rst_controller_004|alt_rst_sync_uq1
+
+
+
++-------------------------------------------------------------------------------------+
+; Source Assignments for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer ;
++--------------------+-------+------+-------------+-----------------------------------+
+; Assignment         ; Value ; From ; To          ; Source Location                   ;
++--------------------+-------+------+-------------+-----------------------------------+
+; RAMSTYLE_ATTRIBUTE ; M20K  ; -    ; history_ram ; tabu_mask_generator.v:24          ;
++--------------------+-------+------+-------------+-----------------------------------+
+All Instances:
+u1|uut|tabu_buffer
 
 
 
@@ -1563,9 +1577,9 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
 ; USE_WRITERESPONSE         ; 0     ; Signed Integer                                                                                                      ;
 +---------------------------+-------+---------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent
 u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent
 u0|mm_interconnect_0|mm_bridge_0_s0_agent
+u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent
 u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
 
@@ -1834,15 +1848,31 @@ u0|rst_controller_004|alt_rst_sync_uq1
 
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity e_off_generator Instance: u1|uut|u_e_off ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; WIDTH          ; 18    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity e_off_generator Instance: u1|uut|e_off_region_gen[15].u_e_off_region ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 18    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
 All Instances:
 u1|uut|u_e_off
+u1|uut|e_off_region_gen[0].u_e_off_region
+u1|uut|e_off_region_gen[1].u_e_off_region
+u1|uut|e_off_region_gen[2].u_e_off_region
+u1|uut|e_off_region_gen[3].u_e_off_region
+u1|uut|e_off_region_gen[4].u_e_off_region
+u1|uut|e_off_region_gen[5].u_e_off_region
+u1|uut|e_off_region_gen[6].u_e_off_region
+u1|uut|e_off_region_gen[7].u_e_off_region
+u1|uut|e_off_region_gen[8].u_e_off_region
+u1|uut|e_off_region_gen[9].u_e_off_region
+u1|uut|e_off_region_gen[10].u_e_off_region
+u1|uut|e_off_region_gen[11].u_e_off_region
+u1|uut|e_off_region_gen[12].u_e_off_region
+u1|uut|e_off_region_gen[13].u_e_off_region
+u1|uut|e_off_region_gen[14].u_e_off_region
+u1|uut|e_off_region_gen[15].u_e_off_region
 
 
 
@@ -3166,9 +3196,9 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_
 ; SYNC_RESET     ; 1     ; Signed Integer                                                                                                              ;
 +----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent|uncompressor
 u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent|uncompressor
 u0|mm_interconnect_0|mm_bridge_0_s0_agent|uncompressor
+u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent|uncompressor
 u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent|uncompressor
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
 
@@ -5164,233 +5194,244 @@ u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+-----------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assignments with Invalid Source or Target                                                                                                                                                                      ;
-+-----------------+-------------------------+--------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
-; Assignment Name ; Sample Assignment Value ; Entity ; Source ; Source Valid ; Target                  ; Target Valid ; Location                                                                                 ;
-+-----------------+-------------------------+--------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
-; LOCATION        ; PIN_A10                 ;        ;        ;              ; FMC_LA28_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:252 ;
-; LOCATION        ; PIN_A12                 ;        ;        ;              ; FMC_LA29_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:253 ;
-; LOCATION        ; PIN_A13                 ;        ;        ;              ; FMC_LA21_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:237 ;
-; LOCATION        ; PIN_A14                 ;        ;        ;              ; FMC_HA23_P(n)           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:309 ;
-; LOCATION        ; PIN_A15                 ;        ;        ;              ; FMC_HA23_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:310 ;
-; LOCATION        ; PIN_A17                 ;        ;        ;              ; FMC_LA12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:219 ;
-; LOCATION        ; PIN_A18                 ;        ;        ;              ; FMC_LA08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:210 ;
-; LOCATION        ; PIN_A22                 ;        ;        ;              ; FMC_HA18_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:327 ;
-; LOCATION        ; PIN_A23                 ;        ;        ;              ; FMC_HA00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:266 ;
-; LOCATION        ; PIN_A25                 ;        ;        ;              ; FMC_HA02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:272 ;
-; LOCATION        ; PIN_A8                  ;        ;        ;              ; FMC_I2C_SCL_1V8         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:403 ;
-; LOCATION        ; PIN_A9                  ;        ;        ;              ; FMC_LA28_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:251 ;
-; LOCATION        ; PIN_AA2                 ;        ;        ;              ; FMC_HB12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:331 ;
-; LOCATION        ; PIN_AA3                 ;        ;        ;              ; FMC_HB13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:365 ;
-; LOCATION        ; PIN_AA5                 ;        ;        ;              ; FMC_HB09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:379 ;
-; LOCATION        ; PIN_AB1                 ;        ;        ;              ; FMC_HB14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:347 ;
-; LOCATION        ; PIN_AB2                 ;        ;        ;              ; FMC_HB12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:332 ;
-; LOCATION        ; PIN_AB3                 ;        ;        ;              ; FMC_HB13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:364 ;
-; LOCATION        ; PIN_AC3                 ;        ;        ;              ; FMC_HB15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:340 ;
-; LOCATION        ; PIN_AC8                 ;        ;        ;              ; FMC_CLK2_BIDIR_IN_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:393 ;
-; LOCATION        ; PIN_AD11                ;        ;        ;              ; ETH_RC22504_I2C_LVL_EN  ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:541 ;
-; LOCATION        ; PIN_AD1                 ;        ;        ;              ; FMC_HB18_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:373 ;
-; LOCATION        ; PIN_AD2                 ;        ;        ;              ; FMC_HB16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:333 ;
-; LOCATION        ; PIN_AD3                 ;        ;        ;              ; FMC_HB15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:339 ;
-; LOCATION        ; PIN_AE11                ;        ;        ;              ; AD9545_I2C_LVL_EN       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:540 ;
-; LOCATION        ; PIN_AE1                 ;        ;        ;              ; FMC_HB18_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:372 ;
-; LOCATION        ; PIN_AE2                 ;        ;        ;              ; FMC_HB16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:334 ;
-; LOCATION        ; PIN_AF12                ;        ;        ;              ; FMC_I2C_LVL_EN          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:543 ;
-; LOCATION        ; PIN_AF17                ;        ;        ;              ; FPGA_EEPROM_SDA         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:508 ;
-; LOCATION        ; PIN_AF2                 ;        ;        ;              ; FMC_HB20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:337 ;
-; LOCATION        ; PIN_AF3                 ;        ;        ;              ; FMC_HB19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:367 ;
-; LOCATION        ; PIN_AF8                 ;        ;        ;              ; QSFP1_PWR_GOOD_1V8      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:522 ;
-; LOCATION        ; PIN_AG11                ;        ;        ;              ; FPGA_EEPROM_I2C_LVL_EN  ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:539 ;
-; LOCATION        ; PIN_AG12                ;        ;        ;              ; JESD_RC22504_I2C_LVL_EN ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:542 ;
-; LOCATION        ; PIN_AG17                ;        ;        ;              ; FPGA_EEPROM_SCL         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:507 ;
-; LOCATION        ; PIN_AG1                 ;        ;        ;              ; FMC_HB21_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:370 ;
-; LOCATION        ; PIN_AG2                 ;        ;        ;              ; FMC_HB20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:338 ;
-; LOCATION        ; PIN_AG3                 ;        ;        ;              ; FMC_HB19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:366 ;
-; LOCATION        ; PIN_AG8                 ;        ;        ;              ; QSFP0_PWR_GOOD_1V8      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:511 ;
-; LOCATION        ; PIN_AH1                 ;        ;        ;              ; FMC_HB21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:371 ;
-; LOCATION        ; PIN_AH3                 ;        ;        ;              ; AD9545_RESETB           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:551 ;
-; LOCATION        ; PIN_AH9                 ;        ;        ;              ; FPGA_FAN_PWM            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:534 ;
-; LOCATION        ; PIN_AJ3                 ;        ;        ;              ; AD9545_SDA              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:560 ;
-; LOCATION        ; PIN_AJ4                 ;        ;        ;              ; AD9545_SCK              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:559 ;
-; LOCATION        ; PIN_AJ6                 ;        ;        ;              ; AD9545_M6               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:558 ;
-; LOCATION        ; PIN_AJ9                 ;        ;        ;              ; FAN_TACH_1V8            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:535 ;
-; LOCATION        ; PIN_AK10                ;        ;        ;              ; QSFP1_PWR_EN            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:530 ;
-; LOCATION        ; PIN_AK19                ;        ;        ;              ; JESD_CORECLK_P(n)       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:472 ;
-; LOCATION        ; PIN_AK1                 ;        ;        ;              ; AD9545_M0               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:552 ;
-; LOCATION        ; PIN_AK2                 ;        ;        ;              ; AD9545_M1               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:553 ;
-; LOCATION        ; PIN_AK4                 ;        ;        ;              ; AD9545_M2               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:554 ;
-; LOCATION        ; PIN_AK5                 ;        ;        ;              ; AD9545_M3               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:555 ;
-; LOCATION        ; PIN_AK6                 ;        ;        ;              ; AD9545_M4               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:556 ;
-; LOCATION        ; PIN_AK7                 ;        ;        ;              ; AD9545_M5               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:557 ;
-; LOCATION        ; PIN_AK9                 ;        ;        ;              ; QSFP0_PWR_EN            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:519 ;
-; LOCATION        ; PIN_AL10                ;        ;        ;              ; QSFP1_LPMODE            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:523 ;
-; LOCATION        ; PIN_AL19                ;        ;        ;              ; JESD_CORECLK_P          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:473 ;
-; LOCATION        ; PIN_AL2                 ;        ;        ;              ; RC22504_JESD_OEN        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:476 ;
-; LOCATION        ; PIN_AL3                 ;        ;        ;              ; RC22504_JESD_LOCK       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:477 ;
-; LOCATION        ; PIN_AL7                 ;        ;        ;              ; QSFP0_LPMODE            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:512 ;
-; LOCATION        ; PIN_AL8                 ;        ;        ;              ; QSFP0_MODSEL_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:517 ;
-; LOCATION        ; PIN_AL9                 ;        ;        ;              ; QSFP1_MODSEL_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:528 ;
-; LOCATION        ; PIN_AM10                ;        ;        ;              ; QSFP1_RESET_L           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:524 ;
-; LOCATION        ; PIN_AM2                 ;        ;        ;              ; RC22504_JESD_SCL        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:478 ;
-; LOCATION        ; PIN_AM3                 ;        ;        ;              ; RC22504_JESD_SDA        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:479 ;
-; LOCATION        ; PIN_AM7                 ;        ;        ;              ; QSFP0_RESET_L           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:513 ;
-; LOCATION        ; PIN_AM8                 ;        ;        ;              ; QSFP0_INT_L             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:516 ;
-; LOCATION        ; PIN_AN10                ;        ;        ;              ; QSFP1_INT_L             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:527 ;
-; LOCATION        ; PIN_AN3                 ;        ;        ;              ; RC22504_ETH_OEN         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:487 ;
-; LOCATION        ; PIN_AN4                 ;        ;        ;              ; RC22504_ETH_LOCK        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:488 ;
-; LOCATION        ; PIN_AN8                 ;        ;        ;              ; QSFP0_MODPRS_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:518 ;
-; LOCATION        ; PIN_AN9                 ;        ;        ;              ; QSFP1_MODPRS_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:529 ;
-; LOCATION        ; PIN_AP3                 ;        ;        ;              ; RC22504_ETH_SCL         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:489 ;
-; LOCATION        ; PIN_AP4                 ;        ;        ;              ; RC22504_ETH_SDA         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:490 ;
-; LOCATION        ; PIN_AP6                 ;        ;        ;              ; QSFP0_SDA               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:515 ;
-; LOCATION        ; PIN_AP7                 ;        ;        ;              ; QSFP0_SCL               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:514 ;
-; LOCATION        ; PIN_AP8                 ;        ;        ;              ; QSFP1_SDA               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:526 ;
-; LOCATION        ; PIN_AP9                 ;        ;        ;              ; QSFP1_SCL               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:525 ;
-; LOCATION        ; PIN_B12                 ;        ;        ;              ; FMC_LA29_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:254 ;
-; LOCATION        ; PIN_B13                 ;        ;        ;              ; FMC_LA21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:238 ;
-; LOCATION        ; PIN_B16                 ;        ;        ;              ; FMC_LA14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:223 ;
-; LOCATION        ; PIN_B17                 ;        ;        ;              ; FMC_LA12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:218 ;
-; LOCATION        ; PIN_B18                 ;        ;        ;              ; FMC_LA08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:211 ;
-; LOCATION        ; PIN_B21                 ;        ;        ;              ; FMC_HA22_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:283 ;
-; LOCATION        ; PIN_B22                 ;        ;        ;              ; FMC_HA18_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:328 ;
-; LOCATION        ; PIN_B23                 ;        ;        ;              ; FMC_HA00_CC_TERM_N      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:265 ;
-; LOCATION        ; PIN_B25                 ;        ;        ;              ; FMC_HA03_P(n)           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:304 ;
-; LOCATION        ; PIN_B8                  ;        ;        ;              ; FMC_I2C_SDA_1V8         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:404 ;
-; LOCATION        ; PIN_C13                 ;        ;        ;              ; FMC_LA26_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:248 ;
-; LOCATION        ; PIN_C14                 ;        ;        ;              ; FMC_LA23_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:242 ;
-; LOCATION        ; PIN_C16                 ;        ;        ;              ; FMC_LA14_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:222 ;
-; LOCATION        ; PIN_C18                 ;        ;        ;              ; FMC_LA05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:204 ;
-; LOCATION        ; PIN_C19                 ;        ;        ;              ; FMC_LA03_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:200 ;
-; LOCATION        ; PIN_C20                 ;        ;        ;              ; FMC_LA00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:398 ;
-; LOCATION        ; PIN_C21                 ;        ;        ;              ; FMC_HA22_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:284 ;
-; LOCATION        ; PIN_C23                 ;        ;        ;              ; FMC_HA16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:323 ;
-; LOCATION        ; PIN_C24                 ;        ;        ;              ; FMC_HA13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:316 ;
-; LOCATION        ; PIN_C25                 ;        ;        ;              ; FMC_HA03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:305 ;
-; LOCATION        ; PIN_C9                  ;        ;        ;              ; FMC_LA32_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:260 ;
-; LOCATION        ; PIN_D11                 ;        ;        ;              ; FMC_CLK1_M2C_TERM_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:390 ;
-; LOCATION        ; PIN_D12                 ;        ;        ;              ; FMC_LA24_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:243 ;
-; LOCATION        ; PIN_D13                 ;        ;        ;              ; FMC_LA26_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:247 ;
-; LOCATION        ; PIN_D14                 ;        ;        ;              ; FMC_LA23_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:241 ;
-; LOCATION        ; PIN_D16                 ;        ;        ;              ; FMC_LA13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:220 ;
-; LOCATION        ; PIN_D17                 ;        ;        ;              ; FMC_LA09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:213 ;
-; LOCATION        ; PIN_D18                 ;        ;        ;              ; FMC_LA05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:205 ;
-; LOCATION        ; PIN_D19                 ;        ;        ;              ; FMC_LA03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:201 ;
-; LOCATION        ; PIN_D21                 ;        ;        ;              ; FMC_HA21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:292 ;
-; LOCATION        ; PIN_D22                 ;        ;        ;              ; FMC_HA20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:325 ;
-; LOCATION        ; PIN_D23                 ;        ;        ;              ; FMC_HA16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:324 ;
-; LOCATION        ; PIN_D24                 ;        ;        ;              ; FMC_HA13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:315 ;
-; LOCATION        ; PIN_D9                  ;        ;        ;              ; FMC_LA32_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:259 ;
-; LOCATION        ; PIN_E10                 ;        ;        ;              ; FMC_LA33_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:261 ;
-; LOCATION        ; PIN_E12                 ;        ;        ;              ; FMC_LA24_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:244 ;
-; LOCATION        ; PIN_E14                 ;        ;        ;              ; FMC_LA19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:233 ;
-; LOCATION        ; PIN_E15                 ;        ;        ;              ; FMC_LA15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:224 ;
-; LOCATION        ; PIN_E16                 ;        ;        ;              ; FMC_LA13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:221 ;
-; LOCATION        ; PIN_E17                 ;        ;        ;              ; FMC_LA09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:212 ;
-; LOCATION        ; PIN_E19                 ;        ;        ;              ; FMC_LA01_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:196 ;
-; LOCATION        ; PIN_E22                 ;        ;        ;              ; FMC_HA20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:326 ;
-; LOCATION        ; PIN_E24                 ;        ;        ;              ; FMC_HA06_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:278 ;
-; LOCATION        ; PIN_E25                 ;        ;        ;              ; FMC_HA04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:282 ;
-; LOCATION        ; PIN_F10                 ;        ;        ;              ; FMC_LA33_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:262 ;
-; LOCATION        ; PIN_F13                 ;        ;        ;              ; FMC_LA27_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:249 ;
-; LOCATION        ; PIN_F14                 ;        ;        ;              ; FMC_LA19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:234 ;
-; LOCATION        ; PIN_F15                 ;        ;        ;              ; FMC_LA15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:225 ;
-; LOCATION        ; PIN_F17                 ;        ;        ;              ; FMC_LA10_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:214 ;
-; LOCATION        ; PIN_F18                 ;        ;        ;              ; FMC_LA04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:202 ;
-; LOCATION        ; PIN_F19                 ;        ;        ;              ; FMC_LA01_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:197 ;
-; LOCATION        ; PIN_F22                 ;        ;        ;              ; FMC_HA15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:289 ;
-; LOCATION        ; PIN_F25                 ;        ;        ;              ; FMC_HA04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:281 ;
-; LOCATION        ; PIN_G11                 ;        ;        ;              ; FMC_LA31_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:258 ;
-; LOCATION        ; PIN_G13                 ;        ;        ;              ; FMC_LA27_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:250 ;
-; LOCATION        ; PIN_G15                 ;        ;        ;              ; FMC_LA16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:227 ;
-; LOCATION        ; PIN_G16                 ;        ;        ;              ; FMC_LA11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:216 ;
-; LOCATION        ; PIN_G17                 ;        ;        ;              ; FMC_LA10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:215 ;
-; LOCATION        ; PIN_G18                 ;        ;        ;              ; FMC_LA04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:203 ;
-; LOCATION        ; PIN_G21                 ;        ;        ;              ; FMC_HA19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:296 ;
-; LOCATION        ; PIN_G22                 ;        ;        ;              ; FMC_HA15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:290 ;
-; LOCATION        ; PIN_G23                 ;        ;        ;              ; FMC_HA10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:300 ;
-; LOCATION        ; PIN_G25                 ;        ;        ;              ; FMC_HA05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:317 ;
-; LOCATION        ; PIN_GXEL8A_RX_CH0P      ;        ;        ;              ; QSFP_RX_P[0..1][0..3]   ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:58  ;
-; LOCATION        ; PIN_GXEL8A_RX_CH10N     ;        ;        ;              ; JESD_RXDN[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:137 ;
-; LOCATION        ; PIN_GXEL8A_RX_CH10P     ;        ;        ;              ; JESD_RXDP[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:136 ;
-; LOCATION        ; PIN_GXEL8A_TX_CH0P      ;        ;        ;              ; QSFP_TX_P[0..1][0..3]   ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:54  ;
-; LOCATION        ; PIN_GXEL8A_TX_CH10N     ;        ;        ;              ; JESD_TXDN[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:102 ;
-; LOCATION        ; PIN_GXEL8A_TX_CH10P     ;        ;        ;              ; JESD_TXDP[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:101 ;
-; LOCATION        ; PIN_H11                 ;        ;        ;              ; FMC_LA31_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:257 ;
-; LOCATION        ; PIN_H13                 ;        ;        ;              ; FMC_LA17_CC_TERM_N      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:229 ;
-; LOCATION        ; PIN_H14                 ;        ;        ;              ; FMC_LA18_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:232 ;
-; LOCATION        ; PIN_H15                 ;        ;        ;              ; FMC_LA16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:226 ;
-; LOCATION        ; PIN_H16                 ;        ;        ;              ; FMC_LA11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:217 ;
-; LOCATION        ; PIN_H18                 ;        ;        ;              ; FMC_LA06_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:207 ;
-; LOCATION        ; PIN_H19                 ;        ;        ;              ; FMC_LA02_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:198 ;
-; LOCATION        ; PIN_H20                 ;        ;        ;              ; FMC_PG_C2M_1V8          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:566 ;
-; LOCATION        ; PIN_H21                 ;        ;        ;              ; FMC_HA19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:295 ;
-; LOCATION        ; PIN_H23                 ;        ;        ;              ; FMC_HA12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:275 ;
-; LOCATION        ; PIN_H24                 ;        ;        ;              ; FMC_HA07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:287 ;
-; LOCATION        ; PIN_H25                 ;        ;        ;              ; FMC_HA05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:318 ;
-; LOCATION        ; PIN_J11                 ;        ;        ;              ; FMC_LA30_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:255 ;
-; LOCATION        ; PIN_J12                 ;        ;        ;              ; FMC_LA25_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:245 ;
-; LOCATION        ; PIN_J13                 ;        ;        ;              ; FMC_LA17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:230 ;
-; LOCATION        ; PIN_J14                 ;        ;        ;              ; FMC_LA18_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:231 ;
-; LOCATION        ; PIN_J16                 ;        ;        ;              ; FMC_CLK0_M2C_TERM_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:382 ;
-; LOCATION        ; PIN_J17                 ;        ;        ;              ; FMC_LA07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:209 ;
-; LOCATION        ; PIN_J18                 ;        ;        ;              ; FMC_LA06_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:206 ;
-; LOCATION        ; PIN_J19                 ;        ;        ;              ; FMC_LA02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:199 ;
-; LOCATION        ; PIN_J1                  ;        ;        ;              ; AD9545_CORECLK_P(n)     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:547 ;
-; LOCATION        ; PIN_J23                 ;        ;        ;              ; FMC_HA12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:276 ;
-; LOCATION        ; PIN_J24                 ;        ;        ;              ; FMC_HA07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:288 ;
-; LOCATION        ; PIN_K11                 ;        ;        ;              ; FMC_LA30_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:256 ;
-; LOCATION        ; PIN_K12                 ;        ;        ;              ; FMC_LA25_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:246 ;
-; LOCATION        ; PIN_K14                 ;        ;        ;              ; FMC_LA20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:236 ;
-; LOCATION        ; PIN_K15                 ;        ;        ;              ; FMC_LA20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:235 ;
-; LOCATION        ; PIN_K17                 ;        ;        ;              ; FMC_LA07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:208 ;
-; LOCATION        ; PIN_K1                  ;        ;        ;              ; AD9545_CORECLK_P        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:548 ;
-; LOCATION        ; PIN_K22                 ;        ;        ;              ; FMC_HA17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:268 ;
-; LOCATION        ; PIN_K24                 ;        ;        ;              ; FMC_HA08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:285 ;
-; LOCATION        ; PIN_K25                 ;        ;        ;              ; FMC_HA01_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:313 ;
-; LOCATION        ; PIN_L13                 ;        ;        ;              ; FMC_LA22_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:239 ;
-; LOCATION        ; PIN_L22                 ;        ;        ;              ; FMC_HA14_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:297 ;
-; LOCATION        ; PIN_L23                 ;        ;        ;              ; FMC_HA11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:321 ;
-; LOCATION        ; PIN_L24                 ;        ;        ;              ; FMC_HA08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:286 ;
-; LOCATION        ; PIN_L25                 ;        ;        ;              ; FMC_HA01_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:314 ;
-; LOCATION        ; PIN_M21                 ;        ;        ;              ; FMC_HA14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:298 ;
-; LOCATION        ; PIN_M22                 ;        ;        ;              ; FMC_HA11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:322 ;
-; LOCATION        ; PIN_M23                 ;        ;        ;              ; FMC_HA09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:320 ;
-; LOCATION        ; PIN_M24                 ;        ;        ;              ; FMC_HA09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:319 ;
-; LOCATION        ; PIN_M5                  ;        ;        ;              ; ETH_CORECLK_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:484 ;
-; LOCATION        ; PIN_N5                  ;        ;        ;              ; ETH_CORECLK_P(n)        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:483 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH0P  ;        ;        ;              ; FPGA_REFCLK_EXT         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:164 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH1P  ;        ;        ;              ; FPGA_ETH_REFCLK         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:167 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH2P  ;        ;        ;              ; FMC_GBTCLK0_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:170 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH3P  ;        ;        ;              ; FMC_GBTCLK1_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:173 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH4P  ;        ;        ;              ; FMC_GBTCLK2_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:176 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH5P  ;        ;        ;              ; FMC_GBTCLK3_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:179 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH6P  ;        ;        ;              ; AD9545_REFCLK           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:182 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH7P  ;        ;        ;              ; JESD_REFCLK2            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:185 ;
-; LOCATION        ; PIN_REFCLK_GXEL8A_CH8P  ;        ;        ;              ; ETH_REFCLK0             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:188 ;
-; LOCATION        ; PIN_T4                  ;        ;        ;              ; FMC_HB01_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:356 ;
-; LOCATION        ; PIN_T5                  ;        ;        ;              ; FMC_HB01_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:355 ;
-; LOCATION        ; PIN_T7                  ;        ;        ;              ; FMC_HB02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:342 ;
-; LOCATION        ; PIN_U2                  ;        ;        ;              ; FMC_HB05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:368 ;
-; LOCATION        ; PIN_U3                  ;        ;        ;              ; FMC_HB05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:369 ;
-; LOCATION        ; PIN_U5                  ;        ;        ;              ; FMC_HB04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:335 ;
-; LOCATION        ; PIN_U6                  ;        ;        ;              ; FMC_HB03_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:374 ;
-; LOCATION        ; PIN_U7                  ;        ;        ;              ; FMC_HB02_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:341 ;
-; LOCATION        ; PIN_V1                  ;        ;        ;              ; FMC_HB06_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:353 ;
-; LOCATION        ; PIN_V4                  ;        ;        ;              ; FMC_HB07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:343 ;
-; LOCATION        ; PIN_V5                  ;        ;        ;              ; FMC_HB04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:336 ;
-; LOCATION        ; PIN_V6                  ;        ;        ;              ; FMC_HB03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:375 ;
-; LOCATION        ; PIN_W1                  ;        ;        ;              ; FMC_HB11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:376 ;
-; LOCATION        ; PIN_W3                  ;        ;        ;              ; FMC_HB17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:358 ;
-; LOCATION        ; PIN_W4                  ;        ;        ;              ; FMC_HB07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:344 ;
-; LOCATION        ; PIN_W6                  ;        ;        ;              ; FMC_HB08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:345 ;
-; LOCATION        ; PIN_Y1                  ;        ;        ;              ; FMC_HB11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:377 ;
-; LOCATION        ; PIN_Y2                  ;        ;        ;              ; FMC_HB10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:361 ;
-; LOCATION        ; PIN_Y4                  ;        ;        ;              ; FMC_HB00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:350 ;
-; LOCATION        ; PIN_Y5                  ;        ;        ;              ; FMC_HB09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:378 ;
-; LOCATION        ; PIN_Y6                  ;        ;        ;              ; FMC_HB08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:346 ;
-+-----------------+-------------------------+--------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assignments with Invalid Source or Target                                                                                                                                                                              ;
++------------------+-------------------------+---------------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
+; Assignment Name  ; Sample Assignment Value ; Entity        ; Source ; Source Valid ; Target                  ; Target Valid ; Location                                                                                 ;
++------------------+-------------------------+---------------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
+; PARTITION_COLOUR ; -3638529                ; tempqiart_top ;        ;              ; tempqiart_top           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:695 ;
+; LOCATION         ; PIN_A10                 ;               ;        ;              ; FMC_LA28_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:252 ;
+; LOCATION         ; PIN_A12                 ;               ;        ;              ; FMC_LA29_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:253 ;
+; LOCATION         ; PIN_A13                 ;               ;        ;              ; FMC_LA21_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:237 ;
+; LOCATION         ; PIN_A14                 ;               ;        ;              ; FMC_HA23_P(n)           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:309 ;
+; LOCATION         ; PIN_A15                 ;               ;        ;              ; FMC_HA23_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:310 ;
+; LOCATION         ; PIN_A17                 ;               ;        ;              ; FMC_LA12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:219 ;
+; LOCATION         ; PIN_A18                 ;               ;        ;              ; FMC_LA08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:210 ;
+; LOCATION         ; PIN_A22                 ;               ;        ;              ; FMC_HA18_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:327 ;
+; LOCATION         ; PIN_A23                 ;               ;        ;              ; FMC_HA00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:266 ;
+; LOCATION         ; PIN_A25                 ;               ;        ;              ; FMC_HA02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:272 ;
+; LOCATION         ; PIN_A8                  ;               ;        ;              ; FMC_I2C_SCL_1V8         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:403 ;
+; LOCATION         ; PIN_A9                  ;               ;        ;              ; FMC_LA28_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:251 ;
+; LOCATION         ; PIN_AA2                 ;               ;        ;              ; FMC_HB12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:331 ;
+; LOCATION         ; PIN_AA3                 ;               ;        ;              ; FMC_HB13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:365 ;
+; LOCATION         ; PIN_AA5                 ;               ;        ;              ; FMC_HB09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:379 ;
+; LOCATION         ; PIN_AB1                 ;               ;        ;              ; FMC_HB14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:347 ;
+; LOCATION         ; PIN_AB2                 ;               ;        ;              ; FMC_HB12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:332 ;
+; LOCATION         ; PIN_AB3                 ;               ;        ;              ; FMC_HB13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:364 ;
+; LOCATION         ; PIN_AC3                 ;               ;        ;              ; FMC_HB15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:340 ;
+; LOCATION         ; PIN_AC8                 ;               ;        ;              ; FMC_CLK2_BIDIR_IN_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:393 ;
+; LOCATION         ; PIN_AD11                ;               ;        ;              ; ETH_RC22504_I2C_LVL_EN  ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:541 ;
+; LOCATION         ; PIN_AD1                 ;               ;        ;              ; FMC_HB18_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:373 ;
+; LOCATION         ; PIN_AD2                 ;               ;        ;              ; FMC_HB16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:333 ;
+; LOCATION         ; PIN_AD3                 ;               ;        ;              ; FMC_HB15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:339 ;
+; LOCATION         ; PIN_AE11                ;               ;        ;              ; AD9545_I2C_LVL_EN       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:540 ;
+; LOCATION         ; PIN_AE1                 ;               ;        ;              ; FMC_HB18_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:372 ;
+; LOCATION         ; PIN_AE2                 ;               ;        ;              ; FMC_HB16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:334 ;
+; LOCATION         ; PIN_AF12                ;               ;        ;              ; FMC_I2C_LVL_EN          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:543 ;
+; LOCATION         ; PIN_AF17                ;               ;        ;              ; FPGA_EEPROM_SDA         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:508 ;
+; LOCATION         ; PIN_AF2                 ;               ;        ;              ; FMC_HB20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:337 ;
+; LOCATION         ; PIN_AF3                 ;               ;        ;              ; FMC_HB19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:367 ;
+; LOCATION         ; PIN_AF8                 ;               ;        ;              ; QSFP1_PWR_GOOD_1V8      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:522 ;
+; LOCATION         ; PIN_AG11                ;               ;        ;              ; FPGA_EEPROM_I2C_LVL_EN  ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:539 ;
+; LOCATION         ; PIN_AG12                ;               ;        ;              ; JESD_RC22504_I2C_LVL_EN ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:542 ;
+; LOCATION         ; PIN_AG17                ;               ;        ;              ; FPGA_EEPROM_SCL         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:507 ;
+; LOCATION         ; PIN_AG1                 ;               ;        ;              ; FMC_HB21_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:370 ;
+; LOCATION         ; PIN_AG2                 ;               ;        ;              ; FMC_HB20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:338 ;
+; LOCATION         ; PIN_AG3                 ;               ;        ;              ; FMC_HB19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:366 ;
+; LOCATION         ; PIN_AG8                 ;               ;        ;              ; QSFP0_PWR_GOOD_1V8      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:511 ;
+; LOCATION         ; PIN_AH1                 ;               ;        ;              ; FMC_HB21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:371 ;
+; LOCATION         ; PIN_AH3                 ;               ;        ;              ; AD9545_RESETB           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:551 ;
+; LOCATION         ; PIN_AH9                 ;               ;        ;              ; FPGA_FAN_PWM            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:534 ;
+; LOCATION         ; PIN_AJ3                 ;               ;        ;              ; AD9545_SDA              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:560 ;
+; LOCATION         ; PIN_AJ4                 ;               ;        ;              ; AD9545_SCK              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:559 ;
+; LOCATION         ; PIN_AJ6                 ;               ;        ;              ; AD9545_M6               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:558 ;
+; LOCATION         ; PIN_AJ9                 ;               ;        ;              ; FAN_TACH_1V8            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:535 ;
+; LOCATION         ; PIN_AK10                ;               ;        ;              ; QSFP1_PWR_EN            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:530 ;
+; LOCATION         ; PIN_AK19                ;               ;        ;              ; JESD_CORECLK_P(n)       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:472 ;
+; LOCATION         ; PIN_AK1                 ;               ;        ;              ; AD9545_M0               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:552 ;
+; LOCATION         ; PIN_AK2                 ;               ;        ;              ; AD9545_M1               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:553 ;
+; LOCATION         ; PIN_AK4                 ;               ;        ;              ; AD9545_M2               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:554 ;
+; LOCATION         ; PIN_AK5                 ;               ;        ;              ; AD9545_M3               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:555 ;
+; LOCATION         ; PIN_AK6                 ;               ;        ;              ; AD9545_M4               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:556 ;
+; LOCATION         ; PIN_AK7                 ;               ;        ;              ; AD9545_M5               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:557 ;
+; LOCATION         ; PIN_AK9                 ;               ;        ;              ; QSFP0_PWR_EN            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:519 ;
+; LOCATION         ; PIN_AL10                ;               ;        ;              ; QSFP1_LPMODE            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:523 ;
+; LOCATION         ; PIN_AL19                ;               ;        ;              ; JESD_CORECLK_P          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:473 ;
+; LOCATION         ; PIN_AL2                 ;               ;        ;              ; RC22504_JESD_OEN        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:476 ;
+; LOCATION         ; PIN_AL3                 ;               ;        ;              ; RC22504_JESD_LOCK       ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:477 ;
+; LOCATION         ; PIN_AL7                 ;               ;        ;              ; QSFP0_LPMODE            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:512 ;
+; LOCATION         ; PIN_AL8                 ;               ;        ;              ; QSFP0_MODSEL_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:517 ;
+; LOCATION         ; PIN_AL9                 ;               ;        ;              ; QSFP1_MODSEL_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:528 ;
+; LOCATION         ; PIN_AM10                ;               ;        ;              ; QSFP1_RESET_L           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:524 ;
+; LOCATION         ; PIN_AM2                 ;               ;        ;              ; RC22504_JESD_SCL        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:478 ;
+; LOCATION         ; PIN_AM3                 ;               ;        ;              ; RC22504_JESD_SDA        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:479 ;
+; LOCATION         ; PIN_AM7                 ;               ;        ;              ; QSFP0_RESET_L           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:513 ;
+; LOCATION         ; PIN_AM8                 ;               ;        ;              ; QSFP0_INT_L             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:516 ;
+; LOCATION         ; PIN_AN10                ;               ;        ;              ; QSFP1_INT_L             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:527 ;
+; LOCATION         ; PIN_AN3                 ;               ;        ;              ; RC22504_ETH_OEN         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:487 ;
+; LOCATION         ; PIN_AN4                 ;               ;        ;              ; RC22504_ETH_LOCK        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:488 ;
+; LOCATION         ; PIN_AN8                 ;               ;        ;              ; QSFP0_MODPRS_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:518 ;
+; LOCATION         ; PIN_AN9                 ;               ;        ;              ; QSFP1_MODPRS_L          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:529 ;
+; LOCATION         ; PIN_AP3                 ;               ;        ;              ; RC22504_ETH_SCL         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:489 ;
+; LOCATION         ; PIN_AP4                 ;               ;        ;              ; RC22504_ETH_SDA         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:490 ;
+; LOCATION         ; PIN_AP6                 ;               ;        ;              ; QSFP0_SDA               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:515 ;
+; LOCATION         ; PIN_AP7                 ;               ;        ;              ; QSFP0_SCL               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:514 ;
+; LOCATION         ; PIN_AP8                 ;               ;        ;              ; QSFP1_SDA               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:526 ;
+; LOCATION         ; PIN_AP9                 ;               ;        ;              ; QSFP1_SCL               ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:525 ;
+; LOCATION         ; PIN_B12                 ;               ;        ;              ; FMC_LA29_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:254 ;
+; LOCATION         ; PIN_B13                 ;               ;        ;              ; FMC_LA21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:238 ;
+; LOCATION         ; PIN_B16                 ;               ;        ;              ; FMC_LA14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:223 ;
+; LOCATION         ; PIN_B17                 ;               ;        ;              ; FMC_LA12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:218 ;
+; LOCATION         ; PIN_B18                 ;               ;        ;              ; FMC_LA08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:211 ;
+; LOCATION         ; PIN_B21                 ;               ;        ;              ; FMC_HA22_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:283 ;
+; LOCATION         ; PIN_B22                 ;               ;        ;              ; FMC_HA18_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:328 ;
+; LOCATION         ; PIN_B23                 ;               ;        ;              ; FMC_HA00_CC_TERM_N      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:265 ;
+; LOCATION         ; PIN_B25                 ;               ;        ;              ; FMC_HA03_P(n)           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:304 ;
+; LOCATION         ; PIN_B8                  ;               ;        ;              ; FMC_I2C_SDA_1V8         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:404 ;
+; LOCATION         ; PIN_C13                 ;               ;        ;              ; FMC_LA26_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:248 ;
+; LOCATION         ; PIN_C14                 ;               ;        ;              ; FMC_LA23_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:242 ;
+; LOCATION         ; PIN_C16                 ;               ;        ;              ; FMC_LA14_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:222 ;
+; LOCATION         ; PIN_C18                 ;               ;        ;              ; FMC_LA05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:204 ;
+; LOCATION         ; PIN_C19                 ;               ;        ;              ; FMC_LA03_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:200 ;
+; LOCATION         ; PIN_C20                 ;               ;        ;              ; FMC_LA00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:398 ;
+; LOCATION         ; PIN_C21                 ;               ;        ;              ; FMC_HA22_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:284 ;
+; LOCATION         ; PIN_C23                 ;               ;        ;              ; FMC_HA16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:323 ;
+; LOCATION         ; PIN_C24                 ;               ;        ;              ; FMC_HA13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:316 ;
+; LOCATION         ; PIN_C25                 ;               ;        ;              ; FMC_HA03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:305 ;
+; LOCATION         ; PIN_C9                  ;               ;        ;              ; FMC_LA32_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:260 ;
+; LOCATION         ; PIN_D11                 ;               ;        ;              ; FMC_CLK1_M2C_TERM_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:390 ;
+; LOCATION         ; PIN_D12                 ;               ;        ;              ; FMC_LA24_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:243 ;
+; LOCATION         ; PIN_D13                 ;               ;        ;              ; FMC_LA26_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:247 ;
+; LOCATION         ; PIN_D14                 ;               ;        ;              ; FMC_LA23_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:241 ;
+; LOCATION         ; PIN_D16                 ;               ;        ;              ; FMC_LA13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:220 ;
+; LOCATION         ; PIN_D17                 ;               ;        ;              ; FMC_LA09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:213 ;
+; LOCATION         ; PIN_D18                 ;               ;        ;              ; FMC_LA05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:205 ;
+; LOCATION         ; PIN_D19                 ;               ;        ;              ; FMC_LA03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:201 ;
+; LOCATION         ; PIN_D21                 ;               ;        ;              ; FMC_HA21_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:292 ;
+; LOCATION         ; PIN_D22                 ;               ;        ;              ; FMC_HA20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:325 ;
+; LOCATION         ; PIN_D23                 ;               ;        ;              ; FMC_HA16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:324 ;
+; LOCATION         ; PIN_D24                 ;               ;        ;              ; FMC_HA13_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:315 ;
+; LOCATION         ; PIN_D9                  ;               ;        ;              ; FMC_LA32_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:259 ;
+; LOCATION         ; PIN_E10                 ;               ;        ;              ; FMC_LA33_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:261 ;
+; LOCATION         ; PIN_E12                 ;               ;        ;              ; FMC_LA24_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:244 ;
+; LOCATION         ; PIN_E14                 ;               ;        ;              ; FMC_LA19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:233 ;
+; LOCATION         ; PIN_E15                 ;               ;        ;              ; FMC_LA15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:224 ;
+; LOCATION         ; PIN_E16                 ;               ;        ;              ; FMC_LA13_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:221 ;
+; LOCATION         ; PIN_E17                 ;               ;        ;              ; FMC_LA09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:212 ;
+; LOCATION         ; PIN_E19                 ;               ;        ;              ; FMC_LA01_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:196 ;
+; LOCATION         ; PIN_E22                 ;               ;        ;              ; FMC_HA20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:326 ;
+; LOCATION         ; PIN_E24                 ;               ;        ;              ; FMC_HA06_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:278 ;
+; LOCATION         ; PIN_E25                 ;               ;        ;              ; FMC_HA04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:282 ;
+; LOCATION         ; PIN_F10                 ;               ;        ;              ; FMC_LA33_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:262 ;
+; LOCATION         ; PIN_F13                 ;               ;        ;              ; FMC_LA27_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:249 ;
+; LOCATION         ; PIN_F14                 ;               ;        ;              ; FMC_LA19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:234 ;
+; LOCATION         ; PIN_F15                 ;               ;        ;              ; FMC_LA15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:225 ;
+; LOCATION         ; PIN_F17                 ;               ;        ;              ; FMC_LA10_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:214 ;
+; LOCATION         ; PIN_F18                 ;               ;        ;              ; FMC_LA04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:202 ;
+; LOCATION         ; PIN_F19                 ;               ;        ;              ; FMC_LA01_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:197 ;
+; LOCATION         ; PIN_F22                 ;               ;        ;              ; FMC_HA15_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:289 ;
+; LOCATION         ; PIN_F25                 ;               ;        ;              ; FMC_HA04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:281 ;
+; LOCATION         ; PIN_G11                 ;               ;        ;              ; FMC_LA31_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:258 ;
+; LOCATION         ; PIN_G13                 ;               ;        ;              ; FMC_LA27_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:250 ;
+; LOCATION         ; PIN_G15                 ;               ;        ;              ; FMC_LA16_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:227 ;
+; LOCATION         ; PIN_G16                 ;               ;        ;              ; FMC_LA11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:216 ;
+; LOCATION         ; PIN_G17                 ;               ;        ;              ; FMC_LA10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:215 ;
+; LOCATION         ; PIN_G18                 ;               ;        ;              ; FMC_LA04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:203 ;
+; LOCATION         ; PIN_G21                 ;               ;        ;              ; FMC_HA19_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:296 ;
+; LOCATION         ; PIN_G22                 ;               ;        ;              ; FMC_HA15_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:290 ;
+; LOCATION         ; PIN_G23                 ;               ;        ;              ; FMC_HA10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:300 ;
+; LOCATION         ; PIN_G25                 ;               ;        ;              ; FMC_HA05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:317 ;
+; LOCATION         ; PIN_GXEL8A_RX_CH0P      ;               ;        ;              ; QSFP_RX_P[0..1][0..3]   ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:58  ;
+; LOCATION         ; PIN_GXEL8A_RX_CH10N     ;               ;        ;              ; JESD_RXDN[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:137 ;
+; LOCATION         ; PIN_GXEL8A_RX_CH10P     ;               ;        ;              ; JESD_RXDP[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:136 ;
+; LOCATION         ; PIN_GXEL8A_TX_CH0P      ;               ;        ;              ; QSFP_TX_P[0..1][0..3]   ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:54  ;
+; LOCATION         ; PIN_GXEL8A_TX_CH10N     ;               ;        ;              ; JESD_TXDN[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:102 ;
+; LOCATION         ; PIN_GXEL8A_TX_CH10P     ;               ;        ;              ; JESD_TXDP[0..7]         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:101 ;
+; LOCATION         ; PIN_H11                 ;               ;        ;              ; FMC_LA31_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:257 ;
+; LOCATION         ; PIN_H13                 ;               ;        ;              ; FMC_LA17_CC_TERM_N      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:229 ;
+; LOCATION         ; PIN_H14                 ;               ;        ;              ; FMC_LA18_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:232 ;
+; LOCATION         ; PIN_H15                 ;               ;        ;              ; FMC_LA16_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:226 ;
+; LOCATION         ; PIN_H16                 ;               ;        ;              ; FMC_LA11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:217 ;
+; LOCATION         ; PIN_H18                 ;               ;        ;              ; FMC_LA06_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:207 ;
+; LOCATION         ; PIN_H19                 ;               ;        ;              ; FMC_LA02_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:198 ;
+; LOCATION         ; PIN_H20                 ;               ;        ;              ; FMC_PG_C2M_1V8          ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:566 ;
+; LOCATION         ; PIN_H21                 ;               ;        ;              ; FMC_HA19_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:295 ;
+; LOCATION         ; PIN_H23                 ;               ;        ;              ; FMC_HA12_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:275 ;
+; LOCATION         ; PIN_H24                 ;               ;        ;              ; FMC_HA07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:287 ;
+; LOCATION         ; PIN_H25                 ;               ;        ;              ; FMC_HA05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:318 ;
+; LOCATION         ; PIN_J11                 ;               ;        ;              ; FMC_LA30_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:255 ;
+; LOCATION         ; PIN_J12                 ;               ;        ;              ; FMC_LA25_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:245 ;
+; LOCATION         ; PIN_J13                 ;               ;        ;              ; FMC_LA17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:230 ;
+; LOCATION         ; PIN_J14                 ;               ;        ;              ; FMC_LA18_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:231 ;
+; LOCATION         ; PIN_J16                 ;               ;        ;              ; FMC_CLK0_M2C_TERM_P     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:382 ;
+; LOCATION         ; PIN_J17                 ;               ;        ;              ; FMC_LA07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:209 ;
+; LOCATION         ; PIN_J18                 ;               ;        ;              ; FMC_LA06_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:206 ;
+; LOCATION         ; PIN_J19                 ;               ;        ;              ; FMC_LA02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:199 ;
+; LOCATION         ; PIN_J1                  ;               ;        ;              ; AD9545_CORECLK_P(n)     ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:547 ;
+; LOCATION         ; PIN_J23                 ;               ;        ;              ; FMC_HA12_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:276 ;
+; LOCATION         ; PIN_J24                 ;               ;        ;              ; FMC_HA07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:288 ;
+; LOCATION         ; PIN_K11                 ;               ;        ;              ; FMC_LA30_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:256 ;
+; LOCATION         ; PIN_K12                 ;               ;        ;              ; FMC_LA25_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:246 ;
+; LOCATION         ; PIN_K14                 ;               ;        ;              ; FMC_LA20_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:236 ;
+; LOCATION         ; PIN_K15                 ;               ;        ;              ; FMC_LA20_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:235 ;
+; LOCATION         ; PIN_K17                 ;               ;        ;              ; FMC_LA07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:208 ;
+; LOCATION         ; PIN_K1                  ;               ;        ;              ; AD9545_CORECLK_P        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:548 ;
+; LOCATION         ; PIN_K22                 ;               ;        ;              ; FMC_HA17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:268 ;
+; LOCATION         ; PIN_K24                 ;               ;        ;              ; FMC_HA08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:285 ;
+; LOCATION         ; PIN_K25                 ;               ;        ;              ; FMC_HA01_CC_N           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:313 ;
+; LOCATION         ; PIN_L13                 ;               ;        ;              ; FMC_LA22_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:239 ;
+; LOCATION         ; PIN_L22                 ;               ;        ;              ; FMC_HA14_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:297 ;
+; LOCATION         ; PIN_L23                 ;               ;        ;              ; FMC_HA11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:321 ;
+; LOCATION         ; PIN_L24                 ;               ;        ;              ; FMC_HA08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:286 ;
+; LOCATION         ; PIN_L25                 ;               ;        ;              ; FMC_HA01_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:314 ;
+; LOCATION         ; PIN_M21                 ;               ;        ;              ; FMC_HA14_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:298 ;
+; LOCATION         ; PIN_M22                 ;               ;        ;              ; FMC_HA11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:322 ;
+; LOCATION         ; PIN_M23                 ;               ;        ;              ; FMC_HA09_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:320 ;
+; LOCATION         ; PIN_M24                 ;               ;        ;              ; FMC_HA09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:319 ;
+; LOCATION         ; PIN_M5                  ;               ;        ;              ; ETH_CORECLK_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:484 ;
+; LOCATION         ; PIN_N5                  ;               ;        ;              ; ETH_CORECLK_P(n)        ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:483 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH0P  ;               ;        ;              ; FPGA_REFCLK_EXT         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:164 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH1P  ;               ;        ;              ; FPGA_ETH_REFCLK         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:167 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH2P  ;               ;        ;              ; FMC_GBTCLK0_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:170 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH3P  ;               ;        ;              ; FMC_GBTCLK1_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:173 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH4P  ;               ;        ;              ; FMC_GBTCLK2_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:176 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH5P  ;               ;        ;              ; FMC_GBTCLK3_M2C         ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:179 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH6P  ;               ;        ;              ; AD9545_REFCLK           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:182 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH7P  ;               ;        ;              ; JESD_REFCLK2            ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:185 ;
+; LOCATION         ; PIN_REFCLK_GXEL8A_CH8P  ;               ;        ;              ; ETH_REFCLK0             ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:188 ;
+; LOCATION         ; PIN_T4                  ;               ;        ;              ; FMC_HB01_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:356 ;
+; LOCATION         ; PIN_T5                  ;               ;        ;              ; FMC_HB01_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:355 ;
+; LOCATION         ; PIN_T7                  ;               ;        ;              ; FMC_HB02_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:342 ;
+; LOCATION         ; PIN_U2                  ;               ;        ;              ; FMC_HB05_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:368 ;
+; LOCATION         ; PIN_U3                  ;               ;        ;              ; FMC_HB05_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:369 ;
+; LOCATION         ; PIN_U5                  ;               ;        ;              ; FMC_HB04_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:335 ;
+; LOCATION         ; PIN_U6                  ;               ;        ;              ; FMC_HB03_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:374 ;
+; LOCATION         ; PIN_U7                  ;               ;        ;              ; FMC_HB02_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:341 ;
+; LOCATION         ; PIN_V1                  ;               ;        ;              ; FMC_HB06_CC_P           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:353 ;
+; LOCATION         ; PIN_V4                  ;               ;        ;              ; FMC_HB07_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:343 ;
+; LOCATION         ; PIN_V5                  ;               ;        ;              ; FMC_HB04_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:336 ;
+; LOCATION         ; PIN_V6                  ;               ;        ;              ; FMC_HB03_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:375 ;
+; LOCATION         ; PIN_W1                  ;               ;        ;              ; FMC_HB11_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:376 ;
+; LOCATION         ; PIN_W3                  ;               ;        ;              ; FMC_HB17_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:358 ;
+; LOCATION         ; PIN_W4                  ;               ;        ;              ; FMC_HB07_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:344 ;
+; LOCATION         ; PIN_W6                  ;               ;        ;              ; FMC_HB08_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:345 ;
+; LOCATION         ; PIN_Y1                  ;               ;        ;              ; FMC_HB11_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:377 ;
+; LOCATION         ; PIN_Y2                  ;               ;        ;              ; FMC_HB10_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:361 ;
+; LOCATION         ; PIN_Y4                  ;               ;        ;              ; FMC_HB00_CC_TERM_P      ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:350 ;
+; LOCATION         ; PIN_Y5                  ;               ;        ;              ; FMC_HB09_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:378 ;
+; LOCATION         ; PIN_Y6                  ;               ;        ;              ; FMC_HB08_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:346 ;
++------------------+-------------------------+---------------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
 Sources or targets that are created in Fitter might appear here, safely ignore those. Refer to Fitter's Ignored Assignments Report for a more accurate list.
+
+
+Hierarchies have been optimized away during sweep. For more details and filtering options, ensure that you have compiled with the "Enable RTL Analysis Debug Mode " setting turned on under Assignments->Settings->Compiler Settings, then use the " Sweep Hints Viewer " tool in the " RTL Analyzer ".
++---------------------------------------------------------------------------------------------+
+; Hierarchies Optimized Away During Sweep                                                     ;
++-----------------+--------------------+------------------------------+-----------------------+
+; Entity Name     ; Number of Instance ; Number of Gates before Sweep ; Sample Hierarchy Name ;
++-----------------+--------------------+------------------------------+-----------------------+
+; e_off_generator ; 1                  ; 73                           ; u1|uut|u_e_off        ;
++-----------------+--------------------+------------------------------+-----------------------+
 
 
 Top root causes of logic optimization that have been identified during sweep. For more details and filtering options, ensure that you have compiled with the "Enable RTL Analysis Debug Mode " setting turned on under Assignments->Settings->Compiler Settings, then go to the " Root Causes Tab " in the " Sweep Hints Viewer " tool in the " RTL Analyzer ".
@@ -5419,9 +5460,9 @@ Table limited at 10 items. To change the number of top root causes reported, set
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Fri Sep 11 17:39:43 2026
-    Info: System process ID: 39096
-Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off --analysis_and_elaboration nios_path -c nios_path --synthesis
+    Info: Processing started: Fri Sep 11 20:12:59 2026
+    Info: System process ID: 39628
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off nios_path -c nios_path
 Info: qis_default_flow_script.tcl version: #1
 Info: Initializing Synthesis...
 Info: Project = "nios_path"
@@ -5474,6 +5515,7 @@ Info (22567): Verilog HDL info at tempqiart_altera_avalon_sc_fifo_1932_22gxxgi.v
 Warning (18254): Verilog HDL warning at sym_matrix_bank_ram_2port_2050_frg6cuq.v(31): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank/ram_2port_2050/synth/sym_matrix_bank_ram_2port_2050_frg6cuq.v Line: 31
 Warning (18254): Verilog HDL warning at sym_matrix_bank_ram_2port_2050_frg6cuq.v(34): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank/ram_2port_2050/synth/sym_matrix_bank_ram_2port_2050_frg6cuq.v Line: 34
 Warning (18254): Verilog HDL warning at sym_matrix_bank_ram_2port_2050_frg6cuq.v(35): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/sym_matrix_bank/ram_2port_2050/synth/sym_matrix_bank_ram_2port_2050_frg6cuq.v Line: 35
+Info (22567): Verilog HDL info at tabu_mask_generator.v(24): extracting RAM for identifier 'history_ram' File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/Verilog/hdl/tabu_mask_generator.v Line: 24
 Warning (18254): Verilog HDL warning at hyperparam_ram_ram_1port_2011_waqxbri.v(26): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram/ram_1port_2011/synth/hyperparam_ram_ram_1port_2011_waqxbri.v Line: 26
 Info (19337): VHDL info at sld_mod_ram_rom_top.vhd(31): executing entity "sld_mod_ram_rom_top(fifo_size_delay=5,width_word=32,numwords=32,widthad=5,shift_count_bits=6,backpressure_enabled=1,node_name_dec=2147483647)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd Line: 31
 Info (19337): VHDL info at sld_mod_ram_rom.vhd(17): executing entity "sld_mod_ram_rom(fifo_size_delay=5,width_word=32,numwords=32,widthad=5,shift_count_bits=6,backpressure_enabled=1,node_name=2147483647)(1,3)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 17
@@ -5485,11 +5527,11 @@ Warning (18254): Verilog HDL warning at initial_h_ram_ram_1port_2011_4l4kj3a.v(2
 Info (19337): VHDL info at sld_mod_ram_rom_top.vhd(31): executing entity "sld_mod_ram_rom_top(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name_dec=2147483647)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd Line: 31
 Info (19337): VHDL info at sld_mod_ram_rom.vhd(17): executing entity "sld_mod_ram_rom(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name=2147483647)(1,3)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 17
 Warning (18254): Verilog HDL warning at state_ram_ram_1port_2011_fyinmwy.v(26): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/ram_1port_2011/synth/state_ram_ram_1port_2011_fyinmwy.v Line: 26
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 37
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 38
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 39
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 41
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39096/altera_mult_add_fil82.v Line: 42
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 37
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 38
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 39
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 41
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 42
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(682): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 682
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(683): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 683
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(710): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 710
@@ -5507,7 +5549,7 @@ Warning (21610): Output port "HEX2[0..6]" in instance "u1" of entity "BitSieve_2
 Warning (21610): Output port "HEX3[0..6]" in instance "u1" of entity "BitSieve_256" does not have a driver. Connecting to the default value "gnd". File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/Verilog/synthesis/BitSieve_256.v Line: 15
 Warning (21610): Output port "HEX4[0..6]" in instance "u1" of entity "BitSieve_256" does not have a driver. Connecting to the default value "gnd". File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/Verilog/synthesis/BitSieve_256.v Line: 16
 Warning (21610): Output port "HEX5[0..6]" in instance "u1" of entity "BitSieve_256" does not have a driver. Connecting to the default value "gnd". File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/Verilog/synthesis/BitSieve_256.v Line: 17
-Info: There are 6722 partitions after elaboration.
+Info: There are 6738 partitions after elaboration.
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab_0.
 Info (11172): ***************************************************************
 Info (11172): Quartus is a registered trademark of Intel Corporation in the
@@ -5585,7 +5627,7 @@ Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
 Info (11172): Alt_sld_fab_0.alt_sld_fab_0.alt_sld_fab_0: SLD fabric agents which did not specify prefer_host were connected to JTAG
-Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0.ip
+Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0.ip
 Info (11172): ***************************************************************
 Info (11172): Quartus is a registered trademark of Intel Corporation in the
 Info (11172): US and other countries.  Portions of the Quartus Prime software
@@ -5661,10 +5703,10 @@ Info (11172): Add_connection sldfabric.node_3 splitter.node_1 conduit
 Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
-Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
+Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
 Info (11172): Generated by version: 25.1 build 129
 Info (11172): Starting: Create HDL design files for synthesis
-Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39096_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
+Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
 Info (11172): Add_instance splitter altera_sld_splitter
 Info (11172): Set_instance_parameter_value splitter ADD_INTERFACE_ASGN 1
 Info (11172): Send_message info {SLD fabric agents which did not specify prefer_host were connected to JTAG}
@@ -5751,20 +5793,21 @@ Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_for_
 Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_to_debug_logic"
 Info (11172): Alt_sld_fab_0: Done "alt_sld_fab_0" with 12 modules, 12 files
 Info (11172): Finished: Create HDL design files for synthesis
-Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 872 ms
+Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 1539 ms
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab_0.
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 402
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 409
-Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39096_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 402
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 409
+Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
 Info (19337): VHDL info at sld_jtag_hub.vhd(89): executing entity "sld_jtag_hub(device_family="Stratix 10",n_nodes=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(127,0)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 89
 Info (19337): VHDL info at sld_hub.vhd(1554): executing entity "sld_shadow_jsm(ip_major_version=1,ip_minor_version=5)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_hub.vhd Line: 1554
 Info (19337): VHDL info at sld_rom_sr.vhd(5): executing entity "sld_rom_sr(n_bits=160)" with architecture "INFO_REG" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_rom_sr.vhd Line: 5
 Info: DA report generation in native DNI mode
 Info (21615): Running Design Assistant Rules for snapshot 'partitioned'
 Info: No waiver waived any violations
-Info (22360): Design Assistant Results: 8 of 10 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
+Info (22360): Design Assistant Results: 9 of 10 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
 Info (21661): Design Assistant Results: 0 of 1 High severity rules issued violations in snapshot 'partitioned'
 Info (21621): Design Assistant Results: 0 of 1 Medium severity rules issued violations in snapshot 'partitioned'
-Info (21622): Design Assistant Results: 2 of 8 Low severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/output_files/nios_path.drc.partitioned.rpt' for more information
+Info (21622): Design Assistant Results: 1 of 8 Low severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/output_files/nios_path.drc.partitioned.rpt' for more information
+Warning (23762): Hierarchies were optimized away during sweep. For details, refer to " Hierarchies Optimized Away During Sweep " report.
 
 

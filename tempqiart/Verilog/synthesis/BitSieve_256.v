@@ -105,7 +105,13 @@ module BitSieve_256 (
     wire [(ENGINE_COUNT*WEIGHT_WIDTH)-1:0] qubo_weights;
     wire [BANK_ROW_WIDTH-1:0] bank_q_a_packed;
     wire [BANK_ROW_WIDTH-1:0] bank_q_b_packed;
-    reg  [9:0] sampled_weight_row_low;
+    // Regional copies of sampled_weight_row_low: identical value, separate
+    // flip-flops, so placement can keep each copy's fanout local to its own
+    // slice of the 1024 physically-distributed banks instead of one register
+    // driving all of them (which was causing router congestion).
+    localparam integer ROW_LOW_REGIONS   = 16;
+    localparam integer BANKS_PER_REGION  = TWIN_COUNT / ROW_LOW_REGIONS;
+    reg  [9:0] sampled_weight_row_low_region [0:ROW_LOW_REGIONS-1];
 
     // =========================================================================
     // Avalon-MM Slave Interface to the symmetric matrix bank fabric
@@ -113,7 +119,10 @@ module BitSieve_256 (
     // Each of the 1024 banks stores both twin engines' folded rows directly:
     // port A holds the low engine's 1024-entry row, port B holds the high
     // engine's. The Avalon address is mapped as:
-    //   [20:11] -> bank number (0..1023)
+    //   [24:21] -> section: 0000 = weight banks, 0001 = hyperparam RAM
+    //              (read/write), 0010 = state RAM (read-only), 0011 =
+    //              initial-h RAM (read/write)
+    //   [20:11] -> bank number (0..1023), section 0000 only
     //   [10]    -> engine half within the twin (0 = low/port A, 1 = high/port B)
     //   [9:0]   -> row within that engine's folded 1024-entry weight vector
     reg [9:0] avalon_last_bank_reg;
@@ -171,9 +180,13 @@ module BitSieve_256 (
                                 avalon_last_port_reg
                                     ? bank_q_b_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]
                                     : bank_q_a_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]};
+                end else if (avalon_last_section_reg == 4'b0001) begin
+                    readdata <= hp_q_data;
                 end else if (avalon_last_state_section_reg) begin
                     readdata <= state_ram_q[
                         (avalon_last_state_word_reg * 32) +: 32];
+                end else if (avalon_last_section_reg == 4'b0011) begin
+                    readdata <= {4'd0, h_init_value};
                 end
             end else if (avalon_write_req) begin
                 readdata <= 32'd0;
@@ -268,8 +281,8 @@ module BitSieve_256 (
             // the low engine's half, MSB=1 the high engine's half, so both
             // ports always read disjoint, independent halves in parallel.
             sym_matrix_bank u_sym_matrix_bank (
-                .address_a(bank_avalon_low_selected  ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low}),
-                .address_b(bank_avalon_high_selected ? {1'b1, avalon_row[9:0]} : {1'b1, sampled_weight_row_low}),
+                .address_a(bank_avalon_low_selected  ? {1'b0, avalon_row[9:0]} : {1'b0, sampled_weight_row_low_region[bank_id / BANKS_PER_REGION]}),
+                .address_b(bank_avalon_high_selected ? {1'b1, avalon_row[9:0]} : {1'b1, sampled_weight_row_low_region[bank_id / BANKS_PER_REGION]}),
                 .clock(CLOCK_50),
                 .data_a(bank_avalon_low_selected  && avalon_write_req ? writedata[9:0] : 10'd0),
                 .data_b(bank_avalon_high_selected && avalon_write_req ? writedata[9:0] : 10'd0),
@@ -282,10 +295,14 @@ module BitSieve_256 (
     endgenerate
 
     always @(posedge CLOCK_50) begin
-        if (rst)
-            sampled_weight_row_low <= 10'd0;
-        else
-            sampled_weight_row_low <= winner_index[9:0];
+        integer region;
+        if (rst) begin
+            for (region = 0; region < ROW_LOW_REGIONS; region = region + 1)
+                sampled_weight_row_low_region[region] <= 10'd0;
+        end else begin
+            for (region = 0; region < ROW_LOW_REGIONS; region = region + 1)
+                sampled_weight_row_low_region[region] <= winner_index[9:0];
+        end
     end
 
     // Each bank's data is already local to its own twin engines, so the
@@ -384,8 +401,18 @@ module BitSieve_256 (
     // =========================================================================
 
     // Instantiate the new ROM
+    // Avalon may read/write this memory directly (address section 4'b0001)
+    // whenever the FSM isn't actively sweeping it during programming_active,
+    // so the two access paths never contend for the single port.
+    wire hyperparam_avalon_selected = (address[24:21] == 4'b0001) &&
+                                      (avalon_read_req || avalon_write_req) &&
+                                      !programming_active;
+    wire hyperparam_avalon_write    = hyperparam_avalon_selected && avalon_write_req;
+
     hyperparam_ram hp_ram (
-        .address(h_init_address[4:0]), // 5-bit address for the 32-word ROM
+        .address(hyperparam_avalon_selected ? avalon_row[4:0] : h_init_address[4:0]),
+        .data(hyperparam_avalon_write ? writedata : 32'd0),
+        .wren(hyperparam_avalon_write),
         .clock(CLOCK_50),
         .q(hp_q_data)
     );
@@ -428,8 +455,17 @@ module BitSieve_256 (
     // MEMORY: Initial local fields
     // =========================================================================
 
+    // Avalon may read/write this memory directly (address section 4'b0011)
+    // whenever the FSM isn't actively sweeping it during programming_active.
+    wire initial_h_avalon_selected = (address[24:21] == 4'b0011) &&
+                                     (avalon_read_req || avalon_write_req) &&
+                                     !programming_active;
+    wire initial_h_avalon_write    = initial_h_avalon_selected && avalon_write_req;
+
     initial_h_ram	initial_h_ram_inst (
-        .address (h_init_address),
+        .address (initial_h_avalon_selected ? avalon_row : h_init_address),
+        .data (initial_h_avalon_write ? writedata[27:0] : 28'd0),
+        .wren (initial_h_avalon_write),
         .clock (CLOCK_50),
         .q (h_init_value)
 	);

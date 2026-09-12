@@ -1,0 +1,126 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'fpga_clk_pll|iopll_0_fpga_clk_50'
+Slack : 2.438
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Setup 'fpga_clk_pll|iopll_0_refclk'
+Slack : 7.762
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Hold 'fpga_clk_pll|iopll_0_fpga_clk_50'
+Slack : 0.010
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Hold 'fpga_clk_pll|iopll_0_refclk'
+Slack : 0.186
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Recovery 'fpga_clk_pll|iopll_0_refclk'
+Slack : 8.984
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Recovery 'fpga_clk_pll|iopll_0_fpga_clk_50'
+Slack : 9.876
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Removal 'fpga_clk_pll|iopll_0_fpga_clk_50'
+Slack : 0.174
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Removal 'fpga_clk_pll|iopll_0_refclk'
+Slack : 0.308
+TNS   : 0.000
+Corner: Fast 900mV 0C Model
+
+Type  : Minimum Pulse Width 'fpga_clk_pll|iopll_0_refclk'
+Slack : 4.568
+TNS   : 0.000
+Corner: Slow 900mV 0C Model
+
+Type  : Minimum Pulse Width 'fpga_clk_pll|iopll_0_fpga_clk_50'
+Slack : 9.408
+TNS   : 0.000
+Corner: Slow 900mV 100C Model
+
+Type  : Minimum Pulse Width 'fpga_clk_pll|iopll_0_m_cnt_clk'
+Slack : 70.000
+TNS   : 0.000
+Corner: 2 Slow vid2 100C Model
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.153
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.173
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.221
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.227
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.239
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.392
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.399
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.428
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.475
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.481
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.492
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+Type  : Net Delay 'set_net_delay'
+Slack : Invalid clock
+
+------------------------------------------------------------

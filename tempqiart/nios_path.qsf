@@ -692,3 +692,5 @@ set_global_assignment -name IP_FILE hyperparam_ram.ip
 # Legacy ROM IPs removed: initial_h_rom.ip and hyperparam_rom.ip were replaced by
 # the generated RAM instances in the project root and are intentionally excluded
 # from active analysis to avoid stale Quartus QCU metadata conflicts.
+set_instance_assignment -name PARTITION_COLOUR 4291328767 -to tempqiart_top -entity tempqiart_top
+set_instance_assignment -name PARTITION_COLOUR 4294939263 -to auto_fab_0 -entity tempqiart_top
