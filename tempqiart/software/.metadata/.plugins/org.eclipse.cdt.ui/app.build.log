@@ -1,78 +1,52 @@
-20:08:35 **** Incremental Build of configuration Debug for project app ****
+05:38:15 **** Incremental Build of configuration Debug for project app ****
 "E:\\quartus\\Quartus\\riscfree\\build_tools\\bin\\make.exe" -j all 
-[  2%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
-[  2%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
-[ 31%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
-[ 32%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
-[ 27%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
-[ 34%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
-[ 35%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
-[ 35%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
-[ 35%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
-[ 36%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
-[ 36%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
-[ 41%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
-[ 41%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
-[ 41%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
-[ 45%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
-[ 44%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
-[ 45%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
-[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
-[ 39%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
-[ 37%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
-[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
-[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
-[ 47%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
-[ 45%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
-[ 47%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
-[ 46%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
-[ 47%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
-[ 43%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
-[ 38%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
-[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
-[ 61%] Linking C static library libhal2_bsp.a
 [ 94%] Built target hal2_bsp
 [ 95%] Building CXX object CMakeFiles/app.elf.dir/hello.cpp.obj
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp: In function 'void print_qubo_banks(uint32_t)':
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:198:48: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  198 |             printf("  Bank[%lu] Row[%lu]: Low=%u, High=%u\n",
+      |                                               ~^
+      |                                                |
+      |                                                unsigned int
+      |                                               %lu
+  199 |                    (unsigned long)bank_id, (unsigned long)i, lo, hi);
+      |                                                              ~~
+      |                                                              |
+      |                                                              uint32_t {aka long unsigned int}
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:198:57: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  198 |             printf("  Bank[%lu] Row[%lu]: Low=%u, High=%u\n",
+      |                                                        ~^
+      |                                                         |
+      |                                                         unsigned int
+      |                                                        %lu
+  199 |                    (unsigned long)bank_id, (unsigned long)i, lo, hi);
+      |                                                                  ~~
+      |                                                                  |
+      |                                                                  uint32_t {aka long unsigned int}
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp: In function 'void readback_all_memory_regions()':
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:232:34: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  232 |         printf("  Row[%lu]: Low=%u, High=%u\n", (unsigned long)i, lo, hi);
+      |                                 ~^                                ~~
+      |                                  |                                |
+      |                                  unsigned int                     uint32_t {aka long unsigned int}
+      |                                 %lu
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:232:43: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  232 |         printf("  Row[%lu]: Low=%u, High=%u\n", (unsigned long)i, lo, hi);
+      |                                          ~^                           ~~
+      |                                           |                           |
+      |                                           unsigned int                uint32_t {aka long unsigned int}
+      |                                          %lu
 [ 96%] Linking CXX executable app.elf
 [ 96%] Built target app.elf
 [ 97%] Creating app.elf.objdump.
 [ 98%] Reporting memory available for stack + heap in app.elf.
 [100%] Creating intel_onchip_memory_0.hex.
 app.elf
- * 91.14 KB - Program size (code + initialized data).
- * 30.64 KB - Free for stack + heap.
+ * 99.64 KB - Program size (code + initialized data).
+ * 644.14 KB - Free for stack + heap.
 [100%] Built target niosv-stack-report
 [100%] Built target create-objdump
 [100%] Built target create-hex
 
-20:08:44 Build Finished. 0 errors, 0 warnings. (took 9s.2ms)
+05:38:19 Build Finished. 0 errors, 4 warnings. (took 4s.69ms)
 

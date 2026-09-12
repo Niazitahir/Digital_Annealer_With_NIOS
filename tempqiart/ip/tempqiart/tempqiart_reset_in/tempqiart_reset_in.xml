@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2026.09.09.21:16:32"
- outputDirectory="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_reset_in/">
+ date="2026.09.12.02:12:44"
+ outputDirectory="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_reset_in/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -95,17 +95,17 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_reset_in\synth\tempqiart_reset_in.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_reset_in\synth\tempqiart_reset_in.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_reset_in\synth\tempqiart_reset_in.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_reset_in\synth\tempqiart_reset_in.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_reset_in.ip" />
+       path="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_reset_in.ip" />
   </sourceFiles>
   <childSourceFiles/>
   <messages>

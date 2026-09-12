@@ -1,5 +1,5 @@
 Synthesis Analysis & Elaboration Stage Report for nios_path
-Fri Sep 11 20:14:03 2026
+Sat Sep 12 02:44:04 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -35,7 +35,7 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  27. Parameter Settings for User Entity bit_sieve_engine_25 Instance: u1|uut
  28. Parameter Settings for User Entity engine_control_fsm Instance: u1|control_unit
  29. Parameter Settings for User Entity stratix10_altera_iopll Instance: fpga_clk_pll|iopll_0|stratix10_altera_iopll_i
- 30. Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0
+ 30. Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0
  31. Parameter Settings for User Entity altera_avalon_jtag_uart Instance: u0|jtag_uart_0|jtag_uart_0
  32. Parameter Settings for User Entity tempqiart_mm_bridge_0_altera_avalon_mm_bridge_2010_tex5a4i Instance: u0|mm_bridge_0|mm_bridge_0
  33. Parameter Settings for User Entity tempqiart_altera_merlin_axi_translator_1974_xfkiwxi Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_translator
@@ -48,8 +48,8 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  40. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica Instance: u0|mm_interconnect_0|intel_niosv_g_0_data_manager_agent
  41. Parameter Settings for User Entity tempqiart_altera_merlin_axi_master_ni_19100_y3ctica_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
  42. Parameter Settings for User Entity tempqiart_altera_merlin_slave_agent_1930_jxauz3i Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
- 43. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rsp_fifo
- 44. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rdata_fifo
+ 43. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rsp_fifo
+ 44. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rdata_fifo
  45. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_2 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rsp_fifo
  46. Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_3 Instance: u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent_rdata_fifo
  47. Parameter Settings for User Entity tempqiart_altera_merlin_traffic_limiter_1921_5pm4apa Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_rd_limiter
@@ -61,7 +61,7 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  53. Parameter Settings for User Entity tabu_mask_generator Instance: u1|uut|tabu_buffer
  54. Parameter Settings for User Entity twin_unified_BitSieve_Engine Instance: u1|uut|twin_engine_array[1023].u_twin_engine
  55. Parameter Settings for User Entity matrix_selector_1024_flat Instance: u1|uut|u_selector
- 56. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
+ 56. Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart
  57. Parameter Settings for User Entity altera_reset_controller_4 Instance: u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
  58. Parameter Settings for User Entity altera_syncram Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0|altera_syncram_component
  59. Parameter Settings for User Entity altera_avalon_jtag_uart_scfifo_w Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w
@@ -69,8 +69,8 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  61. Parameter Settings for User Entity altera_merlin_waitrequest_adapter Instance: u0|mm_bridge_0|mm_bridge_0|waitrequest_adapter
  62. Parameter Settings for User Entity altera_merlin_address_alignment Instance: u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_size
  63. Parameter Settings for User Entity altera_merlin_burst_uncompressor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
- 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
- 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
+ 64. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_klplswi_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode
+ 65. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_uao6kiq_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode
  66. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_obse4oa_default_decode Instance: u0|mm_interconnect_0|router_008|the_default_decode
  67. Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_baawywi_default_decode Instance: u0|mm_interconnect_0|router_007|the_default_decode
  68. Parameter Settings for User Entity altera_merlin_burst_adapter_13_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter
@@ -86,7 +86,7 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  78. Parameter Settings for User Entity initial_h_ram_ram_1port_intel_mce_arb_2011_sr6jboi Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component
  79. Parameter Settings for User Entity altera_syncram_3 Instance: u1|initial_h_ram_inst|ram_1port_0|altera_syncram_component
  80. Parameter Settings for User Entity altera_syncram_4 Instance: u1|solution_state_ram|ram_1port_0|altera_syncram_component
- 81. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
+ 81. Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst
  82. Parameter Settings for User Entity scfifo Instance: u0|jtag_uart_0|jtag_uart_0|altera_avalon_jtag_uart_scfifo_w|wfifo
  83. Parameter Settings for User Entity altera_merlin_address_alignment_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|align_address_to_size
  84. Parameter Settings for User Entity altera_merlin_burst_adapter_burstwrap_increment Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_burstwrap_increment
@@ -98,7 +98,7 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
  90. Parameter Settings for User Entity altera_sld_arbiter_top Instance: u1|hp_ram|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
  91. Parameter Settings for User Entity sld_mod_ram_rom_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_component|intel_mce_inst
  92. Parameter Settings for User Entity altera_sld_arbiter_top_1 Instance: u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
- 93. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
+ 93. Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst
  94. Parameter Settings for User Entity altera_merlin_burst_adapter_subtractor Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub
  95. Parameter Settings for User Entity altera_merlin_burst_adapter_adder Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|the_min|dc_sub|subtract
  96. Verilog Macro Usage
@@ -745,7 +745,7 @@ fpga_clk_pll|iopll_0|stratix10_altera_iopll_i
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0 ;
+; Parameter Settings for User Entity tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq Instance: u0|intel_onchip_memory_0|intel_onchip_memory_0 ;
 +----------------+-----------------------------------------------------------+---------------------------------------------------------------------------------+
 ; Parameter Name ; Value                                                     ; Type                                                                            ;
 +----------------+-----------------------------------------------------------+---------------------------------------------------------------------------------+
@@ -1219,7 +1219,7 @@ u0|mm_interconnect_0|mm_bridge_0_s0_translator
 ; Parameter Name                 ; Value ; Type                                                                                                                ;
 +--------------------------------+-------+---------------------------------------------------------------------------------------------------------------------+
 ; AV_ADDRESS_SYMBOLS             ; 0     ; Signed Integer                                                                                                      ;
-; AV_ADDRESS_W                   ; 15    ; Signed Integer                                                                                                      ;
+; AV_ADDRESS_W                   ; 18    ; Signed Integer                                                                                                      ;
 ; AV_BURSTCOUNT_SYMBOLS          ; 0     ; Signed Integer                                                                                                      ;
 ; AV_BURSTCOUNT_W                ; 1     ; Signed Integer                                                                                                      ;
 ; AV_BYTEENABLE_W                ; 4     ; Signed Integer                                                                                                      ;
@@ -1577,73 +1577,73 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent
 ; USE_WRITERESPONSE         ; 0     ; Signed Integer                                                                                                      ;
 +---------------------------+-------+---------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent
+u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent
 u0|mm_interconnect_0|mm_bridge_0_s0_agent
 u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent
-u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rsp_fifo ;
-+-----------------------+-------+------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Name        ; Value ; Type                                                                                                                         ;
-+-----------------------+-------+------------------------------------------------------------------------------------------------------------------------------+
-; ALMOST_FULL_THRESHOLD ; 1     ; Signed Integer                                                                                                               ;
-; BITS_PER_SYMBOL       ; 148   ; Signed Integer                                                                                                               ;
-; CHANNEL_WIDTH         ; 0     ; Signed Integer                                                                                                               ;
-; DATA_WIDTH            ; 148   ; Signed Integer                                                                                                               ;
-; EMPTY_LATENCY         ; 1     ; Signed Integer                                                                                                               ;
-; EMPTY_WIDTH           ; 1     ; Signed Integer                                                                                                               ;
-; ERROR_WIDTH           ; 0     ; Signed Integer                                                                                                               ;
-; FIFO_DEPTH            ; 2     ; Signed Integer                                                                                                               ;
-; MEM_TYPE              ; M20K  ; String                                                                                                                       ;
-; SYMBOLS_PER_BEAT      ; 1     ; Signed Integer                                                                                                               ;
-; SYNC_RESET            ; 1     ; Signed Integer                                                                                                               ;
-; USE_ALMOST_EMPTY_IF   ; 0     ; Signed Integer                                                                                                               ;
-; USE_ALMOST_FULL_IF    ; 0     ; Signed Integer                                                                                                               ;
-; USE_FILL_LEVEL        ; 0     ; Signed Integer                                                                                                               ;
-; USE_MEMORY_BLOCKS     ; 0     ; Signed Integer                                                                                                               ;
-; USE_PACKETS           ; 1     ; Signed Integer                                                                                                               ;
-; USE_STORE_FORWARD     ; 0     ; Signed Integer                                                                                                               ;
-+-----------------------+-------+------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rsp_fifo ;
++-----------------------+-------+------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name        ; Value ; Type                                                                                                                   ;
++-----------------------+-------+------------------------------------------------------------------------------------------------------------------------+
+; ALMOST_FULL_THRESHOLD ; 1     ; Signed Integer                                                                                                         ;
+; BITS_PER_SYMBOL       ; 148   ; Signed Integer                                                                                                         ;
+; CHANNEL_WIDTH         ; 0     ; Signed Integer                                                                                                         ;
+; DATA_WIDTH            ; 148   ; Signed Integer                                                                                                         ;
+; EMPTY_LATENCY         ; 1     ; Signed Integer                                                                                                         ;
+; EMPTY_WIDTH           ; 1     ; Signed Integer                                                                                                         ;
+; ERROR_WIDTH           ; 0     ; Signed Integer                                                                                                         ;
+; FIFO_DEPTH            ; 2     ; Signed Integer                                                                                                         ;
+; MEM_TYPE              ; M20K  ; String                                                                                                                 ;
+; SYMBOLS_PER_BEAT      ; 1     ; Signed Integer                                                                                                         ;
+; SYNC_RESET            ; 1     ; Signed Integer                                                                                                         ;
+; USE_ALMOST_EMPTY_IF   ; 0     ; Signed Integer                                                                                                         ;
+; USE_ALMOST_FULL_IF    ; 0     ; Signed Integer                                                                                                         ;
+; USE_FILL_LEVEL        ; 0     ; Signed Integer                                                                                                         ;
+; USE_MEMORY_BLOCKS     ; 0     ; Signed Integer                                                                                                         ;
+; USE_PACKETS           ; 1     ; Signed Integer                                                                                                         ;
+; USE_STORE_FORWARD     ; 0     ; Signed Integer                                                                                                         ;
++-----------------------+-------+------------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
 u0|mm_interconnect_0|mm_bridge_0_s0_agent_rsp_fifo
-u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rsp_fifo
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rsp_fifo
+u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rsp_fifo
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rdata_fifo ;
-+-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Name        ; Value ; Type                                                                                                                             ;
-+-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
-; ALMOST_FULL_THRESHOLD ; 1     ; Signed Integer                                                                                                                   ;
-; BITS_PER_SYMBOL       ; 34    ; Signed Integer                                                                                                                   ;
-; CHANNEL_WIDTH         ; 0     ; Signed Integer                                                                                                                   ;
-; DATA_WIDTH            ; 34    ; Signed Integer                                                                                                                   ;
-; EMPTY_LATENCY         ; 0     ; Signed Integer                                                                                                                   ;
-; EMPTY_WIDTH           ; 1     ; Signed Integer                                                                                                                   ;
-; ERROR_WIDTH           ; 0     ; Signed Integer                                                                                                                   ;
-; FIFO_DEPTH            ; 2     ; Signed Integer                                                                                                                   ;
-; MEM_TYPE              ; M20K  ; String                                                                                                                           ;
-; SYMBOLS_PER_BEAT      ; 1     ; Signed Integer                                                                                                                   ;
-; SYNC_RESET            ; 1     ; Signed Integer                                                                                                                   ;
-; USE_ALMOST_EMPTY_IF   ; 0     ; Signed Integer                                                                                                                   ;
-; USE_ALMOST_FULL_IF    ; 0     ; Signed Integer                                                                                                                   ;
-; USE_FILL_LEVEL        ; 0     ; Signed Integer                                                                                                                   ;
-; USE_MEMORY_BLOCKS     ; 0     ; Signed Integer                                                                                                                   ;
-; USE_PACKETS           ; 0     ; Signed Integer                                                                                                                   ;
-; USE_STORE_FORWARD     ; 0     ; Signed Integer                                                                                                                   ;
-+-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity tempqiart_altera_avalon_sc_fifo_1932_22gxxgi_1 Instance: u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rdata_fifo ;
++-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name        ; Value ; Type                                                                                                                       ;
++-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------+
+; ALMOST_FULL_THRESHOLD ; 1     ; Signed Integer                                                                                                             ;
+; BITS_PER_SYMBOL       ; 34    ; Signed Integer                                                                                                             ;
+; CHANNEL_WIDTH         ; 0     ; Signed Integer                                                                                                             ;
+; DATA_WIDTH            ; 34    ; Signed Integer                                                                                                             ;
+; EMPTY_LATENCY         ; 0     ; Signed Integer                                                                                                             ;
+; EMPTY_WIDTH           ; 1     ; Signed Integer                                                                                                             ;
+; ERROR_WIDTH           ; 0     ; Signed Integer                                                                                                             ;
+; FIFO_DEPTH            ; 2     ; Signed Integer                                                                                                             ;
+; MEM_TYPE              ; M20K  ; String                                                                                                                     ;
+; SYMBOLS_PER_BEAT      ; 1     ; Signed Integer                                                                                                             ;
+; SYNC_RESET            ; 1     ; Signed Integer                                                                                                             ;
+; USE_ALMOST_EMPTY_IF   ; 0     ; Signed Integer                                                                                                             ;
+; USE_ALMOST_FULL_IF    ; 0     ; Signed Integer                                                                                                             ;
+; USE_FILL_LEVEL        ; 0     ; Signed Integer                                                                                                             ;
+; USE_MEMORY_BLOCKS     ; 0     ; Signed Integer                                                                                                             ;
+; USE_PACKETS           ; 0     ; Signed Integer                                                                                                             ;
+; USE_STORE_FORWARD     ; 0     ; Signed Integer                                                                                                             ;
++-----------------------+-------+----------------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent_rdata_fifo
 u0|mm_interconnect_0|mm_bridge_0_s0_agent_rdata_fifo
-u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rdata_fifo
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent_rdata_fifo
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent_rdata_fifo
+u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent_rdata_fifo
 
 
 
@@ -2940,7 +2940,7 @@ u1|uut|u_selector
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart ;
+; Parameter Settings for User Entity tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart ;
 +--------------------------+----------------------------------+---------------------------------------------------------------------------------+
 ; Parameter Name           ; Value                            ; Type                                                                            ;
 +--------------------------+----------------------------------+---------------------------------------------------------------------------------+
@@ -2956,8 +2956,8 @@ u1|uut|u_selector
 ; CLIC_VT_ALIGN            ; 8                                ; Signed Integer                                                                  ;
 ; CORE_EXTN                ; 4352                             ; Signed Integer                                                                  ;
 ; DATA_CACHE_SIZE          ; 4096                             ; Signed Integer                                                                  ;
-; DBG_DATA_S_BASE          ; 00000000000000100000000000000000 ; Unsigned Binary                                                                 ;
-; DBG_EXPN_VECTOR          ; 00000000000000100000000000000000 ; Unsigned Binary                                                                 ;
+; DBG_DATA_S_BASE          ; 00000000000100000000000000000000 ; Unsigned Binary                                                                 ;
+; DBG_EXPN_VECTOR          ; 00000000000100000000000000000000 ; Unsigned Binary                                                                 ;
 ; DBG_PARK_LOOP_OFFSET     ; 00000000000000000000000000011000 ; Unsigned Binary                                                                 ;
 ; DCLS_EXTRST_IF_ACTIVE    ; 0                                ; Signed Integer                                                                  ;
 ; DEBUG_ENABLED            ; 1                                ; Signed Integer                                                                  ;
@@ -2993,7 +2993,7 @@ u1|uut|u_selector
 ; PLAT_IRQ_VEC_W           ; 16                               ; Signed Integer                                                                  ;
 ; REMOVE_TIME_DIVERSITY    ; 0                                ; Signed Integer                                                                  ;
 ; RESET_VECTOR             ; 00000000000000000000000000000000 ; Unsigned Binary                                                                 ;
-; TIMER_MSIP_DATA_S_BASE   ; 00000000000000110000000000000000 ; Unsigned Binary                                                                 ;
+; TIMER_MSIP_DATA_S_BASE   ; 00000000000100010000000000000000 ; Unsigned Binary                                                                 ;
 ; USE_RESET_REQ            ; 0                                ; Signed Integer                                                                  ;
 +--------------------------+----------------------------------+---------------------------------------------------------------------------------+
 All Instances:
@@ -3050,7 +3050,7 @@ u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
 ; ADDRESS_REG_B                                              ; CLOCK1                                                                                                           ; Untyped        ;
 ; BYTEENA_REG_B                                              ; CLOCK1                                                                                                           ; Untyped        ;
 ; BYTE_SIZE                                                  ; 8                                                                                                                ; Signed Integer ;
-; CBXI_PARAMETER                                             ; altera_syncram_m7g41                                                                                             ; Untyped        ;
+; CBXI_PARAMETER                                             ; altera_syncram_9dnn                                                                                              ; Untyped        ;
 ; CLKEN_POWER_OPTIMIZATION                                   ; OFF                                                                                                              ; Untyped        ;
 ; CLOCK_DUTY_CYCLE_DEPENDENCE                                ; AUTO                                                                                                             ; Untyped        ;
 ; CLOCK_ENABLE_CORE_A                                        ; USE_INPUT_CLKEN                                                                                                  ; Untyped        ;
@@ -3072,7 +3072,7 @@ u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
 ; INSTANCE_NAME                                              ; UNUSED                                                                                                           ; Untyped        ;
 ; LOW_POWER_MODE                                             ; AUTO                                                                                                             ; Untyped        ;
 ; MAXIMUM_DEPTH                                              ; 0                                                                                                                ; Untyped        ;
-; NUMWORDS_A                                                 ; 32768                                                                                                            ; Signed Integer ;
+; NUMWORDS_A                                                 ; 192000                                                                                                           ; Signed Integer ;
 ; NUMWORDS_B                                                 ; 0                                                                                                                ; Untyped        ;
 ; OPERATION_MODE                                             ; SINGLE_PORT                                                                                                      ; String         ;
 ; OPTIMIZATION_OPTION                                        ; AUTO                                                                                                             ; Untyped        ;
@@ -3091,7 +3091,7 @@ u0|intel_niosv_g_0|intel_niosv_g_0|rst_controller
 ; READ_DURING_WRITE_MODE_PORT_B                              ; NEW_DATA_NO_NBE_READ                                                                                             ; Untyped        ;
 ; WIDTHAD2_A                                                 ; 1                                                                                                                ; Untyped        ;
 ; WIDTHAD2_B                                                 ; 1                                                                                                                ; Untyped        ;
-; WIDTHAD_A                                                  ; 15                                                                                                               ; Signed Integer ;
+; WIDTHAD_A                                                  ; 18                                                                                                               ; Signed Integer ;
 ; WIDTHAD_B                                                  ; 1                                                                                                                ; Untyped        ;
 ; WIDTH_A                                                    ; 32                                                                                                               ; Signed Integer ;
 ; WIDTH_B                                                    ; 1                                                                                                                ; Untyped        ;
@@ -3196,16 +3196,16 @@ u0|mm_interconnect_0|intel_niosv_g_0_instruction_manager_agent|align_address_to_
 ; SYNC_RESET     ; 1     ; Signed Integer                                                                                                              ;
 +----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
 All Instances:
-u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent|uncompressor
+u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent|uncompressor
 u0|mm_interconnect_0|mm_bridge_0_s0_agent|uncompressor
 u0|mm_interconnect_0|intel_niosv_g_0_dm_agent_agent|uncompressor
-u0|mm_interconnect_0|intel_onchip_memory_0_s1_agent|uncompressor
+u0|mm_interconnect_0|jtag_uart_0_avalon_jtag_slave_agent|uncompressor
 u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_agent|uncompressor
 
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_w7cuuma_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode ;
+; Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_klplswi_default_decode Instance: u0|mm_interconnect_0|router_001|the_default_decode ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Name     ; Value ; Type                                                                                                                          ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
@@ -3221,7 +3221,7 @@ u0|mm_interconnect_0|router_001|the_default_decode
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_na3lwia_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode ;
+; Parameter Settings for User Entity tempqiart_altera_merlin_router_1921_uao6kiq_default_decode Instance: u0|mm_interconnect_0|router_003|the_default_decode ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Name     ; Value ; Type                                                                                                                          ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
@@ -4784,7 +4784,7 @@ u1|solution_state_ram|ram_1port_0|altera_syncram_component
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst ;
+; Parameter Settings for User Entity niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst ;
 +--------------------------+----------------------------------+--------------------------------------------------------------------------------------------------------+
 ; Parameter Name           ; Value                            ; Type                                                                                                   ;
 +--------------------------+----------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -4799,8 +4799,8 @@ u1|solution_state_ram|ram_1port_0|altera_syncram_component
 ; CLIC_VT_ALIGN            ; 8                                ; Signed Integer                                                                                         ;
 ; CORE_EXTN                ; 4352                             ; Signed Integer                                                                                         ;
 ; DATA_CACHE_SIZE          ; 4096                             ; Signed Integer                                                                                         ;
-; DBG_DATA_S_BASE          ; 00000000000000100000000000000000 ; Unsigned Binary                                                                                        ;
-; DBG_EXPN_VECTOR          ; 00000000000000100000000000000000 ; Unsigned Binary                                                                                        ;
+; DBG_DATA_S_BASE          ; 00000000000100000000000000000000 ; Unsigned Binary                                                                                        ;
+; DBG_EXPN_VECTOR          ; 00000000000100000000000000000000 ; Unsigned Binary                                                                                        ;
 ; DBG_PARK_LOOP_OFFSET     ; 00000000000000000000000000011000 ; Unsigned Binary                                                                                        ;
 ; DEBUG_ENABLED            ; 1                                ; Signed Integer                                                                                         ;
 ; DEVICE_FAMILY            ; Stratix 10                       ; String                                                                                                 ;
@@ -4834,7 +4834,7 @@ u1|solution_state_ram|ram_1port_0|altera_syncram_component
 ; PERIPHERAL_REGION_B_SIZE ; 0                                ; Signed Integer                                                                                         ;
 ; PLAT_IRQ_VEC_W           ; 16                               ; Signed Integer                                                                                         ;
 ; RESET_VECTOR             ; 00000000000000000000000000000000 ; Unsigned Binary                                                                                        ;
-; TIMER_MSIP_DATA_S_BASE   ; 00000000000000110000000000000000 ; Unsigned Binary                                                                                        ;
+; TIMER_MSIP_DATA_S_BASE   ; 00000000000100010000000000000000 ; Unsigned Binary                                                                                        ;
 ; USE_RESET_REQ            ; 0                                ; Signed Integer                                                                                         ;
 ; csrind_if.MXLEN          ; 32                               ; Signed Integer                                                                                         ;
 ; csrind_if.NUM_XIREGS     ; 1                                ; Signed Integer                                                                                         ;
@@ -5062,7 +5062,7 @@ u1|initial_h_ram_inst|ram_1port_0|intel_mce_arb_component|intel_mce_arb_inst
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst ;
+; Parameter Settings for User Entity instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi Instance: u0|intel_niosv_g_0|intel_niosv_g_0|hart|core_inst|instr_decoder_inst ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Name     ; Value ; Type                                                                                                                                                        ;
 +--------------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -5199,7 +5199,7 @@ u0|mm_interconnect_0|intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_
 +------------------+-------------------------+---------------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
 ; Assignment Name  ; Sample Assignment Value ; Entity        ; Source ; Source Valid ; Target                  ; Target Valid ; Location                                                                                 ;
 +------------------+-------------------------+---------------+--------+--------------+-------------------------+--------------+------------------------------------------------------------------------------------------+
-; PARTITION_COLOUR ; -3638529                ; tempqiart_top ;        ;              ; tempqiart_top           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:695 ;
+; PARTITION_COLOUR ; -3638529                ; tempqiart_top ;        ;              ; tempqiart_top           ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:694 ;
 ; LOCATION         ; PIN_A10                 ;               ;        ;              ; FMC_LA28_P              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:252 ;
 ; LOCATION         ; PIN_A12                 ;               ;        ;              ; FMC_LA29_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:253 ;
 ; LOCATION         ; PIN_A13                 ;               ;        ;              ; FMC_LA21_N              ; No           ; C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/nios_path.qsf:237 ;
@@ -5460,9 +5460,9 @@ Table limited at 10 items. To change the number of top root causes reported, set
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Fri Sep 11 20:12:59 2026
-    Info: System process ID: 39628
-Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off nios_path -c nios_path
+    Info: Processing started: Sat Sep 12 02:43:08 2026
+    Info: System process ID: 24200
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off --analysis_and_elaboration nios_path -c nios_path --synthesis
 Info: qis_default_flow_script.tcl version: #1
 Info: Initializing Synthesis...
 Info: Project = "nios_path"
@@ -5470,13 +5470,13 @@ Info: Revision = "nios_path"
 Info (21958): Initialized Quartus Message Database
 Info (16303): Aggressive Area optimization mode selected -- logic area will be prioritized at the potential cost of reduced timing performance
 Info: Analyzing source files
-Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_controller.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_controller.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
-Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
 Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd" (same filename, same library name and same md5 digest). Skipping analysis of this file.
 Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/hyperparam_ram/intel_mce_arb_100/synth/altera_sld_arbiter_top.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_arb_100/synth/altera_sld_arbiter_top.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_controller.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_controller.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (18237): File "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tempqiart/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" is a duplicate of already analyzed file "C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/altera_reset_controller_1924/synth/altera_reset_synchronizer.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
 Critical Warning (20615): Use the Reset Release IP in Intel Stratix 10 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Intel Stratix 10 Configuration User Guide.
 Info: Elaborating from top-level entity "tempqiart_top"
-Info (18235): Library search order is as follows: "ram_1port_2011; intel_mce_arb_100; initial_h_ram; altera_merlin_axi_translator_1974; altera_merlin_slave_translator_191; altera_merlin_axi_master_ni_19100; altera_merlin_slave_agent_1930; altera_avalon_sc_fifo_1932; altera_merlin_router_1921; altera_merlin_traffic_limiter_1921; altera_avalon_st_pipeline_stage_1930; altera_merlin_burst_adapter_1940; altera_merlin_demultiplexer_1921; altera_merlin_multiplexer_1922; altera_mm_interconnect_1920; altera_irq_mapper_2001; altera_reset_controller_1924; tempqiart; altera_iopll_2000; fpga_clk_pll_mfg; tempqiart_reset_in; intel_onchip_memory_1410; tempqiart_intel_onchip_memory_0; tempqiart_clock_in; altera_avalon_jtag_uart_1930; tempqiart_jtag_uart_0; intel_niosv_g_unit_400; intel_niosv_timer_msip_120; intel_niosv_dbg_mod_210; intel_niosv_g_400; tempqiart_intel_niosv_g_0; state_ram; ram_2port_2050; sym_matrix_bank; altera_avalon_mm_bridge_2010; tempqiart_mm_bridge_0; hyperparam_ram; intel_mce_104". Quartus will look for undefined design units in your libraries in that order. To modify the ordering, please specify a semi-colon separated library list using the assignment LIBRARY_SEARCH_ORDER.
+Info (18235): Library search order is as follows: "ram_1port_2011; intel_mce_arb_100; initial_h_ram; altera_iopll_2000; fpga_clk_pll_mfg; tempqiart_reset_in; intel_onchip_memory_1410; tempqiart_intel_onchip_memory_0; tempqiart_clock_in; altera_avalon_jtag_uart_1930; tempqiart_jtag_uart_0; altera_reset_controller_1924; intel_niosv_g_unit_400; intel_niosv_timer_msip_120; intel_niosv_dbg_mod_210; altera_irq_mapper_2001; intel_niosv_g_400; tempqiart_intel_niosv_g_0; state_ram; ram_2port_2050; sym_matrix_bank; altera_avalon_mm_bridge_2010; tempqiart_mm_bridge_0; hyperparam_ram; altera_merlin_axi_translator_1974; altera_merlin_slave_translator_191; altera_merlin_axi_master_ni_19100; altera_merlin_slave_agent_1930; altera_avalon_sc_fifo_1932; altera_merlin_router_1921; altera_merlin_traffic_limiter_1921; altera_avalon_st_pipeline_stage_1930; altera_merlin_burst_adapter_1940; altera_merlin_demultiplexer_1921; altera_merlin_multiplexer_1922; altera_mm_interconnect_1920; tempqiart; intel_mce_104". Quartus will look for undefined design units in your libraries in that order. To modify the ordering, please specify a semi-colon separated library list using the assignment LIBRARY_SEARCH_ORDER.
 Info (23145): Top design parameter 'BUILD_REV' set with value '48'h001895ED0000' from user settings File: C Line: 0
 Warning (16751): Verilog HDL warning at niosv_dm_jtag2mm.sv(297): port "in_channel" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_dbg_mod_210/synth/niosv_dm_jtag2mm.sv Line: 297
 Warning (16751): Verilog HDL warning at niosv_dm_jtag2mm.sv(329): port "in_channel" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_dbg_mod_210/synth/niosv_dm_jtag2mm.sv Line: 329
@@ -5487,17 +5487,17 @@ Warning (16751): Verilog HDL warning at niosv_debug_module.sv(532): port "ecc_in
 Warning (16751): Verilog HDL warning at niosv_debug_module.sv(1273): port "ecc_inject_correctable_i" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_dbg_mod_210/synth/niosv_debug_module.sv Line: 1273
 Warning (16751): Verilog HDL warning at altera_avalon_jtag_uart.sv(281): port "tdo" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_jtag_uart_0/altera_avalon_jtag_uart_1930/synth/altera_avalon_jtag_uart.sv Line: 281
 Warning (16751): Verilog HDL warning at alt_jtag_atlantic.v(276): port "raw_tms" remains unconnected for this instance File: e:/quartus/quartus/quartus/libraries/megafunctions/alt_jtag_atlantic.v Line: 276
-Warning (13469): Verilog HDL assignment warning at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv(3072): truncated value with size 8 to match size of target (1) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv Line: 3072
-Warning (13469): Verilog HDL assignment warning at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv(3076): truncated value with size 8 to match size of target (1) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv Line: 3076
+Warning (13469): Verilog HDL assignment warning at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv(3072): truncated value with size 8 to match size of target (1) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv Line: 3072
+Warning (13469): Verilog HDL assignment warning at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv(3076): truncated value with size 8 to match size of target (1) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv Line: 3076
 Warning (13469): Verilog HDL assignment warning at niosv_g_alu.sv(134): truncated value with size 33 to match size of target (32) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_alu.sv Line: 134
 Info (22567): Verilog HDL info at altera_avalon_sc_fifo.v(126): extracting RAM for identifier 'infer_mem' File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/altera_avalon_sc_fifo.v Line: 126
 Warning (16788): Net "raw_dtcm1_rd_data_a_gen[31]" does not have a driver at niosv_g_dcache.sv(224) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_dcache.sv Line: 224
 Warning (16788): Net "C0_dtcm1_ram_rd_during_wr" does not have a driver at niosv_g_dcache.sv(232) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_dcache.sv Line: 232
 Warning (16788): Net "raw_dtcm2_rd_data_a_gen[31]" does not have a driver at niosv_g_dcache.sv(238) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_dcache.sv Line: 238
 Warning (16788): Net "C0_dtcm2_ram_rd_during_wr" does not have a driver at niosv_g_dcache.sv(246) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_dcache.sv Line: 246
-Warning (16788): Net "M1_fix_gpr_rd[4]" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv(981) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv Line: 981
-Warning (16788): Net "M1_fix_gpr_val[31]" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv(982) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv Line: 982
-Warning (16788): Net "I_itcm1_correctable_error" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv(2644) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv Line: 2644
+Warning (16788): Net "M1_fix_gpr_rd[4]" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv(981) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv Line: 981
+Warning (16788): Net "M1_fix_gpr_val[31]" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv(982) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv Line: 982
+Warning (16788): Net "I_itcm1_correctable_error" does not have a driver at niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv(2644) File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv Line: 2644
 Info (19337): VHDL info at sld_jtag_endpoint_adapter.vhd(96): executing entity "sld_jtag_endpoint_adapter(sld_ir_width=5,sld_auto_instance_index="YES",sld_node_info_internal=144207360)(1,1)(1,3)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 96
 Info (19337): VHDL info at altera_sld_agent_endpoint.vhd(122): executing entity "altera_sld_agent_endpoint(mfr_code=110,type_code=19,version=1,ir_width=5)(1,1)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_sld_agent_endpoint.vhd Line: 122
 Info (19337): VHDL info at altera_fabric_endpoint.vhd(126): executing entity "altera_fabric_endpoint(send_width=7,receive_width=28,settings="{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance -1 ir_width 5 bridge_agent 0 prefer_host { } type_name 0 instance_name 0 psig 9b67919e}")(1,154)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_fabric_endpoint.vhd Line: 126
@@ -5527,11 +5527,11 @@ Warning (18254): Verilog HDL warning at initial_h_ram_ram_1port_2011_4l4kj3a.v(2
 Info (19337): VHDL info at sld_mod_ram_rom_top.vhd(31): executing entity "sld_mod_ram_rom_top(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name_dec=2147483647)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/initial_h_ram/intel_mce_104/synth/sld_mod_ram_rom_top.vhd Line: 31
 Info (19337): VHDL info at sld_mod_ram_rom.vhd(17): executing entity "sld_mod_ram_rom(byte_enable_width=1,fifo_size_delay=5,width_word=28,numwords=2048,widthad=11,shift_count_bits=5,backpressure_enabled=1,node_name=2147483647)(1,3)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 17
 Warning (18254): Verilog HDL warning at state_ram_ram_1port_2011_fyinmwy.v(26): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/ram_1port_2011/synth/state_ram_ram_1port_2011_fyinmwy.v Line: 26
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 37
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 38
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 39
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 41
-Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/39628/altera_mult_add_fil82.v Line: 42
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(37): "tri1" is synthesized as "pullup": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/24200/altera_mult_add_fil82.v Line: 37
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(38): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/24200/altera_mult_add_fil82.v Line: 38
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(39): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/24200/altera_mult_add_fil82.v Line: 39
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(41): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/24200/altera_mult_add_fil82.v Line: 41
+Warning (18254): Verilog HDL warning at altera_mult_add_fil82.v(42): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/tmp-clearbox/nios_path/24200/altera_mult_add_fil82.v Line: 42
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(682): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 682
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(683): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 683
 Warning (18254): Verilog HDL warning at altera_mult_add_rtl.v(710): "tri0" is synthesized as "pulldown": might cause synthesis - simulation differences File: e:/quartus/quartus/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 710
@@ -5573,7 +5573,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5606,7 +5606,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5627,7 +5627,7 @@ Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
 Info (11172): Alt_sld_fab_0.alt_sld_fab_0.alt_sld_fab_0: SLD fabric agents which did not specify prefer_host were connected to JTAG
-Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0.ip
+Info (11172): Deploying alt_sld_fab_0 to C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_24200_0\sld\ipgen\alt_sld_fab_0.ip
 Info (11172): ***************************************************************
 Info (11172): Quartus is a registered trademark of Intel Corporation in the
 Info (11172): US and other countries.  Portions of the Quartus Prime software
@@ -5650,7 +5650,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5683,7 +5683,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5703,10 +5703,10 @@ Info (11172): Add_connection sldfabric.node_3 splitter.node_1 conduit
 Info (11172): Add_connection sldfabric.ident ident.ident_0 conduit
 Info (11172): Add_connection configresetfabric.conf_reset_out_0 sldfabric.conf_reset_out reset
 Info (11172): Set_parameter_value COMPOSED_SETTINGS {{fabric sld dir agent mfr_code 110 type_code 19 version 1 instance 0 ir_width 5 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 128 version 1 instance 0 ir_width 1 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 0 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} {fabric sld dir agent mfr_code 110 type_code 3 version 2 instance 1 ir_width 8 bridge_agent 0 prefer_host {} type_name 0 instance_name 0} }
-Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
+Info (11172): Saving generation log to C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_24200_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0_generation.rpt
 Info (11172): Generated by version: 25.1 build 129
 Info (11172): Starting: Create HDL design files for synthesis
-Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_39628_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
+Info (11172): Qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_24200_0\sld\ipgen\alt_sld_fab_0.ip --synthesis=VERILOG --output-directory=C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\dni\sandboxes\DESKTOP-Q792E6G_24200_0\sld\ipgen\alt_sld_fab_0 --family="Stratix 10" --part=1ST040EH2F35E2VG
 Info (11172): Add_instance splitter altera_sld_splitter
 Info (11172): Set_instance_parameter_value splitter ADD_INTERFACE_ASGN 1
 Info (11172): Send_message info {SLD fabric agents which did not specify prefer_host were connected to JTAG}
@@ -5720,7 +5720,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5753,7 +5753,7 @@ Info (11172): Set_instance_parameter_value sldfabric BRIDGE_HOST 0
 Info (11172): Set_instance_parameter_value sldfabric USE_TCK_ENA 0
 Info (11172): Set_instance_parameter_value sldfabric NEGEDGE_TDO_LATCH 0
 Info (11172): Add_instance ident altera_connection_identification_hub
-Info (11172): Set_instance_parameter_value ident DESIGN_HASH a2836525606766db963e
+Info (11172): Set_instance_parameter_value ident DESIGN_HASH f139472fefb5424dd949
 Info (11172): Set_instance_parameter_value ident COUNT 1
 Info (11172): Set_instance_parameter_value ident SETTINGS {{width 4 latency 0 type_name 0 instance_name 0} }
 Info (11172): Add_instance configresetfabric intel_configuration_debug_reset_release_hub
@@ -5779,11 +5779,11 @@ Info (11172): Alt_sld_fab_0: "Naming system components in system: alt_sld_fab_0"
 Info (11172): Alt_sld_fab_0: "Processing generation queue"
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0"
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_alt_sld_fab_0_10_fkimwiy"
-Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_alt_sld_fab_1920_5aonwxi"
+Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_alt_sld_fab_1920_77pj62y"
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_altera_sld_splitter_1920_ayqxcma"
 Info (11172): Alt_sld_fab_0: "Generating: altera_jtag_wys_atom"
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y"
-Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_altera_connection_identification_hub_1920_6lqssxa"
+Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_altera_connection_identification_hub_1920_p37tofy"
 Info (11172): Alt_sld_fab_0: "Generating: alt_sld_fab_0_intel_configuration_debug_reset_release_hub_203_5sysfza"
 Info (11172): Conf_reset_src: "Generating: conf_reset_src"
 Info (11172): Grounded_conf_reset_src: "Generating: grounded_conf_reset_src"
@@ -5793,11 +5793,11 @@ Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_for_
 Info (11172): Alt_sld_fab_0: "Generating: intel_configuration_reset_release_to_debug_logic"
 Info (11172): Alt_sld_fab_0: Done "alt_sld_fab_0" with 12 modules, 12 files
 Info (11172): Finished: Create HDL design files for synthesis
-Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 1539 ms
+Info (11172): Generation of C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_24200_0/sld/ipgen/alt_sld_fab_0.ip (alt_sld_fab_0) took 832 ms
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab_0.
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 402
-Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_5aonwxi.v Line: 409
-Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_39628_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_77pj62y.v(402): port "mixed" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_24200_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_77pj62y.v Line: 402
+Warning (16751): Verilog HDL warning at alt_sld_fab_0_alt_sld_fab_1920_77pj62y.v(409): port "reset_in" remains unconnected for this instance File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_24200_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_1920/synth/alt_sld_fab_0_alt_sld_fab_1920_77pj62y.v Line: 409
+Info (19337): VHDL info at alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd(13): executing entity "alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y(device_family="Stratix 10",count=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",compilation_mode=0,force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(1,0)(1,128)" with architecture "rtl" File: C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/dni/sandboxes/DESKTOP-Q792E6G_24200_0/sld/ipgen/alt_sld_fab_0/altera_sld_jtag_hub_1920/synth/alt_sld_fab_0_altera_sld_jtag_hub_1920_czsmy3y.vhd Line: 13
 Info (19337): VHDL info at sld_jtag_hub.vhd(89): executing entity "sld_jtag_hub(device_family="Stratix 10",n_nodes=4,n_sel_bits=3,n_node_ir_bits=8,node_info="00001100000000000110111000000000000010001001100001101110000000000001000000011000011011100000000100010000000110000110111000000000",force_pre_1_4_feature=0,negedge_tdo_latch=0,bridge_start_index=5)(1,10)(127,0)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 89
 Info (19337): VHDL info at sld_hub.vhd(1554): executing entity "sld_shadow_jsm(ip_major_version=1,ip_minor_version=5)" with architecture "rtl" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_hub.vhd Line: 1554
 Info (19337): VHDL info at sld_rom_sr.vhd(5): executing entity "sld_rom_sr(n_bits=160)" with architecture "INFO_REG" File: e:/quartus/quartus/quartus/libraries/megafunctions/sld_rom_sr.vhd Line: 5

@@ -78,7 +78,7 @@ module tempqiart_intel_niosv_g_0 (
 		input  wire        ndm_reset_in_reset            //        ndm_reset_in.reset,         Reset Input
 	);
 
-	tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi intel_niosv_g_0 (
+	tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi intel_niosv_g_0 (
 		.clk                          (clk),                          //   input,   width = 1,                 clk.clk
 		.reset_reset                  (reset_reset),                  //   input,   width = 1,               reset.reset
 		.platform_irq_rx_irq          (platform_irq_rx_irq),          //   input,  width = 16,     platform_irq_rx.irq

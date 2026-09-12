@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2026.09.09.21:16:33"
- outputDirectory="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0/">
+ date="2026.09.12.02:12:45"
+ outputDirectory="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -72,7 +72,7 @@
   <interface name="s1" kind="avalon" start="0">
    <property name="addressAlignment" value="DYNAMIC" />
    <property name="addressGroup" value="0" />
-   <property name="addressSpan" value="131072" />
+   <property name="addressSpan" value="768000" />
    <property name="addressUnits" value="WORDS" />
    <property name="alwaysBurstMaxBurst" value="false" />
    <property name="associatedClock" value="clk1" />
@@ -83,7 +83,7 @@
    <property name="burstOnBurstBoundariesOnly" value="false" />
    <property name="burstcountUnits" value="WORDS" />
    <property name="constantBurstBehavior" value="false" />
-   <property name="explicitAddressSpan" value="131072" />
+   <property name="explicitAddressSpan" value="768000" />
    <property name="holdTime" value="0" />
    <property name="interleaveBursts" value="false" />
    <property name="isBigEndian" value="false" />
@@ -123,7 +123,7 @@
    <property name="dfhFeatureMinorVersion" value="0" />
    <property name="dfhFeatureId" value="35" />
    <property name="dfhFeatureType" value="3" />
-   <port name="address" direction="input" role="address" width="15" />
+   <port name="address" direction="input" role="address" width="18" />
    <port name="read" direction="input" role="read" width="1" />
    <port name="readdata" direction="output" role="readdata" width="32" />
    <port name="byteenable" direction="input" role="byteenable" width="4" />
@@ -153,17 +153,17 @@
   <parameter name="AUTO_CLK1_CLOCK_RATE" value="-1" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\synth\tempqiart_intel_onchip_memory_0.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\synth\tempqiart_intel_onchip_memory_0.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\synth\tempqiart_intel_onchip_memory_0.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\synth\tempqiart_intel_onchip_memory_0.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0.ip" />
+       path="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_onchip_memory_0.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -171,13 +171,13 @@
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="tempqiart_intel_onchip_memory_0">"Generating: tempqiart_intel_onchip_memory_0"</message>
-   <message level="Info" culprit="tempqiart_intel_onchip_memory_0">"Generating: tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga"</message>
+   <message level="Info" culprit="tempqiart_intel_onchip_memory_0">"Generating: tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq"</message>
   </messages>
  </entity>
  <entity
    kind="intel_onchip_memory"
    version="1.4.10"
-   name="tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga">
+   name="tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq">
   <parameter name="readDuringWriteMode_Mixed" value="DONT_CARE" />
   <parameter name="derived_singleClockOperation" value="true" />
   <parameter name="poison_enable" value="false" />
@@ -185,7 +185,7 @@
   <parameter name="ecc_check" value="false" />
   <parameter name="derived_ecc_bits" value="0" />
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="derived_set_addr_width" value="15" />
+  <parameter name="derived_set_addr_width" value="18" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="singleClockOperation" value="false" />
   <parameter name="ecc_pipeline_reg" value="false" />
@@ -217,7 +217,7 @@
   <parameter name="clockEnable" value="false" />
   <parameter name="derived_ram_port" value="0" />
   <parameter name="ecc_encoder_bypass" value="false" />
-  <parameter name="derived_set_addr_width2" value="15" />
+  <parameter name="derived_set_addr_width2" value="18" />
   <parameter name="dataWidth" value="32" />
   <parameter name="derived_debugaccess" value="false" />
   <parameter name="derived_set_axiaddr_width" value="3" />
@@ -234,23 +234,23 @@
   <parameter name="lvl1OutputRegB" value="false" />
   <parameter name="gui_debugaccess" value="false" />
   <parameter name="derived_set_data_width" value="32" />
-  <parameter name="derived_memorySize" value="131072" />
-  <parameter name="memorySize" value="131072" />
+  <parameter name="derived_memorySize" value="768000" />
+  <parameter name="memorySize" value="768000" />
   <parameter name="abs_path" value="false" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_onchip_memory_0\intel_onchip_memory_1410\synth\tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -262,7 +262,7 @@
      instantiator="tempqiart_intel_onchip_memory_0"
      as="intel_onchip_memory_0" />
   <messages>
-   <message level="Info" culprit="tempqiart_intel_onchip_memory_0">"Generating: tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga"</message>
+   <message level="Info" culprit="tempqiart_intel_onchip_memory_0">"Generating: tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq"</message>
   </messages>
  </entity>
 </deploy>

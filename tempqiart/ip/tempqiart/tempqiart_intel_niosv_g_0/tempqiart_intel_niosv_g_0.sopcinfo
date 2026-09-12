@@ -5,7 +5,7 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 25.1 129 (Future versions may contain additional information.) -->
- <!-- 2026.09.09.21:16:35 -->
+ <!-- 2026.09.12.02:12:47 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -182,7 +182,7 @@
    name="intel_niosv_g_0"
    kind="intel_niosv_g"
    version="4.0.0"
-   entity="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+   entity="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
    library="intel_niosv_g_400"
    path="intel_niosv_g_0"
    hpath="intel_niosv_g_0"
@@ -243,7 +243,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.MTIME_OFFSET</name>
-   <value>0x00030000</value>
+   <value>0x00110000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.NIOSV_CORE_VARIANT</name>
@@ -377,7 +377,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -387,7 +387,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x30000' end='0x30040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x30040' end='0x30048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>

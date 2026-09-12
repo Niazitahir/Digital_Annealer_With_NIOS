@@ -2,7 +2,7 @@
 #
 # Machine generated for CPU 'intel_niosv_g_0' in SOPC Builder design 'tempqiart'
 #
-# Generated: Fri Sep 11 20:07:58 EDT 2026
+# Generated: Sat Sep 12 03:33:51 EDT 2026
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,4 +46,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # intel_onchip_memory_0
-memory 0x0 0x20000 cache
+memory 0x0 0xbb800 cache

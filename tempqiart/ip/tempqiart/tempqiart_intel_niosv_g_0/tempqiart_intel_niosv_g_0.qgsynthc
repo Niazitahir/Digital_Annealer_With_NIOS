@@ -62,7 +62,7 @@
           </parameter>
           <parameter>
             <name>dataSlaveMapParam</name>
-            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x30000' end='0x30040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x30040' end='0x30048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
           </parameter>
           <parameter>
             <name>deviceFamily</name>
@@ -170,7 +170,7 @@
           </parameter>
           <parameter>
             <name>instSlaveMapParam</name>
-            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
           </parameter>
           <parameter>
             <name>itcm1Base</name>
@@ -253,7 +253,7 @@
         <className>intel_niosv_g</className>
         <version>4.0.0</version>
         <name>intel_niosv_g_0</name>
-        <uniqueName>tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi</uniqueName>
+        <uniqueName>tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>tempqiart_intel_niosv_g_0.intel_niosv_g_0</path>
@@ -784,11 +784,11 @@
               </parameter>
               <parameter>
                 <name>DBG_DATA_S_BASE</name>
-                <value>131072</value>
+                <value>1048576</value>
               </parameter>
               <parameter>
                 <name>DBG_EXPN_VECTOR</name>
-                <value>131072</value>
+                <value>1048576</value>
               </parameter>
               <parameter>
                 <name>DCLS_EXTRST_IF_ACTIVE</name>
@@ -928,7 +928,7 @@
               </parameter>
               <parameter>
                 <name>TIMER_MSIP_DATA_S_BASE</name>
-                <value>196608</value>
+                <value>1114112</value>
               </parameter>
               <parameter>
                 <name>USE_RESET_REQ</name>
@@ -955,7 +955,7 @@
             <className>intel_niosv_g_unit</className>
             <version>4.0.0</version>
             <name>hart</name>
-            <uniqueName>tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y</uniqueName>
+            <uniqueName>tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi</uniqueName>
             <nonce>0</nonce>
             <incidentConnections>
               <incidentConnection>

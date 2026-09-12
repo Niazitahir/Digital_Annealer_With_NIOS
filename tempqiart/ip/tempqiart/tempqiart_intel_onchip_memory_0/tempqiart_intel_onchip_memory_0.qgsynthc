@@ -78,7 +78,7 @@
           </parameter>
           <parameter>
             <name>derived_memorySize</name>
-            <value>131072</value>
+            <value>768000</value>
           </parameter>
           <parameter>
             <name>derived_ram_port</name>
@@ -86,11 +86,11 @@
           </parameter>
           <parameter>
             <name>derived_set_addr_width</name>
-            <value>15</value>
+            <value>18</value>
           </parameter>
           <parameter>
             <name>derived_set_addr_width2</name>
-            <value>15</value>
+            <value>18</value>
           </parameter>
           <parameter>
             <name>derived_set_axiaddr_width</name>
@@ -194,7 +194,7 @@
           </parameter>
           <parameter>
             <name>memorySize</name>
-            <value>131072</value>
+            <value>768000</value>
           </parameter>
           <parameter>
             <name>poison_enable</name>
@@ -233,7 +233,7 @@
         <className>intel_onchip_memory</className>
         <version>1.4.10</version>
         <name>intel_onchip_memory_0</name>
-        <uniqueName>tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga</uniqueName>
+        <uniqueName>tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>tempqiart_intel_onchip_memory_0.intel_onchip_memory_0</path>

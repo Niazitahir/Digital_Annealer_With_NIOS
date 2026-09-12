@@ -130,7 +130,7 @@ on the Quartus Prime software download page.
 		(text "debugaccess" (rect 78 346 222 702)(font "Arial" (color 0 0 0)))
 		(text "reset_out" (rect 137 371 328 755)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset" (rect 111 396 252 802)(font "Arial" (color 0 0 0)))
-		(text " tempqiart " (rect 263 426 592 862)(font "Arial" ))
+		(text " system " (rect 271 426 590 862)(font "Arial" ))
 		(line (pt 51 34)(pt 136 34)(line_width 1))
 		(line (pt 136 34)(pt 136 426)(line_width 1))
 		(line (pt 51 426)(pt 136 426)(line_width 1))

@@ -5,7 +5,7 @@
 `timescale 1 ps / 1 ps
 module tempqiart_intel_onchip_memory_0 (
 		input  wire        clk,        //   clk1.clk
-		input  wire [14:0] address,    //     s1.address
+		input  wire [17:0] address,    //     s1.address
 		input  wire        read,       //       .read
 		output wire [31:0] readdata,   //       .readdata
 		input  wire [3:0]  byteenable, //       .byteenable
@@ -15,12 +15,12 @@ module tempqiart_intel_onchip_memory_0 (
 		input  wire        reset_req   //       .reset_req
 	);
 
-	tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_ulc7mga #(
+	tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq #(
 		.deviceFamily ("Stratix 10"),
 		.INIT_FILE    ("tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex")
 	) intel_onchip_memory_0 (
 		.clk        (clk),        //   input,   width = 1,   clk1.clk
-		.address    (address),    //   input,  width = 15,     s1.address
+		.address    (address),    //   input,  width = 18,     s1.address
 		.read       (read),       //   input,   width = 1,       .read
 		.readdata   (readdata),   //  output,  width = 32,       .readdata
 		.byteenable (byteenable), //   input,   width = 4,       .byteenable

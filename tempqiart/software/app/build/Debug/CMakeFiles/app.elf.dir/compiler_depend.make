@@ -12,68 +12,107 @@ CMakeFiles/app.elf.dir/hello.cpp.obj: C:/Users/bigkunt/Documents/GitHub/Digital_
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_endian.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/endian.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/types.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_pthreadtypes.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_sigset.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timespec.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timeval.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h \
   E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h \
-  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/sched.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/select.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/timespec.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/types.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/unistd.h \
+  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/unistd.h
 
 
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h:
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/unistd.h:
 
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h:
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/types.h:
 
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h:
-
-C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h:
-
-C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/alt_types.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h:
-
-C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h:
-
-C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/io.h:
-
-C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h:
-
-E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h:
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/unistd.h:
 
 E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h:
 
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/sched.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/types.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/endian.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_endian.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/select.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h:
+
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/alt_types.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h:
+
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h:
+
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/app/hello.cpp:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h:
+
 E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h:
+
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/io.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timeval.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_pthreadtypes.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/timespec.h:
+
+C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_sigset.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timespec.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h:
+
+E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h:

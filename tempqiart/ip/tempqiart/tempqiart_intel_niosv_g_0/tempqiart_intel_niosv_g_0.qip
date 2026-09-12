@@ -34,13 +34,13 @@ set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_u
 set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
 set_global_assignment -entity "niosv_reset_controller" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_VERSION "NC4wLjA="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_NAME "dGVtcHFpYXJ0X2ludGVsX25pb3N2X2dfMF9pbnRlbF9uaW9zdl9nX3VuaXRfNDAwXzR5aXUzN3k="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgUHJvY2Vzc29yIEhBUlQgSW50ZWwgRlBHQSBJUA=="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_INTERNAL "On"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_VERSION "NC4wLjA="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_NAME "dGVtcHFpYXJ0X2ludGVsX25pb3N2X2dfMF9pbnRlbF9uaW9zdl9nX3VuaXRfNDAwX2Vsbmx4b2k="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgUHJvY2Vzc29yIEhBUlQgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_VERSION "NC4wLjA="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_NAME "bmlvc3ZfdGltZXJfbXNpcA=="
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWIFRpbWVyIGFuZCBTb2Z0d2FyZSBJbnRlcnJ1cHQgSW50ZWwgRlBHQSBJUA=="
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -65,18 +65,18 @@ set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_COMPONENT_VERSION "MjAuMC4x"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_COMPONENT_DESCRIPTION "Q29udmVydHMgaW5kaXZpZHVhbCBpbnRlcnJ1cHQgd2lyZXMgdG8gYSBidXMuIEJ5IGRlZmF1bHQsIHRoZSBpbnRlcnJ1cHQgc2VuZGVyIGNvbm5lY3RlZCB0byB0aGUgcmVjZWl2ZXIwIGludGVyZmFjZSBvZiB0aGUgSVJRIG1hcHBlciBpcyB0aGUgaGlnaGVzdCBwcmlvcml0eSB3aXRoIHNlcXVlbnRpYWwgcmVjZWl2ZXJzIGJlaWluZyBzdWNjZXNzaXZlbHkgbG93ZXIgcHJpb3JpdHku"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_COMPONENT_GROUP "SW50ZWwgRlBHQSBJbnRlcmNvbm5lY3QvSW50ZXJydXB0"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_NAME "dGVtcHFpYXJ0X2ludGVsX25pb3N2X2dfMF9pbnRlbF9uaW9zdl9nXzQwMF9oanp0emJp"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgR2VuZXJhbCBQdXJwb3NlIFByb2Nlc3NvciBJbnRlbCBGUEdBIElQ"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_VERSION "NC4wLjA="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DESCRIPTION "TmlvcyBWL2cgaXMgYSBnZW5lcmFsIHB1cnBvc2UgY29yZSBiYXNlZCBvbiB0aGUgUklTQy1WIFJWMzJJTSBjbGFzc2lmaWNhdGlvbi4="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzYzMi9jdXJyZW50L292ZXJ2aWV3Lmh0bWw="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzcyNjk1Mi9jdXJyZW50L2Fib3V0LXRoZS1lbWJlZGRlZC1wcm9jZXNzb3IuaHRtbA=="
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzc0MzgxMC9jdXJyZW50L292ZXJ2aWV3LW9mLWVtYmVkZGVkLXByb2Nlc3Nvci1kZXZlbG9wbWVudC5odG1s"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzA5OC8yMy00L3Byb2Nlc3Nvci1yZWxlYXNlLW5vdGVzLTQwNzMzLmh0bWw="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_NAME "dGVtcHFpYXJ0X2ludGVsX25pb3N2X2dfMF9pbnRlbF9uaW9zdl9nXzQwMF9rYm1nYmZp"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DISPLAY_NAME "TmlvcyBWL2cgR2VuZXJhbCBQdXJwb3NlIFByb2Nlc3NvciBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_VERSION "NC4wLjA="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DESCRIPTION "TmlvcyBWL2cgaXMgYSBnZW5lcmFsIHB1cnBvc2UgY29yZSBiYXNlZCBvbiB0aGUgUklTQy1WIFJWMzJJTSBjbGFzc2lmaWNhdGlvbi4="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_GROUP "UHJvY2Vzc29ycyBhbmQgUGVyaXBoZXJhbHMvRW1iZWRkZWQgUHJvY2Vzc29ycw=="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzYzMi9jdXJyZW50L292ZXJ2aWV3Lmh0bWw="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzcyNjk1Mi9jdXJyZW50L2Fib3V0LXRoZS1lbWJlZGRlZC1wcm9jZXNzb3IuaHRtbA=="
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzc0MzgxMC9jdXJyZW50L292ZXJ2aWV3LW9mLWVtYmVkZGVkLXByb2Nlc3Nvci1kZXZlbG9wbWVudC5odG1s"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzA5OC8yMy00L3Byb2Nlc3Nvci1yZWxlYXNlLW5vdGVzLTQwNzMzLmh0bWw="
 set_global_assignment -entity "tempqiart_intel_niosv_g_0" -library "tempqiart_intel_niosv_g_0" -name IP_COMPONENT_NAME "dGVtcHFpYXJ0X2ludGVsX25pb3N2X2dfMA=="
 set_global_assignment -entity "tempqiart_intel_niosv_g_0" -library "tempqiart_intel_niosv_g_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0" -library "tempqiart_intel_niosv_g_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
@@ -166,9 +166,9 @@ set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE
 set_global_assignment -library "intel_niosv_g_unit_400" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"]
 set_global_assignment -library "intel_niosv_g_unit_400" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"]
 set_global_assignment -library "intel_niosv_g_unit_400" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"]
-set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"]
-set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"]
-set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"]
+set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"]
+set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"]
+set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"]
 set_global_assignment -library "intel_niosv_g_unit_400" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_unit_400/synth/altera_avalon_sc_fifo.v"]
 set_global_assignment -library "intel_niosv_timer_msip_120" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_timer_msip_120/synth/niosv_timer_msip.sv"]
 set_global_assignment -library "intel_niosv_dbg_mod_210" -name SOURCE_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/csr_mlab.mif"]
@@ -190,13 +190,13 @@ set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FIL
 set_global_assignment -library "intel_niosv_dbg_mod_210" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_reset_controller.v"]
 set_instance_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "intel_niosv_dbg_mod_210/synth/altera_reset_controller.sdc"] -no_sdc_promotion  -no_auto_inst_discovery 
 set_global_assignment -library "altera_irq_mapper_2001" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_irq_mapper_2001/synth/tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy.sv"]
-set_global_assignment -library "intel_niosv_g_400" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_400/synth/tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi.v"]
+set_global_assignment -library "intel_niosv_g_400" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_niosv_g_400/synth/tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi.v"]
 set_global_assignment -library "tempqiart_intel_niosv_g_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/tempqiart_intel_niosv_g_0.v"]
 
 
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_TOOL_NAME "intel_niosv_g"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_TOOL_VERSION "4.0.0"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi" -library "intel_niosv_g_400" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_TOOL_NAME "intel_niosv_g"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_TOOL_VERSION "4.0.0"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi" -library "intel_niosv_g_400" -name IP_TOOL_ENV "QsysPrimePro"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_TOOL_NAME "altera_irq_mapper"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_TOOL_VERSION "20.0.1"
 set_global_assignment -entity "tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy" -library "altera_irq_mapper_2001" -name IP_TOOL_ENV "QsysPrimePro"
@@ -206,9 +206,9 @@ set_global_assignment -entity "niosv_dm_top" -library "intel_niosv_dbg_mod_210" 
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_NAME "intel_niosv_timer_msip"
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_VERSION "1.2.0"
 set_global_assignment -entity "niosv_timer_msip" -library "intel_niosv_timer_msip_120" -name IP_TOOL_ENV "QsysPrimePro"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_TOOL_NAME "intel_niosv_g_unit"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_TOOL_VERSION "4.0.0"
-set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y" -library "intel_niosv_g_unit_400" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_TOOL_NAME "intel_niosv_g_unit"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_TOOL_VERSION "4.0.0"
+set_global_assignment -entity "tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi" -library "intel_niosv_g_unit_400" -name IP_TOOL_ENV "QsysPrimePro"
 set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1924" -name IP_TOOL_NAME "altera_reset_controller"
 set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1924" -name IP_TOOL_VERSION "19.2.4"
 set_global_assignment -entity "altera_reset_controller" -library "altera_reset_controller_1924" -name IP_TOOL_ENV "QsysPrimePro"

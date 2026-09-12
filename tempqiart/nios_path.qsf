@@ -648,7 +648,6 @@ set_global_assignment -name BOARD default
 # Constraints file
 #set_global_assignment -name SDC_FILE hsb_100g.sdc
 set_global_assignment -name QIP_FILE initial_h_ram/initial_h_ram.qip
-set_global_assignment -name QIP_FILE tempqiart/tempqiart.qip
 set_global_assignment -name VERILOG_FILE Verilog/synthesis/BitSieve_256.v -hdl_version Verilog_2001
 # Legacy solver sources not instantiated by the active 2048-engine hierarchy.
 # Keep them in the workspace, but exclude them from analysis during debug builds.
@@ -694,3 +693,4 @@ set_global_assignment -name IP_FILE hyperparam_ram.ip
 # from active analysis to avoid stale Quartus QCU metadata conflicts.
 set_instance_assignment -name PARTITION_COLOUR 4291328767 -to tempqiart_top -entity tempqiart_top
 set_instance_assignment -name PARTITION_COLOUR 4294939263 -to auto_fab_0 -entity tempqiart_top
+set_global_assignment -name QSYS_FILE tempqiart.qsys

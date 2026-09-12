@@ -1,5 +1,5 @@
 Assembler report for nios_path
-Fri Sep 11 20:00:44 2026
+Sat Sep 12 03:32:45 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -40,7 +40,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 11 20:00:44 2026 ;
+; Assembler Status      ; Successful - Sat Sep 12 03:32:45 2026 ;
 ; Revision Name         ; nios_path                             ;
 ; Top-level Entity Name ; tempqiart_top                         ;
 ; Family                ; Stratix 10                            ;
@@ -156,8 +156,8 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Fri Sep 11 20:00:28 2026
-    Info: System process ID: 38672
+    Info: Processing started: Sat Sep 12 03:32:31 2026
+    Info: System process ID: 37516
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off nios_path -c nios_path
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
@@ -165,10 +165,10 @@ Info (16734): Loading "final" snapshot for partition "auto_fab_0".
 Info (16678): Successfully loaded final database: elapsed time is 00:00:06.
 Info (20553): Using CVP Hash 0123456789ABCDEF001122334455667788889999AAAABBBBCCCCDDDDEEEEFFFF
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 3767 megabytes
-    Info: Processing ended: Fri Sep 11 20:00:45 2026
-    Info: Elapsed time: 00:00:17
-    Info: System process ID: 38672
+    Info: Peak virtual memory: 3798 megabytes
+    Info: Processing ended: Sat Sep 12 03:32:46 2026
+    Info: Elapsed time: 00:00:15
+    Info: System process ID: 37516
 
 
 +------------------------------------------------------------------------------------------+
@@ -197,8 +197,8 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
 ; Option         ; Setting                                                                                                    ;
 +----------------+------------------------------------------------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                 ;
-; Checksum       ; 0x18B5D8F4                                                                                                 ;
-; Design hash    ; 1FAB8FF76DB57A76D1C8170E0672938F4CFAA7D75322A3FA74584437B82066D2                                           ;
+; Checksum       ; 0x199E76C9                                                                                                 ;
+; Design hash    ; 08810D0C14C1A882654086AFCA64A06F833C522A4EB4CE4C877FE904DC7A86AE                                           ;
 +----------------+------------------------------------------------------------------------------------------------------------+
 
 

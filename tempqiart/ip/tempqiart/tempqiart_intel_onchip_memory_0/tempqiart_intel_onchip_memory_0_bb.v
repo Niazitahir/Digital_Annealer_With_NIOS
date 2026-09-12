@@ -1,6 +1,6 @@
 module tempqiart_intel_onchip_memory_0 (
 		input  wire        clk,        //   clk1.clk
-		input  wire [14:0] address,    //     s1.address
+		input  wire [17:0] address,    //     s1.address
 		input  wire        read,       //       .read
 		output wire [31:0] readdata,   //       .readdata
 		input  wire [3:0]  byteenable, //       .byteenable

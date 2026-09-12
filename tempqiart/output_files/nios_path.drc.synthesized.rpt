@@ -1,5 +1,5 @@
 Design Assistant report for nios_path
-Fri Sep 11 19:35:09 2026
+Sat Sep 12 02:47:21 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -124,7 +124,7 @@ Rule Parameters:      	max_violations = 5000
 +-------------------+----------------------------+
 ; Input Name        ; Waived                     ;
 +-------------------+----------------------------+
-; DBG_SWITCH[2..15] ;                            ;
+; DBG_SWITCH[0..15] ;                            ;
 ; STX_STRAP[0..3]   ;                            ;
 +-------------------+----------------------------+
 

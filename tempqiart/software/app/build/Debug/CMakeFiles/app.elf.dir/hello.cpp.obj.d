@@ -21,6 +21,19 @@ CMakeFiles/app.elf.dir/hello.cpp.obj: \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h \
  E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/unistd.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/unistd.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/types.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/endian.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_endian.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/select.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_sigset.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timeval.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/timespec.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_timespec.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_pthreadtypes.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/sched.h \
+ E:/quartus/Quartus/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/types.h \
  C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/system.h \
  C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/linker.h \
  C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/software/bsp/HAL/inc/io.h \

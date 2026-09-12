@@ -1,5 +1,5 @@
 Fitter Retime Stage Report for nios_path
-Fri Sep 11 19:58:07 2026
+Sat Sep 12 03:29:40 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -12,8 +12,8 @@ Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
   4. Retiming Limit Summary
   5. Clock Domain fpga_clk_pll|iopll_0_fpga_clk_50 (Meets timing requirements: No further analysis performed.)
   6. Clock Domain altera_reserved_tck (Meets timing requirements: No further analysis performed.)
-  7. Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 (Meets timing requirements: No further analysis performed.)
-  8. Clock Domain fpga_clk_pll|iopll_0_refclk (Meets timing requirements: No further analysis performed.)
+  7. Clock Domain fpga_clk_pll|iopll_0_refclk (Meets timing requirements: No further analysis performed.)
+  8. Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 (Meets timing requirements: No further analysis performed.)
   9. Retime Messages
 
 
@@ -54,7 +54,7 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------------------+
 ; fpga_clk_pll|iopll_0_refclk      ; 0                           ;
 ; fpga_clk_pll|iopll_0_m_cnt_clk   ; 0                           ;
-; fpga_clk_pll|iopll_0_fpga_clk_50 ; 2                           ;
+; fpga_clk_pll|iopll_0_fpga_clk_50 ; 3                           ;
 ; altera_reserved_tck              ; 0                           ;
 +----------------------------------+-----------------------------+
 Note: Due to retiming optimizations, a clock domain may require a longer reset sequence to ensure correct functionality.  The table above indicates the minimum number of additional reset sequence cycles needed for each clock domain.
@@ -67,8 +67,8 @@ Note: Due to retiming optimizations, a clock domain may require a longer reset s
 +-------------------------------------------------------------------------------+-----------------------------------------------------------+----------------+
 ; Clock Domain fpga_clk_pll|iopll_0_fpga_clk_50                                 ; Meets timing requirements: No further analysis performed. ; None           ;
 ; Clock Domain altera_reserved_tck                                              ; Meets timing requirements: No further analysis performed. ; None           ;
-; Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 ; Meets timing requirements: No further analysis performed. ; None           ;
 ; Clock Domain fpga_clk_pll|iopll_0_refclk                                      ; Meets timing requirements: No further analysis performed. ; None           ;
+; Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 ; Meets timing requirements: No further analysis performed. ; None           ;
 +-------------------------------------------------------------------------------+-----------------------------------------------------------+----------------+
 
 
@@ -80,11 +80,11 @@ Clock Domain altera_reserved_tck (Meets timing requirements: No further analysis
 ===============================================================================
 
 
-Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 (Meets timing requirements: No further analysis performed.)
+Clock Domain fpga_clk_pll|iopll_0_refclk (Meets timing requirements: No further analysis performed.)
 ===============================================================================
 
 
-Clock Domain fpga_clk_pll|iopll_0_refclk (Meets timing requirements: No further analysis performed.)
+Transfer from fpga_clk_pll|iopll_0_refclk to fpga_clk_pll|iopll_0_fpga_clk_50 (Meets timing requirements: No further analysis performed.)
 ===============================================================================
 
 
@@ -95,16 +95,15 @@ Info (20030): Parallel compilation is enabled and will use 24 of the 24 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Fri Sep 11 19:35:12 2026
-    Info: System process ID: 14380
+    Info: Processing started: Sat Sep 12 02:47:23 2026
+    Info: System process ID: 17660
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off nios_path -c nios_path
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = nios_path
 Info: Revision = nios_path
 Info (17966): Starting Hyper-Retimer operations.
-Info (18914): The Hyper-Retimer was unable to optimize the design due to retiming restrictions. Run Fast Forward Timing Closure Recommendations to see step-by-step suggestions for design changes and show the estimated performance improvement from making these changes.
 Info (17968): Completed Hyper-Retimer operations.
-Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:34
+Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:56
 Info: Adding default timing constraints to JTAG signals.  This will help to achieve basic functionality since no such constraints were provided by the user.
 
 

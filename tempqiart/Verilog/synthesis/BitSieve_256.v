@@ -33,8 +33,6 @@ module BitSieve_256 (
 	wire 			 sign_temp;
 
     // --- Wires for External Control Signals --- //
-    reg [1:0] sync_program_reg;
-    reg [1:0] sync_Go_reg;
 
     wire rst;
     wire program;
@@ -120,11 +118,14 @@ module BitSieve_256 (
     // port A holds the low engine's 1024-entry row, port B holds the high
     // engine's. The Avalon address is mapped as:
     //   [24:21] -> section: 0000 = weight banks, 0001 = hyperparam RAM
-    //              (read/write), 0010 = state RAM (read-only), 0011 =
-    //              initial-h RAM (read/write)
+    //              (read/write), 0010 = state RAM (read/write), 0011 =
+    //              initial-h RAM (read/write), 0100 = program/start pulse
+    //              registers (write-only, [0] selects program vs. start)
     //   [20:11] -> bank number (0..1023), section 0000 only
+    //   [20:17] -> state RAM slot (0..15), section 0010 only
     //   [10]    -> engine half within the twin (0 = low/port A, 1 = high/port B)
     //   [9:0]   -> row within that engine's folded 1024-entry weight vector
+    //   [5:0]   -> 32-bit word within state RAM slot (0..63), section 0010 only
     reg [9:0] avalon_last_bank_reg;
     reg       avalon_last_port_reg;
     reg [2:0] avalon_read_pipeline;
@@ -140,10 +141,25 @@ module BitSieve_256 (
     wire        avalon_write_req     = write && byteenable[0] && avalon_access_enable;
     wire        state_ram_read_active = !avalon_access_enable &&
                                         avalon_last_state_section_reg;
-    wire [3:0]  state_ram_address = state_ram_read_active
-        ? avalon_last_state_address_reg
-        : sol_write_addr[3:0];
-    wire        state_ram_wren = write_en && !state_ram_read_active;
+    wire        state_ram_avalon_write = (address[24:21] == 4'b0010) && avalon_write_req;
+
+    reg [2047:0] state_ram_avalon_wdata;
+    wire [2047:0] state_ram_wdata_comb;
+    genvar st_w;
+    generate
+        for (st_w = 0; st_w < 64; st_w = st_w + 1) begin : gen_state_wdata
+            assign state_ram_wdata_comb[(st_w*32) +: 32] =
+                (state_ram_avalon_write && (address[5:0] == st_w[5:0]))
+                    ? writedata
+                    : state_ram_avalon_wdata[(st_w*32) +: 32];
+        end
+    endgenerate
+
+    wire [3:0]  state_ram_address = state_ram_avalon_write
+        ? address[20:17]
+        : (state_ram_read_active ? avalon_last_state_address_reg : sol_write_addr[3:0]);
+    wire        state_ram_wren = state_ram_avalon_write || (write_en && !state_ram_read_active);
+    wire [2047:0] state_ram_wdata = state_ram_avalon_write ? state_ram_wdata_comb : current_state_X;
     wire [2047:0] state_ram_q;
 
     assign waitrequest   = !avalon_access_enable;
@@ -159,7 +175,12 @@ module BitSieve_256 (
             avalon_last_section_reg <= 4'd0;
             avalon_read_pipeline <= 3'b000;
             readdata             <= 32'd0;
+            state_ram_avalon_wdata <= 2048'd0;
         end else begin
+            if (state_ram_avalon_write) begin
+                state_ram_avalon_wdata[(address[5:0] * 32) +: 32] <= writedata;
+            end
+
             avalon_read_pipeline <= {
                 avalon_read_pipeline[1:0],
                 avalon_read_req
@@ -169,7 +190,7 @@ module BitSieve_256 (
                 avalon_last_bank_reg <= avalon_bank;
                 avalon_last_port_reg <= avalon_row[10];
                 avalon_last_state_address_reg <= address[20:17];
-                avalon_last_state_word_reg <= address[7:2];
+                avalon_last_state_word_reg <= address[5:0];
                 avalon_last_state_section_reg <= (address[24:21] == 4'b0010);
                 avalon_last_section_reg <= address[24:21];
             end
@@ -217,28 +238,46 @@ module BitSieve_256 (
 
 
     // =========================================================================
-    // Asynchronous Input Synchronizers
+    // Program/Start pulse registers
     // =========================================================================
+    // A write to section 0100 pulses program (avalon_row[0]=0) or Go
+    // (avalon_row[0]=1) high for exactly two cycles, then it self-clears
+    // until written again -- replaces the old SW[0]/SW[1] switch inputs.
+    wire control_reg_write     = avalon_write_req && (address[24:21] == 4'b0100);
+    wire program_write_trigger = control_reg_write && !avalon_row[0];
+    wire start_write_trigger   = control_reg_write &&  avalon_row[0];
 
-    // Use these clean, clock-aligned signals for the FSM instead of the raw inputs
-    assign program = sync_program_reg[1];
-    assign Go      = sync_Go_reg[1];
+    reg [1:0] program_pulse_counter;
+    reg [1:0] start_pulse_counter;
+
+    always @(posedge CLOCK_50) begin
+        if (rst) begin
+            program_pulse_counter <= 2'd0;
+        end else if (program_write_trigger) begin
+            program_pulse_counter <= 2'd2;
+        end else if (program_pulse_counter != 2'd0) begin
+            program_pulse_counter <= program_pulse_counter - 1'b1;
+        end
+    end
+
+    always @(posedge CLOCK_50) begin
+        if (rst) begin
+            start_pulse_counter <= 2'd0;
+        end else if (start_write_trigger) begin
+            start_pulse_counter <= 2'd2;
+        end else if (start_pulse_counter != 2'd0) begin
+            start_pulse_counter <= start_pulse_counter - 1'b1;
+        end
+    end
+
+    assign program = (program_pulse_counter != 2'd0);
+    assign Go      = (start_pulse_counter != 2'd0);
 
     reset_debouncer rst_filter (
         .clk(CLOCK_50),
         .async_rst_in(~KEY[0]), // Raw bouncing button
         .sync_rst_out(rst) // Clean, synchronized release
     );
-
-    always @(posedge CLOCK_50) begin
-        if (rst) begin
-            sync_program_reg <= 2'b00;
-            sync_Go_reg      <= 2'b00;
-        end else begin
-            sync_program_reg <= {sync_program_reg[0], SW[0]};
-            sync_Go_reg      <= {sync_Go_reg[0], SW[1]};
-        end
-    end
 
     // =========================================================================
     // MEMORY: 1024 x (2048-word x 10-bit) folded twin-pair banks
@@ -485,7 +524,7 @@ module BitSieve_256 (
     state_ram solution_state_ram (
         .address (state_ram_address),
         .clock   (CLOCK_50),
-        .data    (current_state_X),
+        .data    (state_ram_wdata),
         .wren    (state_ram_wren),
         .q       (state_ram_q)
     );

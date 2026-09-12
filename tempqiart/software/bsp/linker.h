@@ -3,7 +3,7 @@
  *
  * Machine generated for CPU 'intel_niosv_g_0' in SOPC Builder design 'tempqiart'
  *
- * Generated: Fri Sep 11 20:07:58 EDT 2026
+ * Generated: Sat Sep 12 03:33:51 EDT 2026
  */
 
 /*
@@ -65,7 +65,7 @@
  */
 
 #define INTEL_ONCHIP_MEMORY_0_REGION_BASE 0x20
-#define INTEL_ONCHIP_MEMORY_0_REGION_SPAN 131040
+#define INTEL_ONCHIP_MEMORY_0_REGION_SPAN 767968
 #define RESET_REGION_BASE 0x0
 #define RESET_REGION_SPAN 32
 

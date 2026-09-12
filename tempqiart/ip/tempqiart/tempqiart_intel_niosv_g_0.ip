@@ -2777,12 +2777,12 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="instSlaveMapParam" type="string">
           <ipxact:name>instSlaveMapParam</ipxact:name>
           <ipxact:displayName>instSlaveMapParam</ipxact:displayName>
-          <ipxact:value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&gt;&lt;/address-map&gt;</ipxact:value>
+          <ipxact:value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="dataSlaveMapParam" type="string">
           <ipxact:name>dataSlaveMapParam</ipxact:name>
           <ipxact:displayName>dataSlaveMapParam</ipxact:displayName>
-          <ipxact:value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x30000' end='0x30040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x30040' end='0x30048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</ipxact:value>
+          <ipxact:value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="enableMulDiv" type="bit">
           <ipxact:name>enableMulDiv</ipxact:name>
@@ -3142,7 +3142,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.MTIME_OFFSET" type="string">
           <ipxact:name>embeddedsw.CMacro.MTIME_OFFSET</ipxact:name>
-          <ipxact:value>0x00030000</ipxact:value>
+          <ipxact:value>0x00110000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.NIOSV_CORE_VARIANT" type="string">
           <ipxact:name>embeddedsw.CMacro.NIOSV_CORE_VARIANT</ipxact:name>
@@ -4835,7 +4835,7 @@ https://fpgasoftware.intel.com/eula.-->
                 &lt;suppliedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_MAP&lt;/key&gt;
-                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x30000' end='0x30040' datawidth='32' /&amp;gt;&amp;lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x30040' end='0x30048' datawidth='32' /&amp;gt;&amp;lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
+                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&amp;gt;&amp;lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&amp;gt;&amp;lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/suppliedSystemInfos&gt;
                 &lt;consumedSystemInfos/&gt;
@@ -4869,7 +4869,7 @@ https://fpgasoftware.intel.com/eula.-->
                 &lt;suppliedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_MAP&lt;/key&gt;
-                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x20000' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.dm_agent' start='0x20000' end='0x30000' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
+                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&amp;gt;&amp;lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/suppliedSystemInfos&gt;
                 &lt;consumedSystemInfos/&gt;

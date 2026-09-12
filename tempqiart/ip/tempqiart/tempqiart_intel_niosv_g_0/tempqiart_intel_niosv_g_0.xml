@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2026.09.09.21:16:35"
- outputDirectory="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/">
+ date="2026.09.12.02:12:47"
+ outputDirectory="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -552,17 +552,17 @@
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\synth\tempqiart_intel_niosv_g_0.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\synth\tempqiart_intel_niosv_g_0.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\synth\tempqiart_intel_niosv_g_0.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\synth\tempqiart_intel_niosv_g_0.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/bigkunt/Documents/GitHub/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0.ip" />
+       path="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/ip/tempqiart/tempqiart_intel_niosv_g_0.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -582,8 +582,8 @@
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0"</message>
-   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"</message>
-   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y"</message>
+   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"</message>
+   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi"</message>
    <message level="Info" culprit="niosv_reset_controller">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: altera_reset_controller"</message>
@@ -596,7 +596,7 @@
  <entity
    kind="intel_niosv_g"
    version="4.0.0"
-   name="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi">
+   name="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi">
   <parameter name="numCLICDebugTriggers" value="0" />
   <parameter name="enableECCFull" value="false" />
   <parameter name="AUTO_BOARD" value="default" />
@@ -638,14 +638,14 @@
   <parameter name="numCLICLevels" value="2" />
   <parameter
      name="dataSlaveMapParam"
-     value="&lt;address-map&gt;&lt;slave name=&apos;intel_onchip_memory_0.s1&apos; start=&apos;0x0&apos; end=&apos;0x20000&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.dm_agent&apos; start=&apos;0x20000&apos; end=&apos;0x30000&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.timer_sw_agent&apos; start=&apos;0x30000&apos; end=&apos;0x30040&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;jtag_uart_0.avalon_jtag_slave&apos; start=&apos;0x30040&apos; end=&apos;0x30048&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;mm_bridge_0.s0&apos; start=&apos;0x8000000&apos; end=&apos;0x10000000&apos; datawidth=&apos;32&apos; /&gt;&lt;/address-map&gt;" />
+     value="&lt;address-map&gt;&lt;slave name=&apos;intel_onchip_memory_0.s1&apos; start=&apos;0x0&apos; end=&apos;0xBB800&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.dm_agent&apos; start=&apos;0x100000&apos; end=&apos;0x110000&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.timer_sw_agent&apos; start=&apos;0x110000&apos; end=&apos;0x110040&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;jtag_uart_0.avalon_jtag_slave&apos; start=&apos;0x110040&apos; end=&apos;0x110048&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;mm_bridge_0.s0&apos; start=&apos;0x8000000&apos; end=&apos;0x10000000&apos; datawidth=&apos;32&apos; /&gt;&lt;/address-map&gt;" />
   <parameter name="enableCLICInterruptEdgeTriggerConfig" value="false" />
   <parameter name="dtcm2InitFile" value="" />
   <parameter name="enableCoreLevelInterruptController" value="false" />
   <parameter name="Blind_Window_Period" value="1000" />
   <parameter
      name="instSlaveMapParam"
-     value="&lt;address-map&gt;&lt;slave name=&apos;intel_onchip_memory_0.s1&apos; start=&apos;0x0&apos; end=&apos;0x20000&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.dm_agent&apos; start=&apos;0x20000&apos; end=&apos;0x30000&apos; datawidth=&apos;32&apos; /&gt;&lt;/address-map&gt;" />
+     value="&lt;address-map&gt;&lt;slave name=&apos;intel_onchip_memory_0.s1&apos; start=&apos;0x0&apos; end=&apos;0xBB800&apos; datawidth=&apos;32&apos; /&gt;&lt;slave name=&apos;intel_niosv_g_0.dm_agent&apos; start=&apos;0x100000&apos; end=&apos;0x110000&apos; datawidth=&apos;32&apos; /&gt;&lt;/address-map&gt;" />
   <parameter name="itcm1Size" value="0" />
   <parameter name="enableECCLite" value="false" />
   <parameter name="CLICenabledShadowRegisterFiles" value="1" />
@@ -666,12 +666,12 @@
   <parameter name="numCLICPlatformInterrupts" value="16" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -694,8 +694,8 @@
   </childSourceFiles>
   <instantiator instantiator="tempqiart_intel_niosv_g_0" as="intel_niosv_g_0" />
   <messages>
-   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"</message>
-   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y"</message>
+   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"</message>
+   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi"</message>
    <message level="Info" culprit="niosv_reset_controller">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: altera_reset_controller"</message>
@@ -708,7 +708,7 @@
  <entity
    kind="intel_niosv_g_unit"
    version="4.0.0"
-   name="tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y">
+   name="tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi">
   <parameter name="AUTO_DEBUG_IRQ_RX_INTERRUPTS_USED" value="1" />
   <parameter name="DISABLE_FSQRT_FDIV" value="0" />
   <parameter name="CLIC_NUM_LEVELS" value="2" />
@@ -722,18 +722,18 @@
   <parameter name="DEFAULT_TIMEOUT_PERIOD" value="255" />
   <parameter name="NUM_SRF_BANKS" value="1" />
   <parameter name="ITCM2_BASE" value="0" />
-  <parameter name="DBG_DATA_S_BASE" value="131072" />
+  <parameter name="DBG_DATA_S_BASE" value="1048576" />
   <parameter name="mnemonic" value="" />
   <parameter name="PERIPHERAL_REGION_A_BASE" value="0" />
   <parameter name="RESET_VECTOR" value="0" />
   <parameter name="DTCS1_ADDR_WIDTH" value="10" />
-  <parameter name="DBG_EXPN_VECTOR" value="131072" />
+  <parameter name="DBG_EXPN_VECTOR" value="1048576" />
   <parameter name="LOCKSTEP_EN" value="0" />
   <parameter name="DTCM2_SIZE" value="0" />
   <parameter name="funct3" value="" />
   <parameter name="CORE_EXTN" value="4352" />
   <parameter name="CLIC_EN" value="0" />
-  <parameter name="TIMER_MSIP_DATA_S_BASE" value="196608" />
+  <parameter name="TIMER_MSIP_DATA_S_BASE" value="1114112" />
   <parameter name="funct7" value="" />
   <parameter name="CLIC_NUM_PRIORITIES" value="8" />
   <parameter name="ITCM1_BASE" value="0" />
@@ -767,492 +767,492 @@
   <parameter name="ITCM2_INIT_FILE" value="" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_opcode_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_opcode_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_mem_op_state.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_mem_op_state.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_pkg.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_pkg.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32enc.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32enc.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32dec.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32dec.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_enc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_enc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_enc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_enc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_tcm_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_tcm_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reg_file.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reg_file.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csr.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_if.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_if.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_host.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_host.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_interrupt_handler.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_interrupt_handler.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_multiplier.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_multiplier.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fxp33_mult_cyclone10lp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fxp33_mult_cyclone10lp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_divider.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_divider.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_instr_buffer.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_instr_buffer.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_victim_buffer.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_victim_buffer.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmart_comp_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmart_comp_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ahbdecmx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ahbdecmx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_avmm2ahb.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_avmm2ahb.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ccfdetstub.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ccfdetstub.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp_serial.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp_serial.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp0.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp0.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp1.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp1.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cpu_ioroute.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cpu_ioroute.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_ctrl.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_ctrl.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec_bfi.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec_bfi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_defslave.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_defslave.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_ahbsi.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_ahbsi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok0.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok0.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok1.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok1.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_cu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_cu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_sm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_sm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_tcu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_tcu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmartcomp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmartcomp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintattr_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintattr_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintctl_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintctl_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintie_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintie_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintip_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintip_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicinttrig_csr.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicinttrig_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_endpoint.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_endpoint.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_mapper.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_mapper.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_node.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_node.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_tree.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_tree.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_interrupt_frontend.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_interrupt_frontend.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_optional_csr_bit.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_optional_csr_bit.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fetch.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fetch.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_dcache.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_dcache.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_lsu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_lsu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_instr_cache.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_instr_cache.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_itcm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_itcm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_branch_predictor.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_branch_predictor.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_new_pc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_new_pc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_alu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_alu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fp_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fp_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fpu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fpu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\int33_to_fp32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\int33_to_fp32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_int32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_int32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_uint32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_uint32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_alu_cycloneivgx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_alu_cycloneivgx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_mult_cycloneivgx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_mult_cycloneivgx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_div.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_div.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dspba_library_ver.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dspba_library_ver.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altera_avalon_sc_fifo.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altera_avalon_sc_fifo.v"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_opcode_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_opcode_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_mem_op_state.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_mem_op_state.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_pkg.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_pkg.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32enc.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32enc.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32dec.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_altecc_32dec.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_enc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_enc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\ecc_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_enc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_enc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altecc_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_tcm_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_tcm_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reg_file.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reg_file.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csr.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_if.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_if.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_host.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_csrind_host.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_interrupt_handler.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_interrupt_handler.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_multiplier.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_multiplier.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fxp33_mult_cyclone10lp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fxp33_mult_cyclone10lp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_divider.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_divider.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_instr_buffer.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_instr_buffer.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_victim_buffer.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_victim_buffer.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmart_comp_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmart_comp_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ahbdecmx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ahbdecmx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_avmm2ahb.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_avmm2ahb.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ccfdetstub.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_ccfdetstub.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp_serial.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp_serial.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp0.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp0.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp1.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cmp1.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cpu_ioroute.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_cpu_ioroute.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_ctrl.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_ctrl.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec_bfi.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec_bfi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm_dec.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dclsm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_defslave.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_defslave.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_ahbsi.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_ahbsi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok0.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok0.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok1.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am_oknok1.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_am.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_cu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_cu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_sm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_sm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_tcu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl_tcu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_errctrl.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmartcomp.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_frsmartcomp.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintattr_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintattr_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintctl_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintctl_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintie_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintie_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintip_slice.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicintip_slice.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicinttrig_csr.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_clicinttrig_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_endpoint.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_endpoint.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_mapper.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_csrind_mapper.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_node.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_node.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_tree.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_filter_tree.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_interrupt_frontend.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_interrupt_frontend.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_optional_csr_bit.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_clic_optional_csr_bit.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fetch.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fetch.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_dcache.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_dcache.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_lsu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_lsu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_instr_cache.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_instr_cache.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_itcm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_itcm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_branch_predictor.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_branch_predictor.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_new_pc.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_new_pc.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_alu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_alu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fp_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fp_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fpu.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_fpu.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\int33_to_fp32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\int33_to_fp32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_int32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_int32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_uint32.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_to_uint32.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_alu_cycloneivgx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_alu_cycloneivgx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_mult_cycloneivgx.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_mult_cycloneivgx.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_div.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_div.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dspba_library_ver.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_dspba_library_ver.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC0_uid62_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC1_uid65_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\fp32_sqrt_memoryC2_uid68_sqrtTables_lutmem.hex"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\instr_decoder_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_g_core_tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altera_avalon_sc_fifo.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\altera_avalon_sc_fifo.v"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -1264,10 +1264,10 @@
        path="E:/quartus/quartus/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
   </childSourceFiles>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
      as="hart" />
   <messages>
-   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y"</message>
+   <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi"</message>
    <message level="Info" culprit="niosv_reset_controller">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_reset_controller"</message>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: altera_reset_controller"</message>
@@ -1280,12 +1280,12 @@
   <parameter name="NIOS_VARIANT" value="g" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_timer_msip_120\synth\niosv_timer_msip.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_timer_msip_120\synth\niosv_timer_msip.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_timer_msip_120\synth\niosv_timer_msip.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_timer_msip_120\synth\niosv_timer_msip.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -1294,7 +1294,7 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
      as="timer_module" />
   <messages>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_timer_msip"</message>
@@ -1307,114 +1307,114 @@
   <parameter name="FPU_EN" value="0" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\csr_mlab.mif"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\csr_mlab.mif"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\debug_rom.mif"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\debug_rom.mif"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_jtag2mm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_jtag2mm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_top.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_top.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_debug_module.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_debug_module.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_bundle.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_bundle.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_nocut.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_nocut.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_clock_crosser.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_clock_crosser.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_base.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_base.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_stage.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_stage.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\csr_mlab.mif"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\csr_mlab.mif"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\debug_rom.mif"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\debug_rom.mif"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_def.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_def.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_ram.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_ram.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_jtag2mm.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_jtag2mm.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_top.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_dm_top.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_debug_module.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\niosv_debug_module.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_bundle.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_bundle.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_nocut.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer_nocut.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_std_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_clock_crosser.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_clock_crosser.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_base.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_base.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_stage.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_pipeline_stage.sv"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_avalon_st_handshake_clock_crosser.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_dbg_mod_210\synth\altera_reset_controller.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -1423,7 +1423,7 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
      as="dbg_mod" />
   <messages>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_dm_top"</message>
@@ -1441,12 +1441,12 @@
   <parameter name="SENDER_IRQ_WIDTH" value="1" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_irq_mapper_2001\synth\tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_irq_mapper_2001\synth\tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_irq_mapper_2001\synth\tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy.sv"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_irq_mapper_2001\synth\tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -1455,7 +1455,7 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
      as="irq_mapper,irq_mapper_001,irq_mapper_002" />
   <messages>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: tempqiart_intel_niosv_g_0_altera_irq_mapper_2001_wgtbcyy"</message>
@@ -1467,12 +1467,12 @@
    name="niosv_reset_controller">
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reset_controller.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\intel_niosv_g_unit_400\synth\niosv_reset_controller.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles/>
@@ -1481,7 +1481,7 @@
        path="E:/quartus/quartus/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
   </childSourceFiles>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_4yiu37y"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_unit_400_elnlxoi"
      as="niosv_reset_controller" />
   <messages>
    <message level="Info" culprit="tempqiart_intel_niosv_g_0">"Generating: niosv_reset_controller"</message>
@@ -1494,24 +1494,24 @@
    name="altera_reset_controller">
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.sdc"
        attributes="NO_SDC_PROMOTION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_synchronizer.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_synchronizer.v"
        attributes="" />
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.sdc"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\ip\tempqiart\tempqiart_intel_niosv_g_0\altera_reset_controller_1924\synth\altera_reset_controller.sdc"
        attributes="NO_SDC_PROMOTION" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -1520,7 +1520,7 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_hjztzbi"
+     instantiator="tempqiart_intel_niosv_g_0_intel_niosv_g_400_kbmgbfi"
      as="rst_controller,rst_controller_001" />
   <instantiator instantiator="niosv_reset_controller" as="niosv_reset_controller" />
   <messages>
