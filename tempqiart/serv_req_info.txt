@@ -1,42 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <internal_error>
 	<sub_system>ERR</sub_system>
-	<callstack>	0x7fff756a18a0: dni_orch + 0x118a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x3590)
-	0x7fff921b9c84: ucrtbase + 0x49c84 (bsearch_s + 0x254)
-	0x7fff921b98a6: ucrtbase + 0x498a6 (_execute_onexit_table + 0x86)
-	0x7fff921b985c: ucrtbase + 0x4985c (_execute_onexit_table + 0x3c)
-	0x7fff7569f5a0: dni_orch + 0xf5a0 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x1290)
-	0x7fff7569e68d: dni_orch + 0xe68d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x37d)
-	0x7fff7569e96d: dni_orch + 0xe96d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x65d)
-	0x7fff94bbead9: ntdll + 0x11ead9 (RtlIsCriticalSectionLocked + 0x5169)
-	0x7fff94ab0c32: ntdll + 0x10c32 (RtlRaiseException + 0x1532)
-	0x7fff94b2830f: ntdll + 0x8830f (LdrGetProcedureAddressForCaller + 0x106f)
-	0x7fff94b265fd: ntdll + 0x865fd (LdrUnloadDll + 0x50d)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b267a1: ntdll + 0x867a1 (LdrUnloadDll + 0x6b1)
-	0x7fff94b26443: ntdll + 0x86443 (LdrUnloadDll + 0x353)
-	0x7fff94b262df: ntdll + 0x862df (LdrUnloadDll + 0x1ef)
-	0x7fff91d81358: KERNELBASE + 0x21358 (FreeLibrary + 0x18)
-	0x7fff70341fc8: mega_qsysipc_jni_stub + 0x1fc8 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x6c8)
-	0x7fff70341908: mega_qsysipc_jni_stub + 0x1908 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x8)
-	0x192480dd620:
-	0x192aa71d597:
-	0x192abdfcd9f:
-	0x191ffffffff:
-	0x192480d94fd:
-	0x446003127:
-	0x192480dd2f5:
-	0x7bb5ff32f:
-	0x192aa71d597:
-	0x7bb5ff397:
-	0x192aa720297:
+	<callstack>	0x7ffa60e44955: fitter_fitcc + 0x74955 (??0FITCC_ENV@@QEAA@PEAVCMP_FACADE@@HP6APEAVFITCC_DEVICE@@PEAV0@@Z@Z + 0xbf5)
+	0x7ffa618ca3bc: fitter_fdrgn + 0x4a3bc (?fdrgn_initialize_fitter@@YA_NPEAVCMP_FACADE@@_N@Z + 0x10c)
+	0x7ffa597d57b7: comp_fit2 + 0x257b7 (fit2_create_fitter_netlist + 0xea7)
+	 0x569d6442: tcl86 + 0x16442 (TclNRRunCallbacks + 0x62)
+	 0x569d7c4d: tcl86 + 0x17c4d (TclEvalEx + 0x9ed)
+	 0x569d7257: tcl86 + 0x17257 (Tcl_EvalEx + 0x27)
+	0x7ffbcef6bda2: ccl_atcl + 0x2bda2 (?atcl_tcl_eval@@YAHPEAUTcl_Interp@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z + 0x4d2)
+	0x7ffa59801ea9: comp_fit2 + 0x51ea9 (?fit2_run_create_fitter_netlist@@YA_NPEAUTcl_Interp@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVATCL_ARGS@@AEAH_N@Z + 0x1029)
+	0x7ffa597d8927: comp_fit2 + 0x28927 (fit2_fit_plan + 0x357)
+	 0x569d6442: tcl86 + 0x16442 (TclNRRunCallbacks + 0x62)
+	 0x569d7c4d: tcl86 + 0x17c4d (TclEvalEx + 0x9ed)
+	 0x56a66a8b: tcl86 + 0xa6a8b (Tcl_FSEvalFileEx + 0x22b)
+	 0x56a65136: tcl86 + 0xa5136 (Tcl_EvalFile + 0x36)
+	0x7ffbd3e330ac: comp_qexe + 0x230ac (?qexe_evaluate_tcl_script@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z + 0x66c)
+	0x7ffbd3e31be9: comp_qexe + 0x21be9 (qexe_do_tcl + 0x8f9)
+	0x7ffbd3e3a1ad: comp_qexe + 0x2a1ad (?qexe_run_tcl_option@@YA_NPEAVQEXE_FRAMEWORK@@PEBDPEAV?$list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N@Z + 0x6cd)
+	0x7ffa8edd119f: comp_qcu + 0x4119f (?qcu_run_tcl_option@@YA_NPEAVQCU_FRAMEWORK@@PEBDPEAV?$list@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@_N@Z + 0x6ef)
+	0x7ffbd3e39969: comp_qexe + 0x29969 (qexe_run + 0x629)
+	0x7ffbd3e3abd6: comp_qexe + 0x2abd6 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0x266)
+	0x7ff6f675bd32: quartus_fit + 0xbd32 (?qfit2_main@@YAHHPEAPEBD@Z + 0x82)
+	0x7ffbcf688708: ccl_msg + 0x28708 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)
+	0x7ffbcf689912: ccl_msg + 0x29912 (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x82)
+	0x7ffbcf86b063: ccl_mem + 0x2b063 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x73)
+	0x7ffbcf6865df: ccl_msg + 0x265df (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0x17f)
+	0x7ff6f675cfab: quartus_fit + 0xcfab (__scrt_common_main_seh + 0x10b)
+	0x7ffbe6b6cd86: KERNEL32 + 0x2cd86 (BaseThreadInitThunk + 0x16)
+	0x7ffbe7e8caeb: ntdll + 0xacaeb (RtlUserThreadStart + 0x2b)
 </callstack>
-	<error>*** Fatal Error: Access Violation at 00007FFF756A18A1</error>
-	<date>Fri Sep 11 14:31:33 2026
+	<error>*** Fatal Error: Neither FAST FIT nor AUTO FIT is not supported by this family, but FAST FIT is requested in QSF</error>
+	<date>Sat Sep 12 14:43:09 2026
 </date>
 	<version>Version 25.1.0 Build 129 03/26/2025 SC Pro Edition</version>
 </internal_error>

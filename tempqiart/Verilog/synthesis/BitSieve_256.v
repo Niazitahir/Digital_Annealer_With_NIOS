@@ -128,7 +128,7 @@ module BitSieve_256 (
     //   [5:0]   -> 32-bit word within state RAM slot (0..63), section 0010 only
     reg [9:0] avalon_last_bank_reg;
     reg       avalon_last_port_reg;
-    reg [2:0] avalon_read_pipeline;
+    reg [3:0] avalon_read_pipeline;
     reg [3:0] avalon_last_state_address_reg;
     reg [5:0] avalon_last_state_word_reg;
     reg       avalon_last_state_section_reg;
@@ -136,7 +136,7 @@ module BitSieve_256 (
 
     wire [9:0]  avalon_bank          = address[20:11];
     wire [10:0] avalon_row           = address[10:0];
-    wire        avalon_access_enable = (avalon_read_pipeline == 3'b000);
+    wire        avalon_access_enable = (avalon_read_pipeline == 4'b0000);
     wire        avalon_read_req      = read && avalon_access_enable;
     wire        avalon_write_req     = write && byteenable[0] && avalon_access_enable;
     wire        state_ram_read_active = !avalon_access_enable &&
@@ -163,7 +163,7 @@ module BitSieve_256 (
     wire [2047:0] state_ram_q;
 
     assign waitrequest   = !avalon_access_enable;
-    assign readdatavalid = avalon_read_pipeline[2];
+    assign readdatavalid = avalon_read_pipeline[3];
 
     always @(posedge CLOCK_50) begin
         if (rst) begin
@@ -173,7 +173,7 @@ module BitSieve_256 (
             avalon_last_state_word_reg <= 6'd0;
             avalon_last_state_section_reg <= 1'b0;
             avalon_last_section_reg <= 4'd0;
-            avalon_read_pipeline <= 3'b000;
+            avalon_read_pipeline <= 4'b0000;
             readdata             <= 32'd0;
             state_ram_avalon_wdata <= 2048'd0;
         end else begin
@@ -182,7 +182,7 @@ module BitSieve_256 (
             end
 
             avalon_read_pipeline <= {
-                avalon_read_pipeline[1:0],
+                avalon_read_pipeline[2:0],
                 avalon_read_req
             };
 
@@ -203,11 +203,14 @@ module BitSieve_256 (
                                     : bank_q_a_packed[(avalon_last_bank_reg * WEIGHT_WIDTH) +: WEIGHT_WIDTH]};
                 end else if (avalon_last_section_reg == 4'b0001) begin
                     readdata <= hp_q_data;
-                end else if (avalon_last_state_section_reg) begin
-                    readdata <= state_ram_q[
-                        (avalon_last_state_word_reg * 32) +: 32];
                 end else if (avalon_last_section_reg == 4'b0011) begin
                     readdata <= {4'd0, h_init_value};
+                end
+            end else if (avalon_read_pipeline[2]) begin
+                if (avalon_last_state_section_reg) begin
+                    readdata <= state_ram_q[
+
+                        (avalon_last_state_word_reg * 32) +: 32];
                 end
             end else if (avalon_write_req) begin
                 readdata <= 32'd0;

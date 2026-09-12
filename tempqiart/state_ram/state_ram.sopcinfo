@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="state_ram" kind="state_ram" version="1.0" fabric="QSYS">
  <!-- Format version 25.1 129 (Future versions may contain additional information.) -->
- <!-- 2026.09.11.14:31:29 -->
+ <!-- 2026.09.12.16:53:09 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -108,7 +108,7 @@
    name="ram_1port_0"
    kind="ram_1port"
    version="20.1.1"
-   entity="state_ram_ram_1port_2011_fyinmwy"
+   entity="state_ram_ram_1port_2011_faio2zy"
    library="ram_1port_2011"
    path="ram_1port_0"
    hpath="ram_1port_0"
@@ -262,7 +262,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="GUI_JTAG_ENABLED">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -270,7 +270,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="GUI_JTAG_ID">
    <type>java.lang.String</type>
-   <value>NONE</value>
+   <value>sys_ram</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

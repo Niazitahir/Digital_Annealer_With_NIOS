@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2026.09.11.14:31:29"
+ date="2026.09.12.16:53:09"
  outputDirectory="C:/Users/bigkunt/Documents/GitHub/Digital_Annealer_With_NIOS/tempqiart/state_ram/">
  <perimeter>
   <parameter
@@ -115,16 +115,26 @@
   <childSourceFiles>
    <file
        path="E:/quartus/quartus/ip/altera/megafunctions/ram_1port/ram_1_port_hw.tcl" />
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_hw.tcl" />
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_arb_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="state_ram">"Generating: state_ram"</message>
-   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_fyinmwy"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_faio2zy"</message>
+   <message level="Info" culprit="intel_mce_inst">"Generating: intel_mce_inst"</message>
+   <message level="Info" culprit="intel_mce_arb_inst">"Generating: intel_mce_arb_inst"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_2011_fo5s6qy"</message>
+   <message level="Info" culprit="state_ram">"Generating: sld_mod_ram_rom_top"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_arb_2011_ext4j7q"</message>
+   <message level="Info" culprit="state_ram">"Generating: altera_sld_arbiter_top"</message>
   </messages>
  </entity>
  <entity
    kind="ram_1port"
    version="20.1.1"
-   name="state_ram_ram_1port_2011_fyinmwy">
+   name="state_ram_ram_1port_2011_faio2zy">
   <parameter name="GUI_CLOCK_ENABLE_INPUT_A" value="false" />
   <parameter name="GUI_AclrData" value="false" />
   <parameter name="GUI_NUMWORDS_A" value="16" />
@@ -142,7 +152,7 @@
   <parameter name="GUI_BYTE_SIZE" value="8" />
   <parameter name="GUI_RESOURCE_USAGE" value="2 M20K" />
   <parameter name="GUI_rden" value="false" />
-  <parameter name="GUI_JTAG_ID" value="NONE" />
+  <parameter name="GUI_JTAG_ID" value="sys_ram" />
   <parameter name="GUI_WIDTH_A" value="2048" />
   <parameter name="GUI_RegData" value="true" />
   <parameter name="GUI_FORCE_TO_ZERO" value="false" />
@@ -152,7 +162,7 @@
   <parameter name="GUI_Clken" value="false" />
   <parameter name="GUI_AclrByte" value="false" />
   <parameter name="GUI_RegAddr" value="true" />
-  <parameter name="GUI_JTAG_ENABLED" value="false" />
+  <parameter name="GUI_JTAG_ENABLED" value="true" />
   <parameter name="GUI_INIT_TO_SIM_X" value="false" />
   <parameter name="GUI_BYTE_WIDTH" value="256" />
   <parameter name="GUI_WRCONTROL_ACLR_A" value="false" />
@@ -167,22 +177,177 @@
   <parameter name="GUI_BlankMemory" value="0" />
   <generatedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_fyinmwy.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_faio2zy.v"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_fyinmwy.v"
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_2011_faio2zy.v"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
        path="E:/quartus/quartus/ip/altera/megafunctions/ram_1port/ram_1_port_hw.tcl" />
   </sourceFiles>
-  <childSourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_hw.tcl" />
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_arb_hw.tcl" />
+  </childSourceFiles>
   <instantiator instantiator="state_ram" as="ram_1port_0" />
   <messages>
-   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_fyinmwy"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_2011_faio2zy"</message>
+   <message level="Info" culprit="intel_mce_inst">"Generating: intel_mce_inst"</message>
+   <message level="Info" culprit="intel_mce_arb_inst">"Generating: intel_mce_arb_inst"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_2011_fo5s6qy"</message>
+   <message level="Info" culprit="state_ram">"Generating: sld_mod_ram_rom_top"</message>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_arb_2011_ext4j7q"</message>
+   <message level="Info" culprit="state_ram">"Generating: altera_sld_arbiter_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="ram_1port_intel_mce"
+   version="20.1.1"
+   name="state_ram_ram_1port_intel_mce_2011_fo5s6qy">
+  <parameter name="IS_DATA_IN_RAM" value="1" />
+  <parameter name="NUMWORDS" value="16" />
+  <parameter name="IS_READABLE" value="1" />
+  <parameter name="FIFO_SIZE" value="16" />
+  <parameter name="SLD_NODE_INFO" value="270036480" />
+  <parameter name="QUEUE_SIZE_WIDTH" value="5" />
+  <parameter name="FIFO_SIZE_WIDTH" value="4" />
+  <parameter name="BYTE_ENABLE_WIDTH" value="256" />
+  <parameter name="NODE_NAME" value="sys_ram" />
+  <parameter name="BACKPRESSURE_ENABLED" value="1" />
+  <parameter name="WIDTH_WORD" value="2048" />
+  <parameter name="NODE_NAME_DEC" value="2147483647" />
+  <parameter name="LATENCY" value="2" />
+  <parameter name="WIDTHAD" value="4" />
+  <parameter name="SHIFT_COUNT_BITS" value="12" />
+  <parameter name="FIFO_SIZE_DELAY" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_intel_mce_2011_fo5s6qy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_intel_mce_2011_fo5s6qy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="state_ram_ram_1port_2011_faio2zy" as="intel_mce_inst" />
+  <messages>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_2011_fo5s6qy"</message>
+   <message level="Info" culprit="state_ram">"Generating: sld_mod_ram_rom_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="ram_1port_intel_mce_arb"
+   version="20.1.1"
+   name="state_ram_ram_1port_intel_mce_arb_2011_ext4j7q">
+  <parameter name="BYTE_ENABLE_WIDTH" value="256" />
+  <parameter name="DATA_WIDTH" value="2048" />
+  <parameter name="LATENCY" value="2" />
+  <parameter name="WIDTHAD" value="4" />
+  <generatedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_intel_mce_arb_2011_ext4j7q.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\ram_1port_2011\synth\state_ram_ram_1port_intel_mce_arb_2011_ext4j7q.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_arb_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="state_ram_ram_1port_2011_faio2zy"
+     as="intel_mce_arb_inst" />
+  <messages>
+   <message level="Info" culprit="state_ram">"Generating: state_ram_ram_1port_intel_mce_arb_2011_ext4j7q"</message>
+   <message level="Info" culprit="state_ram">"Generating: altera_sld_arbiter_top"</message>
+  </messages>
+ </entity>
+ <entity kind="intel_mce" version="1.0.4" name="sld_mod_ram_rom_top">
+  <parameter name="IS_DATA_IN_RAM" value="1" />
+  <parameter name="NUMWORDS" value="16" />
+  <parameter name="IS_READABLE" value="1" />
+  <parameter name="FIFO_SIZE" value="16" />
+  <parameter name="SLD_NODE_INFO" value="270036480" />
+  <parameter name="QUEUE_SIZE_WIDTH" value="5" />
+  <parameter name="FIFO_SIZE_WIDTH" value="4" />
+  <parameter name="BYTE_ENABLE_WIDTH" value="256" />
+  <parameter name="NODE_NAME" value="sys_ram" />
+  <parameter name="BACKPRESSURE_ENABLED" value="1" />
+  <parameter name="WIDTH_WORD" value="2048" />
+  <parameter name="NODE_NAME_DEC" value="2147483647" />
+  <parameter name="LATENCY" value="2" />
+  <parameter name="WIDTHAD" value="4" />
+  <parameter name="SHIFT_COUNT_BITS" value="12" />
+  <parameter name="FIFO_SIZE_DELAY" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_104\synth\sld_mod_ram_rom_top.vhd"
+       attributes="" />
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_104\synth\intel_mce_adapter.sdc"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_104\synth\sld_mod_ram_rom_top.vhd"
+       attributes="" />
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_104\synth\intel_mce_adapter.sdc"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="state_ram_ram_1port_intel_mce_2011_fo5s6qy"
+     as="intel_mce_inst" />
+  <messages>
+   <message level="Info" culprit="state_ram">"Generating: sld_mod_ram_rom_top"</message>
+  </messages>
+ </entity>
+ <entity kind="intel_mce_arb" version="1.0.0" name="altera_sld_arbiter_top">
+  <parameter name="BYTE_ENABLE_WIDTH" value="256" />
+  <parameter name="DATA_WIDTH" value="2048" />
+  <parameter name="LATENCY" value="2" />
+  <parameter name="WIDTHAD" value="4" />
+  <generatedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_arb_100\synth\altera_sld_arbiter_top.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\state_ram\intel_mce_arb_100\synth\altera_sld_arbiter_top.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="E:/quartus/quartus/ip/altera/sld/jtag/intel_mce/intel_mce_arb_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="state_ram_ram_1port_intel_mce_arb_2011_ext4j7q"
+     as="intel_mce_arb_inst" />
+  <messages>
+   <message level="Info" culprit="state_ram">"Generating: altera_sld_arbiter_top"</message>
   </messages>
  </entity>
 </deploy>

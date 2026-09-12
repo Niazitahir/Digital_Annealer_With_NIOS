@@ -11,7 +11,7 @@ module state_ram (
 		input  wire          clock    //   clock.clk,     Memory clock,refer to user guide for specific details
 	);
 
-	state_ram_ram_1port_2011_fyinmwy ram_1port_0 (
+	state_ram_ram_1port_2011_faio2zy ram_1port_0 (
 		.data    (data),    //   input,  width = 2048,    data.datain
 		.q       (q),       //  output,  width = 2048,       q.dataout
 		.address (address), //   input,     width = 4, address.address

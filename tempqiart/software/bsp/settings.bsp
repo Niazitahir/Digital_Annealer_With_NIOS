@@ -3,13 +3,13 @@
     <Tool>PD-BSP</Tool>
     <BspType>hal2</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Sep. 12, 2026 3:33:49 a.m.</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1789198429991</BspGeneratedUnixTimeStamp>
+    <BspGeneratedTimeStamp>Sep. 12, 2026 6:10:07 p.m.</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1789251007587</BspGeneratedUnixTimeStamp>
     <BspGeneratedLocation>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp</BspGeneratedLocation>
     <BspSettingsFile>C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS\tempqiart\software\bsp\settings.bsp</BspSettingsFile>
     <QsysFile>../../tempqiart.qsys</QsysFile>
     <QuartusProjectFile>../../nios_path.qpf</QuartusProjectFile>
-    <SystemFileHash>54703149ae83e92cda88c8c6383c75749d61aae07f51fa358fdc687b5bb24a</SystemFileHash>
+    <SystemFileHash>90f3bc3d47890df3b8d8481a842709f50f44d3a5ee53cbfd5a03fa9ce1da7</SystemFileHash>
     <JdiFile>default</JdiFile>
     <Cpu>intel_niosv_g_0</Cpu>
     <Setting>
@@ -588,8 +588,8 @@
     </MemoryMap>
     <MemoryMap>
         <slaveDescriptor>intel_onchip_memory_0</slaveDescriptor>
-        <addressRange>0x00000000 - 0x000BB7FF</addressRange>
-        <addressSpan>768000</addressSpan>
+        <addressRange>0x00000000 - 0x00041EAF</addressRange>
+        <addressSpan>270000</addressSpan>
         <attributes>memory</attributes>
     </MemoryMap>
     <MemoryMap>

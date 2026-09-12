@@ -1,5 +1,5 @@
 Assembler report for nios_path
-Sat Sep 12 03:32:45 2026
+Sat Sep 12 18:05:42 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -40,7 +40,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Sep 12 03:32:45 2026 ;
+; Assembler Status      ; Successful - Sat Sep 12 18:05:42 2026 ;
 ; Revision Name         ; nios_path                             ;
 ; Top-level Entity Name ; tempqiart_top                         ;
 ; Family                ; Stratix 10                            ;
@@ -156,19 +156,19 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Sat Sep 12 03:32:31 2026
-    Info: System process ID: 37516
+    Info: Processing started: Sat Sep 12 18:05:27 2026
+    Info: System process ID: 10000
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off nios_path -c nios_path
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
 Info (16734): Loading "final" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded final database: elapsed time is 00:00:06.
+Info (16678): Successfully loaded final database: elapsed time is 00:00:07.
 Info (20553): Using CVP Hash 0123456789ABCDEF001122334455667788889999AAAABBBBCCCCDDDDEEEEFFFF
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 3798 megabytes
-    Info: Processing ended: Sat Sep 12 03:32:46 2026
-    Info: Elapsed time: 00:00:15
-    Info: System process ID: 37516
+    Info: Peak virtual memory: 3829 megabytes
+    Info: Processing ended: Sat Sep 12 18:05:43 2026
+    Info: Elapsed time: 00:00:16
+    Info: System process ID: 10000
 
 
 +------------------------------------------------------------------------------------------+
@@ -197,8 +197,8 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
 ; Option         ; Setting                                                                                                    ;
 +----------------+------------------------------------------------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                 ;
-; Checksum       ; 0x199E76C9                                                                                                 ;
-; Design hash    ; 08810D0C14C1A882654086AFCA64A06F833C522A4EB4CE4C877FE904DC7A86AE                                           ;
+; Checksum       ; 0x1A10EF41                                                                                                 ;
+; Design hash    ; DF52296104FFE4AA24B1F87D6C34CCE732D43E1C8ABC21BEE1F518A9AD36042C                                           ;
 +----------------+------------------------------------------------------------------------------------------------------------+
 
 

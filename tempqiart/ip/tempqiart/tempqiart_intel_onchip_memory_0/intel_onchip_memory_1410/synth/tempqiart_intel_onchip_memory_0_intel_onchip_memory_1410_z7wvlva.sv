@@ -13,7 +13,7 @@
 
 `timescale 1 ps / 1 ps
 
-module  tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq  (
+module  tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_z7wvlva  (
     address,
     byteenable,
     clk,
@@ -28,7 +28,7 @@ module  tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq  (
     parameter INIT_FILE = "tempqiart_intel_onchip_memory_0_intel_onchip_memory_0.hex";
     parameter deviceFamily = "Agilex 7";
 
-    input  [17:0]	address;
+    input  [16:0]	address;
     input  [3:0]	byteenable;
     input        	clk;
     input        	read;
@@ -95,9 +95,9 @@ module  tempqiart_intel_onchip_memory_0_intel_onchip_memory_1410_n65hufq  (
         altera_syncram_component.operation_mode  	= "SINGLE_PORT",
         altera_syncram_component.ram_block_type  	= "AUTO",
         altera_syncram_component.byte_size  	= 8,
-        altera_syncram_component.numwords_a  	= 192000,
+        altera_syncram_component.numwords_a  	= 67500,
         altera_syncram_component.width_a  	= 32,
-        altera_syncram_component.widthad_a  	= 18,
+        altera_syncram_component.widthad_a  	= 17,
         altera_syncram_component.width_byteena_a  	= 4,
         altera_syncram_component.outdata_reg_a  	= "UNREGISTERED",
         altera_syncram_component.outdata_aclr_a  	= "NONE",

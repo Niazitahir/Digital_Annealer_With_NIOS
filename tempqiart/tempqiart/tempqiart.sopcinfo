@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="tempqiart" kind="tempqiart" version="1.0" fabric="QSYS">
  <!-- Format version 25.1 129 (Future versions may contain additional information.) -->
- <!-- 2026.09.12.02:12:49 -->
+ <!-- 2026.09.12.17:13:41 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -2618,7 +2618,7 @@ the requested settings for a module instance. -->
                     <consumedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -2652,7 +2652,7 @@ the requested settings for a module instance. -->
                     <consumedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -4526,7 +4526,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4545,7 +4545,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -5138,7 +5138,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>intel_onchip_memory_0.s1</name>
     <baseAddress>0</baseAddress>
-    <span>768000</span>
+    <span>270000</span>
    </memoryBlock>
   </interface>
   <interface name="data_manager" kind="altera_axi4_master" version="25.1">
@@ -5528,7 +5528,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>intel_onchip_memory_0.s1</name>
     <baseAddress>0</baseAddress>
-    <span>768000</span>
+    <span>270000</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -6739,7 +6739,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>768000</value>
+   <value>270000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -6829,7 +6829,7 @@ the requested settings for a module instance. -->
                         <name>address</name>
                         <role>address</role>
                         <direction>Input</direction>
-                        <width>18</width>
+                        <width>17</width>
                         <lowerBound>0</lowerBound>
                         <vhdlType>STD_LOGIC_VECTOR</vhdlType>
                         <terminationValue>0</terminationValue>
@@ -6912,7 +6912,7 @@ the requested settings for a module instance. -->
                         </entry>
                         <entry>
                             <key>addressSpan</key>
-                            <value>768000</value>
+                            <value>270000</value>
                         </entry>
                         <entry>
                             <key>addressUnits</key>
@@ -6955,7 +6955,7 @@ the requested settings for a module instance. -->
                         </entry>
                         <entry>
                             <key>explicitAddressSpan</key>
-                            <value>768000</value>
+                            <value>270000</value>
                         </entry>
                         <entry>
                             <key>holdTime</key>
@@ -7189,11 +7189,11 @@ the requested settings for a module instance. -->
                     <suppliedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='s1' start='0x0' end='0xBB800' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                         <entry>
                             <key>ADDRESS_WIDTH</key>
-                            <value>20</value>
+                            <value>19</value>
                         </entry>
                         <entry>
                             <key>MAX_SLAVE_DATA_WIDTH</key>
@@ -7316,7 +7316,7 @@ the requested settings for a module instance. -->
                     <name>address</name>
                     <role>address</role>
                     <direction>Input</direction>
-                    <width>18</width>
+                    <width>17</width>
                     <lowerBound>0</lowerBound>
                     <vhdlType>STD_LOGIC_VECTOR</vhdlType>
                     <terminationValue>0</terminationValue>
@@ -7399,7 +7399,7 @@ the requested settings for a module instance. -->
                     </entry>
                     <entry>
                         <key>addressSpan</key>
-                        <value>768000</value>
+                        <value>270000</value>
                     </entry>
                     <entry>
                         <key>addressUnits</key>
@@ -7442,7 +7442,7 @@ the requested settings for a module instance. -->
                     </entry>
                     <entry>
                         <key>explicitAddressSpan</key>
-                        <value>768000</value>
+                        <value>270000</value>
                     </entry>
                     <entry>
                         <key>holdTime</key>
@@ -7699,7 +7699,7 @@ the requested settings for a module instance. -->
         </entry>
         <entry>
             <key>embeddedsw.CMacro.SIZE_VALUE</key>
-            <value>768000</value>
+            <value>270000</value>
         </entry>
         <entry>
             <key>embeddedsw.CMacro.WRITABLE</key>
@@ -7933,7 +7933,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>768000</value>
+    <value>270000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -8021,7 +8021,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>768000</value>
+    <value>270000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -8356,12 +8356,12 @@ parameters are a RESULT of the module parameters. -->
     <valid>true</valid>
    </parameter>
    <type>avalon</type>
-   <span>768000</span>
+   <span>270000</span>
    <isStart>false</isStart>
    <port>
     <name>address</name>
     <direction>Input</direction>
-    <width>18</width>
+    <width>17</width>
     <role>address</role>
    </port>
    <port>
@@ -13904,7 +13904,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14119,7 +14119,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14334,7 +14334,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14549,7 +14549,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14764,7 +14764,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /><slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /><slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -14979,7 +14979,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15194,7 +15194,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="addressMapSysInfo">
    <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
-   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0xBB800' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /><slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /></address-map>]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>

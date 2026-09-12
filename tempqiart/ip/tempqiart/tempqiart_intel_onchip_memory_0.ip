@@ -128,7 +128,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="addressSpan" type="string">
           <ipxact:name>addressSpan</ipxact:name>
           <ipxact:displayName>Address span</ipxact:displayName>
-          <ipxact:value>768000</ipxact:value>
+          <ipxact:value>270000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="addressUnits" type="string">
           <ipxact:name>addressUnits</ipxact:name>
@@ -183,7 +183,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="explicitAddressSpan" type="string">
           <ipxact:name>explicitAddressSpan</ipxact:name>
           <ipxact:displayName>Explicit address span</ipxact:displayName>
-          <ipxact:value>768000</ipxact:value>
+          <ipxact:value>270000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="holdTime" type="int">
           <ipxact:name>holdTime</ipxact:name>
@@ -484,7 +484,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>17</ipxact:right>
+              <ipxact:right>16</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -665,7 +665,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="memorySize" type="longint">
           <ipxact:name>memorySize</ipxact:name>
           <ipxact:displayName>Total memory size</ipxact:displayName>
-          <ipxact:value>768000</ipxact:value>
+          <ipxact:value>270000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="clockEnable" type="bit">
           <ipxact:name>clockEnable</ipxact:name>
@@ -836,7 +836,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.SIZE_VALUE" type="string">
           <ipxact:name>embeddedsw.CMacro.SIZE_VALUE</ipxact:name>
-          <ipxact:value>768000</ipxact:value>
+          <ipxact:value>270000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.WRITABLE" type="string">
           <ipxact:name>embeddedsw.CMacro.WRITABLE</ipxact:name>
@@ -979,7 +979,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;name&gt;address&lt;/name&gt;
                     &lt;role&gt;address&lt;/role&gt;
                     &lt;direction&gt;Input&lt;/direction&gt;
-                    &lt;width&gt;18&lt;/width&gt;
+                    &lt;width&gt;17&lt;/width&gt;
                     &lt;lowerBound&gt;0&lt;/lowerBound&gt;
                     &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
                     &lt;terminationValue&gt;0&lt;/terminationValue&gt;
@@ -1062,7 +1062,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressSpan&lt;/key&gt;
-                        &lt;value&gt;768000&lt;/value&gt;
+                        &lt;value&gt;270000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressUnits&lt;/key&gt;
@@ -1105,7 +1105,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;explicitAddressSpan&lt;/key&gt;
-                        &lt;value&gt;768000&lt;/value&gt;
+                        &lt;value&gt;270000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;holdTime&lt;/key&gt;
@@ -1317,11 +1317,11 @@ https://fpgasoftware.intel.com/eula.-->
                 &lt;consumedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_MAP&lt;/key&gt;
-                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0xBB800' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
+                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0x41EB0' datawidth='32' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_WIDTH&lt;/key&gt;
-                        &lt;value&gt;20&lt;/value&gt;
+                        &lt;value&gt;19&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;MAX_SLAVE_DATA_WIDTH&lt;/key&gt;

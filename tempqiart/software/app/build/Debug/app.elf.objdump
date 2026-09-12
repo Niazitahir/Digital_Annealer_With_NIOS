@@ -384,7 +384,7 @@ SYMBOL TABLE:
 00003f20 g     F .text	00000004 __retarget_lock_release_recursive
 00003f14 g     F .text	00000008 __retarget_lock_try_acquire_recursive
 00001548 g     F .text	000000c0 altera_avalon_jtag_uart_init
-000bb800 g       *ABS*	00000000 __alt_stack_pointer
+00041eb0 g       *ABS*	00000000 __alt_stack_pointer
 000141d8 g     F .text	00000088 .hidden __clzsi2
 00001c94 g     F .text	0000023c altera_avalon_jtag_uart_write
 0000356c g     F .text	0000000c __sfp_lock_acquire
@@ -455,7 +455,7 @@ SYMBOL TABLE:
 00003ef8 g     F .text	00000004 __retarget_lock_init_recursive
 0000897c g     F .text	00000010 __swbuf
 00003c84 g     F .text	00000008 __sclose
-000bb800 g       *ABS*	00000000 __alt_heap_limit
+00041eb0 g       *ABS*	00000000 __alt_heap_limit
 00007e90 g     F .text	0000000c fclose
 0000295c g     F .text	00000040 alt_timestamp_start
 00015194 g       *ABS*	00000000 __init_array_end
@@ -516,7 +516,7 @@ SYMBOL TABLE:
 0001466c g     F .text	000000f4 _kill
 000173e8 g     O .rwdata	00000120 _impure_data
 000094f0 g     F .text	00000198 frexpl
-000bb800 g       *ABS*	00000000 __alt_data_end
+00041eb0 g       *ABS*	00000000 __alt_data_end
 000161d0 g       *ABS*	00000000 __tbss_end
 00003578 g     F .text	0000000c __sfp_lock_release
 00009688 g     F .text	000002cc _ldtoa_r
@@ -888,7 +888,7 @@ void alt_irq_handler (void)
     exception_code = (cause & ~NIOSV_MCAUSE_INTERRUPT_MASK);
  228:	fdc42703          	lw	a4,-36(s0)
  22c:	800007b7          	lui	a5,0x80000
- 230:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+ 230:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
  234:	00f777b3          	and	a5,a4,a5
  238:	fef42623          	sw	a5,-20(s0)
     if (is_irq) {
@@ -1021,7 +1021,7 @@ static inline uint32_t mm_read(uint32_t base, uint32_t idx, uint32_t mask)
      398:	00f70733          	add	a4,a4,a5
      39c:	080007b7          	lui	a5,0x8000
      3a0:	00f707b3          	add	a5,a4,a5
-     3a4:	0007a783          	lw	a5,0(a5) # 8000000 <__alt_data_end+0x7f44800>
+     3a4:	0007a783          	lw	a5,0(a5) # 8000000 <__alt_data_end+0x7fbe150>
      3a8:	fef42623          	sw	a5,-20(s0)
      3ac:	fec42703          	lw	a4,-20(s0)
      3b0:	fd442783          	lw	a5,-44(s0)
@@ -1149,7 +1149,7 @@ static void pulse_triggers(void)
      500:	fe042423          	sw	zero,-24(s0)
      504:	0a0007b7          	lui	a5,0xa000
      508:	fe842703          	lw	a4,-24(s0)
-     50c:	00e7a023          	sw	a4,0(a5) # a000000 <__alt_data_end+0x9f44800>
+     50c:	00e7a023          	sw	a4,0(a5) # a000000 <__alt_data_end+0x9fbe150>
     printf("[CPU] Program trigger pulsed. Waiting for programming to complete...\n");
      510:	000157b7          	lui	a5,0x15
      514:	3d078513          	add	a0,a5,976 # 153d0 <__flash_rodata_start>
@@ -1161,13 +1161,13 @@ static void pulse_triggers(void)
      528:	311020ef          	jal	3038 <fflush>
     usleep(500000);
      52c:	0007a7b7          	lui	a5,0x7a
-     530:	12078513          	add	a0,a5,288 # 7a120 <__alt_heap_start+0x5f9b0>
+     530:	12078513          	add	a0,a5,288 # 7a120 <__alt_data_end+0x38270>
      534:	5a9000ef          	jal	12dc <usleep>
 
     IOWR_32DIRECT(MM_BRIDGE_0_BASE, START_TRIGGER_OFFSET, 0u);
      538:	fe042623          	sw	zero,-20(s0)
      53c:	0a0007b7          	lui	a5,0xa000
-     540:	00478793          	add	a5,a5,4 # a000004 <__alt_data_end+0x9f44804>
+     540:	00478793          	add	a5,a5,4 # a000004 <__alt_data_end+0x9fbe154>
      544:	fec42703          	lw	a4,-20(s0)
      548:	00e7a023          	sw	a4,0(a5)
     printf("[CPU] Start trigger pulsed.\n");
@@ -1329,7 +1329,7 @@ static void uart_init_h(void)
      714:	008787b3          	add	a5,a5,s0
      718:	bfc7a703          	lw	a4,-1028(a5)
      71c:	100007b7          	lui	a5,0x10000
-     720:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xff447ff>
+     720:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xffbe14f>
      724:	00070613          	mv	a2,a4
      728:	be842583          	lw	a1,-1048(s0)
      72c:	01800537          	lui	a0,0x1800
@@ -1812,7 +1812,7 @@ static void readback_all_memory_regions(void)
     mm_read_block(INIT_H_RAM_BASE, h, 8, INIT_H_DATA_MASK);
      ccc:	e4c40713          	add	a4,s0,-436
      cd0:	100007b7          	lui	a5,0x10000
-     cd4:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xff447ff>
+     cd4:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xffbe14f>
      cd8:	00800613          	li	a2,8
      cdc:	00070593          	mv	a1,a4
      ce0:	01800537          	lui	a0,0x1800
@@ -2053,7 +2053,7 @@ int main(void)
     verify_region("Initial-h RAM", INIT_H_RAM_BASE, INIT_H_WORDS, INIT_H_DATA_MASK, true);
      fa4:	00100713          	li	a4,1
      fa8:	100007b7          	lui	a5,0x10000
-     fac:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xff447ff>
+     fac:	fff78693          	add	a3,a5,-1 # fffffff <__alt_data_end+0xffbe14f>
      fb0:	10000613          	li	a2,256
      fb4:	018005b7          	lui	a1,0x1800
      fb8:	000157b7          	lui	a5,0x15
@@ -2123,7 +2123,7 @@ int main(void)
     1060:	7d9010ef          	jal	3038 <fflush>
     usleep(3000000);
     1064:	002dc7b7          	lui	a5,0x2dc
-    1068:	6c078513          	add	a0,a5,1728 # 2dc6c0 <__alt_data_end+0x220ec0>
+    1068:	6c078513          	add	a0,a5,1728 # 2dc6c0 <__alt_data_end+0x29a810>
     106c:	270000ef          	jal	12dc <usleep>
 
     // Dump 5 full QUBO banks for testing before the state summary.
@@ -2209,8 +2209,8 @@ _start:
      * The values provided by the linker are assumed to be correctly aligned.
      */
     la sp, __alt_stack_pointer
-    10f4:	000ba117          	auipc	sp,0xba
-    10f8:	70c10113          	add	sp,sp,1804 # bb800 <__alt_data_end>
+    10f4:	00041117          	auipc	sp,0x41
+    10f8:	dbc10113          	add	sp,sp,-580 # 41eb0 <__alt_data_end>
     /* Log that the BSS is about to be cleared. */
 #ifdef ALT_LOG_ENABLE
     ALT_LOG_PUTS(alt_log_msg_bss)
@@ -2815,7 +2815,7 @@ void altera_avalon_jtag_uart_init(altera_avalon_jtag_uart_state* sp,
     sp->timeout = INT_MAX;
     15e4:	fdc42783          	lw	a5,-36(s0)
     15e8:	80000737          	lui	a4,0x80000
-    15ec:	fff70713          	add	a4,a4,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    15ec:	fff70713          	add	a4,a4,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     15f0:	00e7a223          	sw	a4,4(a5)
   }
 
@@ -3128,7 +3128,7 @@ altera_avalon_jtag_uart_timeout(void* context)
     18b4:	fe042783          	lw	a5,-32(s0)
     18b8:	0247a703          	lw	a4,36(a5)
     18bc:	800007b7          	lui	a5,0x80000
-    18c0:	ffc78793          	add	a5,a5,-4 # 7ffffffc <__alt_data_end+0x7ff447fc>
+    18c0:	ffc78793          	add	a5,a5,-4 # 7ffffffc <__alt_data_end+0x7ffbe14c>
     18c4:	02e7e063          	bltu	a5,a4,18e4 <altera_avalon_jtag_uart_timeout+0xa4>
     sp->host_inactive++;
     18c8:	fe042783          	lw	a5,-32(s0)
@@ -3238,7 +3238,7 @@ altera_avalon_jtag_uart_ioctl(altera_avalon_jtag_uart_state* sp, int req,
     19ac:	fdc42783          	lw	a5,-36(s0)
     19b0:	0047a703          	lw	a4,4(a5)
     19b4:	800007b7          	lui	a5,0x80000
-    19b8:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    19b8:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     19bc:	08f70663          	beq	a4,a5,1a48 <altera_avalon_jtag_uart_ioctl+0xe0>
       int timeout = *((int *)arg);
     19c0:	fd442783          	lw	a5,-44(s0)
@@ -3250,12 +3250,12 @@ altera_avalon_jtag_uart_ioctl(altera_avalon_jtag_uart_state* sp, int req,
     19d4:	00e7de63          	bge	a5,a4,19f0 <altera_avalon_jtag_uart_ioctl+0x88>
     19d8:	fec42703          	lw	a4,-20(s0)
     19dc:	800007b7          	lui	a5,0x80000
-    19e0:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    19e0:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     19e4:	00f70663          	beq	a4,a5,19f0 <altera_avalon_jtag_uart_ioctl+0x88>
     19e8:	fec42783          	lw	a5,-20(s0)
     19ec:	00c0006f          	j	19f8 <altera_avalon_jtag_uart_ioctl+0x90>
     19f0:	800007b7          	lui	a5,0x80000
-    19f4:	ffe78793          	add	a5,a5,-2 # 7ffffffe <__alt_data_end+0x7ff447fe>
+    19f4:	ffe78793          	add	a5,a5,-2 # 7ffffffe <__alt_data_end+0x7ffbe14e>
     19f8:	fdc42703          	lw	a4,-36(s0)
     19fc:	00f72223          	sw	a5,4(a4)
       rc = 0;
@@ -3266,7 +3266,7 @@ altera_avalon_jtag_uart_ioctl(altera_avalon_jtag_uart_state* sp, int req,
     1a08:	fdc42783          	lw	a5,-36(s0)
     1a0c:	0047a703          	lw	a4,4(a5)
     1a10:	800007b7          	lui	a5,0x80000
-    1a14:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    1a14:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     1a18:	02f70c63          	beq	a4,a5,1a50 <altera_avalon_jtag_uart_ioctl+0xe8>
       *((int *)arg) = (sp->host_inactive < sp->timeout) ? 1 : 0;
     1a1c:	fdc42783          	lw	a5,-36(s0)
@@ -4913,7 +4913,7 @@ alt_u32 alt_timestamp_freq() {
 static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_niosv_timer_timestamp_freq() {
     return ALT_CPU_CPU_FREQ;
     2a00:	02faf7b7          	lui	a5,0x2faf
-    2a04:	08078793          	add	a5,a5,128 # 2faf080 <__alt_data_end+0x2ef3880>
+    2a04:	08078793          	add	a5,a5,128 # 2faf080 <__alt_data_end+0x2f6d1d0>
     return alt_niosv_timer_timestamp_freq();
 }
     2a08:	00078513          	mv	a0,a5
@@ -4935,16 +4935,16 @@ alt_u64 alt_niosv_mtime_get() {
     do {
         highbits = ALT_VOLATILE_ACCESS((alt_u32 *)(NIOSV_MTIME_ADDR + 4));
     2a24:	00110337          	lui	t1,0x110
-    2a28:	00430313          	add	t1,t1,4 # 110004 <__alt_data_end+0x54804>
+    2a28:	00430313          	add	t1,t1,4 # 110004 <__alt_data_end+0xce154>
     2a2c:	00032303          	lw	t1,0(t1)
     2a30:	fe642423          	sw	t1,-24(s0)
         lowbits = ALT_VOLATILE_ACCESS((alt_u32 *)NIOSV_MTIME_ADDR);
     2a34:	00110337          	lui	t1,0x110
-    2a38:	00032303          	lw	t1,0(t1) # 110000 <__alt_data_end+0x54800>
+    2a38:	00032303          	lw	t1,0(t1) # 110000 <__alt_data_end+0xce150>
     2a3c:	fe642623          	sw	t1,-20(s0)
     } while (ALT_VOLATILE_ACCESS((alt_u32 *)(NIOSV_MTIME_ADDR + 4)) != highbits);
     2a40:	00110337          	lui	t1,0x110
-    2a44:	00430313          	add	t1,t1,4 # 110004 <__alt_data_end+0x54804>
+    2a44:	00430313          	add	t1,t1,4 # 110004 <__alt_data_end+0xce154>
     2a48:	00032303          	lw	t1,0(t1)
     2a4c:	fe842e03          	lw	t3,-24(s0)
     2a50:	fc6e1ae3          	bne	t3,t1,2a24 <alt_niosv_mtime_get+0xc>
@@ -5195,7 +5195,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     2d08:	67c110ef          	jal	14384 <_exit>
 
 00002d0c <__sflush_r>:
-    2d0c:	00c59703          	lh	a4,12(a1) # 100000c <__alt_data_end+0xf4480c>
+    2d0c:	00c59703          	lh	a4,12(a1) # 100000c <__alt_data_end+0xfbe15c>
     2d10:	fe010113          	add	sp,sp,-32
     2d14:	00812c23          	sw	s0,24(sp)
     2d18:	01312623          	sw	s3,12(sp)
@@ -5246,13 +5246,13 @@ void alt_niosv_mtimecmp_interrupt_init() {
     2dcc:	00c41703          	lh	a4,12(s0)
     2dd0:	16d7ea63          	bltu	a5,a3,2f44 <__sflush_r+0x238>
     2dd4:	204007b7          	lui	a5,0x20400
-    2dd8:	00178793          	add	a5,a5,1 # 20400001 <__alt_data_end+0x20344801>
+    2dd8:	00178793          	add	a5,a5,1 # 20400001 <__alt_data_end+0x203be151>
     2ddc:	00d7d7b3          	srl	a5,a5,a3
     2de0:	0017f793          	and	a5,a5,1
     2de4:	16078063          	beqz	a5,2f44 <__sflush_r+0x238>
     2de8:	01042603          	lw	a2,16(s0)
     2dec:	fffff7b7          	lui	a5,0xfffff
-    2df0:	7ff78793          	add	a5,a5,2047 # fffff7ff <__alt_data_end+0xfff43fff>
+    2df0:	7ff78793          	add	a5,a5,2047 # fffff7ff <__alt_data_end+0xfffbd94f>
     2df4:	00f777b3          	and	a5,a4,a5
     2df8:	00f41623          	sh	a5,12(s0)
     2dfc:	00042223          	sw	zero,4(s0)
@@ -5317,7 +5317,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     2ee8:	00c41703          	lh	a4,12(s0)
     2eec:	01042683          	lw	a3,16(s0)
     2ef0:	fffff7b7          	lui	a5,0xfffff
-    2ef4:	7ff78793          	add	a5,a5,2047 # fffff7ff <__alt_data_end+0xfff43fff>
+    2ef4:	7ff78793          	add	a5,a5,2047 # fffff7ff <__alt_data_end+0xfffbd94f>
     2ef8:	00f777b3          	and	a5,a4,a5
     2efc:	00f41623          	sh	a5,12(s0)
     2f00:	00042223          	sw	zero,4(s0)
@@ -5660,7 +5660,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3404:	fff78793          	add	a5,a5,-1
     3408:	fe0718e3          	bnez	a4,33f8 <__sfp+0x54>
     340c:	ffff07b7          	lui	a5,0xffff0
-    3410:	00178793          	add	a5,a5,1 # ffff0001 <__alt_data_end+0xfff34801>
+    3410:	00178793          	add	a5,a5,1 # ffff0001 <__alt_data_end+0xfffae151>
     3414:	00f42623          	sw	a5,12(s0)
     3418:	05840513          	add	a0,s0,88
     341c:	06042223          	sw	zero,100(s0)
@@ -5921,7 +5921,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     37c0:	01271693          	sll	a3,a4,0x12
     37c4:	0206c063          	bltz	a3,37e4 <_puts_r+0x9c>
     37c8:	ffffe6b7          	lui	a3,0xffffe
-    37cc:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfff427ff>
+    37cc:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfffbc14f>
     37d0:	00002637          	lui	a2,0x2
     37d4:	00c76733          	or	a4,a4,a2
     37d8:	00d7f7b3          	and	a5,a5,a3
@@ -6011,7 +6011,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3918:	0807f713          	and	a4,a5,128
     391c:	14071263          	bnez	a4,3a60 <setvbuf+0x1d8>
     3920:	fffff737          	lui	a4,0xfffff
-    3924:	35c70713          	add	a4,a4,860 # fffff35c <__alt_data_end+0xfff43b5c>
+    3924:	35c70713          	add	a4,a4,860 # fffff35c <__alt_data_end+0xfffbd4ac>
     3928:	00e7f7b3          	and	a5,a5,a4
     392c:	00f41623          	sh	a5,12(s0)
     3930:	00200713          	li	a4,2
@@ -6095,7 +6095,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3a68:	489000ef          	jal	46f0 <_free_r>
     3a6c:	00c41783          	lh	a5,12(s0)
     3a70:	fffff737          	lui	a4,0xfffff
-    3a74:	35c70713          	add	a4,a4,860 # fffff35c <__alt_data_end+0xfff43b5c>
+    3a74:	35c70713          	add	a4,a4,860 # fffff35c <__alt_data_end+0xfffbd4ac>
     3a78:	00e7f7b3          	and	a5,a5,a4
     3a7c:	00f41623          	sh	a5,12(s0)
     3a80:	00200713          	li	a4,2
@@ -6156,7 +6156,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3b54:	00008067          	ret
     3b58:	00c45783          	lhu	a5,12(s0)
     3b5c:	fffff737          	lui	a4,0xfffff
-    3b60:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfff437ff>
+    3b60:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfffbd14f>
     3b64:	00e7f7b3          	and	a5,a5,a4
     3b68:	00c12083          	lw	ra,12(sp)
     3b6c:	00f41623          	sh	a5,12(s0)
@@ -6183,7 +6183,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3bb0:	00068993          	mv	s3,a3
     3bb4:	04071063          	bnez	a4,3bf4 <__swrite+0x70>
     3bb8:	fffff737          	lui	a4,0xfffff
-    3bbc:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfff437ff>
+    3bbc:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfffbd14f>
     3bc0:	00e7f7b3          	and	a5,a5,a4
     3bc4:	00e41583          	lh	a1,14(s0)
     3bc8:	00f41623          	sh	a5,12(s0)
@@ -6226,7 +6226,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     3c54:	00008067          	ret
     3c58:	00c45783          	lhu	a5,12(s0)
     3c5c:	fffff737          	lui	a4,0xfffff
-    3c60:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfff437ff>
+    3c60:	fff70713          	add	a4,a4,-1 # ffffefff <__alt_data_end+0xfffbd14f>
     3c64:	00e7f7b3          	and	a5,a5,a4
     3c68:	01079793          	sll	a5,a5,0x10
     3c6c:	4107d793          	sra	a5,a5,0x10
@@ -6532,7 +6532,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     4064:	ff067693          	and	a3,a2,-16
     4068:	00f67613          	and	a2,a2,15
     406c:	00e686b3          	add	a3,a3,a4
-    4070:	00b72023          	sw	a1,0(a4) # ff0a0000 <__alt_data_end+0xfefe4800>
+    4070:	00b72023          	sw	a1,0(a4) # ff0a0000 <__alt_data_end+0xff05e150>
     4074:	00b72223          	sw	a1,4(a4)
     4078:	00b72423          	sw	a1,8(a4)
     407c:	00b72623          	sw	a1,12(a4)
@@ -6691,7 +6691,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     42d0:	00050713          	mv	a4,a0
     42d4:	04079c63          	bnez	a5,432c <strlen+0x60>
     42d8:	7f7f86b7          	lui	a3,0x7f7f8
-    42dc:	f7f68693          	add	a3,a3,-129 # 7f7f7f7f <__alt_data_end+0x7f73c77f>
+    42dc:	f7f68693          	add	a3,a3,-129 # 7f7f7f7f <__alt_data_end+0x7f7b60cf>
     42e0:	fff00593          	li	a1,-1
     42e4:	00072603          	lw	a2,0(a4)
     42e8:	00470713          	add	a4,a4,4
@@ -7406,7 +7406,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     4dbc:	dedff06f          	j	4ba8 <_malloc_r+0x198>
     4dc0:	00842603          	lw	a2,8(s0)
     4dc4:	cb5ff06f          	j	4a78 <_malloc_r+0x68>
-    4dc8:	00c7a403          	lw	s0,12(a5) # fffff00c <__alt_data_end+0xfff4380c>
+    4dc8:	00c7a403          	lw	s0,12(a5) # fffff00c <__alt_data_end+0xfffbd15c>
     4dcc:	00258593          	add	a1,a1,2
     4dd0:	d68782e3          	beq	a5,s0,4b34 <_malloc_r+0x124>
     4dd4:	c95ff06f          	j	4a68 <_malloc_r+0x58>
@@ -7717,7 +7717,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     5280:	01269613          	sll	a2,a3,0x12
     5284:	02064063          	bltz	a2,52a4 <_vfprintf_r+0xa0>
     5288:	ffffe637          	lui	a2,0xffffe
-    528c:	fff60613          	add	a2,a2,-1 # ffffdfff <__alt_data_end+0xfff427ff>
+    528c:	fff60613          	add	a2,a2,-1 # ffffdfff <__alt_data_end+0xfffbc14f>
     5290:	000025b7          	lui	a1,0x2
     5294:	00b6e6b3          	or	a3,a3,a1
     5298:	00c77733          	and	a4,a4,a2
@@ -8051,7 +8051,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     57b8:	39468693          	add	a3,a3,916 # 15b48 <__flash_rodata_start+0x778>
     57bc:	00271713          	sll	a4,a4,0x2
     57c0:	00d70733          	add	a4,a4,a3
-    57c4:	00072703          	lw	a4,0(a4) # 80000000 <__alt_data_end+0x7ff44800>
+    57c4:	00072703          	lw	a4,0(a4) # 80000000 <__alt_data_end+0x7ffbe150>
     57c8:	00d70733          	add	a4,a4,a3
     57cc:	00070067          	jr	a4
     57d0:	00812503          	lw	a0,8(sp)
@@ -9159,8 +9159,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     6908:	00000613          	li	a2,0
     690c:	19010593          	add	a1,sp,400
     6910:	00500e13          	li	t3,5
-    6914:	ccd80813          	add	a6,a6,-819 # cccccccd <__alt_data_end+0xccc114cd>
-    6918:	cccc8c93          	add	s9,s9,-820 # cccccccc <__alt_data_end+0xccc114cc>
+    6914:	ccd80813          	add	a6,a6,-819 # cccccccd <__alt_data_end+0xccc8ae1d>
+    6918:	cccc8c93          	add	s9,s9,-820 # cccccccc <__alt_data_end+0xccc8ae1c>
     691c:	0ff00c13          	li	s8,255
     6920:	0540006f          	j	6974 <_vfprintf_r+0x1770>
     6924:	012d37b3          	sltu	a5,s10,s2
@@ -10017,8 +10017,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     7670:	ccccd337          	lui	t1,0xccccd
     7674:	ccccd537          	lui	a0,0xccccd
     7678:	00174583          	lbu	a1,1(a4)
-    767c:	ccd30313          	add	t1,t1,-819 # cccccccd <__alt_data_end+0xccc114cd>
-    7680:	ccc50513          	add	a0,a0,-820 # cccccccc <__alt_data_end+0xccc114cc>
+    767c:	ccd30313          	add	t1,t1,-819 # cccccccd <__alt_data_end+0xccc8ae1d>
+    7680:	ccc50513          	add	a0,a0,-820 # cccccccc <__alt_data_end+0xccc8ae1c>
     7684:	00b035b3          	snez	a1,a1
     7688:	00b70733          	add	a4,a4,a1
     768c:	01012683          	lw	a3,16(sp)
@@ -10576,7 +10576,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     7efc:	80000ab7          	lui	s5,0x80000
     7f00:	00000993          	li	s3,0
     7f04:	00000913          	li	s2,0
-    7f08:	c00a8a93          	add	s5,s5,-1024 # 7ffffc00 <__alt_data_end+0x7ff44400>
+    7f08:	c00a8a93          	add	s5,s5,-1024 # 7ffffc00 <__alt_data_end+0x7ffbdd50>
     7f0c:	00098613          	mv	a2,s3
     7f10:	000a0513          	mv	a0,s4
     7f14:	04090263          	beqz	s2,7f58 <__sfvwrite_r+0xbc>
@@ -10622,7 +10622,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     7fb4:	01912223          	sw	s9,4(sp)
     7fb8:	00000b93          	li	s7,0
     7fbc:	00000993          	li	s3,0
-    7fc0:	fffa8a93          	add	s5,s5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    7fc0:	fffa8a93          	add	s5,s5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     7fc4:	00078513          	mv	a0,a5
     7fc8:	00070c13          	mv	s8,a4
     7fcc:	10098263          	beqz	s3,80d0 <__sfvwrite_r+0x234>
@@ -11200,7 +11200,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     8894:	0cd7d263          	bge	a5,a3,8958 <__swbuf_r+0x13c>
     8898:	00178793          	add	a5,a5,1
     889c:	00842683          	lw	a3,8(s0)
-    88a0:	00170613          	add	a2,a4,1 # ffffe001 <__alt_data_end+0xfff42801>
+    88a0:	00170613          	add	a2,a4,1 # ffffe001 <__alt_data_end+0xfffbc151>
     88a4:	00c42023          	sw	a2,0(s0)
     88a8:	fff68693          	add	a3,a3,-1
     88ac:	00d42423          	sw	a3,8(s0)
@@ -11230,7 +11230,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     890c:	0ff4f493          	zext.b	s1,s1
     8910:	f606c6e3          	bltz	a3,887c <__swbuf_r+0x60>
     8914:	ffffe6b7          	lui	a3,0xffffe
-    8918:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfff427ff>
+    8918:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfffbc14f>
     891c:	00002637          	lui	a2,0x2
     8920:	00c7e7b3          	or	a5,a5,a2
     8924:	00d77733          	and	a4,a4,a3
@@ -11373,8 +11373,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     8b30:	feff08b7          	lui	a7,0xfeff0
     8b34:	80808837          	lui	a6,0x80808
     8b38:	00e585b3          	add	a1,a1,a4
-    8b3c:	eff88893          	add	a7,a7,-257 # fefefeff <__alt_data_end+0xfef346ff>
-    8b40:	08080813          	add	a6,a6,128 # 80808080 <__alt_data_end+0x8074c880>
+    8b3c:	eff88893          	add	a7,a7,-257 # fefefeff <__alt_data_end+0xfefae04f>
+    8b40:	08080813          	add	a6,a6,128 # 80808080 <__alt_data_end+0x807c61d0>
     8b44:	00300313          	li	t1,3
     8b48:	0100006f          	j	8b58 <memchr+0x8c>
     8b4c:	ffc78793          	add	a5,a5,-4
@@ -11422,8 +11422,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     8bec:	feff0337          	lui	t1,0xfeff0
     8bf0:	808088b7          	lui	a7,0x80808
     8bf4:	00050713          	mv	a4,a0
-    8bf8:	eff30313          	add	t1,t1,-257 # fefefeff <__alt_data_end+0xfef346ff>
-    8bfc:	08088893          	add	a7,a7,128 # 80808080 <__alt_data_end+0x8074c880>
+    8bf8:	eff30313          	add	t1,t1,-257 # fefefeff <__alt_data_end+0xfefae04f>
+    8bfc:	08088893          	add	a7,a7,128 # 80808080 <__alt_data_end+0x807c61d0>
     8c00:	00300e13          	li	t3,3
     8c04:	0180006f          	j	8c1c <strncpy+0x8c>
     8c08:	00d72023          	sw	a3,0(a4)
@@ -12079,12 +12079,12 @@ void alt_niosv_mtimecmp_interrupt_init() {
     9588:	00000693          	li	a3,0
     958c:	06048e63          	beqz	s1,9608 <frexpl+0x118>
     9590:	ffffc737          	lui	a4,0xffffc
-    9594:	00270713          	add	a4,a4,2 # ffffc002 <__alt_data_end+0xfff40802>
+    9594:	00270713          	add	a4,a4,2 # ffffc002 <__alt_data_end+0xfffba152>
     9598:	03c12903          	lw	s2,60(sp)
     959c:	00e484b3          	add	s1,s1,a4
     95a0:	800107b7          	lui	a5,0x80010
     95a4:	00d484b3          	add	s1,s1,a3
-    95a8:	fff78793          	add	a5,a5,-1 # 8000ffff <__alt_data_end+0x7ff547ff>
+    95a8:	fff78793          	add	a5,a5,-1 # 8000ffff <__alt_data_end+0x7ffce14f>
     95ac:	009ba023          	sw	s1,0(s7)
     95b0:	03012b03          	lw	s6,48(sp)
     95b4:	03412a83          	lw	s5,52(sp)
@@ -12191,7 +12191,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     9740:	001c1413          	sll	s0,s8,0x1
     9744:	00d77733          	and	a4,a4,a3
     9748:	011ada93          	srl	s5,s5,0x11
-    974c:	f9148493          	add	s1,s1,-111 # ffffbf91 <__alt_data_end+0xfff40791>
+    974c:	f9148493          	add	s1,s1,-111 # ffffbf91 <__alt_data_end+0xfffba0e1>
     9750:	010c1d93          	sll	s11,s8,0x10
     9754:	00dca023          	sw	a3,0(s9)
     9758:	00145413          	srl	s0,s0,0x1
@@ -12256,7 +12256,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     9844:	ffff87b7          	lui	a5,0xffff8
     9848:	00f71863          	bne	a4,a5,9858 <_ldtoa_r+0x1d0>
     984c:	800007b7          	lui	a5,0x80000
-    9850:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+    9850:	fff78793          	add	a5,a5,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
     9854:	00fba023          	sw	a5,0(s7)
     9858:	0bc12083          	lw	ra,188(sp)
     985c:	0b812403          	lw	s0,184(sp)
@@ -12313,7 +12313,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     9928:	ef1ff06f          	j	9818 <_ldtoa_r+0x190>
     992c:	ffffc4b7          	lui	s1,0xffffc
     9930:	00200793          	li	a5,2
-    9934:	f9248493          	add	s1,s1,-110 # ffffbf92 <__alt_data_end+0xfff40792>
+    9934:	f9248493          	add	s1,s1,-110 # ffffbf92 <__alt_data_end+0xfffba0e2>
     9938:	04f12c23          	sw	a5,88(sp)
     993c:	009a87b3          	add	a5,s5,s1
     9940:	00f12e23          	sw	a5,28(sp)
@@ -12951,7 +12951,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     a310:	00000f13          	li	t5,0
     a314:	f71ff06f          	j	a284 <__gdtoa+0x810>
     a318:	00c12783          	lw	a5,12(sp)
-    a31c:	0007a823          	sw	zero,16(a5) # ffff8010 <__alt_data_end+0xfff3c810>
+    a31c:	0007a823          	sw	zero,16(a5) # ffff8010 <__alt_data_end+0xfffb6160>
     a320:	891ff06f          	j	9bb0 <__gdtoa+0x13c>
     a324:	00100793          	li	a5,1
     a328:	02f12e23          	sw	a5,60(sp)
@@ -13186,7 +13186,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     a6bc:	00078b13          	mv	s6,a5
     a6c0:	fffb0793          	add	a5,s6,-1
     a6c4:	fed708e3          	beq	a4,a3,a6b4 <__gdtoa+0xc40>
-    a6c8:	00170693          	add	a3,a4,1 # fcc00001 <__alt_data_end+0xfcb44801>
+    a6c8:	00170693          	add	a3,a4,1 # fcc00001 <__alt_data_end+0xfcbbe151>
     a6cc:	0ff6f693          	zext.b	a3,a3
     a6d0:	00d78023          	sb	a3,0(a5)
     a6d4:	00040493          	mv	s1,s0
@@ -14143,7 +14143,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     b5b0:	00479c13          	sll	s8,a5,0x4
     b5b4:	01012f03          	lw	t5,16(sp)
     b5b8:	000b0793          	mv	a5,s6
-    b5bc:	00170413          	add	s0,a4,1 # fcc00001 <__alt_data_end+0xfcb44801>
+    b5bc:	00170413          	add	s0,a4,1 # fcc00001 <__alt_data_end+0xfcbbe151>
     b5c0:	e81ff06f          	j	b440 <__gdtoa+0x19cc>
     b5c4:	0147a683          	lw	a3,20(a5)
     b5c8:	c0069a63          	bnez	a3,a9dc <__gdtoa+0xf68>
@@ -14347,7 +14347,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     b8b8:	00000f13          	li	t5,0
     b8bc:	00000e93          	li	t4,0
     b8c0:	fff50513          	add	a0,a0,-1 # ffff <__muldf3+0x19f>
-    b8c4:	0008a783          	lw	a5,0(a7) # 80000000 <__alt_data_end+0x7ff44800>
+    b8c4:	0008a783          	lw	a5,0(a7) # 80000000 <__alt_data_end+0x7ffbe150>
     b8c8:	00082603          	lw	a2,0(a6)
     b8cc:	00480813          	add	a6,a6,4
     b8d0:	00a7f6b3          	and	a3,a5,a0
@@ -14797,7 +14797,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     bf80:	0027f693          	and	a3,a5,2
     bf84:	0a068863          	beqz	a3,c034 <__lo0bits+0xd0>
     bf88:	0017d793          	srl	a5,a5,0x1
-    bf8c:	00f72023          	sw	a5,0(a4) # 40000000 <__alt_data_end+0x3ff44800>
+    bf8c:	00f72023          	sw	a5,0(a4) # 40000000 <__alt_data_end+0x3ffbe150>
     bf90:	00100513          	li	a0,1
     bf94:	00008067          	ret
     bf98:	01079693          	sll	a3,a5,0x10
@@ -15518,7 +15518,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     ca7c:	10050263          	beqz	a0,cb80 <__d2b+0x13c>
     ca80:	00100737          	lui	a4,0x100
     ca84:	0144d913          	srl	s2,s1,0x14
-    ca88:	fff70793          	add	a5,a4,-1 # fffff <__alt_data_end+0x447ff>
+    ca88:	fff70793          	add	a5,a4,-1 # fffff <__alt_data_end+0xbe14f>
     ca8c:	7ff97913          	and	s2,s2,2047
     ca90:	00050413          	mv	s0,a0
     ca94:	0097f7b3          	and	a5,a5,s1
@@ -15572,7 +15572,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     cb54:	00249713          	sll	a4,s1,0x2
     cb58:	00e40733          	add	a4,s0,a4
     cb5c:	01072503          	lw	a0,16(a4)
-    cb60:	bce78793          	add	a5,a5,-1074 # 3feffbce <__alt_data_end+0x3fe443ce>
+    cb60:	bce78793          	add	a5,a5,-1074 # 3feffbce <__alt_data_end+0x3febdd1e>
     cb64:	00fa2023          	sw	a5,0(s4)
     cb68:	b84ff0ef          	jal	beec <__hi0bits>
     cb6c:	00549493          	sll	s1,s1,0x5
@@ -16157,7 +16157,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     d430:	00377713          	and	a4,a4,3
     d434:	10071063          	bnez	a4,d534 <strcmp+0x10c>
     d438:	7f7f87b7          	lui	a5,0x7f7f8
-    d43c:	f7f78793          	add	a5,a5,-129 # 7f7f7f7f <__alt_data_end+0x7f73c77f>
+    d43c:	f7f78793          	add	a5,a5,-129 # 7f7f7f7f <__alt_data_end+0x7f7b60cf>
     d440:	00052603          	lw	a2,0(a0)
     d444:	0005a683          	lw	a3,0(a1)
     d448:	00f672b3          	and	t0,a2,a5
@@ -16451,7 +16451,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     d878:	01271693          	sll	a3,a4,0x12
     d87c:	0206c063          	bltz	a3,d89c <_vfiprintf_r+0x78>
     d880:	ffffe6b7          	lui	a3,0xffffe
-    d884:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfff427ff>
+    d884:	fff68693          	add	a3,a3,-1 # ffffdfff <__alt_data_end+0xfffbc14f>
     d888:	00002637          	lui	a2,0x2
     d88c:	00c76733          	or	a4,a4,a2
     d890:	00d7f7b3          	and	a5,a5,a3
@@ -17405,8 +17405,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     e760:	00000513          	li	a0,0
     e764:	0f010593          	add	a1,sp,240
     e768:	00500e93          	li	t4,5
-    e76c:	ccde0e13          	add	t3,t3,-819 # cccccccd <__alt_data_end+0xccc114cd>
-    e770:	ccc38393          	add	t2,t2,-820 # cccccccc <__alt_data_end+0xccc114cc>
+    e76c:	ccde0e13          	add	t3,t3,-819 # cccccccd <__alt_data_end+0xccc8ae1d>
+    e770:	ccc38393          	add	t2,t2,-820 # cccccccc <__alt_data_end+0xccc8ae1c>
     e774:	0ff00f93          	li	t6,255
     e778:	0540006f          	j	e7cc <_vfiprintf_r+0xfa8>
     e77c:	00f93733          	sltu	a4,s2,a5
@@ -17516,8 +17516,8 @@ void alt_niosv_mtimecmp_interrupt_init() {
     e91c:	00c03633          	snez	a2,a2
     e920:	ccccd2b7          	lui	t0,0xccccd
     e924:	00c30333          	add	t1,t1,a2
-    e928:	ccd58593          	add	a1,a1,-819 # cccccccd <__alt_data_end+0xccc114cd>
-    e92c:	ccc28293          	add	t0,t0,-820 # cccccccc <__alt_data_end+0xccc114cc>
+    e928:	ccd58593          	add	a1,a1,-819 # cccccccd <__alt_data_end+0xccc8ae1d>
+    e92c:	ccc28293          	add	t0,t0,-820 # cccccccc <__alt_data_end+0xccc8ae1c>
     e930:	00812683          	lw	a3,8(sp)
     e934:	01012f03          	lw	t5,16(sp)
     e938:	01412803          	lw	a6,20(sp)
@@ -17676,7 +17676,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 0000eb78 <__adddf3>:
     eb78:	001007b7          	lui	a5,0x100
     eb7c:	fe010113          	add	sp,sp,-32
-    eb80:	fff78e93          	add	t4,a5,-1 # fffff <__alt_data_end+0x447ff>
+    eb80:	fff78e93          	add	t4,a5,-1 # fffff <__alt_data_end+0xbe14f>
     eb84:	00bef833          	and	a6,t4,a1
     eb88:	00def7b3          	and	a5,t4,a3
     eb8c:	0146d313          	srl	t1,a3,0x14
@@ -17728,7 +17728,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     ec44:	00899793          	sll	a5,s3,0x8
     ec48:	3207da63          	bgez	a5,ef7c <__adddf3+0x404>
     ec4c:	008007b7          	lui	a5,0x800
-    ec50:	fff78793          	add	a5,a5,-1 # 7fffff <__alt_data_end+0x7447ff>
+    ec50:	fff78793          	add	a5,a5,-1 # 7fffff <__alt_data_end+0x7be14f>
     ec54:	00f9f9b3          	and	s3,s3,a5
     ec58:	2c098863          	beqz	s3,ef28 <__adddf3+0x3b0>
     ec5c:	00098513          	mv	a0,s3
@@ -17768,7 +17768,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     ece4:	00040e13          	mv	t3,s0
     ece8:	2ae78663          	beq	a5,a4,ef94 <__adddf3+0x41c>
     ecec:	ff800737          	lui	a4,0xff800
-    ecf0:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    ecf0:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     ecf4:	00e9f733          	and	a4,s3,a4
     ecf8:	7ff7f793          	and	a5,a5,2047
     ecfc:	01d71813          	sll	a6,a4,0x1d
@@ -17855,7 +17855,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     ee40:	7ff00793          	li	a5,2047
     ee44:	36f90c63          	beq	s2,a5,f1bc <__adddf3+0x644>
     ee48:	ff8007b7          	lui	a5,0xff800
-    ee4c:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    ee4c:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     ee50:	0014f613          	and	a2,s1,1
     ee54:	00f9f7b3          	and	a5,s3,a5
     ee58:	0014d713          	srl	a4,s1,0x1
@@ -17897,7 +17897,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     eee8:	00058493          	mv	s1,a1
     eeec:	52065e63          	bgez	a2,f428 <__adddf3+0x8b0>
     eef0:	ff8007b7          	lui	a5,0xff800
-    eef4:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    eef4:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     eef8:	00f77733          	and	a4,a4,a5
     eefc:	00068e13          	mv	t3,a3
     ef00:	00100793          	li	a5,1
@@ -18011,7 +18011,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f0b0:	00040e13          	mv	t3,s0
     f0b4:	3407de63          	bgez	a5,f410 <__adddf3+0x898>
     f0b8:	ff8007b7          	lui	a5,0xff800
-    f0bc:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    f0bc:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     f0c0:	00f77733          	and	a4,a4,a5
     f0c4:	01d71793          	sll	a5,a4,0x1d
     f0c8:	00375713          	srl	a4,a4,0x3
@@ -18041,7 +18041,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f128:	00c76733          	or	a4,a4,a2
     f12c:	c4dff06f          	j	ed78 <__adddf3+0x200>
     f130:	ff8009b7          	lui	s3,0xff800
-    f134:	fff98993          	add	s3,s3,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    f134:	fff98993          	add	s3,s3,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     f138:	40f90933          	sub	s2,s2,a5
     f13c:	013779b3          	and	s3,a4,s3
     f140:	b71ff06f          	j	ecb0 <__adddf3+0x138>
@@ -18057,7 +18057,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f168:	00d66633          	or	a2,a2,a3
     f16c:	ac9ff06f          	j	ec34 <__adddf3+0xbc>
     f170:	ff8006b7          	lui	a3,0xff800
-    f174:	fff68693          	add	a3,a3,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+    f174:	fff68693          	add	a3,a3,-1 # ff7fffff <__alt_data_end+0xff7be14f>
     f178:	40f907b3          	sub	a5,s2,a5
     f17c:	00d77733          	and	a4,a4,a3
     f180:	01d71813          	sll	a6,a4,0x1d
@@ -18294,7 +18294,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f514:	03078793          	add	a5,a5,48 # 16030 <zeroes.0+0x10>
     f518:	00f484b3          	add	s1,s1,a5
     f51c:	0004a703          	lw	a4,0(s1)
-    f520:	00070067          	jr	a4 # 800000 <__alt_data_end+0x744800>
+    f520:	00070067          	jr	a4 # 800000 <__alt_data_end+0x7be150>
     f524:	00a4eab3          	or	s5,s1,a0
     f528:	1c0a9e63          	bnez	s5,f704 <__divdf3+0x2c4>
     f52c:	01495793          	srl	a5,s2,0x14
@@ -18401,7 +18401,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f6c0:	00741713          	sll	a4,s0,0x7
     f6c4:	00075a63          	bgez	a4,f6d8 <__divdf3+0x298>
     f6c8:	ff0007b7          	lui	a5,0xff000
-    f6cc:	fff78793          	add	a5,a5,-1 # feffffff <__alt_data_end+0xfef447ff>
+    f6cc:	fff78793          	add	a5,a5,-1 # feffffff <__alt_data_end+0xfefbe14f>
     f6d0:	00f47433          	and	s0,s0,a5
     f6d4:	40098793          	add	a5,s3,1024
     f6d8:	7fe00713          	li	a4,2046
@@ -18455,7 +18455,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
     f798:	00f767b3          	or	a5,a4,a5
     f79c:	0117fa63          	bgeu	a5,a7,f7b0 <__divdf3+0x370>
     f7a0:	00f607b3          	add	a5,a2,a5
-    f7a4:	fff40713          	add	a4,s0,-1 # 7fffff <__alt_data_end+0x7447ff>
+    f7a4:	fff40713          	add	a4,s0,-1 # 7fffff <__alt_data_end+0x7be14f>
     f7a8:	2ec7f063          	bgeu	a5,a2,fa88 <__divdf3+0x648>
     f7ac:	00070413          	mv	s0,a4
     f7b0:	411787b3          	sub	a5,a5,a7
@@ -18725,7 +18725,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 0000fbcc <__eqdf2>:
     fbcc:	0145d713          	srl	a4,a1,0x14
     fbd0:	001007b7          	lui	a5,0x100
-    fbd4:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0x447ff>
+    fbd4:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0xbe14f>
     fbd8:	0146d813          	srl	a6,a3,0x14
     fbdc:	7ff77713          	and	a4,a4,2047
     fbe0:	7ff00313          	li	t1,2047
@@ -18762,7 +18762,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 0000fc58 <__gedf2>:
     fc58:	0145d893          	srl	a7,a1,0x14
     fc5c:	001007b7          	lui	a5,0x100
-    fc60:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0x447ff>
+    fc60:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0xbe14f>
     fc64:	0146d713          	srl	a4,a3,0x14
     fc68:	7ff8f893          	and	a7,a7,2047
     fc6c:	7ff00e13          	li	t3,2047
@@ -18828,7 +18828,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 0000fd58 <__ledf2>:
     fd58:	0145d893          	srl	a7,a1,0x14
     fd5c:	001007b7          	lui	a5,0x100
-    fd60:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0x447ff>
+    fd60:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0xbe14f>
     fd64:	0146d713          	srl	a4,a3,0x14
     fd68:	7ff8f893          	and	a7,a7,2047
     fd6c:	7ff00313          	li	t1,2047
@@ -19167,7 +19167,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10298:	00749793          	sll	a5,s1,0x7
    1029c:	0007da63          	bgez	a5,102b0 <__muldf3+0x450>
    102a0:	ff0007b7          	lui	a5,0xff000
-   102a4:	fff78793          	add	a5,a5,-1 # feffffff <__alt_data_end+0xfef447ff>
+   102a4:	fff78793          	add	a5,a5,-1 # feffffff <__alt_data_end+0xfefbe14f>
    102a8:	00f4f4b3          	and	s1,s1,a5
    102ac:	40088613          	add	a2,a7,1024
    102b0:	7fe00793          	li	a5,2046
@@ -19187,7 +19187,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    102e8:	00050613          	mv	a2,a0
    102ec:	ff550693          	add	a3,a0,-11
    102f0:	01d00713          	li	a4,29
-   102f4:	ff860793          	add	a5,a2,-8 # 7fff8 <__alt_heap_start+0x65888>
+   102f4:	ff860793          	add	a5,a2,-8 # 7fff8 <__alt_data_end+0x3e148>
    102f8:	40d70733          	sub	a4,a4,a3
    102fc:	00e45733          	srl	a4,s0,a4
    10300:	00f496b3          	sll	a3,s1,a5
@@ -19335,7 +19335,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 
 00010538 <__subdf3>:
    10538:	001007b7          	lui	a5,0x100
-   1053c:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0x447ff>
+   1053c:	fff78793          	add	a5,a5,-1 # fffff <__alt_data_end+0xbe14f>
    10540:	fe010113          	add	sp,sp,-32
    10544:	00b7f8b3          	and	a7,a5,a1
    10548:	00d7f833          	and	a6,a5,a3
@@ -19391,7 +19391,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10610:	00891793          	sll	a5,s2,0x8
    10614:	3407d863          	bgez	a5,10964 <__subdf3+0x42c>
    10618:	008007b7          	lui	a5,0x800
-   1061c:	fff78793          	add	a5,a5,-1 # 7fffff <__alt_data_end+0x7447ff>
+   1061c:	fff78793          	add	a5,a5,-1 # 7fffff <__alt_data_end+0x7be14f>
    10620:	00f97933          	and	s2,s2,a5
    10624:	2e090663          	beqz	s2,10910 <__subdf3+0x3d8>
    10628:	00090513          	mv	a0,s2
@@ -19430,7 +19430,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    106ac:	7ff00713          	li	a4,2047
    106b0:	24e78663          	beq	a5,a4,108fc <__subdf3+0x3c4>
    106b4:	ff800737          	lui	a4,0xff800
-   106b8:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   106b8:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    106bc:	00e97733          	and	a4,s2,a4
    106c0:	7ff7f793          	and	a5,a5,2047
    106c4:	01d71813          	sll	a6,a4,0x1d
@@ -19485,7 +19485,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10788:	7ff00793          	li	a5,2047
    1078c:	16f98863          	beq	s3,a5,108fc <__subdf3+0x3c4>
    10790:	ff8007b7          	lui	a5,0xff800
-   10794:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   10794:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    10798:	0014f513          	and	a0,s1,1
    1079c:	00f977b3          	and	a5,s2,a5
    107a0:	0014d713          	srl	a4,s1,0x1
@@ -19654,7 +19654,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10a2c:	00000713          	li	a4,0
    10a30:	cadff06f          	j	106dc <__subdf3+0x1a4>
    10a34:	ff800937          	lui	s2,0xff800
-   10a38:	fff90913          	add	s2,s2,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   10a38:	fff90913          	add	s2,s2,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    10a3c:	40f989b3          	sub	s3,s3,a5
    10a40:	01277933          	and	s2,a4,s2
    10a44:	c39ff06f          	j	1067c <__subdf3+0x144>
@@ -19699,7 +19699,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10ae0:	00d56533          	or	a0,a0,a3
    10ae4:	b1dff06f          	j	10600 <__subdf3+0xc8>
    10ae8:	ff8006b7          	lui	a3,0xff800
-   10aec:	fff68693          	add	a3,a3,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   10aec:	fff68693          	add	a3,a3,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    10af0:	40f987b3          	sub	a5,s3,a5
    10af4:	00d77733          	and	a4,a4,a3
    10af8:	ef9ff06f          	j	109f0 <__subdf3+0x4b8>
@@ -19817,7 +19817,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10cb8:	00060493          	mv	s1,a2
    10cbc:	1207de63          	bgez	a5,10df8 <__subdf3+0x8c0>
    10cc0:	ff8007b7          	lui	a5,0xff800
-   10cc4:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   10cc4:	fff78793          	add	a5,a5,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    10cc8:	00f77733          	and	a4,a4,a5
    10ccc:	00068413          	mv	s0,a3
    10cd0:	00100793          	li	a5,1
@@ -19838,7 +19838,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10d0c:	0036d813          	srl	a6,a3,0x3
    10d10:	08075e63          	bgez	a4,10dac <__subdf3+0x874>
    10d14:	ff800737          	lui	a4,0xff800
-   10d18:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7447ff>
+   10d18:	fff70713          	add	a4,a4,-1 # ff7fffff <__alt_data_end+0xff7be14f>
    10d1c:	00e7f7b3          	and	a5,a5,a4
    10d20:	01d79713          	sll	a4,a5,0x1d
    10d24:	00979793          	sll	a5,a5,0x9
@@ -19916,7 +19916,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 00010e40 <__fixdfsi>:
    10e40:	0145d793          	srl	a5,a1,0x14
    10e44:	001006b7          	lui	a3,0x100
-   10e48:	fff68713          	add	a4,a3,-1 # fffff <__alt_data_end+0x447ff>
+   10e48:	fff68713          	add	a4,a3,-1 # fffff <__alt_data_end+0xbe14f>
    10e4c:	7ff7f793          	and	a5,a5,2047
    10e50:	3fe00613          	li	a2,1022
    10e54:	00b77733          	and	a4,a4,a1
@@ -19925,7 +19925,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10e60:	41d00613          	li	a2,1053
    10e64:	00f65e63          	bge	a2,a5,10e80 <__fixdfsi+0x40>
    10e68:	80000537          	lui	a0,0x80000
-   10e6c:	fff50513          	add	a0,a0,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+   10e6c:	fff50513          	add	a0,a0,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
    10e70:	00a58533          	add	a0,a1,a0
    10e74:	00008067          	ret
    10e78:	00000513          	li	a0,0
@@ -19942,7 +19942,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    10ea4:	fc059ce3          	bnez	a1,10e7c <__fixdfsi+0x3c>
    10ea8:	00070513          	mv	a0,a4
    10eac:	00008067          	ret
-   10eb0:	bed78793          	add	a5,a5,-1043 # 7ffbed <__alt_data_end+0x7443ed>
+   10eb0:	bed78793          	add	a5,a5,-1043 # 7ffbed <__alt_data_end+0x7bdd3d>
    10eb4:	00f71733          	sll	a4,a4,a5
    10eb8:	00c55533          	srl	a0,a0,a2
    10ebc:	00a76733          	or	a4,a4,a0
@@ -20283,7 +20283,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    113d0:	fee514e3          	bne	a0,a4,113b8 <__multf3+0xac>
    113d4:	ffffc7b7          	lui	a5,0xffffc
    113d8:	00349493          	sll	s1,s1,0x3
-   113dc:	00178793          	add	a5,a5,1 # ffffc001 <__alt_data_end+0xfff40801>
+   113dc:	00178793          	add	a5,a5,1 # ffffc001 <__alt_data_end+0xfffba151>
    113e0:	02912823          	sw	s1,48(sp)
    113e4:	00f68db3          	add	s11,a3,a5
    113e8:	00000b13          	li	s6,0
@@ -20318,7 +20318,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    1145c:	00d72223          	sw	a3,4(a4)
    11460:	fee594e3          	bne	a1,a4,11448 <__multf3+0x13c>
    11464:	ffffc737          	lui	a4,0xffffc
-   11468:	00170713          	add	a4,a4,1 # ffffc001 <__alt_data_end+0xfff40801>
+   11468:	00170713          	add	a4,a4,1 # ffffc001 <__alt_data_end+0xfffba151>
    1146c:	003a9a93          	sll	s5,s5,0x3
    11470:	00e787b3          	add	a5,a5,a4
    11474:	05512023          	sw	s5,64(sp)
@@ -20465,7 +20465,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    116a8:	00d7e463          	bltu	a5,a3,116b0 <__multf3+0x3a4>
    116ac:	00072023          	sw	zero,0(a4)
    116b0:	ffffc7b7          	lui	a5,0xffffc
-   116b4:	01178793          	add	a5,a5,17 # ffffc011 <__alt_data_end+0xfff40811>
+   116b4:	01178793          	add	a5,a5,17 # ffffc011 <__alt_data_end+0xfffba161>
    116b8:	40a787b3          	sub	a5,a5,a0
    116bc:	01b787b3          	add	a5,a5,s11
    116c0:	00178693          	add	a3,a5,1
@@ -20524,7 +20524,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    11794:	00d7e463          	bltu	a5,a3,1179c <__multf3+0x490>
    11798:	00072023          	sw	zero,0(a4)
    1179c:	ffffc6b7          	lui	a3,0xffffc
-   117a0:	01168693          	add	a3,a3,17 # ffffc011 <__alt_data_end+0xfff40811>
+   117a0:	01168693          	add	a3,a3,17 # ffffc011 <__alt_data_end+0xfffba161>
    117a4:	40a68db3          	sub	s11,a3,a0
    117a8:	00000b13          	li	s6,0
    117ac:	00000c13          	li	s8,0
@@ -21081,7 +21081,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    12048:	00b69593          	sll	a1,a3,0xb
    1204c:	0005de63          	bgez	a1,12068 <__multf3+0xd5c>
    12050:	fff00637          	lui	a2,0xfff00
-   12054:	fff60613          	add	a2,a2,-1 # ffefffff <__alt_data_end+0xffe447ff>
+   12054:	fff60613          	add	a2,a2,-1 # ffefffff <__alt_data_end+0xffebe14f>
    12058:	00c6f6b3          	and	a3,a3,a2
    1205c:	00004637          	lui	a2,0x4
    12060:	04d12e23          	sw	a3,92(sp)
@@ -21474,7 +21474,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    12664:	00ce1793          	sll	a5,t3,0xc
    12668:	5007d663          	bgez	a5,12b74 <__subtf3+0x6b4>
    1266c:	00080537          	lui	a0,0x80
-   12670:	fff50513          	add	a0,a0,-1 # 7ffff <__alt_heap_start+0x6588f>
+   12670:	fff50513          	add	a0,a0,-1 # 7ffff <__alt_data_end+0x3e14f>
    12674:	00ae7533          	and	a0,t3,a0
    12678:	02a12e23          	sw	a0,60(sp)
    1267c:	1c0512e3          	bnez	a0,13040 <__subtf3+0xb80>
@@ -21822,7 +21822,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    12bd4:	fff70713          	add	a4,a4,-1 # 7fff <__sfvwrite_r+0x163>
    12bd8:	14e40a63          	beq	s0,a4,12d2c <__subtf3+0x86c>
    12bdc:	fff80637          	lui	a2,0xfff80
-   12be0:	fff60613          	add	a2,a2,-1 # fff7ffff <__alt_data_end+0xffec47ff>
+   12be0:	fff60613          	add	a2,a2,-1 # fff7ffff <__alt_data_end+0xfff3e14f>
    12be4:	00ce7633          	and	a2,t3,a2
    12be8:	02c12e23          	sw	a2,60(sp)
    12bec:	00365613          	srl	a2,a2,0x3
@@ -21863,7 +21863,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    12c78:	06010113          	add	sp,sp,96
    12c7c:	00008067          	ret
    12c80:	fff807b7          	lui	a5,0xfff80
-   12c84:	fff78793          	add	a5,a5,-1 # fff7ffff <__alt_data_end+0xffec47ff>
+   12c84:	fff78793          	add	a5,a5,-1 # fff7ffff <__alt_data_end+0xfff3e14f>
    12c88:	00fe75b3          	and	a1,t3,a5
    12c8c:	03010793          	add	a5,sp,48
    12c90:	02b12e23          	sw	a1,60(sp)
@@ -22083,7 +22083,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    12fe8:	03012983          	lw	s3,48(sp)
    12fec:	00098513          	mv	a0,s3
    12ff0:	1e8010ef          	jal	141d8 <__clzsi2>
-   12ff4:	05450613          	add	a2,a0,84 # 80054 <__alt_heap_start+0x658e4>
+   12ff4:	05450613          	add	a2,a0,84 # 80054 <__alt_data_end+0x3e1a4>
    12ff8:	01f67893          	and	a7,a2,31
    12ffc:	060890e3          	bnez	a7,1385c <__subtf3+0x139c>
    13000:	04c12983          	lw	s3,76(sp)
@@ -22226,7 +22226,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    13224:	0200006f          	j	13244 <__subtf3+0xd84>
    13228:	03c12e03          	lw	t3,60(sp)
    1322c:	fff806b7          	lui	a3,0xfff80
-   13230:	fff68693          	add	a3,a3,-1 # fff7ffff <__alt_data_end+0xffec47ff>
+   13230:	fff68693          	add	a3,a3,-1 # fff7ffff <__alt_data_end+0xfff3e14f>
    13234:	03012703          	lw	a4,48(sp)
    13238:	00de7e33          	and	t3,t3,a3
    1323c:	40c40433          	sub	s0,s0,a2
@@ -22497,7 +22497,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    13660:	41f3d493          	sra	s1,t2,0x1f
    13664:	00251713          	sll	a4,a0,0x2
    13668:	01b4d493          	srl	s1,s1,0x1b
-   1366c:	04070713          	add	a4,a4,64 # 80040 <__alt_heap_start+0x658d0>
+   1366c:	04070713          	add	a4,a4,64 # 80040 <__alt_data_end+0x3e190>
    13670:	00938533          	add	a0,t2,s1
    13674:	00270733          	add	a4,a4,sp
    13678:	fd072703          	lw	a4,-48(a4)
@@ -22696,7 +22696,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    1397c:	00ce1793          	sll	a5,t3,0xc
    13980:	c207de63          	bgez	a5,12dbc <__subtf3+0x8fc>
    13984:	fff807b7          	lui	a5,0xfff80
-   13988:	fff78793          	add	a5,a5,-1 # fff7ffff <__alt_data_end+0xffec47ff>
+   13988:	fff78793          	add	a5,a5,-1 # fff7ffff <__alt_data_end+0xfff3e14f>
    1398c:	00fe7e33          	and	t3,t3,a5
    13990:	03c12e23          	sw	t3,60(sp)
    13994:	00100413          	li	s0,1
@@ -22882,7 +22882,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
 
 00013c64 <__unordtf2>:
    13c64:	00c52803          	lw	a6,12(a0)
-   13c68:	00c5a303          	lw	t1,12(a1) # 8000c <__alt_heap_start+0x6589c>
+   13c68:	00c5a303          	lw	t1,12(a1) # 8000c <__alt_data_end+0x3e15c>
    13c6c:	000087b7          	lui	a5,0x8
    13c70:	fff78793          	add	a5,a5,-1 # 7fff <__sfvwrite_r+0x163>
    13c74:	01085713          	srl	a4,a6,0x10
@@ -22942,7 +22942,7 @@ void alt_niosv_mtimecmp_interrupt_init() {
    13d44:	01f7d593          	srl	a1,a5,0x1f
    13d48:	00e6dc63          	bge	a3,a4,13d60 <__fixtfsi+0x68>
    13d4c:	80000537          	lui	a0,0x80000
-   13d50:	fff50513          	add	a0,a0,-1 # 7fffffff <__alt_data_end+0x7ff447ff>
+   13d50:	fff50513          	add	a0,a0,-1 # 7fffffff <__alt_data_end+0x7ffbe14f>
    13d54:	00a58533          	add	a0,a1,a0
    13d58:	02010113          	add	sp,sp,32
    13d5c:	00008067          	ret
@@ -23750,7 +23750,7 @@ int ALT_ISATTY (int file)
    146bc:	00100713          	li	a4,1
    146c0:	00f717b3          	sll	a5,a4,a5
    146c4:	cf810737          	lui	a4,0xcf810
-   146c8:	f7870713          	add	a4,a4,-136 # cf80ff78 <__alt_data_end+0xcf754778>
+   146c8:	f7870713          	add	a4,a4,-136 # cf80ff78 <__alt_data_end+0xcf7ce0c8>
    146cc:	00e7f733          	and	a4,a5,a4
    146d0:	00e03733          	snez	a4,a4
    146d4:	0ff77713          	zext.b	a4,a4
@@ -23805,7 +23805,7 @@ int ALT_ISATTY (int file)
    14730:	ef9ff0ef          	jal	14628 <alt_get_errno>
    14734:	00050713          	mv	a4,a0
    14738:	fec42783          	lw	a5,-20(s0)
-   1473c:	00f72023          	sw	a5,0(a4) # 110000 <__alt_data_end+0x54800>
+   1473c:	00f72023          	sw	a5,0(a4) # 110000 <__alt_data_end+0xce150>
     return -1;
    14740:	fff00793          	li	a5,-1
    14744:	0080006f          	j	1474c <_kill+0xe0>
@@ -23977,7 +23977,7 @@ int ALT_ISATTY (int file)
    148e0:	400007b7          	lui	a5,0x40000
    148e4:	00f76733          	or	a4,a4,a5
    148e8:	fdc42783          	lw	a5,-36(s0)
-   148ec:	00e7a423          	sw	a4,8(a5) # 40000008 <__alt_data_end+0x3ff44808>
+   148ec:	00e7a423          	sw	a4,8(a5) # 40000008 <__alt_data_end+0x3ffbe158>
   for (i = 0; i <= alt_max_fd; i++)
    148f0:	fe042623          	sw	zero,-20(s0)
    148f4:	0980006f          	j	1498c <alt_file_locked+0xc4>
@@ -24125,7 +24125,7 @@ int ALT_OPEN (const char* file, int flags, int mode)
       fd->fd_flags = (flags & ~ALT_FD_FLAGS_MASK);
    14a5c:	fc842703          	lw	a4,-56(s0)
    14a60:	400007b7          	lui	a5,0x40000
-   14a64:	fff78793          	add	a5,a5,-1 # 3fffffff <__alt_data_end+0x3ff447ff>
+   14a64:	fff78793          	add	a5,a5,-1 # 3fffffff <__alt_data_end+0x3ffbe14f>
    14a68:	00f77733          	and	a4,a4,a5
    14a6c:	fec42783          	lw	a5,-20(s0)
    14a70:	00e7a423          	sw	a4,8(a5)
@@ -24372,8 +24372,8 @@ caddr_t ALT_SBRK (int incr)
    14c9c:	8301a703          	lw	a4,-2000(gp) # 17aac <heap_end>
    14ca0:	fcc42783          	lw	a5,-52(s0)
    14ca4:	00f70733          	add	a4,a4,a5
-   14ca8:	000bc7b7          	lui	a5,0xbc
-   14cac:	80078793          	add	a5,a5,-2048 # bb800 <__alt_data_end>
+   14ca8:	000427b7          	lui	a5,0x42
+   14cac:	eb078793          	add	a5,a5,-336 # 41eb0 <__alt_data_end>
    14cb0:	02e7f263          	bgeu	a5,a4,14cd4 <_sbrk+0x70>
    14cb4:	fdc42783          	lw	a5,-36(s0)
    14cb8:	fef42423          	sw	a5,-24(s0)

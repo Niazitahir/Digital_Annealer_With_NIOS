@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Sep 12 03:31:37 2026
+Fitter Status : Successful - Sat Sep 12 18:04:34 2026
 Quartus Prime Version : 25.1.0 Build 129 03/26/2025 SC Pro Edition
 Revision Name : nios_path
 Top-level Entity Name : tempqiart_top
@@ -7,11 +7,11 @@ Device : 1ST040EH2F35E2VG
 Timing Models : Final
 Power Models : Final
 Device Status : Final
-Logic utilization (in ALMs) : 119,499 / 128,160 ( 93 % )
-Total dedicated logic registers : 58687
+Logic utilization (in ALMs) : 122,535 / 128,160 ( 96 % )
+Total dedicated logic registers : 65583
 Total pins : 60 / 498 ( 12 % )
-Total block memory bits : 27,307,936 / 31,477,760 ( 87 % )
-Total RAM Blocks : 1,472 / 1,537 ( 96 % )
+Total block memory bits : 23,389,552 / 31,477,760 ( 74 % )
+Total RAM Blocks : 1,332 / 1,537 ( 87 % )
 Total DSP Blocks : 2 / 648 ( < 1 % )
 Total HSSI E-Tile Channels : 0 / 24 ( 0 % )
 Total HSSI HPS : 0 / 1 ( 0 % )

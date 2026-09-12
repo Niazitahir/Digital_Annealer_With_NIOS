@@ -1,0 +1,37 @@
+Decoded Hyperparameters from param.hex
+================================================================================
+
+Idx   Hex Value    Dec Value (Signed)   Field Description
+--------------------------------------------------------------------------------
+[00] 0x407437C1    1081358273           Reserved / Config Word 0
+[01] 0x000007C6    1990                 Reserved / Config Word 1
+[02] 0x00000000    0                    max_iter (Maximum Annealing Iterations)
+[03] 0x00000000    0                    penalty / tabu_depth (Tabu History Depth [10:0])
+[04] 0x00000000    0                    init_ising_energy (Initial Ising Energy)
+[05] 0x00000000    0                    random_seed (PRNG Seed)
+[06] 0x00000000    0                    e_off_delta (Energy Offset Step Size [17:0])
+[07] 0x00000000    0                    qubo_constant_raw (QUBO Objective Constant Offset)
+[08] 0x00000000    0                    global_min_raw (Target Optimum Ground State Energy)
+[09] 0x00000000    0                    active_variable_count (Active Variable Count [11:0])
+[10] 0x00000000    0                    weight_scale_raw_q25_2 (Q25.2 Integer Weight Scale Factor)
+[11] 0x00000000    0                    Unused Hyperparameter Slot 11
+[12] 0x00000000    0                    Unused Hyperparameter Slot 12
+[13] 0x00000000    0                    Unused Hyperparameter Slot 13
+[14] 0x00000000    0                    Unused Hyperparameter Slot 14
+[15] 0x00000000    0                    Unused Hyperparameter Slot 15
+[16] 0x00000000    0                    Unused Hyperparameter Slot 16
+[17] 0x00000000    0                    Unused Hyperparameter Slot 17
+[18] 0x00000000    0                    Unused Hyperparameter Slot 18
+[19] 0x00000000    0                    Unused Hyperparameter Slot 19
+[20] 0x00000000    0                    Unused Hyperparameter Slot 20
+[21] 0x00000000    0                    Unused Hyperparameter Slot 21
+[22] 0x00000000    0                    Unused Hyperparameter Slot 22
+[23] 0x00000000    0                    Unused Hyperparameter Slot 23
+[24] 0x00000000    0                    Unused Hyperparameter Slot 24
+[25] 0x00000000    0                    Unused Hyperparameter Slot 25
+[26] 0x00000000    0                    Unused Hyperparameter Slot 26
+[27] 0x00000000    0                    Unused Hyperparameter Slot 27
+[28] 0x00000000    0                    Unused Hyperparameter Slot 28
+[29] 0x00000000    0                    Unused Hyperparameter Slot 29
+[30] 0x00000000    0                    Unused Hyperparameter Slot 30
+[31] 0x00000000    0                    Unused Hyperparameter Slot 31

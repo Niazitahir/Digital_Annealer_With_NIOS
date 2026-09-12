@@ -13,6 +13,7 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Component Instantiation Warning: tempqiart.intel_niosv_g_0: System Information doesn't match requirements of IP.  Double-click to open System Info tab.
 Component Instantiation Warning: tempqiart.intel_niosv_g_0: Warnings found in IP parameterization.
 Info: tempqiart: "Transforming system: tempqiart"
 Info: tempqiart: "Naming system components in system: tempqiart"
@@ -24,7 +25,7 @@ Info: tempqiart: "Generating: tempqiart_intel_onchip_memory_0"
 Info: tempqiart: "Generating: tempqiart_jtag_uart_0"
 Info: tempqiart: "Generating: tempqiart_mm_bridge_0"
 Info: tempqiart: "Generating: tempqiart_reset_in"
-Info: tempqiart: "Generating: tempqiart_altera_mm_interconnect_1920_zo5dvly"
+Info: tempqiart: "Generating: tempqiart_altera_mm_interconnect_1920_acrfdki"
 Info: tempqiart: "Generating: tempqiart_altera_irq_mapper_2001_x43qi7i"
 Info: tempqiart: "Generating: altera_reset_controller"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_axi_translator_1974_xfkiwxi"
@@ -32,8 +33,8 @@ Info: tempqiart: "Generating: tempqiart_altera_merlin_slave_translator_191_xg7rz
 Info: tempqiart: "Generating: tempqiart_altera_merlin_axi_master_ni_19100_y3ctica"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_slave_agent_1930_jxauz3i"
 Info: tempqiart: "Generating: tempqiart_altera_avalon_sc_fifo_1932_22gxxgi"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_klplswi"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_uao6kiq"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_dqwwsqa"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_47sutmy"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_obse4oa"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_baawywi"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_traffic_limiter_1921_5pm4apa"

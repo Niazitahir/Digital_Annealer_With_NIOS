@@ -1,5 +1,5 @@
 Fitter Finalize Stage Report for nios_path
-Sat Sep 12 03:31:22 2026
+Sat Sep 12 18:04:17 2026
 Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
 
 
@@ -38,28 +38,28 @@ on the Quartus Prime software download page.
 ; Routing Resource Type          ; Usage                        ;
 +--------------------------------+------------------------------+
 ; Block Input Muxes              ; 22 / 122,932 ( < 1 % )       ;
-; Block interconnects            ; 516,263 / 1,247,616 ( 41 % ) ;
-; C16 interconnects              ; 20,862 / 30,888 ( 68 % )     ;
-; C2 interconnects               ; 91,472 / 185,328 ( 49 % )    ;
-; C3 interconnects               ; 194,393 / 375,912 ( 52 % )   ;
-; C4 interconnects               ; 164,240 / 241,848 ( 68 % )   ;
-; CLOCK_INVERTs                  ; 18 / 1,472 ( 1 % )           ;
+; Block interconnects            ; 528,919 / 1,247,616 ( 42 % ) ;
+; C16 interconnects              ; 21,122 / 30,888 ( 68 % )     ;
+; C2 interconnects               ; 93,855 / 185,328 ( 51 % )    ;
+; C3 interconnects               ; 198,006 / 375,912 ( 53 % )   ;
+; C4 interconnects               ; 164,928 / 241,848 ( 68 % )   ;
+; CLOCK_INVERTs                  ; 26 / 1,472 ( 2 % )           ;
 ; DCM_muxes                      ; 2 / 368 ( < 1 % )            ;
-; Direct links                   ; 89,006 / 1,247,616 ( 7 % )   ;
-; GAP Interconnects              ; 17,285 / 79,560 ( 22 % )     ;
-; GAPs                           ; 17,488 / 29,304 ( 60 % )     ;
+; Direct links                   ; 94,135 / 1,247,616 ( 8 % )   ;
+; GAP Interconnects              ; 15,777 / 79,560 ( 20 % )     ;
+; GAPs                           ; 17,092 / 29,304 ( 58 % )     ;
 ; HIO Buffers                    ; 4 / 64,512 ( < 1 % )         ;
-; Horizontal Buffers             ; 10,063 / 49,788 ( 20 % )     ;
-; Horizontal_clock_segment_muxes ; 44 / 1,600 ( 3 % )           ;
-; Programmable Inverts           ; 1,502 / 78,336 ( 2 % )       ;
-; R10 interconnects              ; 198,569 / 364,860 ( 54 % )   ;
-; R2 interconnects               ; 140,977 / 308,880 ( 46 % )   ;
-; R24 interconnects              ; 17,020 / 49,896 ( 34 % )     ;
-; R24/C16 interconnect drivers   ; 29,036 / 61,776 ( 47 % )     ;
-; R4 interconnects               ; 229,361 / 454,860 ( 50 % )   ;
-; Row Clock Tap-Offs             ; 7,191 / 100,872 ( 7 % )      ;
-; Switchbox_clock_muxes          ; 136 / 9,600 ( 1 % )          ;
-; Vertical_seam_tap_muxes        ; 101 / 4,416 ( 2 % )          ;
+; Horizontal Buffers             ; 9,436 / 49,788 ( 19 % )      ;
+; Horizontal_clock_segment_muxes ; 50 / 1,600 ( 3 % )           ;
+; Programmable Inverts           ; 1,466 / 78,336 ( 2 % )       ;
+; R10 interconnects              ; 197,914 / 364,860 ( 54 % )   ;
+; R2 interconnects               ; 146,328 / 308,880 ( 47 % )   ;
+; R24 interconnects              ; 17,485 / 49,896 ( 35 % )     ;
+; R24/C16 interconnect drivers   ; 28,850 / 61,776 ( 47 % )     ;
+; R4 interconnects               ; 234,735 / 454,860 ( 52 % )   ;
+; Row Clock Tap-Offs             ; 7,185 / 100,872 ( 7 % )      ;
+; Switchbox_clock_muxes          ; 169 / 9,600 ( 2 % )          ;
+; Vertical_seam_tap_muxes        ; 132 / 4,416 ( 3 % )          ;
 +--------------------------------+------------------------------+
 
 
@@ -70,8 +70,8 @@ Info (20030): Parallel compilation is enabled and will use 24 of the 24 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
-    Info: Processing started: Sat Sep 12 02:47:23 2026
-    Info: System process ID: 17660
+    Info: Processing started: Sat Sep 12 17:18:54 2026
+    Info: System process ID: 26956
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off nios_path -c nios_path
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = nios_path
@@ -79,10 +79,10 @@ Info: Revision = nios_path
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Info (18258): Fitter Physical Synthesis operations beginning
-Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:08
+Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:09
 Critical Warning (24605): There are 24 unused RX channels and 24 unused TX channels in the design.
     Info (24606): Add the QSF assignment 'set_instance_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON -to <pin_name>' for each unused channel that will be used in future.
     Info (24607): The above QSF assignment will preserve the performance of specified channels over time.
-Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:40
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:41
 
 
