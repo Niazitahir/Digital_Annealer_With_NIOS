@@ -1,7 +1,7 @@
 	component tempqiart_intel_onchip_memory_0 is
 		port (
 			clk        : in  std_logic                     := 'X';             -- clk
-			address    : in  std_logic_vector(16 downto 0) := (others => 'X'); -- address
+			address    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- address
 			read       : in  std_logic                     := 'X';             -- read
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
 			byteenable : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable

@@ -26,7 +26,7 @@
 // slot select, so a slot increment of 1 there requires (1 << 17) << 2 here.
 #define STATE_RAM_SLOT_STRIDE   0x00080000u
 
-#define INIT_H_WORDS            256u
+#define INIT_H_WORDS            2048u
 #define INIT_H_RAM_BASE         0x01800000u
 #define INIT_H_DATA_MASK        0x0FFFFFFFu
 
@@ -292,9 +292,29 @@ int main(void)
     fflush(stdout);
     pulse_triggers();
 
+    // Check debug flags via Avalon section 0100 readback
+    uint32_t debug_val = mm_read(PROG_START_BASE, 0, 0xFFFFFFFFu);
+    bool go_live = debug_val & 1;
+    bool go_fired = (debug_val >> 1) & 1;
+    bool win_fired = (debug_val >> 2) & 1;
+    uint32_t last_win = (debug_val >> 3) & 0x7FF;
+    printf("[DEBUG DEBUG] Go_Live=%d | Go_Fired=%d | Winner_Fired=%d | LastWinnerIdx=%lu\n",
+           go_live, go_fired, win_fired, (unsigned long)last_win);
+    fflush(stdout);
+
     printf("[DEBUG] Waiting 3 seconds for annealing to complete...\n");
     fflush(stdout);
     usleep(3000000);
+
+    // Read debug flags again after annealing wait
+    debug_val = mm_read(PROG_START_BASE, 0, 0xFFFFFFFFu);
+    go_live = debug_val & 1;
+    go_fired = (debug_val >> 1) & 1;
+    win_fired = (debug_val >> 2) & 1;
+    last_win = (debug_val >> 3) & 0x7FF;
+    printf("[DEBUG AFTER 3S] Go_Live=%d | Go_Fired=%d | Winner_Fired=%d | LastWinnerIdx=%lu\n",
+           go_live, go_fired, win_fired, (unsigned long)last_win);
+    fflush(stdout);
 
     // Dump 5 full QUBO banks for testing before the state summary.
     print_qubo_banks(5);

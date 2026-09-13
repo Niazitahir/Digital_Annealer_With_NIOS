@@ -3,7 +3,7 @@
  *
  * Machine generated for CPU 'intel_niosv_g_0' in SOPC Builder design 'tempqiart'
  *
- * Generated: Sat Sep 12 18:10:07 EDT 2026
+ * Generated: Sat Sep 12 23:17:20 EDT 2026
  */
 
 /*
@@ -50,7 +50,7 @@
 MEMORY
 {
     reset : ORIGIN = 0x0, LENGTH = 32
-    intel_onchip_memory_0 : ORIGIN = 0x20, LENGTH = 269968
+    intel_onchip_memory_0 : ORIGIN = 0x20, LENGTH = 199968
 }
 
 /* Define symbols for each memory base-address */
@@ -390,7 +390,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x41eb0;
+__alt_data_end = 0x30d40;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -406,4 +406,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x41eb0 );
+PROVIDE( __alt_heap_limit    = 0x30d40 );

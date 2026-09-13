@@ -54,19 +54,35 @@ module engine_control_fsm #(
     // --- Internal Iteration Counter --- //
     reg [WIDTH-1:0] iter_count;       // Counts trials up to max_iter
 
+    // Go is only a 2-cycle pulse; if it arrives while still in S_IDLE (before
+    // program has moved the FSM to S_READY) it must not be lost, so latch it.
+    reg go_pending;
+    wire go_request = Go || go_pending;
+
     // --- Sequential Logic --- //
     always @(posedge clk) begin
         if (rst) begin
             current_state <= S_IDLE;
             iter_count    <= {WIDTH{1'b0}};
+            go_pending    <= 1'b0;
         end else begin
             current_state <= next_state;
 
             // Iteration Counter Logic
-            if (current_state == S_READY && Go) begin
+            if (current_state == S_READY && go_request) begin
                 iter_count <= {WIDTH{1'b0}}; // Reset before starting run
             end else if (current_state == S_DEGLORIA) begin
                 iter_count <= iter_count + 1'b1;
+            end
+
+            // Go latch: set on any Go pulse, drop stale requests from a
+            // previous run when (re)programming starts, clear once consumed.
+            if (current_state == S_IDLE && program) begin
+                go_pending <= 1'b0;
+            end else if (current_state == S_READY && go_request) begin
+                go_pending <= 1'b0;
+            end else if (Go) begin
+                go_pending <= 1'b1;
             end
         end
     end
@@ -81,7 +97,7 @@ module engine_control_fsm #(
             end
             
             S_READY: begin
-                if (Go) next_state = S_RNG_GEN;
+                if (go_request) next_state = S_RNG_GEN;
             end
             
             // --- Execution Loop --- //

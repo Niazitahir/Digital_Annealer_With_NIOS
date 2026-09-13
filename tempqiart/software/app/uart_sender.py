@@ -147,7 +147,7 @@ def parse_mif(file_path):
     return width, depth, mem
 
 
-def load_h_init_file(path, count=256):
+def load_h_init_file(path, count=2048):
     """Load initial_h values from .mif or plain text/mem file."""
     if not path or not os.path.exists(path):
         print(f"[-] h_init file not found: {path}, using zeros.")
@@ -322,7 +322,7 @@ def main():
             st_path = args.state_ram or (def_st if os.path.exists(def_st) else input("Path to state_ram .mif: ").strip())
             sym_dir = args.sym_matrix_dir or (def_sym_dir if os.path.isdir(def_sym_dir) else input("Path to sym_matrix_bank directory: ").strip())
 
-            init_h_data = load_h_init_file(h_path, 256)
+            init_h_data = load_h_init_file(h_path, 2048)
             hp_data = load_hyper_params_file(hp_path, 32)
             state_ram_data = load_state_ram_file(st_path, 64)
             qubo_banks = load_sym_matrix_dir(sym_dir, 1024, 512)
@@ -352,8 +352,8 @@ def main():
 
             # 1. init_h
             if line == "init_h":
-                print(f"--> [JUART] Streaming 256 initial_h words...")
-                send_block(conn, init_h_data[:256])
+                print(f"--> [JUART] Streaming 2048 initial_h words...")
+                send_block(conn, init_h_data[:2048])
                 wait_for(conn, "Done")
 
             # 2. hyper_params

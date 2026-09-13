@@ -2178,7 +2178,7 @@ https://fpgasoftware.intel.com/eula.-->
                     <consumedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x30D40' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.timer_sw_agent' start='0x110000' end='0x110040' datawidth='32' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x110040' end='0x110048' datawidth='32' /&gt;&lt;slave name='mm_bridge_0.s0' start='0x8000000' end='0x10000000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -2212,7 +2212,7 @@ https://fpgasoftware.intel.com/eula.-->
                     <consumedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='intel_onchip_memory_0.s1' start='0x0' end='0x30D40' datawidth='32' /&gt;&lt;slave name='intel_niosv_g_0.dm_agent' start='0x100000' end='0x110000' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -3997,7 +3997,7 @@ https://fpgasoftware.intel.com/eula.-->
                         <name>address</name>
                         <role>address</role>
                         <direction>Input</direction>
-                        <width>17</width>
+                        <width>16</width>
                         <lowerBound>0</lowerBound>
                         <vhdlType>STD_LOGIC_VECTOR</vhdlType>
                         <terminationValue>0</terminationValue>
@@ -4080,7 +4080,7 @@ https://fpgasoftware.intel.com/eula.-->
                         </entry>
                         <entry>
                             <key>addressSpan</key>
-                            <value>270000</value>
+                            <value>200000</value>
                         </entry>
                         <entry>
                             <key>addressUnits</key>
@@ -4123,7 +4123,7 @@ https://fpgasoftware.intel.com/eula.-->
                         </entry>
                         <entry>
                             <key>explicitAddressSpan</key>
-                            <value>270000</value>
+                            <value>200000</value>
                         </entry>
                         <entry>
                             <key>holdTime</key>
@@ -4357,11 +4357,11 @@ https://fpgasoftware.intel.com/eula.-->
                     <suppliedSystemInfos>
                         <entry>
                             <key>ADDRESS_MAP</key>
-                            <value>&lt;address-map&gt;&lt;slave name='s1' start='0x0' end='0x41EB0' datawidth='32' /&gt;&lt;/address-map&gt;</value>
+                            <value>&lt;address-map&gt;&lt;slave name='s1' start='0x0' end='0x30D40' datawidth='32' /&gt;&lt;/address-map&gt;</value>
                         </entry>
                         <entry>
                             <key>ADDRESS_WIDTH</key>
-                            <value>19</value>
+                            <value>18</value>
                         </entry>
                         <entry>
                             <key>MAX_SLAVE_DATA_WIDTH</key>
@@ -4420,7 +4420,7 @@ https://fpgasoftware.intel.com/eula.-->
                     <name>address</name>
                     <role>address</role>
                     <direction>Input</direction>
-                    <width>17</width>
+                    <width>16</width>
                     <lowerBound>0</lowerBound>
                     <vhdlType>STD_LOGIC_VECTOR</vhdlType>
                     <terminationValue>0</terminationValue>
@@ -4503,7 +4503,7 @@ https://fpgasoftware.intel.com/eula.-->
                     </entry>
                     <entry>
                         <key>addressSpan</key>
-                        <value>270000</value>
+                        <value>200000</value>
                     </entry>
                     <entry>
                         <key>addressUnits</key>
@@ -4546,7 +4546,7 @@ https://fpgasoftware.intel.com/eula.-->
                     </entry>
                     <entry>
                         <key>explicitAddressSpan</key>
-                        <value>270000</value>
+                        <value>200000</value>
                     </entry>
                     <entry>
                         <key>holdTime</key>
@@ -4835,7 +4835,7 @@ https://fpgasoftware.intel.com/eula.-->
         </entry>
         <entry>
             <key>embeddedsw.CMacro.SIZE_VALUE</key>
-            <value>270000</value>
+            <value>200000</value>
         </entry>
         <entry>
             <key>embeddedsw.CMacro.WRITABLE</key>

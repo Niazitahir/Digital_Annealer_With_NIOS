@@ -68,17 +68,23 @@ module engine_control_fsm #(
 
     assign h_init_address = h_init_count[INDEX_WIDTH-1:0];
 
+    // Go is only a 2-cycle pulse; if it arrives while still in S_PROGRAM it
+    // must not be lost before the FSM reaches S_READY, so latch it here.
+    reg go_pending;
+    wire go_request = Go || go_pending;
+
     // --- Sequential Logic --- //
     always @(posedge clk) begin
         if (rst) begin
             current_state <= S_IDLE;
             iter_count    <= 32'd0;
             h_init_count  <= {(INDEX_WIDTH+1){1'b0}};
+            go_pending    <= 1'b0;
         end else begin
             current_state <= next_state;
 
             // Iteration Counter Logic
-            if (current_state == S_READY && Go) begin
+            if (current_state == S_READY && go_request) begin
                 iter_count <= 32'd0; // Reset before starting run
             end else if (current_state == S_DEGLORIA) begin
                 iter_count <= iter_count + 1'b1;
@@ -89,6 +95,16 @@ module engine_control_fsm #(
                 h_init_count <= {(INDEX_WIDTH+1){1'b0}};
             end else if (current_state == S_PROGRAM) begin
                 h_init_count <= h_init_count + 1'b1;
+            end
+
+            // Go latch: set on any Go pulse, drop stale requests from a
+            // previous run when (re)programming starts, clear once consumed.
+            if (current_state == S_IDLE && program) begin
+                go_pending <= 1'b0;
+            end else if (current_state == S_READY && go_request) begin
+                go_pending <= 1'b0;
+            end else if (Go) begin
+                go_pending <= 1'b1;
             end
         end
     end
@@ -107,7 +123,7 @@ module engine_control_fsm #(
             end
             
             S_READY: begin
-                if (Go) next_state = S_RNG_GEN;
+                if (go_request) next_state = S_RNG_GEN;
             end
             
             // --- Execution Loop --- //

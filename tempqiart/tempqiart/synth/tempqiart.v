@@ -98,7 +98,7 @@ module tempqiart (
 	wire  [31:0] mm_interconnect_0_mm_bridge_0_s0_writedata;                     // mm_interconnect_0:mm_bridge_0_s0_writedata -> mm_bridge_0:s0_writedata
 	wire   [0:0] mm_interconnect_0_mm_bridge_0_s0_burstcount;                    // mm_interconnect_0:mm_bridge_0_s0_burstcount -> mm_bridge_0:s0_burstcount
 	wire  [31:0] mm_interconnect_0_intel_onchip_memory_0_s1_readdata;            // intel_onchip_memory_0:readdata -> mm_interconnect_0:intel_onchip_memory_0_s1_readdata
-	wire  [16:0] mm_interconnect_0_intel_onchip_memory_0_s1_address;             // mm_interconnect_0:intel_onchip_memory_0_s1_address -> intel_onchip_memory_0:address
+	wire  [15:0] mm_interconnect_0_intel_onchip_memory_0_s1_address;             // mm_interconnect_0:intel_onchip_memory_0_s1_address -> intel_onchip_memory_0:address
 	wire         mm_interconnect_0_intel_onchip_memory_0_s1_read;                // mm_interconnect_0:intel_onchip_memory_0_s1_read -> intel_onchip_memory_0:read
 	wire   [3:0] mm_interconnect_0_intel_onchip_memory_0_s1_byteenable;          // mm_interconnect_0:intel_onchip_memory_0_s1_byteenable -> intel_onchip_memory_0:byteenable
 	wire         mm_interconnect_0_intel_onchip_memory_0_s1_write;               // mm_interconnect_0:intel_onchip_memory_0_s1_write -> intel_onchip_memory_0:write
@@ -204,7 +204,7 @@ module tempqiart (
 
 	tempqiart_intel_onchip_memory_0 intel_onchip_memory_0 (
 		.clk        (clock_in_out_clk_clk),                                  //   input,   width = 1,   clk1.clk
-		.address    (mm_interconnect_0_intel_onchip_memory_0_s1_address),    //   input,  width = 17,     s1.address
+		.address    (mm_interconnect_0_intel_onchip_memory_0_s1_address),    //   input,  width = 16,     s1.address
 		.read       (mm_interconnect_0_intel_onchip_memory_0_s1_read),       //   input,   width = 1,       .read
 		.readdata   (mm_interconnect_0_intel_onchip_memory_0_s1_readdata),   //  output,  width = 32,       .readdata
 		.byteenable (mm_interconnect_0_intel_onchip_memory_0_s1_byteenable), //   input,   width = 4,       .byteenable
@@ -259,7 +259,7 @@ module tempqiart (
 		.out_reset_1 (reset_out_reset)                 //  output,  width = 1, out_reset_1.reset
 	);
 
-	tempqiart_altera_mm_interconnect_1920_acrfdki mm_interconnect_0 (
+	tempqiart_altera_mm_interconnect_1920_iitq5wy mm_interconnect_0 (
 		.intel_niosv_g_0_data_manager_awaddr                                           (intel_niosv_g_0_data_manager_awaddr),                            //   input,  width = 32,                                            intel_niosv_g_0_data_manager.awaddr
 		.intel_niosv_g_0_data_manager_awlen                                            (intel_niosv_g_0_data_manager_awlen),                             //   input,   width = 8,                                                                        .awlen
 		.intel_niosv_g_0_data_manager_awsize                                           (intel_niosv_g_0_data_manager_awsize),                            //   input,   width = 3,                                                                        .awsize
@@ -336,7 +336,7 @@ module tempqiart (
 		.mm_bridge_0_s0_readdatavalid                                                  (mm_interconnect_0_mm_bridge_0_s0_readdatavalid),                 //   input,   width = 1,                                                                        .readdatavalid
 		.mm_bridge_0_s0_waitrequest                                                    (mm_interconnect_0_mm_bridge_0_s0_waitrequest),                   //   input,   width = 1,                                                                        .waitrequest
 		.mm_bridge_0_s0_debugaccess                                                    (mm_interconnect_0_mm_bridge_0_s0_debugaccess),                   //  output,   width = 1,                                                                        .debugaccess
-		.intel_onchip_memory_0_s1_address                                              (mm_interconnect_0_intel_onchip_memory_0_s1_address),             //  output,  width = 17,                                                intel_onchip_memory_0_s1.address
+		.intel_onchip_memory_0_s1_address                                              (mm_interconnect_0_intel_onchip_memory_0_s1_address),             //  output,  width = 16,                                                intel_onchip_memory_0_s1.address
 		.intel_onchip_memory_0_s1_write                                                (mm_interconnect_0_intel_onchip_memory_0_s1_write),               //  output,   width = 1,                                                                        .write
 		.intel_onchip_memory_0_s1_read                                                 (mm_interconnect_0_intel_onchip_memory_0_s1_read),                //  output,   width = 1,                                                                        .read
 		.intel_onchip_memory_0_s1_readdata                                             (mm_interconnect_0_intel_onchip_memory_0_s1_readdata),            //   input,  width = 32,                                                                        .readdata

@@ -129,7 +129,9 @@ module bit_sieve_engine_25 #(
             Ising_Energy     <= {ENERGY_WIDTH{1'b0}};
             valid_candidates <= {N{1'b0}};
         end else begin
-            if (state_update_en && winner_found)
+            if (engine_load_en[0])
+                current_state_X <= starting_state;
+            else if (state_update_en && winner_found)
                 current_state_X <= current_state_X ^
                     ({{(N-1){1'b0}}, 1'b1} << winner_index);
 

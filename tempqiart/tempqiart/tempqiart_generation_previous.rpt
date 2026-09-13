@@ -4,7 +4,7 @@ Info: qsys-generate C:\Users\bigkunt\Documents\GitHub\Digital_Annealer_With_NIOS
 Progress: Loading tempqiart/tempqiart.qsys
 Progress: Reading input file
 Progress: Parameterizing module clock_in
-Progress: Parameterizing module intel_niosv_g_0
+Progress: Parameterizing module intel_niosv_m_0
 Progress: Parameterizing module intel_onchip_memory_0
 Progress: Parameterizing module jtag_uart_0
 Progress: Parameterizing module mm_bridge_0
@@ -13,18 +13,19 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Component Instantiation Warning: tempqiart.intel_niosv_g_0: Warnings found in IP parameterization.
+Component Instantiation Warning: tempqiart.intel_niosv_m_0: System Information doesn't match requirements of IP.  Double-click to open System Info tab.
+Component Instantiation Warning: tempqiart.intel_niosv_m_0: Warnings found in IP parameterization.
 Info: tempqiart: "Transforming system: tempqiart"
 Info: tempqiart: "Naming system components in system: tempqiart"
 Info: tempqiart: "Processing generation queue"
 Info: tempqiart: "Generating: tempqiart"
 Info: tempqiart: "Generating: tempqiart_clock_in"
-Info: tempqiart: "Generating: tempqiart_intel_niosv_g_0"
+Info: tempqiart: "Generating: tempqiart_intel_niosv_g_1"
 Info: tempqiart: "Generating: tempqiart_intel_onchip_memory_0"
 Info: tempqiart: "Generating: tempqiart_jtag_uart_0"
 Info: tempqiart: "Generating: tempqiart_mm_bridge_0"
 Info: tempqiart: "Generating: tempqiart_reset_in"
-Info: tempqiart: "Generating: tempqiart_altera_mm_interconnect_1920_zo5dvly"
+Info: tempqiart: "Generating: tempqiart_altera_mm_interconnect_1920_sl7g2da"
 Info: tempqiart: "Generating: tempqiart_altera_irq_mapper_2001_x43qi7i"
 Info: tempqiart: "Generating: altera_reset_controller"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_axi_translator_1974_xfkiwxi"
@@ -32,8 +33,8 @@ Info: tempqiart: "Generating: tempqiart_altera_merlin_slave_translator_191_xg7rz
 Info: tempqiart: "Generating: tempqiart_altera_merlin_axi_master_ni_19100_y3ctica"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_slave_agent_1930_jxauz3i"
 Info: tempqiart: "Generating: tempqiart_altera_avalon_sc_fifo_1932_22gxxgi"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_klplswi"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_uao6kiq"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_pcyne6a"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_fbc7fnq"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_obse4oa"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_router_1921_baawywi"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_traffic_limiter_1921_5pm4apa"
@@ -41,13 +42,13 @@ Info: my_altera_avalon_sc_fifo_dest_id_fifo: "Generating: my_altera_avalon_sc_fi
 Info: tempqiart: "Generating: tempqiart_altera_merlin_burst_adapter_1940_yvysctq"
 Info: my_altera_avalon_st_pipeline_stage: "Generating: my_altera_avalon_st_pipeline_stage"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_demultiplexer_1921_rhej6mi"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_demultiplexer_1921_bbrurwq"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_demultiplexer_1921_hfaffsq"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_multiplexer_1922_dkuxbuq"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_multiplexer_1922_2ezinbi"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_demultiplexer_1921_dyq5sqi"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_demultiplexer_1921_xdvykii"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_multiplexer_1922_7deef2q"
-Info: tempqiart: "Generating: tempqiart_altera_merlin_multiplexer_1922_jpu4tyy"
+Info: tempqiart: "Generating: tempqiart_altera_merlin_multiplexer_1922_2wkqdfa"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_traffic_limiter_altera_avalon_sc_fifo_1921_te3kfhq"
 Info: tempqiart: "Generating: tempqiart_altera_merlin_burst_adapter_altera_avalon_st_pipeline_stage_1940_tppn4bi"
 Info: tempqiart: "Generating: tempqiart_altera_avalon_st_pipeline_stage_1930_oiupeiq"

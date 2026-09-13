@@ -95,9 +95,10 @@ module BitSieve_256 (
     localparam integer WEIGHT_WIDTH    = 10;
     localparam integer BANK_ROW_WIDTH  = TWIN_COUNT * WEIGHT_WIDTH;
 
-    // The state RAM is used as a history/readback store. Keep solver startup
-    // deterministic until a separate initialization policy is required.
-    assign starting_state = {ENGINE_COUNT{1'b0}};
+    // The engine reloads this registered output at its programming boundary.
+    // Outside Avalon reads/writes, state_ram_address is sol_write_addr, which
+    // is zero before the first saved solution, selecting the host-loaded slot.
+    assign starting_state = state_ram_q;
 
     wire [10:0] winner_index;
     wire [(ENGINE_COUNT*WEIGHT_WIDTH)-1:0] qubo_weights;
@@ -110,6 +111,7 @@ module BitSieve_256 (
     localparam integer ROW_LOW_REGIONS   = 16;
     localparam integer BANKS_PER_REGION  = TWIN_COUNT / ROW_LOW_REGIONS;
     reg  [9:0] sampled_weight_row_low_region [0:ROW_LOW_REGIONS-1];
+    reg        rst_region [0:ROW_LOW_REGIONS-1];
 
     // =========================================================================
     // Avalon-MM Slave Interface to the symmetric matrix bank fabric
@@ -165,6 +167,15 @@ module BitSieve_256 (
     assign waitrequest   = !avalon_access_enable;
     assign readdatavalid = avalon_read_pipeline[3];
 
+    wire control_reg_write     = avalon_write_req && (address[24:21] == 4'b0100);
+    wire program_write_trigger = control_reg_write && !avalon_row[0];
+    wire start_write_trigger   = control_reg_write &&  avalon_row[0];
+
+    // Minimal debug registers to track if Go or winner_found ever fired
+    reg go_has_fired;
+    reg winner_has_fired;
+    reg [10:0] last_winner_idx;
+
     always @(posedge CLOCK_50) begin
         if (rst) begin
             avalon_last_bank_reg <= 10'd0;
@@ -176,7 +187,16 @@ module BitSieve_256 (
             avalon_read_pipeline <= 4'b0000;
             readdata             <= 32'd0;
             state_ram_avalon_wdata <= 2048'd0;
+            go_has_fired <= 1'b0;
+            winner_has_fired <= 1'b0;
+            last_winner_idx <= 11'd0;
         end else begin
+            if (Go) go_has_fired <= 1'b1;
+            if (winner_found) begin
+                winner_has_fired <= 1'b1;
+                last_winner_idx <= winner_index;
+            end
+
             if (state_ram_avalon_write) begin
                 state_ram_avalon_wdata[(address[5:0] * 32) +: 32] <= writedata;
             end
@@ -205,11 +225,12 @@ module BitSieve_256 (
                     readdata <= hp_q_data;
                 end else if (avalon_last_section_reg == 4'b0011) begin
                     readdata <= {4'd0, h_init_value};
+                end else if (avalon_last_section_reg == 4'b0100) begin
+                    readdata <= {18'd0, last_winner_idx, winner_has_fired, go_has_fired, Go};
                 end
             end else if (avalon_read_pipeline[2]) begin
                 if (avalon_last_state_section_reg) begin
                     readdata <= state_ram_q[
-
                         (avalon_last_state_word_reg * 32) +: 32];
                 end
             end else if (avalon_write_req) begin
@@ -246,10 +267,6 @@ module BitSieve_256 (
     // A write to section 0100 pulses program (avalon_row[0]=0) or Go
     // (avalon_row[0]=1) high for exactly two cycles, then it self-clears
     // until written again -- replaces the old SW[0]/SW[1] switch inputs.
-    wire control_reg_write     = avalon_write_req && (address[24:21] == 4'b0100);
-    wire program_write_trigger = control_reg_write && !avalon_row[0];
-    wire start_write_trigger   = control_reg_write &&  avalon_row[0];
-
     reg [1:0] program_pulse_counter;
     reg [1:0] start_pulse_counter;
 
