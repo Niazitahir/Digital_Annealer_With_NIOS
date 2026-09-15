@@ -1,0 +1,8 @@
+# TCL commands history
+# Tue Sep 15 17:01:37 2026
+set_device {1ST040EH2F35E2VG}
+recalc
+recalc
+recalc
+recalc
+edit -target {} -property {thermalcalcmode} {Use a constant junction temperature}

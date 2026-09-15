@@ -1,7 +1,7 @@
 set_global_assignment -name TOP_LEVEL_ENTITY tempqiart_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.3.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:46:26  JULY 19, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "25.1.0 Pro Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "26.1.1 Pro Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
@@ -693,3 +693,6 @@ set_global_assignment -name IP_FILE hyperparam_ram.ip
 set_instance_assignment -name PARTITION_COLOUR 4291328767 -to tempqiart_top -entity tempqiart_top
 set_instance_assignment -name PARTITION_COLOUR 4294939263 -to auto_fab_0 -entity tempqiart_top
 set_global_assignment -name QSYS_FILE tempqiart.qsys
+set_global_assignment -name POWER_USE_TA_VALUE 25
+set_global_assignment -name POWER_THERMAL_SOLVER_MODE FIND_MAX_TJ
+set_global_assignment -name POWER_PSI_CA_VALUE 3.7
